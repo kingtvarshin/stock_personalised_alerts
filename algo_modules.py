@@ -19,11 +19,11 @@ def retrive_weeks52_date_analysis_dict(stock_type_key):
             todays_low = stock_data['priceInfo']['intraDayHighLow']['min']
             perc_high = ((weeks52_high - todays_low)/weeks52_high)*100
             perc_low = ((todays_high - weeks52_low)/weeks52_low)*100
-            # if perc_high < 1:
+            # if perc_high < 10 and perc_high > 0:
             #     weeks52_date_analysis[stock_code] = {'perc_high': perc_high}
             #     print('near high: ',stock_code)
             #     print('perc_high: ',perc_high)
-            if perc_low < 2.5:
+            if perc_low < 10 and perc_low > 0:
                 # print(stock_data)
                 weeks52_date_analysis[stock_code] = {'perc_low': perc_low}
         except KeyError:
