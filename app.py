@@ -2,10 +2,13 @@ import json
 import datetime
 from algo_modules import retrive_weeks52_date_analysis_dict
 
-# weeks52_date_analysis
+# time analysis
+time_analysis = {}
 
+# weeks52_date_analysis
 start_time = datetime.datetime.now()
 print('start_time: ',start_time)
+time_analysis['start_time'] = start_time
 
 ##############################################
 largestocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('largestocks')
@@ -14,6 +17,7 @@ with open("largestocks_52_weeks_date_analysis.json", "w") as outfile:
 
 large_stock_completed = datetime.datetime.now()
 print('large_stock_completed: ',large_stock_completed)
+time_analysis['large_stock_completed'] = large_stock_completed
 
 ##############################################
 midstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('midstocks')
@@ -22,6 +26,7 @@ with open("midstocks_52_weeks_date_analysis.json", "w") as outfile:
 
 mids_stock_completed = datetime.datetime.now()
 print('mids_stock_completed: ',mids_stock_completed)
+time_analysis['mids_stock_completed'] = mids_stock_completed
 
 ##############################################
 smallstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('smallstocks')
@@ -30,6 +35,7 @@ with open("smallstocks_52_weeks_date_analysis.json", "w") as outfile:
 
 small_stock_completed = datetime.datetime.now()
 print('small_stock_completed: ',small_stock_completed)
+time_analysis['small_stock_completed'] = small_stock_completed
 
 ##############################################
 
@@ -39,3 +45,11 @@ print(' time for mid stock = ', mids_stock_completed - large_stock_completed)
 print(' time for small stock = ', small_stock_completed - mids_stock_completed)
 
 print('total time of script run => ', small_stock_completed - start_time)
+
+time_analysis['time_for_large_stock'] = (large_stock_completed - start_time)
+time_analysis['time_for_mid_stock'] = (mids_stock_completed - large_stock_completed)
+time_analysis['time_for_small_stock'] = (small_stock_completed - mids_stock_completed)
+time_analysis['time_for_all_stocks'] = (small_stock_completed - start_time)
+
+with open("time_analysis_52_weeks.json", "w") as outfile: 
+    json.dump(time_analysis, outfile)
