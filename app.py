@@ -1,20 +1,41 @@
 import json
+import datetime
 from algo_modules import retrive_weeks52_date_analysis_dict
 
-start_date = "1-02-2024"
-end_date ="12-02-2024"
+# weeks52_date_analysis
 
-# print(len(stocksdict['largestocks']),len(stocksdict['midstocks']),len(stocksdict['smallstocks']))
+start_time = datetime.datetime.now()
+print('start_time: ',start_time)
 
-largestocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('largestocks', start_date, end_date)
-midstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('midstocks', start_date, end_date)
-smallstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('smallstocks', start_date, end_date)
-        
-# print(stock_52_weeks_date_analysis)
-
+##############################################
+largestocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('largestocks')
 with open("largestocks_52_weeks_date_analysis.json", "w") as outfile: 
     json.dump(largestocks_52_weeks_date_analysis, outfile)
-with open("largestocks_52_weeks_date_analysis.json", "w") as outfile: 
+
+large_stock_completed = datetime.datetime.now()
+print('large_stock_completed: ',large_stock_completed)
+
+##############################################
+midstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('midstocks')
+with open("midstocks_52_weeks_date_analysis.json", "w") as outfile: 
     json.dump(midstocks_52_weeks_date_analysis, outfile)
-with open("largestocks_52_weeks_date_analysis.json", "w") as outfile: 
+
+mids_stock_completed = datetime.datetime.now()
+print('mids_stock_completed: ',mids_stock_completed)
+
+##############################################
+smallstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('smallstocks')
+with open("smallstocks_52_weeks_date_analysis.json", "w") as outfile: 
     json.dump(smallstocks_52_weeks_date_analysis, outfile)
+
+small_stock_completed = datetime.datetime.now()
+print('small_stock_completed: ',small_stock_completed)
+
+##############################################
+
+
+print(' time for large stock = ', large_stock_completed - start_time)
+print(' time for mid stock = ', mids_stock_completed - large_stock_completed)
+print(' time for small stock = ', small_stock_completed - mids_stock_completed)
+
+print('total time of script run => ', small_stock_completed - start_time)
