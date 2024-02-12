@@ -4,7 +4,7 @@ from nsepython import equity_history,nse_eq
 
 def retrive_weeks52_date_analysis_dict(stock_type_key,perc_var=5):
     # importing the dictionary for stocks requirements
-    stocksdictfile = open('./stocksdict.json')
+    stocksdictfile = open('./one_time_scripts/stocksdict.json')
     stocksdict = json.load(stocksdictfile)
     weeks52_date_analysis = {}
     
