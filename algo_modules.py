@@ -1,7 +1,8 @@
 import json
+from requests import JSONDecodeError
 from nsepython import equity_history,nse_eq
 
-def retrive_weeks52_date_analysis_dict(stock_type_key):
+def retrive_weeks52_date_analysis_dict(stock_type_key,perc_var=5):
     # importing the dictionary for stocks requirements
     stocksdictfile = open('./stocksdict.json')
     stocksdict = json.load(stocksdictfile)
@@ -19,20 +20,22 @@ def retrive_weeks52_date_analysis_dict(stock_type_key):
             todays_low = stock_data['priceInfo']['intraDayHighLow']['min']
             perc_high = ((weeks52_high - todays_low)/weeks52_high)*100
             perc_low = ((todays_high - weeks52_low)/weeks52_low)*100
-            # if perc_high < 10 and perc_high > 0:
+            # if perc_high < perc_var and perc_high > 0:
             #     weeks52_date_analysis[stock_code] = {'perc_high': perc_high}
             #     print('near high: ',stock_code)
             #     print('perc_high: ',perc_high)
-            if perc_low < 10 and perc_low > 0:
+            if perc_low < perc_var and perc_low > 0:
                 # print(stock_data)
                 weeks52_date_analysis[stock_code] = {'perc_low': perc_low}
         except KeyError:
             stock_data = nse_eq(stock_code)
-            print(KeyError)
-        except json.JSONDecodeError:
+            print(KeyError,stock_data)
+        except JSONDecodeError:
             stock_data = nse_eq(stock_code)
-            print(json.JSONDecodeError)
-            
+            print(JSONDecodeError,stock_data)
+        except ZeroDivisionError:
+            stock_data = nse_eq(stock_code)
+            print(JSONDecodeError,stock_data)
     #closing file
     stocksdictfile.close()
     return weeks52_date_analysis
