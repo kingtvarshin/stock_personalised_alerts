@@ -8,7 +8,7 @@ time_analysis = {}
 # weeks52_date_analysis
 start_time = datetime.datetime.now()
 print('start_time: ',start_time)
-time_analysis['start_time'] = start_time
+time_analysis['start_time'] = str(start_time)
 
 perc_var = 5
 
