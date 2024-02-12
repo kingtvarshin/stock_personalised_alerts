@@ -1,1 +1,26 @@
-{"HDFCBANK": {"perc_low": 2.4596993298315555}}
+{
+    "HDFCBANK": {
+        "perc_low": 2.419851476181858
+    },
+    "HINDUNILVR": {
+        "perc_low": 2.7225263691897985
+    },
+    "SBICARD": {
+        "perc_low": 3.004291845493562
+    },
+    "UPL": {
+        "perc_low": 2.7575557026251927
+    },
+    "PAGEIND": {
+        "perc_low": 4.426989083803369
+    },
+    "MANYAVAR": {
+        "perc_low": 3.8465608465608487
+    },
+    "BATAINDIA": {
+        "perc_low": 3.2221860178849426
+    },
+    "SUMICHEM": {
+        "perc_low": 3.7601078167115873
+    }
+}
