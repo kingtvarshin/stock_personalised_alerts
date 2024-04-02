@@ -1,1 +1,56 @@
-{"NAVINFLUOR": {"perc_low": 4.178467895105131}, "VINATIORGA": {"perc_low": 3.524036054081133}, "TVSSCS": {"perc_low": 2.7854384997242043}, "DEEPAKFERT": {"perc_low": 3.8666264939238726}, "GMMPFAUDLR": {"perc_low": 4.616815476190473}, "FEDFINA": {"perc_low": 3.4524287434765135}}
+{
+    "VINATIORGA": {
+        "perc_low": 4.853142076502729
+    },
+    "WHIRLPOOL": {
+        "perc_low": 4.459994941404612
+    },
+    "FINEORG": {
+        "perc_low": 2.6423775180303406
+    },
+    "HAPPSTMNDS": {
+        "perc_low": 3.070175438596491
+    },
+    "SFL": {
+        "perc_low": 4.95808515332009
+    },
+    "ALKYLAMINE": {
+        "perc_low": 3.501106194690263
+    },
+    "AAVAS": {
+        "perc_low": 2.1423106350420813
+    },
+    "AETHER": {
+        "perc_low": 3.9262031383363
+    },
+    "BAJAJELEC": {
+        "perc_low": 2.438888888888894
+    },
+    "TTKPRESTIG": {
+        "perc_low": 4.08523032114662
+    },
+    "RENUKA": {
+        "perc_low": 4.071246819338426
+    },
+    "GALAXYSURF": {
+        "perc_low": 4.879366222542316
+    },
+    "KRBL": {
+        "perc_low": 3.0484485574305853
+    },
+    "CAMPUS": {
+        "perc_low": 3.7323943661971772
+    },
+    "GMMPFAUDLR": {
+        "perc_low": 4.259289980092911
+    },
+    "HNDFDS": {
+        "perc_low": 2.0235546038543872
+    },
+    "STLTECH": {
+        "perc_low": 4.8138056312443345
+    },
+    "GHCL": {
+        "perc_low": 3.471663409587314
+    }
+}
