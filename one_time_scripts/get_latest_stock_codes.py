@@ -1,6 +1,6 @@
 import pandas as pd
 import json 
-excel_name = 'MCAP31122023.xlsx'
+excel_name = 'one_time_scripts/MCAP31122023.xlsx'
 list_of_companies = pd.read_excel(excel_name)
 stocksdict = {
     "largestocks" : [],
@@ -27,5 +27,5 @@ for index,company in list_of_companies.iterrows():
 # Serializing json
 stocksdict_json_object = json.dumps(stocksdict, indent=4)
 # Writing to stocksdict.json
-with open("stocksdict.json", "w") as stocksdictoutfile:
+with open("one_time_scripts/stocksdict.json", "w") as stocksdictoutfile:
     stocksdictoutfile.write(stocksdict_json_object)
