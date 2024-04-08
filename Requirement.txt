@@ -1,0 +1,4 @@
+nsepy
+pandas
+json
+openpyxl
