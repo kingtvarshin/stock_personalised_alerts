@@ -11,7 +11,6 @@ def mail_message():
         load_dotenv()
         EMAIL_ID_LIST = eval(os.getenv('EMAIL_ID_LIST'))
         SENDER_EMAIL = os.getenv('SENDER_EMAIL')
-        print(EMAIL_ID_LIST)
         SENDER_EMAIL_PASSWORD = os.getenv('SENDER_EMAIL_PASSWORD')
         INDICATORS_RESULT_CSV_PATH = os.getenv('INDICATORS_RESULT_CSV_PATH')
         
