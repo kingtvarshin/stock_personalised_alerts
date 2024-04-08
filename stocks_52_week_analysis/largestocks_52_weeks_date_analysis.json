@@ -1,14 +1,1 @@
-{
-    "HINDUNILVR": {
-        "perc_low": 2.5515232974910314
-    },
-    "DABUR": {
-        "perc_low": 1.5232974910394332
-    },
-    "MANYAVAR": {
-        "perc_low": 4.585189780610241
-    },
-    "BATAINDIA": {
-        "perc_low": 2.18268799521603
-    }
-}
+{"HINDUNILVR": {"perc_low": 2.5515232974910314}, "DABUR": {"perc_low": 1.5232974910394332}, "MANYAVAR": {"perc_low": 4.585189780610241}, "BATAINDIA": {"perc_low": 2.18268799521603}}
