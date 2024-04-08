@@ -159,4 +159,4 @@ def indicators_response(symbol):
         return v,w,x,y,z,aa
     except Exception:
         print(Exception)
-        return '',''
+        return '','','','','',''

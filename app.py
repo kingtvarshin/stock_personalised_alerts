@@ -1,6 +1,6 @@
 import json
 import datetime
-from algo_modules import retrive_weeks52_date_analysis_dict
+from modules.algo_modules import retrive_weeks52_date_analysis_dict
 
 # time analysis
 time_analysis = {}
