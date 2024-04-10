@@ -121,7 +121,7 @@ def indicators_response(symbol):
             # print('bollinger_band')
             if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0.01:
                 x = 'buy'
-            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.5:
+            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.7:
                 x = 'sell'
             else:
                 x = 'hold'
@@ -138,9 +138,9 @@ def indicators_response(symbol):
                
         # latest stoch
         if not df_stoch.empty: 
-            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 80:
+            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 75:
                 z = 'sell'
-            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 20:
+            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 25:
                 z = 'buy'
             else:
                 z = 'hold'

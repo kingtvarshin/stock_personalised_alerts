@@ -1,8 +1,10 @@
 ,company,cap,closing_price,sma,ball,rsi,stoch,super_trend
-0,HINDUNILVR,large_cap,2266.95,2503.3435,buy,hold,hold,probability to fall more
-1,DABUR,large_cap,507.9,547.7885000000001,buy,hold,hold,probability to fall more
-2,MANYAVAR,large_cap,909.65,1202.32425,buy,hold,hold,probability to fall more
-3,BATAINDIA,large_cap,1359.4,1582.7555000000004,buy,hold,hold,probability to fall more
-4,VINATIORGA,mid_cap,1489.95,1749.180000000001,buy,hold,buy,probability to fall more
-5,MEP,small_cap,10.95,,,hold,buy,probability to fall more
-6,MEGAFLEX,small_cap,,,,,,
+0,HINDUNILVR,large_cap,2264.15,2500.1655,buy,hold,hold,probability to fall more
+1,ASIANPAINT,large_cap,2857.15,3151.34975,hold,hold,hold,probability to fall more
+2,DABUR,large_cap,503.15,547.3815000000001,buy,hold,buy,probability to fall more
+3,MANYAVAR,large_cap,904.0,1200.09675,buy,hold,hold,probability to fall more
+4,BATAINDIA,large_cap,1343.2,1580.6847500000006,buy,hold,buy,probability to fall more
+5,ATUL,large_cap,5879.35,6658.006250000002,hold,hold,hold,probability to fall more
+6,CLEAN,mid_cap,1325.35,1400.4035000000003,hold,hold,hold,probability to fall more
+7,IDEAFORGE,small_cap,698.9,,,hold,hold,probability to fall more
+8,RILINFRA,small_cap,,,,,,
