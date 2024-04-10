@@ -2,6 +2,7 @@ import json
 import datetime
 from modules.algo_modules import retrive_weeks52_date_analysis_dict
 from modules.indicators import indicators_response
+from modules.notification_sending_module import mail_message
 import pandas as pd
 
 # time analysis
@@ -104,3 +105,6 @@ indicator_response_dict_creator(small_capstocksdict,'small_cap')
 
 indicators_df = pd.DataFrame(indicators_data)
 indicators_df.to_csv(f'./stock_indicators_csv/indicators_data.csv')
+
+## sending message
+mail_message()
