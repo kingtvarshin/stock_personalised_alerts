@@ -5,16 +5,16 @@ from dateutil import parser
 import pandas as pd
 import datetime
 
-def indicators_response(symbol):
+def indicators_response(symbol,backdays=0):
     try:
 
-        series = "EQ"
-        end_datetime = datetime.datetime.now()
+        series         = "EQ"
+        end_datetime   = datetime.datetime.now() - datetime.timedelta(days=backdays)
         start_datetime = end_datetime - datetime.timedelta(days=365)
-        end_date = f'{end_datetime.day}-{end_datetime.month}-{end_datetime.year}'
-        start_date = f'{start_datetime.day}-{start_datetime.month}-{start_datetime.year}'
-        a  =  equity_history(symbol,series,start_date,end_date)
-        quotes_list = [
+        end_date       = f'{end_datetime.day}-{end_datetime.month}-{end_datetime.year}'
+        start_date     = f'{start_datetime.day}-{start_datetime.month}-{start_datetime.year}'
+        a              =  equity_history(symbol,series,start_date,end_date)
+        quotes_list    = [
             Quote(parser.parse(d),o,h,l,c,v) 
             for d,o,h,l,c,v 
             in zip(a['CH_TIMESTAMP'], a['CH_OPENING_PRICE'], a['CH_TRADE_HIGH_PRICE'], a['CH_TRADE_LOW_PRICE'], a['CH_CLOSING_PRICE'], a['CH_TOT_TRADED_QTY'])
@@ -70,14 +70,14 @@ def indicators_response(symbol):
                 bollinger_bands_dict['width'].append(i.width)
 
         # print('get_rsi')    
-        results = indicators.get_rsi(quotes_list, 30)
+        results = indicators.get_rsi(quotes_list, 14)
         for i in results:
             if i.rsi is not None:
                 rsi_dict['date'].append(i.date)
                 rsi_dict['rsi'].append(i.rsi)
 
         # print('get_stoch')   
-        results = indicators.get_stoch(quotes_list, 14, 3, 3)
+        results = indicators.get_stoch(quotes_list, 200, 3, 3)
         for i in results:
             if i.k is not None:
                 stoch_dict['date'].append(i.date)
@@ -119,19 +119,19 @@ def indicators_response(symbol):
         # latest bollinger_band
         if not df_bollinger_bands.empty:
             # print('bollinger_band')
-            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0.01:
+            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0:
                 x = 'buy'
-            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.7:
+            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.6:
                 x = 'sell'
             else:
                 x = 'hold'
             
         # latest rsi
         if not df_rsi.empty:
-            # print('rsi')
+            print(df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0])
             if df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]<=34:
                 y = 'buy'
-            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=60:
+            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=65:
                 y = 'sell'
             else:
                 y = 'hold'
@@ -149,11 +149,11 @@ def indicators_response(symbol):
         if not df_super_trend.empty:
             if df_super_trend.tail(5).tail(1)['lower_band'].values[0] is None and df_super_trend.tail(5).tail(1)['upper_band'].values[0] is not None:
                 if df_super_trend.tail(5).tail(2)['upper_band'].values[0] is None:
-                    aa += 'best time to sell...'
+                    aa += 'trend change to upper band...'
                 aa += 'probability to fall more'
             elif df_super_trend.tail(5).tail(1)['lower_band'].values[0] is not None and df_super_trend.tail(5).tail(1)['upper_band'].values[0] is None:
                 if df_super_trend.tail(5).tail(2)['lower_band'].values[0] is None:
-                    aa += 'best time to buy'
+                    aa += 'trend change to lower band'
                 aa += 'probability to rise more'
                 
         return v,w,x,y,z,aa

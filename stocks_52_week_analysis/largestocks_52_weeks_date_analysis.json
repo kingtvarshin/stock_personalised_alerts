@@ -1,1 +1,42 @@
-{"HINDUNILVR": {"perc_low": 2.011648745519717}, "ASIANPAINT": {"perc_low": 4.845366447882765}, "DABUR": {"perc_low": 0.6272401433691824}, "MANYAVAR": {"perc_low": 2.9891151091309007}, "BATAINDIA": {"perc_low": 1.3604425175661568}, "ATUL": {"perc_low": 3.563699825479927}}
+{
+    "NESTLEIND": {
+        "perc_low": 4.559794113984472,
+        "PE_ratio": 97.49
+    },
+    "LTIM": {
+        "perc_low": 2.290001095170303,
+        "PE_ratio": 29.67
+    },
+    "BERGEPAINT": {
+        "perc_low": 4.476987447698741,
+        "PE_ratio": 50.36
+    },
+    "DALBHARAT": {
+        "perc_low": 3.711224910236032,
+        "PE_ratio": 38.27
+    },
+    "SYNGENE": {
+        "perc_low": 4.474393530997298,
+        "PE_ratio": 52.27
+    },
+    "ZEEL": {
+        "perc_low": 3.4429400386847107,
+        "PE_ratio": 47.92
+    },
+    "RAMCOCEM": {
+        "perc_low": 3.938067990575564,
+        "PE_ratio": 43.47
+    },
+    "BATAINDIA": {
+        "perc_low": 3.1684698608964452,
+        "PE_ratio": 58.55
+    },
+    "ATUL": {
+        "perc_low": 3.9581151832460764,
+        "PE_ratio": 55.56
+    },
+    "SONATSOFTW": {
+        "perc_low": 3.141993957703932,
+        "PE_ratio": 3.94
+    }
+}
