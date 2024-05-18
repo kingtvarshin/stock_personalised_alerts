@@ -1,1 +1,42 @@
-{"CLEAN": {"perc_low": 3.6564359536486095, "PE_ratio": 54.85}, "SFL": {"perc_low": 3.1857720649343455, "PE_ratio": 54.28}, "TTKPRESTIG": {"perc_low": 5.397897897897905, "PE_ratio": 42.91}, "CCL": {"perc_low": 4.869984809221696, "PE_ratio": 28.87}, "PGHL": {"perc_low": 4.492896174863392, "PE_ratio": 34.57}}
+{
+    "CLEAN": {
+        "perc_low": 1.8730407523511046,
+        "PE_ratio": 53.43
+    },
+    "SFL": {
+        "perc_low": 4.611923509561304,
+        "PE_ratio": 53.35
+    },
+    "ANURAS": {
+        "perc_low": 1.9458762886597967,
+        "PE_ratio": 43.36
+    },
+    "KRBL": {
+        "perc_low": 3.574033552151718,
+        "PE_ratio": 10.54
+    },
+    "CCL": {
+        "perc_low": 4.1947363693523805,
+        "PE_ratio": 30.58
+    },
+    "GAEL": {
+        "perc_low": 4.976141785957745,
+        "PE_ratio": 21.29
+    },
+    "PGHL": {
+        "perc_low": 2.8728257001434216,
+        "PE_ratio": 36.6
+    },
+    "GOCOLORS": {
+        "perc_low": 4.757312761170052,
+        "PE_ratio": 62.48
+    },
+    "TCIEXP": {
+        "perc_low": 2.9663777120809764,
+        "PE_ratio": 29.4
+    },
+    "GREENPANEL": {
+        "perc_low": 3.604387950548502,
+        "PE_ratio": 25.34
+    }
+}
