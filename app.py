@@ -21,9 +21,13 @@ PE_ratio_max   = 25
 PE_ratio_min   = 15
 
 backdays = 0
-largestocks_52_weeks_date_analysis = ''
-midstocks_52_weeks_date_analysis = ''
-smallstocks_52_weeks_date_analysis = ''
+largestocks_52_weeks_date_analysis = {}
+midstocks_52_weeks_date_analysis = {}
+smallstocks_52_weeks_date_analysis = {}
+large_stock_completed = datetime.datetime.now()
+mids_stock_completed = datetime.datetime.now()
+small_stock_completed = datetime.datetime.now()
+large_stock_completed = datetime.datetime.now()
 
 def large():
     ##############################################
@@ -68,16 +72,16 @@ t3.join()
 ##############################################
 
 
-print(' time for large stock = ', time_analysis['large_stock_completed'] - time_analysis['start_time'])
-print(' time for mid stock = ', time_analysis['mids_stock_completed'] - time_analysis['start_time'])
-print(' time for small stock = ', time_analysis['small_stock_completed'] - time_analysis['start_time'])
+print(' time for large stock = ', large_stock_completed - start_time)
+print(' time for mid stock = ', mids_stock_completed - start_time)
+print(' time for small stock = ', small_stock_completed - start_time)
 
-print('total time of script run => ', time_analysis['small_stock_completed'] - time_analysis['start_time'])
+print('total time of script run => ', small_stock_completed - start_time)
 
-time_analysis['time_for_large_stock'] = str(time_analysis['large_stock_completed'] - time_analysis['start_time'])
-time_analysis['time_for_mid_stock'] = str(time_analysis['mids_stock_completed'] - time_analysis['start_time'])
-time_analysis['time_for_small_stock'] = str(time_analysis['small_stock_completed'] - time_analysis['start_time'])
-time_analysis['time_for_all_stocks'] = str(time_analysis['small_stock_completed'] - time_analysis['start_time'])
+time_analysis['time_for_large_stock'] = str(large_stock_completed - start_time)
+time_analysis['time_for_mid_stock'] = str(mids_stock_completed - start_time)
+time_analysis['time_for_small_stock'] = str(small_stock_completed - start_time)
+time_analysis['time_for_all_stocks'] = str(small_stock_completed - start_time)
 
 
 with open("time_analysis_52_weeks.json", "w") as outfile: 
@@ -128,9 +132,21 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
         indicators_data["stoch"].append(stoch)
         indicators_data["super_trend"].append(super_trend)
         
-indicator_response_dict_creator(large_capstocksdict,'large_cap',backdays)
-indicator_response_dict_creator(mid_capstocksdict,'mid_cap',backdays)
-indicator_response_dict_creator(small_capstocksdict,'small_cap',backdays)
+t4 = threading.Thread(target=indicator_response_dict_creator, args=(large_capstocksdict,'large_cap',backdays,))
+t5 = threading.Thread(target=indicator_response_dict_creator, args=(mid_capstocksdict,'mid_cap',backdays,))
+t6 = threading.Thread(target=indicator_response_dict_creator, args=(small_capstocksdict,'small_cap',backdays,))
+
+t4.start()
+t5.start()
+t6.start()
+
+t4.join()
+t5.join()
+t6.join()
+
+# indicator_response_dict_creator(large_capstocksdict,'large_cap',backdays)
+# indicator_response_dict_creator(mid_capstocksdict,'mid_cap',backdays)
+# indicator_response_dict_creator(small_capstocksdict,'small_cap',backdays)
 indicators_df = pd.DataFrame(indicators_data)
 indicators_df.to_csv(f'./stock_indicators_csv/indicators_data_test_full1.csv')
 
