@@ -1,6 +1,11 @@
 import json
 from modules.indicators import indicators_response
 import pandas as pd
+import threading
+import datetime
+
+start_time = datetime.datetime.now()
+print('start_time: ',start_time)
 
 large_capstocksdictfile = open('./stocks_52_week_analysis/largestocks_52_weeks_date_analysis.json')
 large_capstocksdict = json.load(large_capstocksdictfile)
@@ -77,8 +82,26 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
         indicators_data["stoch"].append(stoch)
         indicators_data["super_trend"].append(super_trend)
         
+        
+# t1 = threading.Thread(target=indicator_response_dict_creator, args=(large_capstocksdict,'large_cap',backdays,))
+# t2 = threading.Thread(target=indicator_response_dict_creator, args=(mid_capstocksdict,'mid_cap',backdays,))
+# t3 = threading.Thread(target=indicator_response_dict_creator, args=(small_capstocksdict,'small_cap',backdays,))
+
+# t1.start()
+# t2.start()
+# t3.start()
 indicator_response_dict_creator(large_capstocksdict,'large_cap',backdays)
 indicator_response_dict_creator(mid_capstocksdict,'mid_cap',backdays)
 indicator_response_dict_creator(small_capstocksdict,'small_cap',backdays)
+
+# t1.join()
+# t2.join()
+# t3.join()
+
+
+completed_time = datetime.datetime.now()
+print('total_time: ',completed_time-start_time)
+
 indicators_df = pd.DataFrame(indicators_data)
-indicators_df.to_csv(f'./stock_indicators_csv/indicators_data_test_full.csv')
+print(indicators_df)
+# indicators_df.to_csv(f'./stock_indicators_csv/indicators_data_test_full.csv')
