@@ -17,7 +17,7 @@ def indicators_response(symbol,backdays=0):
         quotes_list    = [
             Quote(parser.parse(d),o,h,l,c,v) 
             for d,o,h,l,c,v 
-            in zip(a['CH_TIMESTAMP'], a['CH_OPENING_PRICE'], a['CH_TRADE_HIGH_PRICE'], a['CH_TRADE_LOW_PRICE'], a['CH_CLOSING_PRICE'], a['CH_TOT_TRADED_QTY'])
+            in zip(a['CH_TIMESTAMP'], a['CH_OPENING_PRICE'], a['CH_TRADE_HIGH_PRICE'], a['CH_TRADE_LOW_PRICE'], a['CH_CLOSING_PRICE'], a['CH_TOT_TRADED_VAL'])
         ]
 
         sma_dict = {
