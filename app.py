@@ -101,7 +101,10 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
         indicators_data["cap"].append(cap)
         indicators_data["closing_price"].append(closing_price)
         indicators_data["sma"].append(sma)
-        indicators_data["sma%"].append(((closing_price-sma)/closing_price)*100)
+        try:
+            indicators_data["sma%"].append(((closing_price-sma)/closing_price)*100)
+        except:
+            indicators_data["sma%"].append('')
         indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
         indicators_data["ball"].append(ball)
         indicators_data["rsi"].append(rsi)

@@ -1,0 +1,17 @@
+,company,cap,closing_price,sma,sma%,PE_ratio,ball,rsi,stoch,super_trend
+0,TATATECH,large_cap,1004.55,,,NA,,hold,,probability to fall more
+1,ANURAS,mid_cap,754.3,892.8405,-18.366763887047604,49.48,hold,buy,buy,probability to fall more
+2,ESAFSFB,small_cap,51.65,,,6.25,,buy,,probability to rise more
+3,TASTYBITE,small_cap,10273.2,13378.445500000013,-30.22666257835934,63.49,hold,hold,buy,probability to fall more
+4,REPRO,small_cap,634.7,785.5977500000002,-23.77465731841818,75,buy,hold,buy,probability to fall more
+5,IRISDOREME,small_cap,67.08,80.2516,-19.63565891472868,44.81,buy,hold,buy,probability to fall more
+6,SMLT,small_cap,192.64,,,18.41,,buy,,probability to fall more
+7,SELMC,small_cap,59.02,,,0,,buy,,probability to fall more
+8,SWASTIK,small_cap,,,,NA,,,,
+9,PODDARHOUS,small_cap,133.2,,,0,,sell,,probability to rise more
+10,MICROPRO,small_cap,,,,NA,,,,
+11,SECURCRED,small_cap,11.87,18.742149999999995,-57.89511373209769,9.49,buy,buy,buy,probability to fall more
+12,UWCSL,small_cap,,,,NA,,,,
+13,YCCL,small_cap,,,,NA,,,,
+14,INDIFRA,small_cap,,,,NA,,,,
+15,FSC,small_cap,,,,0,,,,
