@@ -36,9 +36,10 @@ def indicator_response_dict_creator(dict_file,cap):
         indicators_data["stoch"].append(stoch)
         indicators_data["super_trend"].append(super_trend)
 
-indicator_response_dict_creator(large_capstocksdict,'large_cap')
-indicator_response_dict_creator(mid_capstocksdict,'mid_cap')
-indicator_response_dict_creator(small_capstocksdict,'small_cap')
+# indicator_response_dict_creator(large_capstocksdict,'large_cap')
+# indicator_response_dict_creator(mid_capstocksdict,'mid_cap')
+# indicator_response_dict_creator(small_capstocksdict,'small_cap')
 
 indicators_df = pd.DataFrame(indicators_data)
-indicators_df.to_csv(f'./stock_indicators_csv/indicators_data.csv')
+print(indicators_df)
+# indicators_df.to_csv(f'./stock_indicators_csv/indicators_data_test.csv')
