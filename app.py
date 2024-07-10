@@ -126,19 +126,20 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
         for key in dict_file.keys():
             print(key)
             closing_price,sma,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
-            indicators_data["company"].append(key)
-            indicators_data["cap"].append(cap)
-            indicators_data["closing_price"].append(closing_price)
-            indicators_data["sma"].append(sma)
-            try:
-                indicators_data["sma%"].append(((closing_price-sma)/closing_price)*100)
-            except:
-                indicators_data["sma%"].append('')
-            indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
-            indicators_data["ball"].append(ball)
-            indicators_data["rsi"].append(rsi)
-            indicators_data["stoch"].append(stoch)
-            indicators_data["super_trend"].append(super_trend)
+            if ball or rsi or stoch:
+                indicators_data["company"].append(key)
+                indicators_data["cap"].append(cap)
+                indicators_data["closing_price"].append(closing_price)
+                indicators_data["sma"].append(sma)
+                try:
+                    indicators_data["sma%"].append(((closing_price-sma)/closing_price)*100)
+                except:
+                    indicators_data["sma%"].append('')
+                indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
+                indicators_data["ball"].append(ball)
+                indicators_data["rsi"].append(rsi)
+                indicators_data["stoch"].append(stoch)
+                indicators_data["super_trend"].append(super_trend)
         
 t4 = threading.Thread(target=indicator_response_dict_creator, args=(large_capstocksdict,'large_cap',backdays,))
 t5 = threading.Thread(target=indicator_response_dict_creator, args=(mid_capstocksdict,'mid_cap',backdays,))
