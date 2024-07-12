@@ -1,16 +1,11 @@
 ,company,cap,closing_price,sma,sma%,PE_ratio,ball,rsi,stoch,super_trend
-0,TATATECH,large_cap,1012.3,,,NA,,hold,,probability to fall more
-1,ANURAS,mid_cap,745.45,892.7432500000001,-19.758971091287147,48.9,hold,buy,buy,probability to fall more
-2,ESAFSFB,small_cap,51.83,,,6.27,,hold,,probability to rise more
-3,TASTYBITE,small_cap,,,,64.11,,,,
-4,REPRO,small_cap,641.05,785.214,-22.488729428281744,75.75,hold,hold,buy,probability to fall more
-5,IRISDOREME,small_cap,64.6,80.27535,-24.265247678018593,43.15,buy,buy,buy,probability to fall more
-6,SMLT,small_cap,192.18,,,18.36,,buy,,probability to fall more
-7,SELMC,small_cap,58.91,,,0,,buy,,probability to fall more
-8,SWASTIK,small_cap,,,,NA,,,,
-9,AMBANIORG,small_cap,,,,NA,,,,
-10,MICROPRO,small_cap,,,,NA,,,,
-11,SECURCRED,small_cap,11.87,18.765649999999997,-58.09309182813816,9.28,buy,buy,buy,probability to fall more
-12,SHUBHLAXMI,small_cap,,,,NA,,,,
-13,CBAZAAR,small_cap,,,,NA,,,,
-14,MARINETRAN,small_cap,,,,NA,,,,
+0,ANURAS,mid_cap,746.25,891.8660000000003,-19.513031825795686,48.95,hold,buy,buy,probability to fall more
+1,TASTYBITE,small_cap,10294.3,13349.514000000008,-29.678695977385633,63.62,hold,hold,buy,probability to fall more
+2,YATRA,small_cap,126.5,,,0.0,,hold,,probability to fall more
+3,IRMENERGY,small_cap,455.4,,,29.37,,hold,,probability to fall more
+4,IRISDOREME,small_cap,64.59,80.15749999999998,-24.10202817773646,43.14,buy,buy,buy,probability to fall more
+5,SMLT,small_cap,190.94,,,18.25,,buy,,probability to fall more
+6,GSS,small_cap,102.25,,,33.92,,buy,,probability to fall more
+7,SELMC,small_cap,59.63,,,0.0,,buy,,probability to fall more
+8,DANGEE,small_cap,7.66,,,0.0,,hold,,probability to fall more
+9,SECURCRED,small_cap,11.87,18.7514,-57.973041280539185,8.81,buy,buy,buy,probability to fall more
