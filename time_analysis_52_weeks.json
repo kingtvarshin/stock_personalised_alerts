@@ -1,10 +1,1 @@
-{
-    "start_time": "2024-07-10 16:04:16.967130",
-    "large_stock_completed": "2024-07-10 16:09:36.448311",
-    "mids_stock_completed": "2024-07-10 16:17:32.614465",
-    "small_stock_completed": "2024-07-10 16:57:14.527507",
-    "time_for_large_stock": "0:05:19.481181",
-    "time_for_mid_stock": "0:13:15.647335",
-    "time_for_small_stock": "0:52:57.560377",
-    "time_for_all_stocks": "0:52:57.560377"
-}
+{"start_time": "2024-07-11 12:13:01.918062", "large_stock_completed": "2024-07-11 12:18:00.009428", "mids_stock_completed": "2024-07-11 12:25:38.844943", "small_stock_completed": "2024-07-11 13:00:30.619047", "time_for_large_stock": "0:04:58.091366", "time_for_mid_stock": "0:12:36.926881", "time_for_small_stock": "0:47:28.700985", "time_for_all_stocks": "0:47:28.700985"}
