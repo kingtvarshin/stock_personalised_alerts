@@ -77,24 +77,24 @@ def indicators_response(symbol,backdays=0):
         for i in res:
             if i.sma is not None:
                 sma100_dict['date'].append(i.date)
-                sma100_dict['sma'].append(i.sma)
+                sma100_dict['sma100'].append(i.sma)
         # print('get_sma')
         res = indicators.get_sma(quotes_list, 50, candle_part=CandlePart.CLOSE)
         for i in res:
             if i.sma is not None:
                 sma50_dict['date'].append(i.date)
-                sma50_dict['sma'].append(i.sma)
+                sma50_dict['sma50'].append(i.sma)
         # print('get_sma')
         res = indicators.get_sma(quotes_list, 20, candle_part=CandlePart.CLOSE)
         for i in res:
             if i.sma is not None:
                 sma20_dict['date'].append(i.date)
-                sma20_dict['sma'].append(i.sma)
+                sma20_dict['sma20'].append(i.sma)
         res = indicators.get_sma(quotes_list, 10, candle_part=CandlePart.CLOSE)
         for i in res:
             if i.sma is not None:
                 sma10_dict['date'].append(i.date)
-                sma10_dict['sma'].append(i.sma)
+                sma10_dict['sma10'].append(i.sma)
 
         # print('get_bollinger_bands')   
         results = indicators.get_bollinger_bands(quotes_list, 200, 2)
@@ -210,4 +210,4 @@ def indicators_response(symbol,backdays=0):
         return v,w,w100,w50,w20,w10,x,y,z,aa
     except Exception:
         print(Exception)
-        return '','','','','',''
+        return '','','','','','','','','',''
