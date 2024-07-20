@@ -1,11 +1,17 @@
 ,company,cap,closing_price,sma,sma%,PE_ratio,ball,rsi,stoch,super_trend
-0,ANURAS,mid_cap,746.25,891.8660000000003,-19.513031825795686,48.95,hold,buy,buy,probability to fall more
-1,TASTYBITE,small_cap,10294.3,13349.514000000008,-29.678695977385633,63.62,hold,hold,buy,probability to fall more
-2,YATRA,small_cap,126.5,,,0.0,,hold,,probability to fall more
-3,IRMENERGY,small_cap,455.4,,,29.37,,hold,,probability to fall more
-4,IRISDOREME,small_cap,64.59,80.15749999999998,-24.10202817773646,43.14,buy,buy,buy,probability to fall more
-5,SMLT,small_cap,190.94,,,18.25,,buy,,probability to fall more
-6,GSS,small_cap,102.25,,,33.92,,buy,,probability to fall more
-7,SELMC,small_cap,59.63,,,0.0,,buy,,probability to fall more
-8,DANGEE,small_cap,7.66,,,0.0,,hold,,probability to fall more
-9,SECURCRED,small_cap,11.87,18.7514,-57.973041280539185,8.81,buy,buy,buy,probability to fall more
+0,TATATECH,large_cap,1025.35,,,NA,,hold,,probability to fall more
+1,ESAFSFB,small_cap,51.9,,,6.28,,hold,,probability to rise more
+2,ANURAS,mid_cap,753.9,889.2832500000001,-17.957719856744937,49.45,hold,hold,buy,probability to fall more
+3,LANDMARK,small_cap,631.95,755.0472500000003,-19.478954031173394,44.2,buy,buy,buy,probability to fall more
+4,TASTYBITE,small_cap,10169.3,13225.546250000009,-30.053654135486312,62.85,hold,hold,buy,probability to fall more
+5,APOLLOPIPE,small_cap,620.85,672.5174999999995,-8.322058468228951,59.95,hold,hold,buy,probability to rise more
+6,YATRA,small_cap,124.98,145.21969999999993,-16.194351096175332,0,hold,hold,buy,probability to fall more
+7,VALIANTORG,small_cap,395.7,441.4897499999997,-11.57183472327513,0,hold,hold,buy,trend change to upper band...probability to fall more
+8,REPRO,small_cap,626.35,782.2987500000002,-24.898020276203418,74.01,buy,hold,buy,probability to fall more
+9,TRU,small_cap,47.23,66.57225000000005,-40.9533135718824,50.36,buy,hold,buy,probability to fall more
+10,IRISDOREME,small_cap,63.19,79.8844,-26.419370153505305,42.21,buy,buy,buy,probability to fall more
+11,SMLT,small_cap,188.38,,,18,,buy,,probability to fall more
+12,SELMC,small_cap,58.96,,,0,,buy,,probability to fall more
+13,DANGEE,small_cap,7.48,,,0,,buy,,probability to fall more
+14,SECURCRED,small_cap,11.87,18.738149999999997,-57.861415332771685,7.58,buy,buy,buy,probability to fall more
+15,SHRENIK,small_cap,1.32,,,0,,sell,,probability to rise more

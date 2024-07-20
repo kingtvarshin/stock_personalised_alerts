@@ -24,6 +24,22 @@ def indicators_response(symbol,backdays=0):
             'date':[],
             'sma':[]
         }
+        sma100_dict = {
+            'date':[],
+            'sma100':[]
+        }
+        sma50_dict = {
+            'date':[],
+            'sma50':[]
+        }
+        sma20_dict = {
+            'date':[],
+            'sma20':[]
+        }
+        sma10_dict = {
+            'date':[],
+            'sma10':[]
+        }
         bollinger_bands_dict = {
             'date':[],
             'sma':[],
@@ -56,6 +72,29 @@ def indicators_response(symbol,backdays=0):
             if i.sma is not None:
                 sma_dict['date'].append(i.date)
                 sma_dict['sma'].append(i.sma)
+        # print('get_sma')
+        res = indicators.get_sma(quotes_list, 100, candle_part=CandlePart.CLOSE)
+        for i in res:
+            if i.sma is not None:
+                sma100_dict['date'].append(i.date)
+                sma100_dict['sma'].append(i.sma)
+        # print('get_sma')
+        res = indicators.get_sma(quotes_list, 50, candle_part=CandlePart.CLOSE)
+        for i in res:
+            if i.sma is not None:
+                sma50_dict['date'].append(i.date)
+                sma50_dict['sma'].append(i.sma)
+        # print('get_sma')
+        res = indicators.get_sma(quotes_list, 20, candle_part=CandlePart.CLOSE)
+        for i in res:
+            if i.sma is not None:
+                sma20_dict['date'].append(i.date)
+                sma20_dict['sma'].append(i.sma)
+        res = indicators.get_sma(quotes_list, 10, candle_part=CandlePart.CLOSE)
+        for i in res:
+            if i.sma is not None:
+                sma10_dict['date'].append(i.date)
+                sma10_dict['sma'].append(i.sma)
 
         # print('get_bollinger_bands')   
         results = indicators.get_bollinger_bands(quotes_list, 200, 2)
@@ -97,6 +136,10 @@ def indicators_response(symbol,backdays=0):
         # print('All get completed')
 
         df_sma = pd.DataFrame(sma_dict)
+        df_sma100 = pd.DataFrame(sma100_dict)
+        df_sma50 = pd.DataFrame(sma50_dict)
+        df_sma20 = pd.DataFrame(sma20_dict)
+        df_sma10 = pd.DataFrame(sma10_dict)
         # df_sma.to_csv(f'{symbol}_sma.csv')
         df_bollinger_bands = pd.DataFrame(bollinger_bands_dict) # %b to be looked here => -ve or near 0 buy => near or above 1 sell
         # df_bollinger_bands.to_csv(f'{symbol}_bollinger_bands.csv')
@@ -107,7 +150,7 @@ def indicators_response(symbol,backdays=0):
         df_super_trend = pd.DataFrame(super_trend_dict)
         # df_super_trend.to_csv(f'{symbol}_super_trend.csv')
 
-        v,w,x,y,z,aa = '','','','','',''
+        v,w,w100,w50,w20,w10,x,y,z,aa = '','','','','','','','','',''
         
         # close price
         v = a[a['CH_TIMESTAMP']==a['CH_TIMESTAMP'].max()]['CH_CLOSING_PRICE'].values[0]
@@ -115,6 +158,14 @@ def indicators_response(symbol,backdays=0):
         # sma
         if not df_sma.empty:
             w = df_sma[df_sma['date']==df_sma['date'].max()]['sma'].values[0]
+        if not df_sma100.empty:
+            w100 = df_sma100[df_sma100['date']==df_sma100['date'].max()]['sma100'].values[0]
+        if not df_sma50.empty:
+            w50 = df_sma50[df_sma50['date']==df_sma50['date'].max()]['sma50'].values[0]
+        if not df_sma20.empty:
+            w20 = df_sma20[df_sma20['date']==df_sma20['date'].max()]['sma20'].values[0]
+        if not df_sma10.empty:
+            w10 = df_sma10[df_sma10['date']==df_sma10['date'].max()]['sma10'].values[0]
         
         # latest bollinger_band
         if not df_bollinger_bands.empty:
@@ -156,7 +207,7 @@ def indicators_response(symbol,backdays=0):
                     aa += 'trend change to lower band'
                 aa += 'probability to rise more'
                 
-        return v,w,x,y,z,aa
+        return v,w,w100,w50,w20,w10,x,y,z,aa
     except Exception:
         print(Exception)
         return '','','','','',''

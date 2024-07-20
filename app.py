@@ -14,7 +14,7 @@ start_time = datetime.datetime.now()
 print('start_time: ',start_time)
 time_analysis['start_time'] = str(start_time)
 
-large_perc_var = 5
+large_perc_var = 7
 mid_perc_var   = 6
 small_perc_var = 7
 PE_ratio_max   = 25
@@ -33,36 +33,36 @@ lock = threading.Lock()
 def large():
     ##############################################
     global largestocks_52_weeks_date_analysis,large_stock_completed
-    with lock:
-        largestocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('largestocks',large_perc_var,backdays)
-        with open("./stocks_52_week_analysis/largestocks_52_weeks_date_analysis.json", "w") as outfile: 
-            json.dump(largestocks_52_weeks_date_analysis, outfile)
+    # with lock:
+    largestocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('largestocks',large_perc_var,backdays)
+    with open("./stocks_52_week_analysis/largestocks_52_weeks_date_analysis.json", "w") as outfile: 
+        json.dump(largestocks_52_weeks_date_analysis, outfile)
 
-        large_stock_completed = datetime.datetime.now()
-        print('large_stock_completed: ',large_stock_completed)
-        time_analysis['large_stock_completed'] = str(large_stock_completed)
+    large_stock_completed = datetime.datetime.now()
+    print('large_stock_completed: ',large_stock_completed)
+    time_analysis['large_stock_completed'] = str(large_stock_completed)
 def mid():
     ##############################################
     global midstocks_52_weeks_date_analysis,mids_stock_completed
-    with lock:
-        midstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('midstocks',mid_perc_var,backdays)
-        with open("./stocks_52_week_analysis/midstocks_52_weeks_date_analysis.json", "w") as outfile: 
-            json.dump(midstocks_52_weeks_date_analysis, outfile)
+    # with lock:
+    midstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('midstocks',mid_perc_var,backdays)
+    with open("./stocks_52_week_analysis/midstocks_52_weeks_date_analysis.json", "w") as outfile: 
+        json.dump(midstocks_52_weeks_date_analysis, outfile)
 
-        mids_stock_completed = datetime.datetime.now()
-        print('mids_stock_completed: ',mids_stock_completed)
-        time_analysis['mids_stock_completed'] = str(mids_stock_completed)
+    mids_stock_completed = datetime.datetime.now()
+    print('mids_stock_completed: ',mids_stock_completed)
+    time_analysis['mids_stock_completed'] = str(mids_stock_completed)
 def small():
     ##############################################
     global smallstocks_52_weeks_date_analysis,small_stock_completed
-    with lock:
-        smallstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('smallstocks',small_perc_var,backdays)
-        with open("./stocks_52_week_analysis/smallstocks_52_weeks_date_analysis.json", "w") as outfile: 
-            json.dump(smallstocks_52_weeks_date_analysis, outfile)
+    # with lock:
+    smallstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('smallstocks',small_perc_var,backdays)
+    with open("./stocks_52_week_analysis/smallstocks_52_weeks_date_analysis.json", "w") as outfile: 
+        json.dump(smallstocks_52_weeks_date_analysis, outfile)
 
-        small_stock_completed = datetime.datetime.now()
-        print('small_stock_completed: ',small_stock_completed)
-        time_analysis['small_stock_completed'] = str(small_stock_completed)
+    small_stock_completed = datetime.datetime.now()
+    print('small_stock_completed: ',small_stock_completed)
+    time_analysis['small_stock_completed'] = str(small_stock_completed)
 
 
 t1 = threading.Thread(target=large)
@@ -112,6 +112,10 @@ indicators_data = {
     "cap":[],
     "closing_price":[],
     "sma":[],
+    "sma100":[],
+    "sma50":[],
+    "sma20":[],
+    "sma10":[],
     "sma%":[],
     "PE_ratio":[],
     "ball":[],
@@ -121,25 +125,29 @@ indicators_data = {
 }
 
 def indicator_response_dict_creator(dict_file,cap,backdays=0):
-    # global indicators_data
-    with lock:
-        for key in dict_file.keys():
-            print(key)
-            closing_price,sma,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
-            if ball or rsi or stoch:
-                indicators_data["company"].append(key)
-                indicators_data["cap"].append(cap)
-                indicators_data["closing_price"].append(closing_price)
-                indicators_data["sma"].append(sma)
-                try:
-                    indicators_data["sma%"].append(((closing_price-sma)/closing_price)*100)
-                except:
-                    indicators_data["sma%"].append('')
-                indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
-                indicators_data["ball"].append(ball)
-                indicators_data["rsi"].append(rsi)
-                indicators_data["stoch"].append(stoch)
-                indicators_data["super_trend"].append(super_trend)
+    global indicators_data
+    # with lock:
+    for key in dict_file.keys():
+        print(key)
+        closing_price,sma,sma100,sma50,sma20,sma10,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
+        if ball or rsi or stoch:
+            indicators_data["company"].append(key)
+            indicators_data["cap"].append(cap)
+            indicators_data["closing_price"].append(closing_price)
+            indicators_data["sma"].append(sma)
+            try:
+                indicators_data["sma%"].append(((closing_price-sma)/closing_price)*100)
+            except:
+                indicators_data["sma%"].append('')
+            indicators_data["sma100"].append(sma100)
+            indicators_data["sma50"].append(sma50)
+            indicators_data["sma20"].append(sma20)
+            indicators_data["sma10"].append(sma10)
+            indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
+            indicators_data["ball"].append(ball)
+            indicators_data["rsi"].append(rsi)
+            indicators_data["stoch"].append(stoch)
+            indicators_data["super_trend"].append(super_trend)
         
 t4 = threading.Thread(target=indicator_response_dict_creator, args=(large_capstocksdict,'large_cap',backdays,))
 t5 = threading.Thread(target=indicator_response_dict_creator, args=(mid_capstocksdict,'mid_cap',backdays,))
