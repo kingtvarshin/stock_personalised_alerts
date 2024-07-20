@@ -14,9 +14,9 @@ start_time = datetime.datetime.now()
 print('start_time: ',start_time)
 time_analysis['start_time'] = str(start_time)
 
-large_perc_var = 7
+large_perc_var = 20
 mid_perc_var   = 6
-small_perc_var = 7
+small_perc_var = 5
 PE_ratio_max   = 25
 PE_ratio_min   = 15
 
