@@ -14,7 +14,7 @@ start_time = datetime.datetime.now()
 print('start_time: ',start_time)
 time_analysis['start_time'] = str(start_time)
 
-large_perc_var = 20
+large_perc_var = 16
 mid_perc_var   = 6
 small_perc_var = 5
 PE_ratio_max   = 25
@@ -164,6 +164,9 @@ t6.join()
 indicators_df = pd.DataFrame(indicators_data)
 print(indicators_df)
 indicators_df.to_csv(f'./stock_indicators_csv/indicators_data.csv')
+indicators_df[indicators_df['cap']=='large_cap'].to_csv(f'./stock_indicators_csv/indicators_data_large_cap.csv')
+indicators_df[indicators_df['cap']=='mid_cap'].to_csv(f'./stock_indicators_csv/indicators_data_mid_cap.csv')
+indicators_df[indicators_df['cap']=='small_cap'].to_csv(f'./stock_indicators_csv/indicators_data_small_cap.csv')
 
 ## sending message
 mail_message()
