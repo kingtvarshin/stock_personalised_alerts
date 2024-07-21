@@ -3,6 +3,7 @@ import datetime
 import pandas as pd
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
 from dotenv import load_dotenv
 import os
 
@@ -12,11 +13,20 @@ def mail_message():
         EMAIL_ID_LIST = eval(os.getenv('EMAIL_ID_LIST'))
         SENDER_EMAIL = os.getenv('SENDER_EMAIL')
         SENDER_EMAIL_PASSWORD = os.getenv('SENDER_EMAIL_PASSWORD')
-        INDICATORS_RESULT_CSV_PATH = os.getenv('INDICATORS_RESULT_CSV_PATH')
+        INDICATORS_RESULT_CSV_PATH_LARGE = f"{os.getenv('INDICATORS_RESULT_CSV_PATH')}indicators_data_large_cap.csv"
+        INDICATORS_RESULT_CSV_PATH_MID = f"{os.getenv('INDICATORS_RESULT_CSV_PATH')}indicators_data_mid_cap.csv"
+        INDICATORS_RESULT_CSV_PATH_SMALL = f"{os.getenv('INDICATORS_RESULT_CSV_PATH')}indicators_data_small_cap.csv"
+        INDICATORS_RESULT_CSV_PATH_FULL = f"{os.getenv('INDICATORS_RESULT_CSV_PATH')}indicators_data.csv"
         
-        df=pd.read_csv(INDICATORS_RESULT_CSV_PATH)
-        htmltable=df.to_html(index=False)
-        htmltable=htmltable.replace('border="1"','border="1" style="border-collapse:collapse"')
+        df_large=pd.read_csv(INDICATORS_RESULT_CSV_PATH_LARGE)
+        df_mid=pd.read_csv(INDICATORS_RESULT_CSV_PATH_MID)
+        df_small=pd.read_csv(INDICATORS_RESULT_CSV_PATH_SMALL)
+        htmltable_large=df_large.to_html(index=False)
+        htmltable_large=htmltable_large.replace('border="1"','border="1" style="border-collapse:collapse"')
+        htmltable_mid=df_mid.to_html(index=False)
+        htmltable_mid=htmltable_mid.replace('border="1"','border="1" style="border-collapse:collapse"')
+        htmltable_small=df_small.to_html(index=False)
+        htmltable_small=htmltable_small.replace('border="1"','border="1" style="border-collapse:collapse"')
         htmlheader='''<html>
             <head>
             <style>
@@ -79,7 +89,7 @@ def mail_message():
 
             </style>
         '''
-        emailfinal= htmlheader + htmltable
+        emailfinal= htmlheader + htmltable_large + htmltable_mid + htmltable_small
 
         message = MIMEMultipart("alternative")
         message['Subject'] = f"Personlised Stock Alert : {datetime.datetime.now()}"
@@ -88,6 +98,11 @@ def mail_message():
 
         csv_part = MIMEText(emailfinal, "html")
         message.attach(csv_part)
+        
+        with open(INDICATORS_RESULT_CSV_PATH_FULL,'rb') as file:
+            # Attach the file with filename to the email
+            message.attach(MIMEApplication(file.read(), Name="indicators_data.csv"))
+        
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
         s.login(SENDER_EMAIL, SENDER_EMAIL_PASSWORD)
