@@ -4,6 +4,7 @@ from modules.algo_modules import retrive_weeks52_date_analysis_dict
 from modules.indicators import indicators_response
 from modules.notification_sending_module import mail_message
 import pandas as pd
+import threading
 
 # time analysis
 time_analysis = {}
@@ -13,98 +14,159 @@ start_time = datetime.datetime.now()
 print('start_time: ',start_time)
 time_analysis['start_time'] = str(start_time)
 
-perc_var = 5
+large_perc_var = 16
+mid_perc_var   = 6
+small_perc_var = 5
+PE_ratio_max   = 25
+PE_ratio_min   = 15
 
-##############################################
-largestocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('largestocks',perc_var)
-with open("./stocks_52_week_analysis/largestocks_52_weeks_date_analysis.json", "w") as outfile: 
-    json.dump(largestocks_52_weeks_date_analysis, outfile)
-
+backdays = 0
+largestocks_52_weeks_date_analysis = {}
+midstocks_52_weeks_date_analysis = {}
+smallstocks_52_weeks_date_analysis = {}
 large_stock_completed = datetime.datetime.now()
-print('large_stock_completed: ',large_stock_completed)
-time_analysis['large_stock_completed'] = str(large_stock_completed)
-
-##############################################
-midstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('midstocks',perc_var)
-with open("./stocks_52_week_analysis/midstocks_52_weeks_date_analysis.json", "w") as outfile: 
-    json.dump(midstocks_52_weeks_date_analysis, outfile)
-
 mids_stock_completed = datetime.datetime.now()
-print('mids_stock_completed: ',mids_stock_completed)
-time_analysis['mids_stock_completed'] = str(mids_stock_completed)
-
-##############################################
-smallstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('smallstocks',perc_var)
-with open("./stocks_52_week_analysis/smallstocks_52_weeks_date_analysis.json", "w") as outfile: 
-    json.dump(smallstocks_52_weeks_date_analysis, outfile)
-
 small_stock_completed = datetime.datetime.now()
-print('small_stock_completed: ',small_stock_completed)
-time_analysis['small_stock_completed'] = str(small_stock_completed)
 
+lock = threading.Lock()
+
+def large():
+    ##############################################
+    global largestocks_52_weeks_date_analysis,large_stock_completed
+    # with lock:
+    largestocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('largestocks',large_perc_var,backdays)
+    with open("./stocks_52_week_analysis/largestocks_52_weeks_date_analysis.json", "w") as outfile: 
+        json.dump(largestocks_52_weeks_date_analysis, outfile)
+
+    large_stock_completed = datetime.datetime.now()
+    print('large_stock_completed: ',large_stock_completed)
+    time_analysis['large_stock_completed'] = str(large_stock_completed)
+def mid():
+    ##############################################
+    global midstocks_52_weeks_date_analysis,mids_stock_completed
+    # with lock:
+    midstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('midstocks',mid_perc_var,backdays)
+    with open("./stocks_52_week_analysis/midstocks_52_weeks_date_analysis.json", "w") as outfile: 
+        json.dump(midstocks_52_weeks_date_analysis, outfile)
+
+    mids_stock_completed = datetime.datetime.now()
+    print('mids_stock_completed: ',mids_stock_completed)
+    time_analysis['mids_stock_completed'] = str(mids_stock_completed)
+def small():
+    ##############################################
+    global smallstocks_52_weeks_date_analysis,small_stock_completed
+    # with lock:
+    smallstocks_52_weeks_date_analysis = retrive_weeks52_date_analysis_dict('smallstocks',small_perc_var,backdays)
+    with open("./stocks_52_week_analysis/smallstocks_52_weeks_date_analysis.json", "w") as outfile: 
+        json.dump(smallstocks_52_weeks_date_analysis, outfile)
+
+    small_stock_completed = datetime.datetime.now()
+    print('small_stock_completed: ',small_stock_completed)
+    time_analysis['small_stock_completed'] = str(small_stock_completed)
+
+
+t1 = threading.Thread(target=large)
+t2 = threading.Thread(target=mid)
+t3 = threading.Thread(target=small)
+
+t1.start()
+t2.start()
+t3.start()
+
+t1.join()
+t2.join()
+t3.join()
 ##############################################
 
 
 print(' time for large stock = ', large_stock_completed - start_time)
-print(' time for mid stock = ', mids_stock_completed - large_stock_completed)
-print(' time for small stock = ', small_stock_completed - mids_stock_completed)
+print(' time for mid stock = ', mids_stock_completed - start_time)
+print(' time for small stock = ', small_stock_completed - start_time)
 
 print('total time of script run => ', small_stock_completed - start_time)
 
 time_analysis['time_for_large_stock'] = str(large_stock_completed - start_time)
-time_analysis['time_for_mid_stock'] = str(mids_stock_completed - large_stock_completed)
-time_analysis['time_for_small_stock'] = str(small_stock_completed - mids_stock_completed)
+time_analysis['time_for_mid_stock'] = str(mids_stock_completed - start_time)
+time_analysis['time_for_small_stock'] = str(small_stock_completed - start_time)
 time_analysis['time_for_all_stocks'] = str(small_stock_completed - start_time)
 
 
 with open("time_analysis_52_weeks.json", "w") as outfile: 
     json.dump(time_analysis, outfile)
     
-############################################################################################################### 
+    
+#########################################################################################################
 
-# large_capstocksdictfile = open('./stocks_52_week_analysis/largestocks_52_weeks_date_analysis.json')
-# large_capstocksdict = json.load(large_capstocksdictfile)
 large_capstocksdict = largestocks_52_weeks_date_analysis
-# mid_capstocksdictfile = open('./stocks_52_week_analysis/midstocks_52_weeks_date_analysis.json')
-# mid_capstocksdict = json.load(mid_capstocksdictfile)
 mid_capstocksdict = midstocks_52_weeks_date_analysis
-# small_capstocksdictfile = open('./stocks_52_week_analysis/smallstocks_52_weeks_date_analysis.json')
-# small_capstocksdict = json.load(small_capstocksdictfile)
 small_capstocksdict = smallstocks_52_weeks_date_analysis
 
+# for long term investment
+# we will consider PE ratio, sma% and 52 weeks low
+
+# for short term investment
+# we will consider ball, rsi, stoch, supertrend along with sma
 
 indicators_data = {
     "company":[],
     "cap":[],
     "closing_price":[],
     "sma":[],
+    "sma100":[],
+    "sma50":[],
+    "sma20":[],
+    "sma10":[],
+    "sma%":[],
+    "PE_ratio":[],
     "ball":[],
     "rsi":[],
     "stoch":[],
     "super_trend":[]
-    
 }
 
-def indicator_response_dict_creator(dict_file,cap):
-    
+def indicator_response_dict_creator(dict_file,cap,backdays=0):
+    global indicators_data
+    # with lock:
     for key in dict_file.keys():
         print(key)
-        closing_price,sma,ball,rsi,stoch,super_trend = indicators_response(key)
-        indicators_data["company"].append(key)
-        indicators_data["cap"].append(cap)
-        indicators_data["closing_price"].append(closing_price)
-        indicators_data["sma"].append(sma)
-        indicators_data["ball"].append(ball)
-        indicators_data["rsi"].append(rsi)
-        indicators_data["stoch"].append(stoch)
-        indicators_data["super_trend"].append(super_trend)
+        closing_price,sma,sma100,sma50,sma20,sma10,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
+        if ball or rsi or stoch:
+            indicators_data["company"].append(key)
+            indicators_data["cap"].append(cap)
+            indicators_data["closing_price"].append(closing_price)
+            indicators_data["sma"].append(sma)
+            try:
+                indicators_data["sma%"].append(((closing_price-sma)/closing_price)*100)
+            except:
+                indicators_data["sma%"].append('')
+            indicators_data["sma100"].append(sma100)
+            indicators_data["sma50"].append(sma50)
+            indicators_data["sma20"].append(sma20)
+            indicators_data["sma10"].append(sma10)
+            indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
+            indicators_data["ball"].append(ball)
+            indicators_data["rsi"].append(rsi)
+            indicators_data["stoch"].append(stoch)
+            indicators_data["super_trend"].append(super_trend)
+        
+t4 = threading.Thread(target=indicator_response_dict_creator, args=(large_capstocksdict,'large_cap',backdays,))
+t5 = threading.Thread(target=indicator_response_dict_creator, args=(mid_capstocksdict,'mid_cap',backdays,))
+t6 = threading.Thread(target=indicator_response_dict_creator, args=(small_capstocksdict,'small_cap',backdays,))
 
-indicator_response_dict_creator(large_capstocksdict,'large_cap')
-indicator_response_dict_creator(mid_capstocksdict,'mid_cap')
-indicator_response_dict_creator(small_capstocksdict,'small_cap')
+t4.start()
+t5.start()
+t6.start()
+
+t4.join()
+t5.join()
+t6.join()
 
 indicators_df = pd.DataFrame(indicators_data)
+print(indicators_df)
 indicators_df.to_csv(f'./stock_indicators_csv/indicators_data.csv')
+indicators_df[indicators_df['cap']=='large_cap'].to_csv(f'./stock_indicators_csv/indicators_data_large_cap.csv')
+indicators_df[indicators_df['cap']=='mid_cap'].to_csv(f'./stock_indicators_csv/indicators_data_mid_cap.csv')
+indicators_df[indicators_df['cap']=='small_cap'].to_csv(f'./stock_indicators_csv/indicators_data_small_cap.csv')
 
 ## sending message
 mail_message()

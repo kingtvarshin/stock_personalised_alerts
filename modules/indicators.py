@@ -5,24 +5,40 @@ from dateutil import parser
 import pandas as pd
 import datetime
 
-def indicators_response(symbol):
+def indicators_response(symbol,backdays=0):
     try:
 
-        series = "EQ"
-        end_datetime = datetime.datetime.now()
+        series         = "EQ"
+        end_datetime   = datetime.datetime.now() - datetime.timedelta(days=backdays)
         start_datetime = end_datetime - datetime.timedelta(days=365)
-        end_date = f'{end_datetime.day}-{end_datetime.month}-{end_datetime.year}'
-        start_date = f'{start_datetime.day}-{start_datetime.month}-{start_datetime.year}'
-        a  =  equity_history(symbol,series,start_date,end_date)
-        quotes_list = [
+        end_date       = f'{end_datetime.day}-{end_datetime.month}-{end_datetime.year}'
+        start_date     = f'{start_datetime.day}-{start_datetime.month}-{start_datetime.year}'
+        a              =  equity_history(symbol,series,start_date,end_date)
+        quotes_list    = [
             Quote(parser.parse(d),o,h,l,c,v) 
             for d,o,h,l,c,v 
-            in zip(a['CH_TIMESTAMP'], a['CH_OPENING_PRICE'], a['CH_TRADE_HIGH_PRICE'], a['CH_TRADE_LOW_PRICE'], a['CH_CLOSING_PRICE'], a['CH_TOT_TRADED_QTY'])
+            in zip(a['CH_TIMESTAMP'], a['CH_OPENING_PRICE'], a['CH_TRADE_HIGH_PRICE'], a['CH_TRADE_LOW_PRICE'], a['CH_CLOSING_PRICE'], a['CH_TOT_TRADED_VAL'])
         ]
 
         sma_dict = {
             'date':[],
             'sma':[]
+        }
+        sma100_dict = {
+            'date':[],
+            'sma100':[]
+        }
+        sma50_dict = {
+            'date':[],
+            'sma50':[]
+        }
+        sma20_dict = {
+            'date':[],
+            'sma20':[]
+        }
+        sma10_dict = {
+            'date':[],
+            'sma10':[]
         }
         bollinger_bands_dict = {
             'date':[],
@@ -56,6 +72,29 @@ def indicators_response(symbol):
             if i.sma is not None:
                 sma_dict['date'].append(i.date)
                 sma_dict['sma'].append(i.sma)
+        # print('get_sma')
+        res = indicators.get_sma(quotes_list, 100, candle_part=CandlePart.CLOSE)
+        for i in res:
+            if i.sma is not None:
+                sma100_dict['date'].append(i.date)
+                sma100_dict['sma100'].append(i.sma)
+        # print('get_sma')
+        res = indicators.get_sma(quotes_list, 50, candle_part=CandlePart.CLOSE)
+        for i in res:
+            if i.sma is not None:
+                sma50_dict['date'].append(i.date)
+                sma50_dict['sma50'].append(i.sma)
+        # print('get_sma')
+        res = indicators.get_sma(quotes_list, 20, candle_part=CandlePart.CLOSE)
+        for i in res:
+            if i.sma is not None:
+                sma20_dict['date'].append(i.date)
+                sma20_dict['sma20'].append(i.sma)
+        res = indicators.get_sma(quotes_list, 10, candle_part=CandlePart.CLOSE)
+        for i in res:
+            if i.sma is not None:
+                sma10_dict['date'].append(i.date)
+                sma10_dict['sma10'].append(i.sma)
 
         # print('get_bollinger_bands')   
         results = indicators.get_bollinger_bands(quotes_list, 200, 2)
@@ -70,14 +109,14 @@ def indicators_response(symbol):
                 bollinger_bands_dict['width'].append(i.width)
 
         # print('get_rsi')    
-        results = indicators.get_rsi(quotes_list, 30)
+        results = indicators.get_rsi(quotes_list, 14)
         for i in results:
             if i.rsi is not None:
                 rsi_dict['date'].append(i.date)
                 rsi_dict['rsi'].append(i.rsi)
 
         # print('get_stoch')   
-        results = indicators.get_stoch(quotes_list, 14, 3, 3)
+        results = indicators.get_stoch(quotes_list, 200, 3, 3)
         for i in results:
             if i.k is not None:
                 stoch_dict['date'].append(i.date)
@@ -97,6 +136,10 @@ def indicators_response(symbol):
         # print('All get completed')
 
         df_sma = pd.DataFrame(sma_dict)
+        df_sma100 = pd.DataFrame(sma100_dict)
+        df_sma50 = pd.DataFrame(sma50_dict)
+        df_sma20 = pd.DataFrame(sma20_dict)
+        df_sma10 = pd.DataFrame(sma10_dict)
         # df_sma.to_csv(f'{symbol}_sma.csv')
         df_bollinger_bands = pd.DataFrame(bollinger_bands_dict) # %b to be looked here => -ve or near 0 buy => near or above 1 sell
         # df_bollinger_bands.to_csv(f'{symbol}_bollinger_bands.csv')
@@ -107,7 +150,7 @@ def indicators_response(symbol):
         df_super_trend = pd.DataFrame(super_trend_dict)
         # df_super_trend.to_csv(f'{symbol}_super_trend.csv')
 
-        v,w,x,y,z,aa = '','','','','',''
+        v,w,w100,w50,w20,w10,x,y,z,aa = '','','','','','','','','',''
         
         # close price
         v = a[a['CH_TIMESTAMP']==a['CH_TIMESTAMP'].max()]['CH_CLOSING_PRICE'].values[0]
@@ -115,32 +158,40 @@ def indicators_response(symbol):
         # sma
         if not df_sma.empty:
             w = df_sma[df_sma['date']==df_sma['date'].max()]['sma'].values[0]
+        if not df_sma100.empty:
+            w100 = df_sma100[df_sma100['date']==df_sma100['date'].max()]['sma100'].values[0]
+        if not df_sma50.empty:
+            w50 = df_sma50[df_sma50['date']==df_sma50['date'].max()]['sma50'].values[0]
+        if not df_sma20.empty:
+            w20 = df_sma20[df_sma20['date']==df_sma20['date'].max()]['sma20'].values[0]
+        if not df_sma10.empty:
+            w10 = df_sma10[df_sma10['date']==df_sma10['date'].max()]['sma10'].values[0]
         
         # latest bollinger_band
         if not df_bollinger_bands.empty:
             # print('bollinger_band')
-            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0.01:
+            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0:
                 x = 'buy'
-            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.5:
+            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.6:
                 x = 'sell'
             else:
                 x = 'hold'
             
         # latest rsi
         if not df_rsi.empty:
-            # print('rsi')
+            print(df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0])
             if df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]<=34:
                 y = 'buy'
-            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=60:
+            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=65:
                 y = 'sell'
             else:
                 y = 'hold'
                
         # latest stoch
         if not df_stoch.empty: 
-            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 80:
+            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 75:
                 z = 'sell'
-            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 20:
+            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 25:
                 z = 'buy'
             else:
                 z = 'hold'
@@ -149,14 +200,14 @@ def indicators_response(symbol):
         if not df_super_trend.empty:
             if df_super_trend.tail(5).tail(1)['lower_band'].values[0] is None and df_super_trend.tail(5).tail(1)['upper_band'].values[0] is not None:
                 if df_super_trend.tail(5).tail(2)['upper_band'].values[0] is None:
-                    aa += 'best time to sell...'
+                    aa += 'trend change to upper band...'
                 aa += 'probability to fall more'
             elif df_super_trend.tail(5).tail(1)['lower_band'].values[0] is not None and df_super_trend.tail(5).tail(1)['upper_band'].values[0] is None:
                 if df_super_trend.tail(5).tail(2)['lower_band'].values[0] is None:
-                    aa += 'best time to buy'
+                    aa += 'trend change to lower band'
                 aa += 'probability to rise more'
                 
-        return v,w,x,y,z,aa
+        return v,w,w100,w50,w20,w10,x,y,z,aa
     except Exception:
         print(Exception)
-        return '','','','','',''
+        return '','','','','','','','','',''
