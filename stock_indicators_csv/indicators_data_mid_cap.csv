@@ -1,1 +1,2 @@
-,Unnamed: 0,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,sma%,PE_ratio,ball,rsi,stoch,super_trend
+,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,sma%,PE_ratio,ball,rsi,stoch,super_trend
+2,SPANDANA,mid_cap,699.15,903.4422500000006,809.0144999999998,753.9470000000001,725.3625,722.99,-29.22008867911044,10.05,hold,buy,buy,probability to fall more
