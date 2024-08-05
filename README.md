@@ -14,3 +14,7 @@ midstocks => market cap generally tends to range from Rs. 5,000 to Rs. 20,000 cr
 smallstocks => companies generally come in below Rs. 5,000 crores
 
 .env file create add variables there and run app.py
+
+
+
+pyinstaller app.py
