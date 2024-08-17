@@ -53,7 +53,7 @@ def retrive_weeks52_date_analysis_dict(stock_type_key,perc_var=5,backdays=0):
     stocksdict = json.load(stocksdictfile)
     weeks52_date_analysis = {}
     
-    with ThreadPoolExecutor(max_workers=4) as executor:
+    with ThreadPoolExecutor(max_workers=2) as executor:
         executor.map(lambda data:stock_details_fetcher(data,perc_var,backdays,weeks52_date_analysis), stocksdict[stock_type_key])
     
     #closing file
