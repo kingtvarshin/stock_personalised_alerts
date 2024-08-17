@@ -1,4 +1,10 @@
 ,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,sma%,PE_ratio,ball,rsi,stoch,super_trend
-0,EQUITASBNK,mid_cap,81.59,98.32930000000006,94.7836,93.8972,87.7055,84.142,-20.516362299301456,14.4,buy,buy,buy,probability to fall more
-7,TMB,mid_cap,450.9,491.59375,474.1110000000001,469.8489999999999,465.45250000000004,458.0699999999999,-9.025005544466627,6.57,hold,buy,buy,trend change to upper band...probability to fall more
-4,SPANDANA,mid_cap,651.35,898.0950000000003,789.0469999999997,734.015,703.7524999999999,680.9999999999999,-37.88209104168269,10.94,hold,buy,buy,probability to fall more
+18,FUSION,mid_cap,303.45,516.09,457.47,434.04,398.1,362.12,-70.07315867523491,8.86,buy,buy,buy,probability to fall more
+17,ALLCARGO,mid_cap,60.53,117.2,67.21,63.06,62.64,61.35,-93.61878407401286,53.24,hold,hold,buy,probability to fall more
+1,RBLBANK,mid_cap,214.25,253.21,247.79,243.89,227.54,217.79,-18.185087514585717,10.15,buy,buy,buy,probability to fall more
+15,TMB,mid_cap,449.8,487.78,472.75,467.42,455.52,451.23,-8.443530457981321,6.48,hold,hold,buy,probability to fall more
+3,HAPPSTMNDS,mid_cap,754.65,837.81,816.34,826.63,798.73,780.57,-11.019677996422148,50.9,buy,buy,buy,probability to fall more
+13,SPANDANA,mid_cap,601.05,889.46,771.15,709.26,654.77,613.6,-47.98402795108564,9.87,hold,buy,buy,probability to fall more
+11,VIPIND,mid_cap,440.05,534.55,496.23,470.52,458.95,449.9,-21.473752982615636,10703.29,hold,buy,buy,probability to fall more
+6,EQUITASBNK,mid_cap,75.15,97.81,93.62,91.39,82.92,78.99,-30.150299401197678,13.9,buy,buy,buy,probability to fall more
+9,UJJIVANSFB,mid_cap,41.75,52.21,48.63,45.36,43.55,42.91,-25.053532934131812,6.44,buy,buy,buy,probability to fall more
