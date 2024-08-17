@@ -73,7 +73,7 @@ t1.start()
 t2.start()
 t3.start()
 
-t1.join()
+t1.join() 
 t2.join()
 t3.join()
 ##############################################
@@ -123,6 +123,7 @@ indicators_data = {
     "stoch":[],
     "super_trend":[]
 }
+
 
 def indicator_response_dict_creator(dict_file,cap,backdays=0):
     global indicators_data
@@ -175,5 +176,5 @@ indicators_df[indicators_df['cap']=='large_cap'].to_csv(f'./stock_indicators_csv
 indicators_df[indicators_df['cap']=='mid_cap'].to_csv(f'./stock_indicators_csv/indicators_data_mid_cap.csv')
 indicators_df[indicators_df['cap']=='small_cap'].to_csv(f'./stock_indicators_csv/indicators_data_small_cap.csv')
 
-## sending message
+# sending message
 mail_message()
