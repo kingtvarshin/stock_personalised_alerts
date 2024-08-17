@@ -128,10 +128,13 @@ indicators_data = {
 def indicator_response_dict_creator(dict_file,cap,backdays=0):
     global indicators_data
     # with lock:
+    
+    
+    
     for key in dict_file.keys():
         print(key)
         closing_price,sma,sma100,sma50,sma20,sma10,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
-        if ball or rsi or stoch:
+        if sma and (ball!='hold' and rsi!='hold' and rsi!='hold'):
             indicators_data["company"].append(key)
             indicators_data["cap"].append(cap)
             indicators_data["closing_price"].append(closing_price)
@@ -169,7 +172,7 @@ t6.join()
 
 indicators_df = pd.DataFrame(indicators_data)
 indicators_df['cap'] = pd.Categorical(indicators_df['cap'],categories = ["large_cap","mid_cap","small_cap"])
-indicators_df = indicators_df.sort_values(by="cap")
+indicators_df = indicators_df.sort_values(by=["cap","sma%"])
 print(indicators_df)
 indicators_df.to_csv(f'./stock_indicators_csv/indicators_data.csv')
 indicators_df[indicators_df['cap']=='large_cap'].to_csv(f'./stock_indicators_csv/indicators_data_large_cap.csv')
