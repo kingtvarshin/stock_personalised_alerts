@@ -30,12 +30,9 @@ def stock_details_fetcher(stock,perc_var,backdays,weeks52_date_analysis):
         perc_high      = ((weeks52_high - todays_low)/weeks52_high)*100
         perc_low       = ((todays_high - weeks52_low)/weeks52_low)*100
         PE_ratio       = stock_data['metadata']['pdSectorPe']
-        # if perc_high < perc_var and perc_high > 0:
-        #     weeks52_date_analysis[stock_code] = {'perc_high': perc_high,'PE_ratio':PE_ratio}
-        #     print('near high: ',stock_code)
-        #     print('perc_high: ',perc_high)
+        if perc_high < perc_var and perc_high > 0:
+            weeks52_date_analysis[stock_code] = {'perc_high': perc_high,'PE_ratio':PE_ratio}
         if perc_low < perc_var and perc_low > 0:
-            # print(stock_data)
             weeks52_date_analysis[stock_code] = {'perc_low': perc_low,'PE_ratio':PE_ratio}
     except KeyError:
         stock_data = nse_eq(stock_code)
