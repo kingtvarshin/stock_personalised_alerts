@@ -14,7 +14,7 @@ start_time = datetime.datetime.now()
 print('start_time: ',start_time)
 time_analysis['start_time'] = str(start_time)
 
-large_perc_var = 16
+large_perc_var = 50
 mid_perc_var   = 6
 small_perc_var = 5
 PE_ratio_max   = 25
@@ -116,6 +116,7 @@ indicators_data = {
     "sma50":[],
     "sma20":[],
     "sma10":[],
+    "ema%":[],
     "sma%":[],
     "PE_ratio":[],
     "ball":[],
@@ -130,8 +131,8 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
     
     for key in dict_file.keys():
         print(key)
-        closing_price,sma,sma100,sma50,sma20,sma10,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
-        if sma and (ball!='hold' or rsi!='hold' or stoch!='hold'):
+        closing_price,sma,sma100,sma50,sma20,sma10,ema,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
+        if sma and (stoch!='hold' and rsi!='hold'):
             indicators_data["company"].append(key)
             indicators_data["cap"].append(cap)
             indicators_data["closing_price"].append(closing_price)
@@ -142,6 +143,7 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
                 indicators_data["sma50"].append(round(sma50,2))
                 indicators_data["sma20"].append(round(sma20,2))
                 indicators_data["sma10"].append(round(sma10,2))
+                indicators_data["ema%"].append(((closing_price-float(ema))/closing_price)*100)
             except:
                 indicators_data["sma"].append('')
                 indicators_data["sma%"].append('')
@@ -149,6 +151,7 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
                 indicators_data["sma50"].append('')
                 indicators_data["sma20"].append('')
                 indicators_data["sma10"].append('')
+                indicators_data["ema%"].append('')
             indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
             indicators_data["ball"].append(ball)
             indicators_data["rsi"].append(rsi)
