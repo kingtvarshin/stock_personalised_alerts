@@ -172,7 +172,7 @@ t6.join()
 
 indicators_df = pd.DataFrame(indicators_data)
 indicators_df['cap'] = pd.Categorical(indicators_df['cap'],categories = ["large_cap","mid_cap","small_cap"])
-indicators_df = indicators_df.sort_values(by=["cap","sma%"])
+indicators_df = indicators_df.sort_values(by=["cap","sma%","ball","rsi","stoch"])
 print(indicators_df)
 indicators_df.to_csv(f'./stock_indicators_csv/indicators_data.csv')
 indicators_df[indicators_df['cap']=='large_cap'].to_csv(f'./stock_indicators_csv/indicators_data_large_cap.csv')
