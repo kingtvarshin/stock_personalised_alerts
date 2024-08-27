@@ -103,7 +103,7 @@ def indicators_response(symbol,backdays=0):
         # print('get_ema')
         res = indicators.get_ema(quotes_list, 100, candle_part=CandlePart.CLOSE)
         for i in res:
-            if i.sma is not None:
+            if i.ema is not None:
                 ema_dict['date'].append(i.date)
                 ema_dict['ema'].append(i.ema)
 
@@ -184,9 +184,9 @@ def indicators_response(symbol,backdays=0):
         # latest bollinger_band
         if not df_bollinger_bands.empty:
             # print('bollinger_band')
-            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0:
+            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0.2:
                 x = 'buy'
-            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.6:
+            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.8:
                 x = 'sell'
             else:
                 x = 'hold'
@@ -194,18 +194,18 @@ def indicators_response(symbol,backdays=0):
         # latest rsi
         if not df_rsi.empty:
             print(df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0])
-            if df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]<=34:
+            if df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]<=30:
                 y = 'buy'
-            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=65:
+            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=70:
                 y = 'sell'
             else:
                 y = 'hold'
                
         # latest stoch
         if not df_stoch.empty: 
-            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 75:
+            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 80:
                 z = 'sell'
-            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 25:
+            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 20:
                 z = 'buy'
             else:
                 z = 'hold'
@@ -222,6 +222,8 @@ def indicators_response(symbol,backdays=0):
                 aa += 'probability to rise more'
                 
         return v,w,w100,w50,w20,w10,wema,x,y,z,aa
-    except Exception:
-        print(Exception)
+    except Exception as e:
+        # print(type(e))
+        # print(e.args)
+        # print(e)
         return '','','','','','','','','','',''
