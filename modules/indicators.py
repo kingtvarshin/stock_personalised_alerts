@@ -184,9 +184,9 @@ def indicators_response(symbol,backdays=0):
         # latest bollinger_band
         if not df_bollinger_bands.empty:
             # print('bollinger_band')
-            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0.2:
+            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0.3:
                 x = 'buy'
-            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.8:
+            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.9:
                 x = 'sell'
             else:
                 x = 'hold'
@@ -194,18 +194,18 @@ def indicators_response(symbol,backdays=0):
         # latest rsi
         if not df_rsi.empty:
             print(df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0])
-            if df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]<=30:
+            if df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]<=35:
                 y = 'buy'
-            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=70:
+            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=75:
                 y = 'sell'
             else:
                 y = 'hold'
                
         # latest stoch
         if not df_stoch.empty: 
-            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 80:
+            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 85:
                 z = 'sell'
-            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 20:
+            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 25:
                 z = 'buy'
             else:
                 z = 'hold'

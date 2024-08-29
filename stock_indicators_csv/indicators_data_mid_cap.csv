@@ -1,10 +1,1 @@
-,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,sma%,PE_ratio,ball,rsi,stoch,super_trend
-16,ALLCARGO,mid_cap,60.54,114.16,67.06,62.88,62.26,60.65,-88.56813676907832,NA,hold,hold,buy,probability to fall more
-22,FUSION,mid_cap,284.85,511.98,453.93,428.41,382.98,331.88,-79.7355625767949,NA,buy,buy,buy,probability to fall more
-9,SPANDANA,mid_cap,588.0,885.42,766.41,702.66,641.75,599.02,-50.58095238095237,NA,hold,buy,buy,probability to fall more
-6,UJJIVANSFB,mid_cap,41.95,52.03,48.54,45.11,43.35,42.25,-24.033730631704454,NA,hold,hold,buy,probability to fall more
-2,RBLBANK,mid_cap,207.11,252.93,247.38,243.18,223.9,213.01,-22.1258992805755,NA,buy,buy,buy,probability to fall more
-7,VIPIND,mid_cap,437.7,532.01,495.74,468.65,455.14,443.78,-21.547406899703056,NA,hold,hold,buy,probability to fall more
-19,VRLLOG,mid_cap,535.5,617.36,564.47,568.28,551.36,532.37,-15.286041083099954,NA,hold,hold,buy,probability to fall more
-4,HAPPSTMNDS,mid_cap,766.1,836.78,816.2,825.73,791.36,768.26,-9.225884349301609,NA,hold,hold,buy,probability to fall more
-12,TMB,mid_cap,451.0,486.76,472.81,467.07,454.04,450.21,-7.929268292682945,NA,hold,hold,buy,probability to fall more
+,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,ema%,sma%,PE_ratio,ball,rsi,stoch,super_trend
