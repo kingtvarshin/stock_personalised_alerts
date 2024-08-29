@@ -132,7 +132,7 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
     for key in dict_file.keys():
         print(key)
         closing_price,sma,sma100,sma50,sma20,sma10,ema,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
-        if sma and (stoch!='hold' and rsi!='hold'):
+        if sma and ('hold' not in [stoch,rsi]) and ('sell' not in [ball,rsi,stoch]):
             indicators_data["company"].append(key)
             indicators_data["cap"].append(cap)
             indicators_data["closing_price"].append(closing_price)
