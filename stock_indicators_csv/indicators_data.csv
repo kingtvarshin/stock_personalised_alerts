@@ -1,1 +1,6 @@
 ,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,ema%,sma%,PE_ratio,ball,rsi,stoch,super_trend
+4,SIS,mid_cap,404.6,447.41,434.91,433.89,423.78,416.46,-7.277419841339975,-10.580388037567978,42.2,buy,buy,buy,probability to fall more
+1,DIVGIITTS,small_cap,614.95,820.38,725.82,671.88,646.11,631.02,-16.910888934995068,-33.405602081470136,53.33,buy,buy,buy,probability to fall more
+2,RISHABH,small_cap,368.7,480.86,435.59,417.52,387.7,373.19,-17.084206898772706,-30.420124762679666,40.19,buy,buy,buy,probability to fall more
+3,NACLIND,small_cap,54.45,69.06,66.7,66.56,60.99,58.01,-21.62492827436978,-26.829843893480238,0.0,buy,buy,buy,probability to fall more
+0,KKCL,small_cap,614.75,715.38,679.84,674.02,636.11,623.6,-10.265431703475748,-16.368849125660848,25.99,buy,buy,buy,probability to fall more

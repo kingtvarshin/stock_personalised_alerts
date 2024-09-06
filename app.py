@@ -15,8 +15,8 @@ print('start_time: ',start_time)
 time_analysis['start_time'] = str(start_time)
 
 large_perc_var = 50
-mid_perc_var   = 6
-small_perc_var = 5
+mid_perc_var   = 10
+small_perc_var = 10
 PE_ratio_max   = 25
 PE_ratio_min   = 15
 
