@@ -1,5 +1,0 @@
-nsepy
-pandas
-json
-openpyxl
-pyinstaller

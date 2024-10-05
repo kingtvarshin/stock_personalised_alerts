@@ -1,9 +1,12 @@
 # stock_personalised_alerts
 this project will give personalised intimation on list of stocks that you want 
 
+sudo apt install python3.12-venv
+python3 -m venv stocks_env
+pip3 install -r requirements.txt
 
-pip install nsepython
-pip install pandas
+<!-- pip install nsepython -->
+<!-- pip install pandas -->
 
 Market capitalization = total number of outstanding shares multiplied by the market price of each share.
 

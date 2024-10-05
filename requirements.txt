@@ -1,0 +1,7 @@
+nsepy
+nsepython
+pandas
+openpyxl
+nsepythonserver
+stock-indicators
+python-dotenv

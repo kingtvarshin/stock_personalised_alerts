@@ -1,5 +1,9 @@
 ,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,ema%,sma%,PE_ratio,ball,rsi,stoch,super_trend
-1,DIVGIITTS,small_cap,614.95,820.38,725.82,671.88,646.11,631.02,-16.910888934995068,-33.405602081470136,53.33,buy,buy,buy,probability to fall more
-2,RISHABH,small_cap,368.7,480.86,435.59,417.52,387.7,373.19,-17.084206898772706,-30.420124762679666,40.19,buy,buy,buy,probability to fall more
-3,NACLIND,small_cap,54.45,69.06,66.7,66.56,60.99,58.01,-21.62492827436978,-26.829843893480238,0.0,buy,buy,buy,probability to fall more
-0,KKCL,small_cap,614.75,715.38,679.84,674.02,636.11,623.6,-10.265431703475748,-16.368849125660848,25.99,buy,buy,buy,probability to fall more
+14,SHANKARA,small_cap,526.05,680.55,644.96,601.96,561.88,545.43,-19.46714840868178,-29.369546621043657,15.97,buy,buy,buy,probability to fall more
+5,ESAFSFB,small_cap,45.18,57.93,51.66,50.0,48.79,47.75,-15.961368967814355,-28.20949535192557,4.76,buy,buy,buy,probability to fall more
+4,HINDWAREAP,small_cap,323.85,410.25,396.25,381.99,344.95,332.35,-19.890204275958645,-26.679095260151364,68.1,buy,buy,buy,probability to fall more
+10,TNPL,small_cap,210.15,263.94,249.03,230.8,216.32,212.7,-15.505692240047944,-25.595051153937654,14.34,buy,buy,buy,probability to fall more
+16,PROZONER,small_cap,25.97,32.59,30.37,29.74,27.92,26.91,-16.295488815184687,-25.50635348479012,0.0,buy,buy,buy,probability to fall more
+13,NDTV,small_cap,187.34,231.59,214.85,202.82,193.72,191.73,-12.395756119318174,-23.621944058930353,0.0,buy,buy,buy,probability to fall more
+15,HPAL,small_cap,91.56,102.1,98.35,97.99,96.09,93.96,-12.35965085302908,-11.5079183049366,39.13,buy,buy,buy,probability to fall more
+17,BANSWRAS,small_cap,140.52,152.17,152.1,150.88,145.45,143.22,-7.193456992786623,-8.29099060631942,19.17,buy,buy,buy,probability to fall more

@@ -14,7 +14,7 @@ start_time = datetime.datetime.now()
 print('start_time: ',start_time)
 time_analysis['start_time'] = str(start_time)
 
-large_perc_var = 50
+large_perc_var = 35
 mid_perc_var   = 10
 small_perc_var = 10
 PE_ratio_max   = 25
@@ -131,32 +131,33 @@ def indicator_response_dict_creator(dict_file,cap,backdays=0):
     
     for key in dict_file.keys():
         print(key)
-        closing_price,sma,sma100,sma50,sma20,sma10,ema,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
-        if sma and ('hold' not in [stoch,rsi]) and ('sell' not in [ball,rsi,stoch]):
-            indicators_data["company"].append(key)
-            indicators_data["cap"].append(cap)
-            indicators_data["closing_price"].append(closing_price)
-            try:
-                indicators_data["sma"].append(round(float(sma),2))
-                indicators_data["sma%"].append(((closing_price-float(sma))/closing_price)*100)
-                indicators_data["sma100"].append(round(sma100,2))
-                indicators_data["sma50"].append(round(sma50,2))
-                indicators_data["sma20"].append(round(sma20,2))
-                indicators_data["sma10"].append(round(sma10,2))
-                indicators_data["ema%"].append(((closing_price-float(ema))/closing_price)*100)
-            except:
-                indicators_data["sma"].append('')
-                indicators_data["sma%"].append('')
-                indicators_data["sma100"].append('')
-                indicators_data["sma50"].append('')
-                indicators_data["sma20"].append('')
-                indicators_data["sma10"].append('')
-                indicators_data["ema%"].append('')
-            indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
-            indicators_data["ball"].append(ball)
-            indicators_data["rsi"].append(rsi)
-            indicators_data["stoch"].append(stoch)
-            indicators_data["super_trend"].append(super_trend)
+        if 'perc_low' in dict_file[key]:
+            closing_price,sma,sma100,sma50,sma20,sma10,ema,ball,rsi,stoch,super_trend = indicators_response(key,backdays)
+            if sma and ('hold' not in [stoch,rsi]) and ('sell' not in [ball,rsi,stoch]):
+                indicators_data["company"].append(key)
+                indicators_data["cap"].append(cap)
+                indicators_data["closing_price"].append(closing_price)
+                try:
+                    indicators_data["sma"].append(round(float(sma),2))
+                    indicators_data["sma%"].append(((closing_price-float(sma))/closing_price)*100)
+                    indicators_data["sma100"].append(round(sma100,2))
+                    indicators_data["sma50"].append(round(sma50,2))
+                    indicators_data["sma20"].append(round(sma20,2))
+                    indicators_data["sma10"].append(round(sma10,2))
+                    indicators_data["ema%"].append(((closing_price-float(ema))/closing_price)*100)
+                except:
+                    indicators_data["sma"].append('')
+                    indicators_data["sma%"].append('')
+                    indicators_data["sma100"].append('')
+                    indicators_data["sma50"].append('')
+                    indicators_data["sma20"].append('')
+                    indicators_data["sma10"].append('')
+                    indicators_data["ema%"].append('')
+                indicators_data["PE_ratio"].append(dict_file[key]["PE_ratio"])
+                indicators_data["ball"].append(ball)
+                indicators_data["rsi"].append(rsi)
+                indicators_data["stoch"].append(stoch)
+                indicators_data["super_trend"].append(super_trend)
         
 t4 = threading.Thread(target=indicator_response_dict_creator, args=(large_capstocksdict,'large_cap',backdays,))
 t5 = threading.Thread(target=indicator_response_dict_creator, args=(mid_capstocksdict,'mid_cap',backdays,))

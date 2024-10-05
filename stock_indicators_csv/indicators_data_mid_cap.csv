@@ -1,2 +1,10 @@
 ,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,ema%,sma%,PE_ratio,ball,rsi,stoch,super_trend
-4,SIS,mid_cap,404.6,447.41,434.91,433.89,423.78,416.46,-7.277419841339975,-10.580388037567978,42.2,buy,buy,buy,probability to fall more
+9,FUSION,mid_cap,246.55,467.21,392.93,326.94,289.54,268.62,-52.383895424000556,-89.49827621172184,7.13,buy,buy,buy,probability to fall more
+6,SPANDANA,mid_cap,585.2,825.17,687.58,619.28,601.1,595.0,-17.026539881357365,-41.007091592617876,9.55,buy,buy,buy,probability to fall more
+7,EASEMYTRIP,mid_cap,34.02,43.4,41.2,40.08,39.84,38.19,-20.4510596965262,-27.56246325690766,33.66,buy,buy,buy,probability to fall more
+1,EQUITASBNK,mid_cap,77.21,95.3,88.88,81.99,82.04,80.93,-12.99696778586839,-23.428441911669477,13.88,buy,buy,buy,trend change to upper band...probability to fall more
+2,UJJIVANSFB,mid_cap,40.43,49.78,45.55,43.0,42.31,41.72,-12.014462670424336,-23.126762305219,6.21,buy,buy,buy,probability to fall more
+0,RBLBANK,mid_cap,204.28,247.98,235.97,219.17,211.61,209.48,-12.81579723953942,-21.393112394752304,9.61,buy,buy,buy,probability to fall more
+8,UTKARSHBNK,mid_cap,44.98,52.45,50.21,48.48,47.25,46.3,-10.527499963392314,-16.61149399733214,9.39,buy,buy,buy,probability to fall more
+3,ANURAS,mid_cap,736.95,845.97,772.04,773.19,754.94,742.56,-6.669663552043353,-14.793981952642593,63.54,buy,buy,buy,probability to fall more
+11,GATEWAY,mid_cap,91.33,104.48,102.35,100.31,95.54,93.32,-10.543087850791574,-14.39401073031866,19.13,buy,buy,buy,probability to fall more
