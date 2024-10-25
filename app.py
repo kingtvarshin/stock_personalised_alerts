@@ -182,3 +182,9 @@ indicators_df[indicators_df['cap']=='small_cap'].to_csv(f'./stock_indicators_csv
 
 # sending message
 mail_message()
+
+time_analysis['time_for_complete_script'] = str(datetime.datetime.now() - start_time)
+
+
+with open("time_analysis_52_weeks.json", "w") as outfile: 
+    json.dump(time_analysis, outfile)

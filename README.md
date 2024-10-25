@@ -4,6 +4,7 @@ this project will give personalised intimation on list of stocks that you want
 sudo apt install python3.12-venv
 python3 -m venv stocks_env
 pip3 install -r requirements.txt
+source stocks_env/bin/activate
 
 <!-- pip install nsepython -->
 <!-- pip install pandas -->
@@ -21,3 +22,5 @@ smallstocks => companies generally come in below Rs. 5,000 crores
 
 
 pyinstaller app.py
+
+python -m jupyter notebook
