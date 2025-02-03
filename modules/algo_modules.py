@@ -43,6 +43,8 @@ def stock_details_fetcher(stock,perc_var,backdays,weeks52_date_analysis):
     except ZeroDivisionError:
         stock_data = nse_eq(stock_code)
         print(JSONDecodeError,stock_data)
+    except Exception:
+        print(Exception)
 
 def retrive_weeks52_date_analysis_dict(stock_type_key,perc_var=5,backdays=0):
     # importing the dictionary for stocks requirements
@@ -50,7 +52,7 @@ def retrive_weeks52_date_analysis_dict(stock_type_key,perc_var=5,backdays=0):
     stocksdict = json.load(stocksdictfile)
     weeks52_date_analysis = {}
     
-    with ThreadPoolExecutor(max_workers=3) as executor:
+    with ThreadPoolExecutor(max_workers=20) as executor:
         executor.map(lambda data:stock_details_fetcher(data,perc_var,backdays,weeks52_date_analysis), stocksdict[stock_type_key])
     
     #closing file
