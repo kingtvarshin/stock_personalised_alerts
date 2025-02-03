@@ -180,11 +180,12 @@ indicators_df[indicators_df['cap']=='large_cap'].to_csv(f'./stock_indicators_csv
 indicators_df[indicators_df['cap']=='mid_cap'].to_csv(f'./stock_indicators_csv/indicators_data_mid_cap.csv')
 indicators_df[indicators_df['cap']=='small_cap'].to_csv(f'./stock_indicators_csv/indicators_data_small_cap.csv')
 
-# sending message
-mail_message()
+# # sending message
+# if not indicators_df.empty:
+#     mail_message()
 
 time_analysis['time_for_complete_script'] = str(datetime.datetime.now() - start_time)
-
+print(time_analysis['time_for_complete_script'])
 
 with open("time_analysis_52_weeks.json", "w") as outfile: 
     json.dump(time_analysis, outfile)

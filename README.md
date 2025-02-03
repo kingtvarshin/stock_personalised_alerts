@@ -24,3 +24,5 @@ smallstocks => companies generally come in below Rs. 5,000 crores
 pyinstaller app.py
 
 python -m jupyter notebook
+
+pip install --upgrade -r requirements.txt
