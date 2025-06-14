@@ -1,4 +1,6 @@
 nsepy
+nsepython
 pandas
 json
 openpyxl
+stock-indicators
