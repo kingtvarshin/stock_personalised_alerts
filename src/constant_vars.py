@@ -2,6 +2,7 @@ excel_name = 'Average MCAP_July2024ToDecember 2024.xlsx' # Name of the Excel fil
 output_json = 'stocksdict.json' # Output JSON file for storing categorized stocks
 fiftytwo_weeks_analysis_json = 'fiftytwo_weeks_analysis.json' # Output JSON file for storing 52-week analysis results
 time_analysis_json = 'time_analysis.json' # Output JSON file for storing time analysis results
+indicators_data_csv = 'indicators_data.csv' # Output CSV file for storing stock indicators data
 
 # Percentage variation from 52 weeks low and high thresholds for stock categorization
 large_perc_var = 16

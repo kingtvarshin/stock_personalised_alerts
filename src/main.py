@@ -1,6 +1,9 @@
 from complete_stocks_list_extractor import complete_stocks_list_extractor
 from fiftytwo_week_analysis_retriever import retrieve_52week_analysis
-from constant_vars import excel_name, output_json, large_perc_var, mid_perc_var, small_perc_var, PE_ratio_max, PE_ratio_min, backdays, time_analysis_json
+from indicator_response_generator import load_stocks_indicators_data
+from notification_sending_module import mail_message
+
+from constant_vars import excel_name, output_json, large_perc_var, mid_perc_var, small_perc_var, backdays, fiftytwo_weeks_analysis_json, time_analysis_json
 
 import datetime
 import json
@@ -34,8 +37,17 @@ time_analysis['duration_for_52week_analysis_completed'] = str(retrieve_52week_an
 
 # for short term investment
 # we will consider ball, rsi, stoch, supertrend along with sma
-# indicator_response_dict_creator(dict_file,cap,backdays=0)
+load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays)
+
+# Record completion time for 52-week analysis
+retrieve_indicators_data_completed = datetime.datetime.now()
+time_analysis['time_for_retrieve_indicators_data_completed'] = str(retrieve_indicators_data_completed)
+time_analysis['duration_for_retrieve_indicators_data_completed'] = str(retrieve_indicators_data_completed - retrieve_52week_analysis_completed)
+time_analysis['duration_for_compelte_script'] = str(retrieve_indicators_data_completed - start_time)
 
 # Save the time analysis results to a JSON file
 with open(time_analysis_json, "w") as outfile: 
     json.dump(time_analysis, outfile)
+
+## sending message
+mail_message()
