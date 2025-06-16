@@ -1,9 +1,1 @@
-,Unnamed: 0,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,sma%,PE_ratio,ball,rsi,stoch,super_trend
-1,1,LANDMARK,small_cap,633.85,752.4757500000005,727.8974999999996,698.9600000000002,685.9100000000001,654.57,-18.7151139859589,44.19,buy,hold,buy,probability to fall more
-3,3,TASTYBITE,small_cap,9860.05,13104.64600000001,11425.206499999998,10566.289,10349.102499999995,10143.285,-32.90648627542468,61.61,hold,buy,buy,probability to fall more
-5,5,APTECHT,small_cap,204.39,247.0979500000001,229.3574,221.2677999999999,216.969,212.819,-20.89532266744956,35.88,hold,buy,buy,probability to fall more
-7,7,REPRO,small_cap,615.15,780.8444999999999,749.3649999999999,686.7570000000001,634.22,630.135,-26.935625457205557,73.92,buy,buy,buy,probability to fall more
-9,9,IRISDOREME,small_cap,62.36,79.5856,75.65070000000003,73.18339999999998,66.689,64.394,-27.62283515073765,42.66,buy,hold,buy,probability to fall more
-11,11,SMLT,small_cap,188.74,,244.0334,220.4938,193.959,190.367,,18.15,,hold,,probability to fall more
-13,13,SELMC,small_cap,58.41,,71.002,64.28699999999999,59.88100000000001,59.00199999999999,,0.0,,buy,,probability to fall more
-16,16,DANGEE,small_cap,7.3,,8.638600000000002,7.925200000000003,7.6915,7.552,,0.0,,buy,,probability to fall more
+,company,cap,closing_price,sma,sma100,sma50,sma20,sma10,sma%,PE_ratio,ball,rsi,stoch,super_trend
