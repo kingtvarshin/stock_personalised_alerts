@@ -64,11 +64,6 @@
     "PE_ratio": 14.88,
     "category": "large"
   },
-  "MARUTI": {
-    "perc_high": 8.845029239766083,
-    "PE_ratio": 27.63,
-    "category": "large"
-  },
   "AXISBANK": {
     "perc_high": 9.58086067256374,
     "PE_ratio": 13.41,
@@ -276,11 +271,6 @@
   "INDUSTOWER": {
     "perc_high": 15.281850765721739,
     "PE_ratio": 10.39,
-    "category": "large"
-  },
-  "INDHOTEL": {
-    "perc_high": 15.968264610571012,
-    "PE_ratio": 63.03,
     "category": "large"
   },
   "APOLLOHOSP": {

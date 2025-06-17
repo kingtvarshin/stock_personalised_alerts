@@ -27,3 +27,5 @@ docker build -t stock-analyzer .
 docker rmi truenas_ip:30095/stock-analyzer
 docker tag stock-analyzer truenas_ip:30095/stock-analyzer
 docker push truenas_ip:30095/stock-analyzer
+
+docker run --rm --env-file .env truenas_ip:30095/stock-analyzer
