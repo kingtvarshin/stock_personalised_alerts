@@ -15,3 +15,8 @@ PE_ratio_min   = 15
 
 backdays = 0 # Number of days to look back for stock data analysis, 0 means current day
 
+# for mailing
+indicators_result_csv_path_large = "indicators_data_large_cap.csv"
+indicators_result_csv_path_mid = "indicators_data_mid_cap.csv"
+indicators_result_csv_path_small = "indicators_data_small_cap.csv"
+indicators_result_csv_path_full = "indicators_data.csv"

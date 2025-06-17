@@ -860,11 +860,6 @@
     "PE_ratio": 43.28,
     "category": "mid"
   },
-  "RPOWER": {
-    "perc_high": 15.453000392208125,
-    "PE_ratio": 0,
-    "category": "mid"
-  },
   "EIDPARRY": {
     "perc_high": 8.637236084452974,
     "PE_ratio": 11.3,
@@ -995,11 +990,6 @@
     "PE_ratio": 104.57,
     "category": "mid"
   },
-  "RELINFRA": {
-    "perc_high": 12.142857142857142,
-    "PE_ratio": 2.08,
-    "category": "mid"
-  },
   "HOMEFIRST": {
     "perc_high": 9.99783127304272,
     "PE_ratio": 34.24,
@@ -1123,11 +1113,6 @@
   "UJJIVANSFB": {
     "perc_high": 9.003277424330046,
     "PE_ratio": 13.08,
-    "category": "mid"
-  },
-  "SHILPAMED": {
-    "perc_high": 3.9399999999999977,
-    "PE_ratio": 113.92,
     "category": "mid"
   },
   "INDIASHLTR": {
@@ -1576,11 +1561,6 @@
     "PE_ratio": 26.76,
     "category": "small"
   },
-  "INTERARCH": {
-    "perc_high": 10.586250527203712,
-    "PE_ratio": 93.19,
-    "category": "small"
-  },
   "RAMRAT": {
     "perc_high": 12.773818949590915,
     "PE_ratio": 41.83,
@@ -1656,19 +1636,9 @@
     "PE_ratio": 123.51,
     "category": "small"
   },
-  "RELTD": {
-    "perc_high": 14.718432598112857,
-    "PE_ratio": 91.87,
-    "category": "small"
-  },
   "SIRCA": {
     "perc_high": 3.3324853726787134,
     "PE_ratio": 42.79,
-    "category": "small"
-  },
-  "CAMLINFINE": {
-    "perc_high": 7.317901234567895,
-    "PE_ratio": 160.56,
     "category": "small"
   },
   "ATULAUTO": {
@@ -1959,11 +1929,6 @@
   "DONEAR": {
     "perc_low": 14.611730689797595,
     "PE_ratio": 17.77,
-    "category": "small"
-  },
-  "SKMEGGPROD": {
-    "perc_high": 13.415468856947294,
-    "PE_ratio": 19.39,
     "category": "small"
   },
   "RACE": {
@@ -2613,11 +2578,6 @@
   },
   "FCONSUMER": {
     "perc_low": 15.217391304347828,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "SKIL": {
-    "perc_low": 11.94029850746268,
     "PE_ratio": "NA",
     "category": "small"
   },
