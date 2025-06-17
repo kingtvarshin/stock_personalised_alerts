@@ -4,6 +4,7 @@ import pandas as pd
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
+from constant_vars import indicators_result_csv_path_large, indicators_result_csv_path_mid, indicators_result_csv_path_small, indicators_result_csv_path_full
 from dotenv import load_dotenv
 import os
 
@@ -13,14 +14,10 @@ def mail_message():
         EMAIL_ID_LIST = eval(os.getenv('EMAIL_ID_LIST'))
         SENDER_EMAIL = os.getenv('SENDER_EMAIL')
         SENDER_EMAIL_PASSWORD = os.getenv('SENDER_EMAIL_PASSWORD')
-        INDICATORS_RESULT_CSV_PATH_LARGE = f"{os.getenv('INDICATORS_RESULT_CSV_PATH')}indicators_data_large_cap.csv"
-        INDICATORS_RESULT_CSV_PATH_MID = f"{os.getenv('INDICATORS_RESULT_CSV_PATH')}indicators_data_mid_cap.csv"
-        INDICATORS_RESULT_CSV_PATH_SMALL = f"{os.getenv('INDICATORS_RESULT_CSV_PATH')}indicators_data_small_cap.csv"
-        INDICATORS_RESULT_CSV_PATH_FULL = f"{os.getenv('INDICATORS_RESULT_CSV_PATH')}indicators_data.csv"
         
-        df_large=pd.read_csv(INDICATORS_RESULT_CSV_PATH_LARGE)
-        df_mid=pd.read_csv(INDICATORS_RESULT_CSV_PATH_MID)
-        df_small=pd.read_csv(INDICATORS_RESULT_CSV_PATH_SMALL)
+        df_large=pd.read_csv(indicators_result_csv_path_large)
+        df_mid=pd.read_csv(indicators_result_csv_path_mid)
+        df_small=pd.read_csv(indicators_result_csv_path_small)
         htmltable_large=df_large.to_html(index=False)
         htmltable_large=htmltable_large.replace('border="1"','border="1" style="border-collapse:collapse"')
         htmltable_mid=df_mid.to_html(index=False)
@@ -99,7 +96,7 @@ def mail_message():
         csv_part = MIMEText(emailfinal, "html")
         message.attach(csv_part)
         
-        with open(INDICATORS_RESULT_CSV_PATH_FULL,'rb') as file:
+        with open(indicators_result_csv_path_full,'rb') as file:
             # Attach the file with filename to the email
             message.attach(MIMEApplication(file.read(), Name="indicators_data.csv"))
         

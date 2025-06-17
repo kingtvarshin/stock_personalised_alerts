@@ -280,8 +280,8 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     # Save to CSV using pandas
     df = pd.DataFrame(final_results)
     df.to_csv(indicators_data_csv, index=False)
-    df[df['cap']=='large'].to_csv(f'indicators_data_large_cap.csv')
-    df[df['cap']=='mid'].to_csv(f'indicators_data_mid_cap.csv')
-    df[df['cap']=='small'].to_csv(f'indicators_data_small_cap.csv')
+    df[df['category']=='large'].to_csv(f'indicators_data_large_cap.csv')
+    df[df['category']=='mid'].to_csv(f'indicators_data_mid_cap.csv')
+    df[df['category']=='small'].to_csv(f'indicators_data_small_cap.csv')
 
     print(f"✅ Done! CSV saved as {indicators_data_csv}")
