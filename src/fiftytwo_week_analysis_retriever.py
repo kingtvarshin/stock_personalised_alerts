@@ -6,13 +6,12 @@ from tqdm.asyncio import tqdm_asyncio
 
 
 def retrieve_52week_analysis(output_json, large_perc_var, mid_perc_var, small_perc_var, backdays):
-    # Load stock list
     with open(output_json) as stocksdictfile:
         stocksdict = json.load(stocksdictfile)
 
     stock_list = []
     for category, stocks in stocksdict.items():
-        label = category.replace("stocks", "")
+        label = category.replace("stocks", "").lower()
         for entry in stocks:
             for symbol in entry:
                 stock_list.append({"symbol": symbol, "category": label})
@@ -21,6 +20,17 @@ def retrieve_52week_analysis(output_json, large_perc_var, mid_perc_var, small_pe
         async with sem:
             symbol = stock_info["symbol"]
             category = stock_info["category"]
+
+            # Assign threshold based on category
+            if category == "large":
+                threshold = large_perc_var
+            elif category == "mid":
+                threshold = mid_perc_var
+            elif category == "small":
+                threshold = small_perc_var
+            else:
+                threshold = large_perc_var  # default fallback
+
             try:
                 stock_data = await asyncio.to_thread(nse_eq, symbol)
 
@@ -34,10 +44,10 @@ def retrieve_52week_analysis(output_json, large_perc_var, mid_perc_var, small_pe
                 perc_low = ((todays_high - weeks52_low) / weeks52_low) * 100
 
                 result = {}
-                if 0 < perc_high < large_perc_var:
+                if 0 < perc_high < threshold:
                     result['perc_high'] = perc_high
                     result['PE_ratio'] = PE_ratio
-                if 0 < perc_low < large_perc_var:
+                if 0 < perc_low < threshold:
                     result['perc_low'] = perc_low
                     result['PE_ratio'] = PE_ratio
 
@@ -54,7 +64,7 @@ def retrieve_52week_analysis(output_json, large_perc_var, mid_perc_var, small_pe
         sem = asyncio.Semaphore(5)
         tasks = [worker(stock, sem) for stock in stock_list]
         results = await tqdm_asyncio.gather(*tasks, desc="Processing Stocks", total=len(stock_list))
-        
+
         final_result = {}
         for r in results:
             final_result.update(r)
