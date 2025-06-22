@@ -104,7 +104,8 @@ def mail_message():
                 df.dropna(axis=1, how='all', inplace=True)
 
                 if not df.empty:
-                    html_table = f'<div class="table-wrapper">{df.to_html(index=False).replace("border=\"1\"", "border=\"1\" style=\"border-collapse:collapse\"")}</div>'
+                    table_html = df.to_html(index=False).replace('border="1"', 'border="1" style="border-collapse:collapse"')
+                    html_table = f'<div class="table-wrapper">{table_html}</div>'
                     email_body_parts.append(f"<h2>{df_label}</h2>{html_table}")
                     with open(df_path, 'rb') as file:
                         message.attach(MIMEApplication(file.read(), Name=os.path.basename(df_path)))

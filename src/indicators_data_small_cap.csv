@@ -1,6 +1,6 @@
-,symbol,category,PE_ratio,perc_high,perc_low,close_price,sma200,sma100,sma50,sma20,sma10,bollinger_signal,rsi_signal,stoch_signal,supertrend_signal
-181,KORE,small,23.35,,2.0247933884297544,,,,,,,,,,
-186,OSIAHYPER,small,16.87,,3.906646372399795,20.01,,,22.835800000000003,21.284000000000002,20.599999999999994,,buy,,probability to fall more
-189,LAKSHYA,small,17.74,,3.4246575342465753,,,,,,,,,,
-191,FONEBOX,small,18.38,,3.312500000000007,,,,,,,,,,
-203,YCCL,small,15.48,,1.5564202334630433,,,,,,,,,,
+symbol,category,PE_ratio,perc_high,perc_low,close_price,sma200,sma100,sma50,sma20,sma10,bollinger_signal,rsi_signal,stoch_signal,supertrend_signal
+KORE,small,23.35,,2.0247933884297544,,,,,,,,,,
+OSIAHYPER,small,16.87,,3.906646372399795,20.01,,,22.841400000000007,21.278000000000002,20.588,,buy,,probability to fall more
+LAKSHYA,small,17.74,,3.4246575342465753,,,,,,,,,,
+FONEBOX,small,18.38,,3.312500000000007,,,,,,,,,,
+YCCL,small,15.48,,1.5564202334630433,,,,,,,,,,

@@ -29,3 +29,9 @@ docker tag stock-analyzer truenas_ip:30095/stock-analyzer
 docker push truenas_ip:30095/stock-analyzer
 
 docker run --rm --env-file .env truenas_ip:30095/stock-analyzer
+
+
+docker container ls -a
+docker container rm <container_id>>
+docker image ls
+docker image rm <Image_id>

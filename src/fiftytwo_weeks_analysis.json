@@ -19,11 +19,6 @@
     "PE_ratio": 40.91,
     "category": "large"
   },
-  "ICICIBANK": {
-    "perc_high": 4.172329437347097,
-    "PE_ratio": 18.71,
-    "category": "large"
-  },
   "SBIN": {
     "perc_high": 12.558398220244712,
     "PE_ratio": 8.99,
@@ -88,11 +83,6 @@
     "perc_high": 7.8531485533673715,
     "PE_ratio": 52.26,
     "perc_low": 14.701154973452027,
-    "category": "large"
-  },
-  "HAL": {
-    "perc_high": 14.48081413278118,
-    "PE_ratio": 39.98,
     "category": "large"
   },
   "TITAN": {
@@ -987,6 +977,11 @@
   "REGENCERAM": {
     "perc_low": 4.485981308411214,
     "PE_ratio": 45.98,
+    "category": "small"
+  },
+  "GICL": {
+    "perc_high": 2.5409836065573725,
+    "PE_ratio": 61.7,
     "category": "small"
   },
   "MCON": {
