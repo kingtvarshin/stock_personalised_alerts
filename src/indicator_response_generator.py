@@ -281,8 +281,8 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     df['PE_ratio'] = pd.to_numeric(df['PE_ratio'], errors='coerce')  # convert to float, NaN if invalid
     df.to_csv(indicators_data_csv, index=False)
     df = df[(df['PE_ratio'] < float(os.getenv('PE_RATIO_MAX'))) & (df['PE_ratio'] > float(os.getenv('PE_RATIO_MIN')))]
-    df[df['category']=='large'].to_csv(f'indicators_data_large_cap.csv')
-    df[df['category']=='mid'].to_csv(f'indicators_data_mid_cap.csv')
-    df[df['category']=='small'].to_csv(f'indicators_data_small_cap.csv')
+    df[df['category']=='large'].to_csv(f'indicators_data_large_cap.csv', index=False)
+    df[df['category']=='mid'].to_csv(f'indicators_data_mid_cap.csv', index=False)
+    df[df['category']=='small'].to_csv(f'indicators_data_small_cap.csv', index=False)
 
     print(f"✅ Done! CSV saved as {indicators_data_csv}")

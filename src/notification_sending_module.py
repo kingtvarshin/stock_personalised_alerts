@@ -14,103 +14,143 @@ def mail_message():
         EMAIL_ID_LIST = eval(os.getenv('EMAIL_ID_LIST'))
         SENDER_EMAIL = os.getenv('SENDER_EMAIL')
         SENDER_EMAIL_PASSWORD = os.getenv('SENDER_EMAIL_PASSWORD')
-        
-        df_large=pd.read_csv(indicators_result_csv_path_large)
-        df_mid=pd.read_csv(indicators_result_csv_path_mid)
-        df_small=pd.read_csv(indicators_result_csv_path_small)
-        htmltable_large=df_large.to_html(index=False)
-        htmltable_large=htmltable_large.replace('border="1"','border="1" style="border-collapse:collapse"')
-        htmltable_mid=df_mid.to_html(index=False)
-        htmltable_mid=htmltable_mid.replace('border="1"','border="1" style="border-collapse:collapse"')
-        htmltable_small=df_small.to_html(index=False)
-        htmltable_small=htmltable_small.replace('border="1"','border="1" style="border-collapse:collapse"')
-        htmlheader='''<html>
-            <head>
-            <style>
-            table.dataframe {
-            border: 1px solid #1C6EA4;
-            background-color: #EEEEEE;
-            text-align: left;
-            border-collapse: collapse;
-            }
-            table.dataframe td, table.dataframe th {
-            border: 1px solid #AAAAAA;
-            padding: 3px 2px;
-            }
-            table.dataframe tbody td {
-            font-size: 13px;
-            }
-            table.dataframe tr:nth-child(even) {
-            background: #D0E4F5;
-            }
-            table.dataframe thead {
-            background: #1C6EA4;
-            background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-            background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-            background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-            border-bottom: 2px solid #444444;
-            }
-            table.dataframe thead th {
-            font-size: 15px;
-            font-weight: bold;
-            color: #FFFFFF;
-            border-left: 2px solid #D0E4F5;
-            }
-            table.dataframe thead th:first-child {
-            border-left: none;
-            }
-
-            table.dataframe tfoot {
-            font-size: 14px;
-            font-weight: bold;
-            color: #FFFFFF;
-            background: #D0E4F5;
-            background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-            background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-            background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-            border-top: 2px solid #444444;
-            }
-            table.dataframe tfoot td {
-            font-size: 14px;
-            }
-            table.dataframe tfoot .links {
-            text-align: right;
-            }
-            table.dataframe tfoot .links a{
-            display: inline-block;
-            background: #1C6EA4;
-            color: #FFFFFF;
-            padding: 2px 8px;
-            border-radius: 5px;
-            }
-
-            </style>
-        '''
-        emailfinal= htmlheader + htmltable_large + htmltable_mid + htmltable_small
 
         message = MIMEMultipart("alternative")
-        message['Subject'] = f"Personlised Stock Alert : {datetime.datetime.now()}"
+        message['Subject'] = f"Personalised Stock Alert : {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}"
         message['Mime-Version'] = "1.0"
         message['Content-Type'] = "text/html"
 
-        csv_part = MIMEText(emailfinal, "html")
-        message.attach(csv_part)
-        
-        with open(indicators_result_csv_path_full,'rb') as file:
-            # Attach the file with filename to the email
-            message.attach(MIMEApplication(file.read(), Name="indicators_data.csv"))
-        
-        s = smtplib.SMTP('smtp.gmail.com', 587)
-        s.starttls()
-        s.login(SENDER_EMAIL, SENDER_EMAIL_PASSWORD)
-        s.sendmail(SENDER_EMAIL, EMAIL_ID_LIST, message.as_string())
-        print('sent message')
-        s.quit()
-    except smtplib.SMTPServerDisconnected:
-        raise smtplib.SMTPServerDisconnected
-    except smtplib.SMTPResponseException:
-        raise smtplib.SMTPResponseException
-    except smtplib.SMTPRecipientsRefused:
-        raise smtplib.SMTPRecipientsRefused
-    except smtplib.SMTPNotSupportedError:
-        raise smtplib.SMTPNotSupportedError
+        # HTML header with responsive table style
+        htmlheader = f'''
+        <html>
+        <head>
+          <style>
+            body {{
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 20px;
+              background-color: #f7f9fc;
+              color: #333;
+            }}
+            h1 {{
+              color: #005792;
+            }}
+            h2 {{
+              background-color: #005792;
+              color: #fff;
+              padding: 10px;
+              border-radius: 6px;
+              font-size: 18px;
+            }}
+            .table-wrapper {{
+              overflow-x: auto;
+              width: 100%;
+              margin-bottom: 30px;
+            }}
+            table {{
+              border-collapse: collapse;
+              width: 100%;
+              min-width: 600px;
+              font-size: 14px;
+              display: block;
+              max-width: 100%;
+              overflow-x: auto;
+            }}
+            th, td {{
+              border: 1px solid #ccc;
+              padding: 8px 10px;
+              text-align: left;
+            }}
+            th {{
+              background-color: #005792;
+              color: white;
+            }}
+            tr:nth-child(even) {{
+              background-color: #f2f2f2;
+            }}
+            .footer {{
+              font-size: 12px;
+              color: #888;
+              text-align: center;
+              margin-top: 40px;
+            }}
+          </style>
+        </head>
+        <body>
+          <h1>📈 Daily Stock Alert</h1>
+          <p>Here is your personalized stock summary for <strong>{datetime.datetime.now().strftime('%B %d, %Y')}</strong>:</p>
+        '''
+
+        htmlfooter = '''
+          <div class="footer">
+            <p>This is an automated stock alert email.</p>
+            <p>Generated by your analytics bot 🤖</p>
+          </div>
+        </body>
+        </html>
+        '''
+
+        email_body_parts = []
+
+        def attach_if_not_empty(df_path, df_label):
+            try:
+                df = pd.read_csv(df_path)
+
+                if "close_price" not in df.columns:
+                    print(f"Skipping {df_label}: 'close_price' column not found.")
+                    return
+
+                df = df[df["close_price"].notna()]
+                df.dropna(axis=1, how='all', inplace=True)
+
+                if not df.empty:
+                    html_table = f'<div class="table-wrapper">{df.to_html(index=False).replace("border=\"1\"", "border=\"1\" style=\"border-collapse:collapse\"")}</div>'
+                    email_body_parts.append(f"<h2>{df_label}</h2>{html_table}")
+                    with open(df_path, 'rb') as file:
+                        message.attach(MIMEApplication(file.read(), Name=os.path.basename(df_path)))
+                else:
+                    print(f"Skipping {df_label}: No data after filtering.")
+            except Exception as e:
+                print(f"Error processing {df_label}: {e}")
+
+        # Attach filtered datasets
+        attach_if_not_empty(indicators_result_csv_path_large, "📊 Large Cap")
+        attach_if_not_empty(indicators_result_csv_path_mid, "📉 Mid Cap")
+        attach_if_not_empty(indicators_result_csv_path_small, "📈 Small Cap")
+
+        # Attach full report if valid
+        try:
+            df_full = pd.read_csv(indicators_result_csv_path_full)
+
+            if "close_price" not in df_full.columns:
+                print("Full report skipped: 'close_price' column not found.")
+            else:
+                df_full = df_full[df_full["close_price"].notna()]
+                df_full.dropna(axis=1, how='all', inplace=True)
+
+                if not df_full.empty:
+                    with open(indicators_result_csv_path_full, 'rb') as file:
+                        message.attach(MIMEApplication(file.read(), Name=os.path.basename(indicators_result_csv_path_full)))
+                else:
+                    print("Full report skipped: No data after filtering.")
+        except Exception as e:
+            print(f"Error attaching full report: {e}")
+
+        # Send email if there's content
+        if email_body_parts:
+            emailfinal = htmlheader + ''.join(email_body_parts) + htmlfooter
+            message.attach(MIMEText(emailfinal, "html"))
+
+            s = smtplib.SMTP('smtp.gmail.com', 587)
+            s.starttls()
+            s.login(SENDER_EMAIL, SENDER_EMAIL_PASSWORD)
+            s.sendmail(SENDER_EMAIL, EMAIL_ID_LIST, message.as_string())
+            print('✅ Email sent successfully.')
+            s.quit()
+        else:
+            print("⚠️ No data to send. Email skipped.")
+
+    except smtplib.SMTPException as e:
+        print(f"SMTP Error: {e}")
+    except Exception as e:
+        print(f"Unexpected error: {e}")
