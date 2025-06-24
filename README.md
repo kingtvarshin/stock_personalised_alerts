@@ -13,24 +13,25 @@ midstocks => market cap generally tends to range from Rs. 5,000 to Rs. 20,000 cr
 
 smallstocks => companies generally come in below Rs. 5,000 crores
 
-.env file create add variables there and run app.py
+.env file create add variables there and run main.py
 
+or 
 
 docker build -t stock-analyzer .
-docker tag stock-analyzer truenas_ip:30095/stock-analyzer
-docker push truenas_ip:30095/stock-analyzer
+docker tag stock-analyzer truenas_ip:port/stock-analyzer
+docker push truenas_ip:port/stock-analyzer
 
-docker pull truenas_ip:30095/stock-analyzer
+docker pull truenas_ip:port/stock-analyzer
 
 to update with latest code
 docker build -t stock-analyzer .
-docker rmi truenas_ip:30095/stock-analyzer
-docker tag stock-analyzer truenas_ip:30095/stock-analyzer
-docker push truenas_ip:30095/stock-analyzer
+docker rmi truenas_ip:port/stock-analyzer
+docker tag stock-analyzer truenas_ip:port/stock-analyzer
+docker push truenas_ip:port/stock-analyzer
 
-docker run --rm --env-file .env truenas_ip:30095/stock-analyzer
+docker run --rm --env-file .env truenas_ip:port/stock-analyzer
 
-
+help cmds -----------
 docker container ls -a
 docker container rm <container_id>>
 docker image ls
