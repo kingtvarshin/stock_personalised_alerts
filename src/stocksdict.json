@@ -1,0 +1,7583 @@
+{
+    "largestocks": [
+        {
+            "RELIANCE": "RELIANCE INDUSTRIES LIMITED"
+        },
+        {
+            "TCS": "TATA CONSULTANCY SERVICES LIMITED"
+        },
+        {
+            "HDFCBANK": "HDFC BANK LIMITED"
+        },
+        {
+            "BHARTIARTL": "BHARTI AIRTEL LIMITED"
+        },
+        {
+            "ICICIBANK": "ICICI BANK LIMITED"
+        },
+        {
+            "INFY": "INFOSYS LIMITED"
+        },
+        {
+            "SBIN": "STATE BANK OF INDIA"
+        },
+        {
+            "LICI": "LIFE INSURANCE CORPORATION OF INDIA"
+        },
+        {
+            "HINDUNILVR": "HINDUSTAN UNILEVER LIMITED"
+        },
+        {
+            "ITC": "ITC LIMITED"
+        },
+        {
+            "LT": "LARSEN & TOUBRO LIMITED"
+        },
+        {
+            "HCLTECH": "HCL TECHNOLOGIES LIMITED"
+        },
+        {
+            "BAJFINANCE": "BAJAJ FINANCE LIMITED"
+        },
+        {
+            "SUNPHARMA": "SUN PHARMACEUTICAL INDUSTRIES LIMITED"
+        },
+        {
+            "NTPC": "NTPC LIMITED"
+        },
+        {
+            "MARUTI": "MARUTI SUZUKI INDIA LIMITED"
+        },
+        {
+            "AXISBANK": "AXIS BANK LIMITED"
+        },
+        {
+            "ONGC": "OIL & NATURAL GAS CORPORATION LIMITED"
+        },
+        {
+            "M&M": "MAHINDRA & MAHINDRA LIMITED"
+        },
+        {
+            "KOTAKBANK": "KOTAK MAHINDRA BANK LIMITED"
+        },
+        {
+            "TATAMOTORS": "TATA MOTORS LIMITED"
+        },
+        {
+            "ADANIENT": "ADANI ENTERPRISES LIMITED"
+        },
+        {
+            "ULTRACEMCO": "ULTRATECH CEMENT LIMITED"
+        },
+        {
+            "POWERGRID": "POWER GRID CORPORATION OF INDIA LIMITED"
+        },
+        {
+            "HAL": "HINDUSTAN AERONAUTICS LIMITED"
+        },
+        {
+            "TITAN": "TITAN COMPANY LIMITED"
+        },
+        {
+            "ADANIPORTS": "ADANI PORTS AND SPECIAL ECONOMIC ZONE LIMITED"
+        },
+        {
+            "DMART": "AVENUE SUPERMARTS LIMITED"
+        },
+        {
+            "COALINDIA": "COAL INDIA LIMITED"
+        },
+        {
+            "WIPRO": "WIPRO LIMITED"
+        },
+        {
+            "BAJAJ-AUTO": "BAJAJ AUTO LIMITED"
+        },
+        {
+            "ASIANPAINT": "ASIAN PAINTS LIMITED"
+        },
+        {
+            "BAJAJFINSV": "BAJAJ FINSERV LIMITED"
+        },
+        {
+            "ADANIGREEN": "ADANI GREEN ENERGY LIMITED"
+        },
+        {
+            "SIEMENS": "SIEMENS LIMITED"
+        },
+        {
+            "ADANIPOWER": "ADANI POWER LIMITED"
+        },
+        {
+            "TRENT": "TRENT LIMITED"
+        },
+        {
+            "NESTLEIND": "NESTLE INDIA LIMITED"
+        },
+        {
+            "JSWSTEEL": "JSW STEEL LIMITED"
+        },
+        {
+            "ZOMATO": "ZOMATO LIMITED"
+        },
+        {
+            "HINDZINC": "HINDUSTAN ZINC LIMITED"
+        },
+        {
+            "IOC": "INDIAN OIL CORPORATION LIMITED"
+        },
+        {
+            "BEL": "BHARAT ELECTRONICS LIMITED"
+        },
+        {
+            "IRFC": "INDIAN RAILWAY FINANCE CORPORATION LIMITED"
+        },
+        {
+            "JIOFIN": "JIO FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "DLF": "DLF LIMITED"
+        },
+        {
+            "VBL": "VARUN BEVERAGES LIMITED"
+        },
+        {
+            "TATASTEEL": "TATA STEEL LIMITED"
+        },
+        {
+            "VEDL": "VEDANTA LIMITED"
+        },
+        {
+            "LTIM": "LTIMINDTREE LIMITED"
+        },
+        {
+            "GRASIM": "GRASIM INDUSTRIES LIMITED"
+        },
+        {
+            "INDIGO": "INTERGLOBE AVIATION LIMITED"
+        },
+        {
+            "SBILIFE": "SBI LIFE INSURANCE COMPANY LIMITED"
+        },
+        {
+            "PFC": "POWER FINANCE CORPORATION LIMITED"
+        },
+        {
+            "ABB": "ABB INDIA LIMITED"
+        },
+        {
+            "TECHM": "TECH MAHINDRA LIMITED"
+        },
+        {
+            "PIDILITIND": "PIDILITE INDUSTRIES LIMITED"
+        },
+        {
+            "HINDALCO": "HINDALCO INDUSTRIES LIMITED"
+        },
+        {
+            "AMBUJACEM": "AMBUJA CEMENTS LIMITED"
+        },
+        {
+            "HYUNDAI": "HYUNDAI MOTOR INDIA LIMITED"
+        },
+        {
+            "HDFCLIFE": "HDFC LIFE INSURANCE COMPANY LIMITED"
+        },
+        {
+            "RECLTD": "REC LIMITED"
+        },
+        {
+            "DIVISLAB": "DIVI'S LABORATORIES LIMITED"
+        },
+        {
+            "GAIL": "GAIL (INDIA) LIMITED"
+        },
+        {
+            "BPCL": "BHARAT PETROLEUM CORPORATION LIMITED"
+        },
+        {
+            "TATAPOWER": "TATA POWER COMPANY LIMITED"
+        },
+        {
+            "GODREJCP": "GODREJ CONSUMER PRODUCTS LIMITED"
+        },
+        {
+            "BRITANNIA": "BRITANNIA INDUSTRIES LIMITED"
+        },
+        {
+            "EICHERMOT": "EICHER MOTORS LIMITED"
+        },
+        {
+            "MOTHERSON": "SAMVARDHANA MOTHERSON INTERNATIONAL LIMITED"
+        },
+        {
+            "LODHA": "MACROTECH DEVELOPERS LIMITED"
+        },
+        {
+            "BANKBARODA": "BANK OF BARODA"
+        },
+        {
+            "CIPLA": "CIPLA LIMITED"
+        },
+        {
+            "JSWENERGY": "JSW ENERGY LIMITED"
+        },
+        {
+            "TVSMOTOR": "TVS MOTOR COMPANY LIMITED"
+        },
+        {
+            "PNB": "PUNJAB NATIONAL BANK"
+        },
+        {
+            "SHRIRAMFIN": "SHRIRAM FINANCE LIMITED"
+        },
+        {
+            "CHOLAFIN": "CHOLAMANDALAM INVESTMENT AND FINANCE COMPANY LIMITED"
+        },
+        {
+            "BAJAJHFL": "BAJAJ HOUSING FINANCE LIMITED"
+        },
+        {
+            "SWIGGY": "SWIGGY LIMITED"
+        },
+        {
+            "BAJAJHLDNG": "BAJAJ HOLDINGS & INVESTMENT LIMITED"
+        },
+        {
+            "NTPCGREEN": "NTPC GREEN ENERGY LIMITED"
+        },
+        {
+            "HAVELLS": "HAVELLS INDIA LIMITED"
+        },
+        {
+            "ADANIENSOL": "ADANI ENERGY SOLUTIONS LIMITED"
+        },
+        {
+            "CGPOWER": "CG POWER AND INDUSTRIAL SOLUTIONS LIMITED"
+        },
+        {
+            "TORNTPHARM": "TORRENT PHARMACEUTICALS LIMITED"
+        },
+        {
+            "DRREDDY": "DR. REDDY'S LABORATORIES LIMITED"
+        },
+        {
+            "IOB": "INDIAN OVERSEAS BANK"
+        },
+        {
+            "ZYDUSLIFE": "ZYDUS LIFESCIENCES LIMITED"
+        },
+        {
+            "TATACONSUM": "TATA CONSUMER PRODUCTS LIMITED"
+        },
+        {
+            "UNITDSPR": "UNITED SPIRITS LIMITED"
+        },
+        {
+            "RVNL": "RAIL VIKAS NIGAM LIMITED"
+        },
+        {
+            "HEROMOTOCO": "HERO MOTOCORP LIMITED"
+        },
+        {
+            "DABUR": "DABUR INDIA LIMITED"
+        },
+        {
+            "ICICIPRULI": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED"
+        },
+        {
+            "BOSCHLTD": "BOSCH LIMITED"
+        },
+        {
+            "POLYCAB": "POLYCAB INDIA LIMITED"
+        },
+        {
+            "INDUSTOWER": "INDUS TOWERS LIMITED"
+        },
+        {
+            "CUMMINSIND": "CUMMINS INDIA LIMITED"
+        },
+        {
+            "NAUKRI": "INFO EDGE (INDIA) LIMITED"
+        },
+        {
+            "INDHOTEL": "THE INDIAN HOTELS COMPANY LIMITED"
+        },
+        {
+            "APOLLOHOSP": "APOLLO HOSPITALS ENTERPRISE LIMITED"
+        },
+        {
+            "MANKIND": "MANKIND PHARMA LIMITED"
+        },
+        {
+            "OFSS": "ORACLE FINANCIAL SERVICES SOFTWARE LIMITED"
+        },
+        {
+            "INDUSINDBK": "INDUSIND BANK LIMITED"
+        },
+        {
+            "ICICIGI": "ICICI LOMBARD GENERAL INSURANCE COMPANY LIMITED"
+        },
+        {
+            "JINDALSTEL": "JINDAL STEEL & POWER LIMITED"
+        },
+        {
+            "SOLARINDS": "SOLAR INDUSTRIES INDIA LIMITED"
+        },
+        {
+            "CANBK": "CANARA BANK"
+        },
+        {
+            "LUPIN": "LUPIN LIMITED"
+        },
+        {
+            "MAXHEALTH": "MAX HEALTHCARE INSTITUTE LIMITED"
+        },
+        {
+            "SUZLON": "SUZLON ENERGY LIMITED"
+        },
+        {
+            "BHEL": "BHARAT HEAVY ELECTRICALS LIMITED"
+        },
+        {
+            "UNIONBANK": "UNION BANK OF INDIA"
+        },
+        {
+            "SHREECEM": "SHREE CEMENT LIMITED"
+        },
+        {
+            "IDBI": "IDBI BANK LIMITED"
+        },
+        {
+            "NHPC": "NHPC LIMITED"
+        },
+        {
+            "HDFCAMC": "HDFC ASSET MANAGEMENT COMPANY LIMITED"
+        },
+        {
+            "MAZDOCK": "MAZAGON DOCK SHIPBUILDERS LIMITED"
+        },
+        {
+            "OIL": "OIL INDIA LIMITED"
+        },
+        {
+            "COLPAL": "COLGATE PALMOLIVE (INDIA) LIMITED"
+        },
+        {
+            "ATGL": "ADANI TOTAL GAS LIMITED"
+        },
+        {
+            "DIXON": "DIXON TECHNOLOGIES (INDIA) LIMITED"
+        },
+        {
+            "MARICO": "MARICO LIMITED"
+        },
+        {
+            "PERSISTENT": "PERSISTENT SYSTEMS LIMITED"
+        },
+        {
+            "HINDPETRO": "HINDUSTAN PETROLEUM CORPORATION LIMITED"
+        },
+        {
+            "WAAREEENER": "WAAREE ENERGIES LIMITED"
+        },
+        {
+            "GODREJPROP": "GODREJ PROPERTIES LIMITED"
+        },
+        {
+            "TORNTPOWER": "TORRENT POWER LIMITED"
+        },
+        {
+            "GMRAIRPORT": "GMR AIRPORTS LIMITED"
+        },
+        {
+            "AUROPHARMA": "AUROBINDO PHARMA LIMITED"
+        },
+        {
+            "IDEA": "VODAFONE IDEA LIMITED"
+        },
+        {
+            "POLICYBZR": "PB FINTECH LIMITED"
+        },
+        {
+            "TIINDIA": "TUBE INVESTMENTS OF INDIA LIMITED"
+        },
+        {
+            "MUTHOOTFIN": "MUTHOOT FINANCE LIMITED"
+        },
+        {
+            "INDIANB": "INDIAN BANK"
+        },
+        {
+            "PRESTIGE": "PRESTIGE ESTATES PROJECTS LIMITED"
+        },
+        {
+            "IRCTC": "INDIAN RAILWAY CATERING AND TOURISM CORPORATION LIMITED"
+        },
+        {
+            "SRF": "SRF LIMITED"
+        },
+        {
+            "YESBANK": "YES BANK LIMITED"
+        },
+        {
+            "GICRE": "GENERAL INSURANCE CORPORATION OF INDIA"
+        },
+        {
+            "BHARATFORG": "BHARAT FORGE LIMITED"
+        },
+        {
+            "OBEROIRLTY": "OBEROI REALTY LIMITED"
+        },
+        {
+            "SBICARD": "SBI CARDS AND PAYMENT SERVICES LIMITED"
+        },
+        {
+            "ASHOKLEY": "ASHOK LEYLAND LIMITED"
+        },
+        {
+            "ALKEM": "ALKEM LABORATORIES LIMITED"
+        },
+        {
+            "JSWINFRA": "JSW INFRASTRUCTURE LIMITED"
+        },
+        {
+            "KALYANKJIL": "KALYAN JEWELLERS INDIA LIMITED"
+        },
+        {
+            "NMDC": "NMDC LIMITED"
+        },
+        {
+            "BHARTIHEXA": "BHARTI HEXACOM LIMITED"
+        },
+        {
+            "PIIND": "PI INDUSTRIES LIMITED"
+        },
+        {
+            "SUPREMEIND": "SUPREME INDUSTRIES LIMITED"
+        },
+        {
+            "LINDEINDIA": "LINDE INDIA LIMITED"
+        },
+        {
+            "PATANJALI": "PATANJALI FOODS LIMITED"
+        },
+        {
+            "BERGEPAINT": "BERGER PAINTS (I) LIMITED"
+        },
+        {
+            "FACT": "FERTILIZERS AND CHEMICALS TRAVANCORE LIMITED"
+        },
+        {
+            "PHOENIXLTD": "THE PHOENIX MILLS LIMITED"
+        },
+        {
+            "IREDA": "INDIAN RENEWABLE ENERGY DEVELOPMENT AGENCY LIMITED"
+        },
+        {
+            "JSL": "JINDAL STAINLESS LIMITED"
+        },
+        {
+            "UNOMINDA": "UNO MINDA LIMITED"
+        },
+        {
+            "SCHAEFFLER": "SCHAEFFLER INDIA LIMITED"
+        },
+        {
+            "UCOBANK": "UCO BANK"
+        },
+        {
+            "THERMAX": "THERMAX LIMITED"
+        },
+        {
+            "BALKRISIND": "BALKRISHNA INDUSTRIES LIMITED"
+        },
+        {
+            "VOLTAS": "VOLTAS LIMITED"
+        },
+        {
+            "MRF": "MRF LIMITED"
+        },
+        {
+            "MPHASIS": "MPHASIS LIMITED"
+        },
+        {
+            "CONCOR": "CONTAINER CORPORATION OF INDIA LIMITED"
+        },
+        {
+            "ABCAPITAL": "ADITYA BIRLA CAPITAL LIMITED"
+        },
+        {
+            "LTTS": "L&T TECHNOLOGY SERVICES LIMITED"
+        },
+        {
+            "POWERINDIA": "HITACHI ENERGY INDIA LIMITED"
+        },
+        {
+            "SAIL": "STEEL AUTHORITY OF INDIA LIMITED"
+        },
+        {
+            "TATACOMM": "TATA COMMUNICATIONS LIMITED"
+        },
+        {
+            "NYKAA": "FSN E COMMERCE VENTURES LIMITED"
+        },
+        {
+            "UBL": "UNITED BREWERIES LIMITED"
+        },
+        {
+            "PGHH": "PROCTER & GAMBLE HYGIENE AND HEALTH CARE LIMITED"
+        },
+        {
+            "ASTRAL": "ASTRAL LIMITED"
+        },
+        {
+            "IDFCFIRSTB": "IDFC FIRST BANK LIMITED"
+        },
+        {
+            "PETRONET": "PETRONET LNG LIMITED"
+        },
+        {
+            "BANKINDIA": "BANK OF INDIA"
+        },
+        {
+            "HUDCO": "HOUSING & URBAN DEVELOPMENT CORPORATION LIMITED"
+        },
+        {
+            "PREMIERENE": "PREMIER ENERGIES LIMITED"
+        },
+        {
+            "CENTRALBK": "CENTRAL BANK OF INDIA"
+        },
+        {
+            "BSE": "BSE LIMITED"
+        },
+        {
+            "SUNDARMFIN": "SUNDARAM FINANCE LIMITED"
+        },
+        {
+            "COROMANDEL": "COROMANDEL INTERNATIONAL LIMITED"
+        },
+        {
+            "SJVN": "SJVN LIMITED"
+        },
+        {
+            "COCHINSHIP": "COCHIN SHIPYARD LIMITED"
+        },
+        {
+            "FEDERALBNK": "THE FEDERAL BANK  LIMITED"
+        },
+        {
+            "PAGEIND": "PAGE INDUSTRIES LIMITED"
+        },
+        {
+            "COFORGE": "COFORGE LIMITED"
+        },
+        {
+            "AUBANK": "AU SMALL FINANCE BANK LIMITED"
+        },
+        {
+            "VMM": "VISHAL MEGA MART LIMITED"
+        },
+        {
+            "MOTILALOFS": "MOTILAL OSWAL FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "LLOYDSME": "LLOYDS METALS AND ENERGY LIMITED"
+        },
+        {
+            "BDL": "BHARAT DYNAMICS LIMITED"
+        },
+        {
+            "KPITTECH": "KPIT TECHNOLOGIES LIMITED"
+        },
+        {
+            "TATAELXSI": "TATA ELXSI LIMITED"
+        },
+        {
+            "GVT&D": "GE VERNOVA T&D INDIA LIMITED"
+        },
+        {
+            "GLENMARK": "GLENMARK PHARMACEUTICALS LIMITED"
+        },
+        {
+            "GLAXO": "GLAXOSMITHKLINE PHARMACEUTICALS LIMITED"
+        },
+        {
+            "ACC": "ACC LIMITED"
+        },
+        {
+            "FORTIS": "FORTIS HEALTHCARE LIMITED"
+        },
+        {
+            "PAYTM": "ONE 97 COMMUNICATIONS LIMITED"
+        },
+        {
+            "AWL": "ADANI WILMAR LIMITED"
+        },
+        {
+            "NAM-INDIA": "NIPPON LIFE INDIA ASSET MANAGEMENT LIMITED"
+        },
+        {
+            "HONAUT": "HONEYWELL AUTOMATION INDIA LIMITED"
+        },
+        {
+            "OLAELEC": "OLA ELECTRIC MOBILITY LIMITED"
+        },
+        {
+            "FLUOROCHEM": "GUJARAT FLUOROCHEMICALS LIMITED"
+        },
+        {
+            "MAHABANK": "BANK OF MAHARASHTRA"
+        },
+        {
+            "BIOCON": "BIOCON LIMITED"
+        },
+        {
+            "UPL": "UPL LIMITED"
+        },
+        {
+            "ESCORTS": "ESCORTS KUBOTA LIMITED"
+        },
+        {
+            "JUBLFOOD": "JUBILANT FOODWORKS LIMITED"
+        },
+        {
+            "APLAPOLLO": "APL APOLLO TUBES LIMITED"
+        },
+        {
+            "EXIDEIND": "EXIDE INDUSTRIES LIMITED"
+        },
+        {
+            "SONACOMS": "SONA BLW PRECISION FORGINGS LIMITED"
+        },
+        {
+            "TATATECH": "TATA TECHNOLOGIES LIMITED"
+        },
+        {
+            "LTF": "L&T FINANCE LIMITED"
+        },
+        {
+            "GUJGASLTD": "GUJARAT GAS LIMITED"
+        },
+        {
+            "360ONE": "360 ONE WAM LIMITED"
+        },
+        {
+            "3MINDIA": "3M INDIA LIMITED"
+        },
+        {
+            "MFSL": "MAX FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "KEI": "KEI INDUSTRIES LIMITED"
+        },
+        {
+            "AIAENG": "AIA ENGINEERING LIMITED"
+        },
+        {
+            "DEEPAKNTR": "DEEPAK NITRITE LIMITED"
+        },
+        {
+            "NATIONALUM": "NATIONAL ALUMINIUM COMPANY LIMITED"
+        },
+        {
+            "BLUESTARCO": "BLUE STAR LIMITED"
+        },
+        {
+            "NIACL": "THE NEW INDIA ASSURANCE COMPANY LIMITED"
+        },
+        {
+            "PSB": "PUNJAB & SIND BANK"
+        },
+        {
+            "APARINDS": "APAR INDUSTRIES LIMITED"
+        },
+        {
+            "AJANTPHARM": "AJANTA PHARMA LIMITED"
+        },
+        {
+            "IPCALAB": "IPCA LABORATORIES LIMITED"
+        },
+        {
+            "LICHSGFIN": "LIC HOUSING FINANCE LIMITED"
+        },
+        {
+            "NLCINDIA": "NLC INDIA LIMITED"
+        },
+        {
+            "M&MFIN": "MAHINDRA & MAHINDRA FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "IRB": "IRB INFRASTRUCTURE DEVELOPERS LIMITED"
+        },
+        {
+            "CRISIL": "CRISIL LIMITED"
+        },
+        {
+            "GODREJIND": "GODREJ INDUSTRIES LIMITED"
+        },
+        {
+            "DALBHARAT": "DALMIA BHARAT LIMITED"
+        },
+        {
+            "SYNGENE": "SYNGENE INTERNATIONAL LIMITED"
+        },
+        {
+            "ENDURANCE": "ENDURANCE TECHNOLOGIES LIMITED"
+        },
+        {
+            "METROBRAND": "METRO BRANDS LIMITED"
+        },
+        {
+            "JKCEMENT": "JK CEMENT LIMITED"
+        },
+        {
+            "KAYNES": "KAYNES TECHNOLOGY INDIA LIMITED"
+        },
+        {
+            "TATAINVEST": "TATA INVESTMENT CORPORATION LIMITED"
+        },
+        {
+            "IKS": "INVENTURUS KNOWLEDGE SOLUTIONS LIMITED"
+        },
+        {
+            "IGL": "INDRAPRASTHA GAS LIMITED"
+        },
+        {
+            "ABFRL": "ADITYA BIRLA FASHION AND RETAIL LIMITED"
+        },
+        {
+            "APOLLOTYRE": "APOLLO TYRES LIMITED"
+        },
+        {
+            "FIRSTCRY": "BRAINBEES SOLUTIONS LIMITED"
+        },
+        {
+            "STARHEALTH": "STAR HEALTH AND ALLIED INSURANCE COMPANY LIMITED"
+        },
+        {
+            "GODIGIT": "GO DIGIT GENERAL INSURANCE LIMITED"
+        },
+        {
+            "MRPL": "MANGALORE REFINERY AND PETROCHEMICALS LIMITED"
+        },
+        {
+            "EMAMILTD": "EMAMI LIMITED"
+        },
+        {
+            "KPRMILL": "K.P.R. MILL LIMITED"
+        },
+        {
+            "CHOLAHLDNG": "CHOLAMANDALAM FINANCIAL HOLDINGS LIMITED"
+        },
+        {
+            "SUNTV": "SUN TV NETWORK LIMITED"
+        },
+        {
+            "CDSL": "CENTRAL DEPOSITORY SERVICES (INDIA) LIMITED"
+        },
+        {
+            "MANYAVAR": "VEDANT FASHIONS LIMITED"
+        },
+        {
+            "BANDHANBNK": "BANDHAN BANK LIMITED"
+        },
+        {
+            "GLAND": "GLAND PHARMA LIMITED"
+        },
+        {
+            "GODFRYPHLP": "GODFREY PHILLIPS INDIA LIMITED"
+        },
+        {
+            "MEDANTA": "GLOBAL HEALTH LIMITED"
+        },
+        {
+            "MSUMI": "MOTHERSON SUMI WIRING INDIA LIMITED"
+        },
+        {
+            "BRIGADE": "BRIGADE ENTERPRISES LIMITED"
+        },
+        {
+            "NBCC": "NBCC (INDIA) LIMITED"
+        },
+        {
+            "HINDCOPPER": "HINDUSTAN COPPER LIMITED"
+        },
+        {
+            "POONAWALLA": "POONAWALLA FINCORP LIMITED"
+        },
+        {
+            "PPLPHARMA": "PIRAMAL PHARMA LIMITED"
+        },
+        {
+            "SUVENPHAR": "SUVEN PHARMACEUTICALS LIMITED"
+        },
+        {
+            "JBCHEPHARM": "JB CHEMICALS & PHARMACEUTICALS LIMITED"
+        },
+        {
+            "DELHIVERY": "DELHIVERY LIMITED"
+        },
+        {
+            "GILLETTE": "GILLETTE INDIA LIMITED"
+        },
+        {
+            "CARBORUNIV": "CARBORUNDUM UNIVERSAL LIMITED"
+        },
+        {
+            "ABREL": "ADITYA BIRLA REAL ESTATE LIMITED"
+        },
+        {
+            "BASF": "BASF INDIA LIMITED"
+        },
+        {
+            "ZFCVINDIA": "ZF COMMERCIAL VEHICLE CONTROL SYSTEMS INDIA LIMITED"
+        },
+        {
+            "AEGISLOG": "AEGIS LOGISTICS LIMITED"
+        },
+        {
+            "ITI": "ITI LIMITED"
+        },
+        {
+            "RADICO": "RADICO KHAITAN LIMITED"
+        },
+        {
+            "SUNDRMFAST": "SUNDRAM FASTENERS LIMITED"
+        },
+        {
+            "TIMKEN": "TIMKEN INDIA LIMITED"
+        },
+        {
+            "TATACHEM": "TATA CHEMICALS LIMITED"
+        },
+        {
+            "CROMPTON": "CROMPTON GREAVES CONSUMER ELECTRICALS LIMITED"
+        },
+        {
+            "ISEC": "ICICI SECURITIES LIMITED"
+        },
+        {
+            "JYOTICNC": "JYOTI CNC AUTOMATION LIMITED"
+        },
+        {
+            "SUMICHEM": "SUMITOMO CHEMICAL INDIA LIMITED"
+        },
+        {
+            "LALPATHLAB": "DR. LAL PATH LABS LIMITED"
+        },
+        {
+            "INOXWIND": "INOX WIND LIMITED"
+        },
+        {
+            "HSCL": "HIMADRI SPECIALITY CHEMICAL LIMITED"
+        },
+        {
+            "LAURUSLABS": "LAURUS LABS LIMITED"
+        },
+        {
+            "EMCURE": "EMCURE PHARMACEUTICALS LIMITED"
+        },
+        {
+            "TVSHLTD": "TVS HOLDINGS LIMITED"
+        },
+        {
+            "GRINDWELL": "GRINDWELL NORTON LIMITED"
+        },
+        {
+            "AIIL": "AUTHUM INVESTMENT & INFRASTRUCTURE LIMITED"
+        },
+        {
+            "WHIRLPOOL": "WHIRLPOOL OF INDIA LIMITED"
+        },
+        {
+            "SKFINDIA": "SKF INDIA LIMITED"
+        },
+        {
+            "ARE&M": "AMARA RAJA ENERGY & MOBILITY LIMITED"
+        },
+        {
+            "HATSUN": "HATSUN AGRO PRODUCT LIMITED"
+        },
+        {
+            "NH": "NARAYANA HRUDAYALAYA LIMITED"
+        },
+        {
+            "NATCOPHARM": "NATCO PHARMA LIMITED"
+        },
+        {
+            "KEC": "KEC INTERNATIONAL LIMITED"
+        },
+        {
+            "RATNAMANI": "RATNAMANI METALS & TUBES LIMITED"
+        },
+        {
+            "PFIZER": "PFIZER LIMITED"
+        },
+        {
+            "EIHOTEL": "EIH LIMITED"
+        },
+        {
+            "CESC": "CESC LIMITED"
+        },
+        {
+            "KIOCL": "KIOCL LIMITED"
+        },
+        {
+            "PEL": "PIRAMAL ENTERPRISES LIMITED"
+        },
+        {
+            "POLYMED": "POLY MEDICURE LIMITED"
+        },
+        {
+            "ANGELONE": "ANGEL ONE LIMITED"
+        },
+        {
+            "PNBHOUSING": "PNB HOUSING FINANCE LIMITED"
+        },
+        {
+            "IGIL": "INTERNATIONAL GEMMOLOGICAL INSTITUTE (INDIA) LIMITED"
+        },
+        {
+            "CASTROLIND": "CASTROL INDIA LIMITED"
+        },
+        {
+            "KANSAINER": "KANSAI NEROLAC PAINTS LIMITED"
+        },
+        {
+            "NUVAMA": "NUVAMA WEALTH MANAGEMENT LIMITED"
+        },
+        {
+            "IRCON": "IRCON INTERNATIONAL LIMITED"
+        },
+        {
+            "JWL": "JUPITER WAGONS LIMITED"
+        },
+        {
+            "TRITURBINE": "TRIVENI TURBINE LIMITED"
+        },
+        {
+            "SHYAMMETL": "SHYAM METALICS AND ENERGY LIMITED"
+        },
+        {
+            "ANANTRAJ": "ANANT RAJ LIMITED"
+        },
+        {
+            "FSL": "FIRSTSOURCE SOLUTIONS LIMITED"
+        },
+        {
+            "ATUL": "ATUL LIMITED"
+        },
+        {
+            "CAMS": "COMPUTER AGE MANAGEMENT SERVICES LIMITED"
+        },
+        {
+            "AFFLE": "AFFLE (INDIA) LIMITED"
+        },
+        {
+            "TEJASNET": "TEJAS NETWORKS LIMITED"
+        },
+        {
+            "FIVESTAR": "FIVE-STAR BUSINESS FINANCE LIMITED"
+        },
+        {
+            "APLLTD": "ALEMBIC PHARMACEUTICALS LIMITED"
+        },
+        {
+            "ABSLAMC": "ADITYA BIRLA SUN LIFE AMC LIMITED"
+        },
+        {
+            "JBMA": "JBM AUTO LIMITED"
+        },
+        {
+            "KAJARIACER": "KAJARIA CERAMICS LIMITED"
+        },
+        {
+            "DEVYANI": "DEVYANI INTERNATIONAL LIMITED"
+        },
+        {
+            "GRSE": "GARDEN REACH SHIPBUILDERS & ENGINEERS LIMITED"
+        },
+        {
+            "CYIENT": "CYIENT LIMITED"
+        },
+        {
+            "GSPL": "GUJARAT STATE PETRONET LIMITED"
+        },
+        {
+            "FINCABLES": "FINOLEX CABLES LIMITED"
+        },
+        {
+            "ELGIEQUIP": "ELGI EQUIPMENTS LIMITED"
+        },
+        {
+            "KIMS": "KRISHNA INSTITUTE OF MEDICAL SCIENCES LIMITED"
+        },
+        {
+            "KPIL": "KALPATARU PROJECTS INTERNATIONAL LIMITED"
+        },
+        {
+            "ASTERDM": "ASTER DM HEALTHCARE LIMITED"
+        },
+        {
+            "RAMCOCEM": "THE RAMCO CEMENTS LIMITED"
+        },
+        {
+            "JINDALSAW": "JINDAL SAW LIMITED"
+        },
+        {
+            "BIKAJI": "BIKAJI FOODS INTERNATIONAL LIMITED"
+        },
+        {
+            "AARTIIND": "AARTI INDUSTRIES LIMITED"
+        },
+        {
+            "CIEINDIA": "CIE AUTOMOTIVE INDIA LIMITED"
+        },
+        {
+            "CHAMBLFERT": "CHAMBAL FERTILIZERS & CHEMICALS LIMITED"
+        },
+        {
+            "VINATIORGA": "VINATI ORGANICS LIMITED"
+        },
+        {
+            "SIGNATURE": "SIGNATUREGLOBAL (INDIA) LIMITED"
+        }
+    ],
+    "midstocks": [
+        {
+            "SWANENERGY": "SWAN ENERGY LIMITED"
+        },
+        {
+            "CONCORDBIO": "CONCORD BIOTECH LIMITED"
+        },
+        {
+            "NCC": "NCC LIMITED"
+        },
+        {
+            "VGUARD": "V-GUARD INDUSTRIES LIMITED"
+        },
+        {
+            "PTCIL": "PTC INDUSTRIES LIMITED"
+        },
+        {
+            "SCHNEIDER": "SCHNEIDER ELECTRIC INFRASTRUCTURE LIMITED"
+        },
+        {
+            "IIFL": "IIFL FINANCE LIMITED"
+        },
+        {
+            "RELAXO": "RELAXO FOOTWEARS LIMITED"
+        },
+        {
+            "HFCL": "HFCL LIMITED"
+        },
+        {
+            "BLUEDART": "BLUE DART EXPRESS LIMITED"
+        },
+        {
+            "CHALET": "CHALET HOTELS LIMITED"
+        },
+        {
+            "CELLO": "CELLO WORLD LIMITED"
+        },
+        {
+            "AFCONS": "AFCONS INFRASTRUCTURE LIMITED"
+        },
+        {
+            "AADHARHFC": "AADHAR HOUSING FINANCE LIMITED"
+        },
+        {
+            "WELCORP": "WELSPUN CORP LIMITED"
+        },
+        {
+            "TBOTEK": "TBO TEK LIMITED"
+        },
+        {
+            "BATAINDIA": "BATA INDIA LIMITED"
+        },
+        {
+            "RRKABEL": "R R KABEL LIMITED"
+        },
+        {
+            "TRIDENT": "TRIDENT LIMITED"
+        },
+        {
+            "SAGILITY": "SAGILITY INDIA LIMITED"
+        },
+        {
+            "JYOTHYLAB": "JYOTHY LABS LIMITED"
+        },
+        {
+            "FINPIPE": "FINOLEX INDUSTRIES LIMITED"
+        },
+        {
+            "TITAGARH": "TITAGARH RAIL SYSTEMS LIMITED"
+        },
+        {
+            "IDFC": "IDFC LIMITED             "
+        },
+        {
+            "TECHNOE": "TECHNO ELECTRIC & ENGINEERING COMPANY LIMITED"
+        },
+        {
+            "SONATSOFTW": "SONATA SOFTWARE LIMITED"
+        },
+        {
+            "CREDITACC": "CREDITACCESS GRAMEEN LIMITED"
+        },
+        {
+            "KFINTECH": "KFIN TECHNOLOGIES LIMITED"
+        },
+        {
+            "GESHIP": "THE GREAT EASTERN SHIPPING COMPANY LIMITED"
+        },
+        {
+            "ERIS": "ERIS LIFESCIENCES LIMITED"
+        },
+        {
+            "AMBER": "AMBER ENTERPRISES INDIA LIMITED"
+        },
+        {
+            "KARURVYSYA": "KARUR VYSYA BANK LIMITED"
+        },
+        {
+            "CENTURYPLY": "CENTURY PLYBOARDS (INDIA) LIMITED"
+        },
+        {
+            "KIRLOSENG": "KIRLOSKAR OIL ENGINES LIMITED"
+        },
+        {
+            "JAIBALAJI": "JAI BALAJI INDUSTRIES LIMITED"
+        },
+        {
+            "IFCI": "IFCI LIMITED"
+        },
+        {
+            "ASTRAZEN": "ASTRAZENECA PHARMA INDIA LIMITED"
+        },
+        {
+            "LMW": "LMW LIMITED"
+        },
+        {
+            "BBTC": "BOMBAY BURMAH TRADING CORPORATION LIMITED"
+        },
+        {
+            "BEML": "BEML LIMITED"
+        },
+        {
+            "BSOFT": "BIRLASOFT LIMITED"
+        },
+        {
+            "RKFORGE": "RAMKRISHNA FORGINGS LIMITED"
+        },
+        {
+            "DCMSHRIRAM": "DCM SHRIRAM LIMITED"
+        },
+        {
+            "NAVINFLUOR": "NAVIN FLUORINE INTERNATIONAL LIMITED"
+        },
+        {
+            "WOCKPHARMA": "WOCKHARDT LIMITED"
+        },
+        {
+            "ASAHIINDIA": "ASAHI INDIA GLASS LIMITED"
+        },
+        {
+            "CGCL": "CAPRI GLOBAL CAPITAL LIMITED"
+        },
+        {
+            "ZENSARTECH": "ZENSAR TECHNOLOGIES LIMITED"
+        },
+        {
+            "IEX": "INDIAN ENERGY EXCHANGE LIMITED"
+        },
+        {
+            "HBLENGINE": "HBL ENGINEERING LIMITED"
+        },
+        {
+            "NEWGEN": "NEWGEN SOFTWARE TECHNOLOGIES LIMITED"
+        },
+        {
+            "VENTIVE": "VENTIVE HOSPITALITY LIMITED"
+        },
+        {
+            "APTUS": "APTUS VALUE HOUSING FINANCE INDIA LIMITED"
+        },
+        {
+            "SOBHA": "SOBHA LIMITED"
+        },
+        {
+            "ANANDRATHI": "ANAND RATHI WEALTH LIMITED"
+        },
+        {
+            "BLS": "BLS INTERNATIONAL SERVICES LIMITED"
+        },
+        {
+            "JUBLPHARMA": "JUBILANT PHARMOVA LIMITED"
+        },
+        {
+            "WELSPUNLIV": "WELSPUN LIVING LIMITED"
+        },
+        {
+            "TTML": "TATA TELESERVICES (MAHARASHTRA) LIMITED"
+        },
+        {
+            "NEULANDLAB": "NEULAND LABORATORIES LIMITED"
+        },
+        {
+            "INDIAMART": "INDIAMART INTERMESH LIMITED"
+        },
+        {
+            "PCBL": "PCBL LIMITED"
+        },
+        {
+            "ACE": "ACTION CONSTRUCTION EQUIPMENT LIMITED"
+        },
+        {
+            "AKZOINDIA": "AKZO NOBEL INDIA LIMITED"
+        },
+        {
+            "MANAPPURAM": "MANAPPURAM FINANCE LIMITED"
+        },
+        {
+            "MGL": "MAHANAGAR GAS LIMITED"
+        },
+        {
+            "KIRLOSBROS": "KIRLOSKAR BROTHERS LIMITED"
+        },
+        {
+            "DOMS": "DOMS INDUSTRIES LIMITED"
+        },
+        {
+            "PGEL": "PG ELECTROPLAST LIMITED"
+        },
+        {
+            "CLEAN": "CLEAN SCIENCE AND TECHNOLOGY LIMITED"
+        },
+        {
+            "FINEORG": "FINE ORGANIC INDUSTRIES LIMITED"
+        },
+        {
+            "GRINFRA": "G R INFRAPROJECTS LIMITED"
+        },
+        {
+            "ZENTEC": "ZEN TECHNOLOGIES LIMITED"
+        },
+        {
+            "ACMESOLAR": "ACME SOLAR HOLDINGS LIMITED"
+        },
+        {
+            "RITES": "RITES LIMITED"
+        },
+        {
+            "REDINGTON": "REDINGTON LIMITED"
+        },
+        {
+            "SAILIFE": "SAI LIFE SCIENCES LIMITED"
+        },
+        {
+            "KSB": "KSB LIMITED"
+        },
+        {
+            "UTIAMC": "UTI ASSET MANAGEMENT COMPANY LIMITED"
+        },
+        {
+            "SANOFI": "SANOFI INDIA LIMITED"
+        },
+        {
+            "SPLPETRO": "SUPREME PETROCHEM LIMITED"
+        },
+        {
+            "DATAPATTNS": "DATA PATTERNS (INDIA) LIMITED"
+        },
+        {
+            "NSLNISP": "NMDC STEEL LIMITED"
+        },
+        {
+            "INDGN": "INDEGENE LIMITED"
+        },
+        {
+            "GODREJAGRO": "GODREJ AGROVET LIMITED"
+        },
+        {
+            "PVRINOX": "PVR INOX LIMITED"
+        },
+        {
+            "RPOWER": "RELIANCE POWER LIMITED"
+        },
+        {
+            "NIVABUPA": "NIVA BUPA HEALTH INSURANCE COMPANY LIMITED"
+        },
+        {
+            "NETWEB": "NETWEB TECHNOLOGIES INDIA LIMITED"
+        },
+        {
+            "EIDPARRY": "EID PARRY INDIA LIMITED"
+        },
+        {
+            "CAPLIPOINT": "CAPLIN POINT LABORATORIES LIMITED"
+        },
+        {
+            "GRAVITA": "GRAVITA INDIA LIMITED"
+        },
+        {
+            "RAILTEL": "RAILTEL CORPORATION OF INDIA LIMITED"
+        },
+        {
+            "VTL": "VARDHMAN TEXTILES LIMITED"
+        },
+        {
+            "ECLERX": "ECLERX SERVICES LIMITED"
+        },
+        {
+            "GRANULES": "GRANULES INDIA LIMITED"
+        },
+        {
+            "SWSOLAR": "STERLING AND WILSON RENEWABLE ENERGY LIMITED"
+        },
+        {
+            "RAINBOW": "RAINBOW CHILDRENS MEDICARE LIMITED"
+        },
+        {
+            "NAVA": "NAVA LIMITED"
+        },
+        {
+            "ELECON": "ELECON ENGINEERING COMPANY LIMITED"
+        },
+        {
+            "GPIL": "GODAWARI POWER AND ISPAT LIMITED"
+        },
+        {
+            "SARDAEN": "SARDA ENERGY & MINERALS LIMITED"
+        },
+        {
+            "PRAJIND": "PRAJ INDUSTRIES LIMITED"
+        },
+        {
+            "AAVAS": "AAVAS FINANCIERS LIMITED"
+        },
+        {
+            "DEEPAKFERT": "DEEPAK FERTILIZERS AND PETROCHEMICALS CORPORATION LIMITED"
+        },
+        {
+            "INGERRAND": "INGERSOLL RAND (INDIA) LIMITED"
+        },
+        {
+            "RAYMONDLSL": "RAYMOND LIFESTYLE LIMITED"
+        },
+        {
+            "OLECTRA": "OLECTRA GREENTECH LIMITED"
+        },
+        {
+            "ZYDUSWELL": "ZYDUS WELLNESS LIMITED"
+        },
+        {
+            "HONASA": "HONASA CONSUMER LIMITED"
+        },
+        {
+            "MMTC": "MMTC LIMITED"
+        },
+        {
+            "CRAFTSMAN": "CRAFTSMAN AUTOMATION LIMITED"
+        },
+        {
+            "IWEL": "INOX WIND ENERGY LIMITED"
+        },
+        {
+            "ZEEL": "ZEE ENTERTAINMENT ENTERPRISES LIMITED"
+        },
+        {
+            "WESTLIFE": "WESTLIFE FOODWORLD LIMITED"
+        },
+        {
+            "LTFOODS": "LT FOODS LIMITED"
+        },
+        {
+            "GLS": "GLENMARK LIFE SCIENCES LIMITED"
+        },
+        {
+            "JPPOWER": "JAIPRAKASH POWER VENTURES LIMITED"
+        },
+        {
+            "MINDACORP": "MINDA CORPORATION LIMITED"
+        },
+        {
+            "CUB": "CITY UNION BANK LIMITED"
+        },
+        {
+            "INTELLECT": "INTELLECT DESIGN ARENA LIMITED"
+        },
+        {
+            "NUVOCO": "NUVOCO VISTAS CORPORATION LIMITED"
+        },
+        {
+            "RAYMOND": "RAYMOND LIMITED"
+        },
+        {
+            "CHENNPETRO": "CHENNAI PETROLEUM CORPORATION LIMITED"
+        },
+        {
+            "AKUMS": "AKUMS DRUGS AND PHARMACEUTICALS LIMITED"
+        },
+        {
+            "VOLTAMP": "VOLTAMP TRANSFORMERS LIMITED"
+        },
+        {
+            "TARIL": "TRANSFORMERS AND RECTIFIERS (INDIA) LIMITED"
+        },
+        {
+            "TTKPRESTIG": "TTK PRESTIGE LIMITED"
+        },
+        {
+            "GENUSPOWER": "GENUS POWER INFRASTRUCTURES LIMITED"
+        },
+        {
+            "ALOKINDS": "ALOK INDUSTRIES LIMITED"
+        },
+        {
+            "RBLBANK": "RBL BANK LIMITED"
+        },
+        {
+            "ENGINERSIN": "ENGINEERS INDIA LIMITED"
+        },
+        {
+            "RHIM": "RHI MAGNESITA INDIA LIMITED"
+        },
+        {
+            "MARKSANS": "MARKSANS PHARMA LIMITED"
+        },
+        {
+            "HAPPSTMNDS": "HAPPIEST MINDS TECHNOLOGIES LIMITED"
+        },
+        {
+            "TEGA": "TEGA INDUSTRIES LIMITED"
+        },
+        {
+            "AETHER": "AETHER INDUSTRIES LIMITED"
+        },
+        {
+            "JMFINANCIL": "JM FINANCIAL LIMITED"
+        },
+        {
+            "SAFARI": "SAFARI INDUSTRIES (INDIA) LIMITED"
+        },
+        {
+            "CEATLTD": "CEAT LIMITED"
+        },
+        {
+            "SCI": "SHIPPING CORPORATION OF INDIA LIMITED"
+        },
+        {
+            "GMDCLTD": "GUJARAT MINERAL DEVELOPMENT CORPORATION LIMITED"
+        },
+        {
+            "J&KBANK": "THE JAMMU & KASHMIR BANK LIMITED"
+        },
+        {
+            "MAHSCOOTER": "MAHARASHTRA SCOOTERS LIMITED"
+        },
+        {
+            "USHAMART": "USHA MARTIN LIMITED"
+        },
+        {
+            "TANLA": "TANLA PLATFORMS LIMITED"
+        },
+        {
+            "STAR": "STRIDES PHARMA SCIENCE LIMITED"
+        },
+        {
+            "ELECTCAST": "ELECTROSTEEL CASTINGS LIMITED"
+        },
+        {
+            "SANOFICONR": "SANOFI CONSUMER HEALTHCARE INDIA LIMITED"
+        },
+        {
+            "CANFINHOME": "CAN FIN HOMES LIMITED"
+        },
+        {
+            "BALRAMCHIN": "BALRAMPUR CHINI MILLS LIMITED"
+        },
+        {
+            "JUBLINGREA": "JUBILANT INGREVIA LIMITED"
+        },
+        {
+            "EUREKAFORB": "EUREKA FORBES LIMITED"
+        },
+        {
+            "JSWHL": "JSW HOLDINGS LIMITED"
+        },
+        {
+            "MAPMYINDIA": "C.E. INFO SYSTEMS LIMITED"
+        },
+        {
+            "INDIACEM": "THE INDIA CEMENTS LIMITED"
+        },
+        {
+            "KPIGREEN": "KPI GREEN ENERGY LIMITED"
+        },
+        {
+            "REDTAPE": "REDTAPE LIMITED"
+        },
+        {
+            "HAPPYFORGE": "HAPPY FORGINGS LIMITED"
+        },
+        {
+            "METROPOLIS": "METROPOLIS HEALTHCARE LIMITED"
+        },
+        {
+            "JKTYRE": "JK TYRE & INDUSTRIES LIMITED"
+        },
+        {
+            "INOXINDIA": "INOX INDIA LIMITED"
+        },
+        {
+            "CERA": "CERA SANITARYWARE LIMITED"
+        },
+        {
+            "ALKYLAMINE": "ALKYL AMINES CHEMICALS LIMITED"
+        },
+        {
+            "VESUVIUS": "VESUVIUS INDIA LIMITED"
+        },
+        {
+            "QUESS": "QUESS CORP LIMITED"
+        },
+        {
+            "PRUDENT": "PRUDENT CORPORATE ADVISORY SERVICES LIMITED"
+        },
+        {
+            "BAJAJELEC": "BAJAJ ELECTRICALS LIMITED"
+        },
+        {
+            "GRAPHITE": "GRAPHITE INDIA LIMITED"
+        },
+        {
+            "PNCINFRA": "PNC INFRATECH LIMITED"
+        },
+        {
+            "LEMONTREE": "LEMON TREE HOTELS LIMITED"
+        },
+        {
+            "SAPPHIRE": "SAPPHIRE FOODS INDIA LIMITED"
+        },
+        {
+            "NETWORK18": "NETWORK18 MEDIA & INVESTMENTS LIMITED"
+        },
+        {
+            "ISGEC": "ISGEC HEAVY ENGINEERING LIMITED"
+        },
+        {
+            "GALAXYSURF": "GALAXY SURFACTANTS LIMITED"
+        },
+        {
+            "RCF": "RASHTRIYA CHEMICALS AND FERTILIZERS LIMITED"
+        },
+        {
+            "RTNINDIA": "RATTANINDIA ENTERPRISES LIMITED"
+        },
+        {
+            "SYMPHONY": "SYMPHONY LIMITED"
+        },
+        {
+            "PURVA": "PURAVANKARA LIMITED"
+        },
+        {
+            "GPPL": "GUJARAT PIPAVAV PORT LIMITED"
+        },
+        {
+            "BIRLACORPN": "BIRLA CORPORATION LIMITED"
+        },
+        {
+            "SAREGAMA": "SAREGAMA INDIA LIMITED"
+        },
+        {
+            "DBREALTY": "VALOR ESTATE LIMITED"
+        },
+        {
+            "BECTORFOOD": "MRS. BECTORS FOOD SPECIALITIES LIMITED"
+        },
+        {
+            "ARVIND": "ARVIND LIMITED"
+        },
+        {
+            "THOMASCOOK": "THOMAS COOK  (INDIA)  LIMITED"
+        },
+        {
+            "SFL": "SHEELA FOAM LIMITED"
+        },
+        {
+            "RELINFRA": "RELIANCE INFRASTRUCTURE LIMITED"
+        },
+        {
+            "LATENTVIEW": "LATENT VIEW ANALYTICS LIMITED"
+        },
+        {
+            "EDELWEISS": "EDELWEISS FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "HOMEFIRST": "HOME FIRST FINANCE COMPANY INDIA LIMITED"
+        },
+        {
+            "PNGJL": "P N GADGIL JEWELLERS LIMITED"
+        },
+        {
+            "FORCEMOT": "FORCE MOTORS LIMITED"
+        },
+        {
+            "JUSTDIAL": "JUST DIAL LIMITED"
+        },
+        {
+            "ROUTE": "ROUTE MOBILE LIMITED"
+        },
+        {
+            "HGINFRA": "H.G. INFRA ENGINEERING LIMITED"
+        },
+        {
+            "IONEXCHANG": "ION EXCHANGE (INDIA) LIMITED"
+        },
+        {
+            "RENUKA": "SHREE RENUKA SUGARS LIMITED"
+        },
+        {
+            "VIJAYA": "VIJAYA DIAGNOSTIC CENTRE LIMITED"
+        },
+        {
+            "SAMMAANCAP": "SAMMAAN CAPITAL LIMITED"
+        },
+        {
+            "JKLAKSHMI": "JK LAKSHMI CEMENT LIMITED"
+        },
+        {
+            "AZAD": "AZAD ENGINEERING LIMITED"
+        },
+        {
+            "ESABINDIA": "ESAB INDIA LIMITED"
+        },
+        {
+            "GNFC": "GUJARAT NARMADA VALLEY FERTILIZERS AND CHEMICALS LIMITED"
+        },
+        {
+            "TIPSMUSIC": "TIPS MUSIC LIMITED"
+        },
+        {
+            "WABAG": "VA TECH WABAG LIMITED"
+        },
+        {
+            "TRIVENI": "TRIVENI ENGINEERING & INDUSTRIES LIMITED"
+        },
+        {
+            "KNRCON": "KNR CONSTRUCTIONS LIMITED"
+        },
+        {
+            "IIFLCAPS": "IIFL CAPITAL SERVICES LIMITED"
+        },
+        {
+            "ABDL": "ALLIED BLENDERS AND DISTILLERS LIMITED"
+        },
+        {
+            "POWERMECH": "POWER MECH PROJECTS LIMITED"
+        },
+        {
+            "CHOICEIN": "CHOICE INTERNATIONAL LIMITED"
+        },
+        {
+            "KIRLPNU": "KIRLOSKAR PNEUMATIC COMPANY LIMITED"
+        },
+        {
+            "AURIONPRO": "AURIONPRO SOLUTIONS LIMITED"
+        },
+        {
+            "CCL": "CCL PRODUCTS (INDIA) LIMITED"
+        },
+        {
+            "SHAKTIPUMP": "SHAKTI PUMPS (INDIA) LIMITED"
+        },
+        {
+            "SBFC": "SBFC FINANCE LIMITED"
+        },
+        {
+            "PRSMJOHNSN": "PRISM JOHNSON LIMITED"
+        },
+        {
+            "JLHL": "JUPITER LIFE LINE HOSPITALS LIMITED"
+        },
+        {
+            "TEXRAIL": "TEXMACO RAIL & ENGINEERING LIMITED"
+        },
+        {
+            "CAMPUS": "CAMPUS ACTIVEWEAR LIMITED"
+        },
+        {
+            "ITDCEM": "ITD CEMENTATION INDIA LIMITED"
+        },
+        {
+            "SHRIPISTON": "SHRIRAM PISTONS & RINGS LIMITED"
+        },
+        {
+            "TIMETECHNO": "TIME TECHNOPLAST LIMITED"
+        },
+        {
+            "SENCO": "SENCO GOLD LIMITED"
+        },
+        {
+            "MASTEK": "MASTEK LIMITED"
+        },
+        {
+            "LLOYDSENGG": "LLOYDS ENGINEERING WORKS LIMITED"
+        },
+        {
+            "BBOX": "BLACK BOX LIMITED"
+        },
+        {
+            "RATEGAIN": "RATEGAIN TRAVEL TECHNOLOGIES LIMITED"
+        },
+        {
+            "GSFC": "GUJARAT STATE FERTILIZERS & CHEMICALS LIMITED"
+        },
+        {
+            "CMSINFO": "CMS INFO SYSTEMS LIMITED"
+        },
+        {
+            "RUSTOMJEE": "KEYSTONE REALTORS LIMITED"
+        },
+        {
+            "MAXESTATES": "MAX ESTATES LIMITED"
+        },
+        {
+            "VARROC": "VARROC ENGINEERING LIMITED"
+        },
+        {
+            "PGHL": "PROCTER & GAMBLE HEALTH LIMITED"
+        },
+        {
+            "MAHSEAMLES": "MAHARASHTRA SEAMLESS LIMITED"
+        },
+        {
+            "HEG": "HEG LIMITED"
+        },
+        {
+            "RELIGARE": "RELIGARE ENTERPRISES LIMITED"
+        },
+        {
+            "AVANTIFEED": "AVANTI FEEDS LIMITED"
+        },
+        {
+            "ACI": "ARCHEAN CHEMICAL INDUSTRIES LIMITED"
+        },
+        {
+            "EQUITASBNK": "EQUITAS SMALL FINANCE BANK LIMITED"
+        },
+        {
+            "SYRMA": "SYRMA SGS TECHNOLOGY LIMITED"
+        },
+        {
+            "STARCEMENT": "STAR CEMENT LIMITED"
+        },
+        {
+            "BLUEJET": "BLUE JET HEALTHCARE LIMITED"
+        },
+        {
+            "ASKAUTOLTD": "ASK AUTOMOTIVE LIMITED"
+        },
+        {
+            "GRWRHITECH": "GARWARE HI-TECH FILMS LIMITED"
+        },
+        {
+            "SANSERA": "SANSERA ENGINEERING LIMITED"
+        },
+        {
+            "FDC": "FDC LIMITED"
+        },
+        {
+            "JUNIPER": "JUNIPER HOTELS LIMITED"
+        },
+        {
+            "MEDPLUS": "MEDPLUS HEALTH SERVICES LIMITED"
+        },
+        {
+            "GALLANTT": "GALLANTT ISPAT LIMITED"
+        },
+        {
+            "KTKBANK": "THE KARNATAKA BANK LIMITED"
+        },
+        {
+            "MAHLIFE": "MAHINDRA LIFESPACE DEVELOPERS LIMITED"
+        },
+        {
+            "TCI": "TRANSPORT CORPORATION OF INDIA LIMITED"
+        },
+        {
+            "TVSSCS": "TVS SUPPLY CHAIN SOLUTIONS LIMITED"
+        },
+        {
+            "GANESHHOUC": "GANESH HOUSING CORPORATION LIMITED"
+        },
+        {
+            "ANURAS": "ANUPAM RASAYAN INDIA LIMITED"
+        },
+        {
+            "GMRP&UI": "GMR POWER AND URBAN INFRA LIMITED"
+        },
+        {
+            "SUNTECK": "SUNTECK REALTY LIMITED"
+        },
+        {
+            "EMBDL": "EQUINOX INDIA DEVELOPMENTS LIMITED"
+        },
+        {
+            "RTNPOWER": "RATTANINDIA POWER LIMITED"
+        },
+        {
+            "MHRIL": "MAHINDRA HOLIDAYS & RESORTS INDIA LIMITED"
+        },
+        {
+            "RAJESHEXPO": "RAJESH EXPORTS LIMITED"
+        },
+        {
+            "GARFIBRES": "GARWARE TECHNICAL FIBRES LIMITED"
+        },
+        {
+            "EPIGRAL": "EPIGRAL LIMITED"
+        },
+        {
+            "JKPAPER": "JK PAPER LIMITED"
+        },
+        {
+            "SHOPERSTOP": "SHOPPERS STOP LIMITED"
+        },
+        {
+            "INFIBEAM": "INFIBEAM AVENUES LIMITED"
+        },
+        {
+            "EPL": "EPL LIMITED"
+        },
+        {
+            "MOIL": "MOIL LIMITED"
+        },
+        {
+            "ASTRAMICRO": "ASTRA MICROWAVE PRODUCTS LIMITED"
+        },
+        {
+            "CHEMPLASTS": "CHEMPLAST SANMAR LIMITED"
+        },
+        {
+            "SANDUMA": "SANDUR MANGANESE & IRON ORES LIMITED"
+        },
+        {
+            "AHLUCONT": "AHLUWALIA CONTRACTS (INDIA) LIMITED"
+        },
+        {
+            "EMIL": "ELECTRONICS MART INDIA LIMITED"
+        },
+        {
+            "DIACABS": "DIAMOND POWER INFRASTRUCTURE LIMITED"
+        },
+        {
+            "TV18BRDCST": "TV18 BROADCAST LIMITED   "
+        },
+        {
+            "UJJIVANSFB": "UJJIVAN SMALL FINANCE BANK LIMITED"
+        },
+        {
+            "SHILPAMED": "SHILPA MEDICARE LIMITED"
+        },
+        {
+            "INDIASHLTR": "INDIA SHELTER FINANCE CORPORATION LIMITED"
+        },
+        {
+            "PARADEEP": "PARADEEP PHOSPHATES LIMITED"
+        },
+        {
+            "ETHOSLTD": "ETHOS LIMITED"
+        },
+        {
+            "ICIL": "INDO COUNT INDUSTRIES LIMITED"
+        },
+        {
+            "VMART": "V-MART RETAIL LIMITED"
+        },
+        {
+            "LXCHEM": "LAXMI ORGANIC INDUSTRIES LIMITED"
+        },
+        {
+            "WELENT": "WELSPUN ENTERPRISES LIMITED"
+        },
+        {
+            "HCC": "HINDUSTAN CONSTRUCTION COMPANY LIMITED"
+        },
+        {
+            "DBL": "DILIP BUILDCON LIMITED"
+        },
+        {
+            "MIDHANI": "MISHRA DHATU NIGAM LIMITED"
+        },
+        {
+            "PDSL": "PDS LIMITED"
+        },
+        {
+            "MANINFRA": "MAN INFRACONSTRUCTION LIMITED"
+        },
+        {
+            "IFBIND": "IFB INDUSTRIES LIMITED"
+        },
+        {
+            "TRANSRAILL": "TRANSRAIL LIGHTING LIMITED"
+        },
+        {
+            "DHANUKA": "DHANUKA AGRITECH LIMITED"
+        },
+        {
+            "TMB": "TAMILNAD MERCANTILE BANK LIMITED"
+        },
+        {
+            "ORCHPHARMA": "ORCHID PHARMA LIMITED"
+        },
+        {
+            "NAZARA": "NAZARA TECHNOLOGIES LIMITED"
+        },
+        {
+            "RESPONIND": "RESPONSIVE INDUSTRIES LIMITED"
+        },
+        {
+            "EMUDHRA": "EMUDHRA LIMITED"
+        },
+        {
+            "ARVINDFASN": "ARVIND FASHIONS LIMITED"
+        },
+        {
+            "DODLA": "DODLA DAIRY LIMITED"
+        },
+        {
+            "SUNDARMHLD": "SUNDARAM FINANCE HOLDINGS LIMITED"
+        },
+        {
+            "BALUFORGE": "BALU FORGE INDUSTRIES LIMITED"
+        },
+        {
+            "TIIL": "TECHNOCRAFT INDUSTRIES (INDIA) LIMITED"
+        },
+        {
+            "INDIGOPNTS": "INDIGO PAINTS LIMITED"
+        },
+        {
+            "SUPRAJIT": "SUPRAJIT ENGINEERING LIMITED"
+        },
+        {
+            "BALAMINES": "BALAJI AMINES LIMITED"
+        },
+        {
+            "GREENLAM": "GREENLAM INDUSTRIES LIMITED"
+        },
+        {
+            "SPARC": "SUN PHARMA ADVANCED RESEARCH COMPANY LIMITED"
+        },
+        {
+            "JINDWORLD": "JINDAL WORLDWIDE LIMITED"
+        },
+        {
+            "SUDARSCHEM": "SUDARSHAN CHEMICAL INDUSTRIES LIMITED"
+        },
+        {
+            "UNIMECH": "UNIMECH AEROSPACE AND MANUFACTURING LIMITED"
+        },
+        {
+            "GABRIEL": "GABRIEL INDIA LIMITED"
+        },
+        {
+            "ASHOKA": "ASHOKA BUILDCON LIMITED"
+        },
+        {
+            "VIPIND": "VIP INDUSTRIES LIMITED"
+        },
+        {
+            "SURYAROSNI": "SURYA ROSHNI LIMITED"
+        },
+        {
+            "BLACKBUCK": "ZINKA LOGISTICS SOLUTIONS LIMITED"
+        },
+        {
+            "KRBL": "KRBL LIMITED"
+        },
+        {
+            "GOKEX": "GOKALDAS EXPORTS LIMITED"
+        },
+        {
+            "SHARDAMOTR": "SHARDA MOTOR INDUSTRIES LIMITED"
+        },
+        {
+            "AMIORG": "AMI ORGANICS LIMITED"
+        },
+        {
+            "NESCO": "NESCO LIMITED"
+        },
+        {
+            "KESORAMIND": "KESORAM INDUSTRIES LIMITED"
+        },
+        {
+            "HNDFDS": "HINDUSTAN FOODS LIMITED"
+        },
+        {
+            "ORIENTCEM": "ORIENT CEMENT LIMITED"
+        },
+        {
+            "SOUTHBANK": "THE SOUTH INDIAN BANK LIMITED"
+        },
+        {
+            "TARC": "TARC LIMITED"
+        },
+        {
+            "BORORENEW": "BOROSIL RENEWABLES LIMITED"
+        },
+        {
+            "TDPOWERSYS": "TD POWER SYSTEMS LIMITED"
+        },
+        {
+            "EASEMYTRIP": "EASY TRIP PLANNERS LIMITED"
+        },
+        {
+            "NIITMTS": "NIIT LEARNING SYSTEMS LIMITED"
+        },
+        {
+            "BANSALWIRE": "BANSAL WIRE INDUSTRIES LIMITED"
+        },
+        {
+            "RALLIS": "RALLIS INDIA LIMITED"
+        },
+        {
+            "PRIVISCL": "PRIVI SPECIALITY CHEMICALS LIMITED"
+        },
+        {
+            "CEIGALL": "CEIGALL INDIA LIMITED"
+        },
+        {
+            "JAICORPLTD": "JAI CORP LIMITED"
+        },
+        {
+            "VSTIND": "VST INDUSTRIES LIMITED"
+        },
+        {
+            "NFL": "NATIONAL FERTILIZERS LIMITED"
+        },
+        {
+            "STLTECH": "STERLITE TECHNOLOGIES LIMITED"
+        },
+        {
+            "ICRA": "ICRA LIMITED"
+        },
+        {
+            "PILANIINVS": "PILANI INVESTMENT AND INDUSTRIES CORPORATION LIMITED"
+        },
+        {
+            "ROLEXRINGS": "ROLEX RINGS LIMITED"
+        },
+        {
+            "AVL": "ADITYA VISION LIMITED"
+        },
+        {
+            "GOCOLORS": "GO FASHION (INDIA) LIMITED"
+        },
+        {
+            "UEL": "UJAAS ENERGY LIMITED     "
+        },
+        {
+            "GULFOILLUB": "GULF OIL LUBRICANTS INDIA LIMITED"
+        },
+        {
+            "LUXIND": "LUX INDUSTRIES LIMITED"
+        },
+        {
+            "PCJEWELLER": "PC JEWELLER LIMITED"
+        },
+        {
+            "GMMPFAUDLR": "GMM PFAUDLER LIMITED"
+        },
+        {
+            "GAEL": "GUJARAT AMBUJA EXPORTS LIMITED"
+        },
+        {
+            "SHAREINDIA": "SHARE INDIA SECURITIES LIMITED"
+        },
+        {
+            "IXIGO": "LE TRAVENUES TECHNOLOGY LIMITED"
+        },
+        {
+            "AGI": "AGI GREENPAC LIMITED"
+        },
+        {
+            "LLOYDSENT": "LLOYDS ENTERPRISES LIMITED"
+        },
+        {
+            "PRINCEPIPE": "PRINCE PIPES AND FITTINGS LIMITED"
+        },
+        {
+            "PRICOLLTD": "PRICOL LIMITED"
+        },
+        {
+            "GHCL": "GHCL LIMITED"
+        },
+        {
+            "ALLCARGO": "ALLCARGO LOGISTICS LIMITED"
+        },
+        {
+            "JKIL": "J.KUMAR INFRAPROJECTS LIMITED"
+        },
+        {
+            "ITDC": "INDIA TOURISM DEVELOPMENT CORPORATION LIMITED"
+        },
+        {
+            "TI": "TILAKNAGAR INDUSTRIES LIMITED"
+        },
+        {
+            "HCG": "HEALTHCARE GLOBAL ENTERPRISES LIMITED"
+        },
+        {
+            "DBCORP": "D.B.CORP LIMITED"
+        },
+        {
+            "SIS": "SIS LIMITED"
+        },
+        {
+            "GUJALKALI": "GUJARAT ALKALIES AND CHEMICALS LIMITED"
+        },
+        {
+            "RSYSTEMS": "R SYSTEMS INTERNATIONAL LIMITED"
+        },
+        {
+            "PTC": "PTC INDIA LIMITED"
+        },
+        {
+            "ENTERO": "ENTERO HEALTHCARE SOLUTIONS LIMITED"
+        },
+        {
+            "SHARDACROP": "SHARDA CROPCHEM LIMITED"
+        },
+        {
+            "INOXGREEN": "INOX GREEN ENERGY SERVICES LIMITED"
+        },
+        {
+            "AARTIPHARM": "AARTI PHARMALABS LIMITED"
+        },
+        {
+            "RAIN": "RAIN INDUSTRIES LIMITED"
+        },
+        {
+            "CSBBANK": "CSB BANK LIMITED"
+        },
+        {
+            "CYIENTDLM": "CYIENT DLM LIMITED"
+        },
+        {
+            "THANGAMAYL": "THANGAMAYIL JEWELLERY LIMITED"
+        },
+        {
+            "BANCOINDIA": "BANCO PRODUCTS (I) LIMITED"
+        },
+        {
+            "JSFB": "JANA SMALL FINANCE BANK LIMITED"
+        },
+        {
+            "JCHAC": "JOHNSON CONTROLS - HITACHI AIR CONDITIONING INDIA LIMITED"
+        },
+        {
+            "HEMIPROP": "HEMISPHERE PROPERTIES INDIA LIMITED"
+        },
+        {
+            "MTARTECH": "MTAR TECHNOLOGIES LIMITED"
+        },
+        {
+            "NPST": "NETWORK PEOPLE SERVICES TECHNOLOGIES LIMITED"
+        },
+        {
+            "ORIENTELEC": "ORIENT ELECTRIC LIMITED"
+        },
+        {
+            "MANORAMA": "MANORAMA INDUSTRIES LIMITED"
+        },
+        {
+            "MSTCLTD": "MSTC LIMITED"
+        },
+        {
+            "PAISALO": "PAISALO DIGITAL LIMITED"
+        },
+        {
+            "KIRLOSIND": "KIRLOSKAR INDUSTRIES LIMITED"
+        },
+        {
+            "OPTIEMUS": "OPTIEMUS INFRACOM LIMITED"
+        },
+        {
+            "ANUP": "THE ANUP ENGINEERING LIMITED"
+        },
+        {
+            "EIEL": "ENVIRO INFRA ENGINEERS LIMITED"
+        },
+        {
+            "BBL": "BHARAT BIJLEE LIMITED"
+        },
+        {
+            "DYNAMATECH": "DYNAMATIC TECHNOLOGIES LIMITED"
+        },
+        {
+            "MASFIN": "MAS FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "HEIDELBERG": "HEIDELBERGCEMENT INDIA LIMITED"
+        },
+        {
+            "ZAGGLE": "ZAGGLE PREPAID OCEAN SERVICES LIMITED"
+        },
+        {
+            "HERITGFOOD": "HERITAGE FOODS LIMITED"
+        },
+        {
+            "VAIBHAVGBL": "VAIBHAV GLOBAL LIMITED"
+        },
+        {
+            "KSCL": "KAVERI SEED COMPANY LIMITED"
+        },
+        {
+            "TEAMLEASE": "TEAMLEASE SERVICES LIMITED"
+        },
+        {
+            "CARTRADE": "CARTRADE TECH LIMITED"
+        }
+    ],
+    "smallstocks": [
+        {
+            "RBA": "RESTAURANT BRANDS ASIA LIMITED"
+        },
+        {
+            "NEOGEN": "NEOGEN CHEMICALS LIMITED"
+        },
+        {
+            "SKIPPER": "SKIPPER LIMITED"
+        },
+        {
+            "GANECOS": "GANESHA ECOSPHERE LIMITED"
+        },
+        {
+            "VRLLOG": "VRL LOGISTICS LIMITED"
+        },
+        {
+            "AWFIS": "AWFIS SPACE SOLUTIONS LIMITED"
+        },
+        {
+            "BOROLTD": "BOROSIL LIMITED"
+        },
+        {
+            "GOPAL": "GOPAL SNACKS LIMITED"
+        },
+        {
+            "UTKARSHBNK": "UTKARSH SMALL FINANCE BANK LIMITED"
+        },
+        {
+            "REFEX": "REFEX INDUSTRIES LIMITED"
+        },
+        {
+            "E2E": "E2E NETWORKS LIMITED"
+        },
+        {
+            "WONDERLA": "WONDERLA HOLIDAYS LIMITED"
+        },
+        {
+            "ADVENZYMES": "ADVANCED ENZYME TECHNOLOGIES LIMITED"
+        },
+        {
+            "BHARATRAS": "BHARAT RASAYAN LIMITED"
+        },
+        {
+            "SHAILY": "SHAILY ENGINEERING PLASTICS LIMITED"
+        },
+        {
+            "BAJAJHIND": "BAJAJ HINDUSTHAN SUGAR LIMITED"
+        },
+        {
+            "UNICHEMLAB": "UNICHEM LABORATORIES LIMITED"
+        },
+        {
+            "ORISSAMINE": "THE ORISSA MINERALS DEVELOPMENT COMPANY LIMITED"
+        },
+        {
+            "PATELENG": "PATEL ENGINEERING LIMITED"
+        },
+        {
+            "YATHARTH": "YATHARTH HOSPITAL & TRAUMA CARE SERVICES LIMITED"
+        },
+        {
+            "HARSHA": "HARSHA ENGINEERS INTERNATIONAL LIMITED"
+        },
+        {
+            "NOCIL": "NOCIL LIMITED"
+        },
+        {
+            "GATEWAY": "GATEWAY DISTRIPARKS LIMITED"
+        },
+        {
+            "ROSSARI": "ROSSARI BIOTECH LIMITED"
+        },
+        {
+            "JAMNAAUTO": "JAMNA AUTO INDUSTRIES LIMITED"
+        },
+        {
+            "SUPRIYA": "SUPRIYA LIFESCIENCE LIMITED"
+        },
+        {
+            "AARTIDRUGS": "AARTI DRUGS LIMITED"
+        },
+        {
+            "WEBELSOLAR": "WEBSOL ENERGY SYSTEM LIMITED"
+        },
+        {
+            "JISLJALEQS": "JAIN IRRIGATION SYSTEMS LIMITED"
+        },
+        {
+            "THYROCARE": "THYROCARE TECHNOLOGIES LIMITED"
+        },
+        {
+            "PITTIENG": "PITTI ENGINEERING LIMITED"
+        },
+        {
+            "PGIL": "PEARL GLOBAL INDUSTRIES LIMITED"
+        },
+        {
+            "RAMKY": "RAMKY INFRASTRUCTURE LIMITED"
+        },
+        {
+            "JTEKTINDIA": "JTEKT INDIA LIMITED"
+        },
+        {
+            "STYRENIX": "STYRENIX PERFORMANCE MATERIALS LIMITED"
+        },
+        {
+            "HIKAL": "HIKAL LIMITED"
+        },
+        {
+            "UFLEX": "UFLEX LIMITED"
+        },
+        {
+            "PARAS": "PARAS DEFENCE AND SPACE TECHNOLOGIES LIMITED"
+        },
+        {
+            "GREENPANEL": "GREENPANEL INDUSTRIES LIMITED"
+        },
+        {
+            "SHANTIGEAR": "SHANTHI GEARS LIMITED"
+        },
+        {
+            "SUBROS": "SUBROS LIMITED"
+        },
+        {
+            "BOMDYEING": "BOMBAY DYEING & MFG COMPANY LIMITED"
+        },
+        {
+            "EMSLIMITED": "EMS LIMITED"
+        },
+        {
+            "INNOVACAP": "INNOVA CAPTAB LIMITED"
+        },
+        {
+            "MOBIKWIK": "ONE MOBIKWIK SYSTEMS LIMITED"
+        },
+        {
+            "SUNCLAY": "SUNDARAM CLAYTON LIMITED"
+        },
+        {
+            "JAYNECOIND": "JAYASWAL NECO INDUSTRIES LIMITED"
+        },
+        {
+            "GREENPLY": "GREENPLY INDUSTRIES LIMITED"
+        },
+        {
+            "BALMLAWRIE": "BALMER LAWRIE & COMPANY LIMITED"
+        },
+        {
+            "IMAGICAA": "IMAGICAAWORLD ENTERTAINMENT LIMITED"
+        },
+        {
+            "SEQUENT": "SEQUENT SCIENTIFIC LIMITED"
+        },
+        {
+            "ORIANA": "ORIANA POWER LIMITED"
+        },
+        {
+            "BANARISUG": "BANNARI AMMAN SUGARS LIMITED"
+        },
+        {
+            "SAMHI": "SAMHI HOTELS LIMITED"
+        },
+        {
+            "FEDFINA": "FEDBANK FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "BHAGCHEM": "BHAGIRADHA CHEMICALS & INDUSTRIES LIMITED"
+        },
+        {
+            "EXICOM": "EXICOM TELE-SYSTEMS LIMITED"
+        },
+        {
+            "GREAVESCOT": "GREAVES COTTON LIMITED"
+        },
+        {
+            "AVALON": "AVALON TECHNOLOGIES LIMITED"
+        },
+        {
+            "LGBBROSLTD": "LG BALAKRISHNAN & BROS LIMITED"
+        },
+        {
+            "MEDIASSIST": "MEDI ASSIST HEALTHCARE SERVICES LIMITED"
+        },
+        {
+            "AVANTEL": "AVANTEL LIMITED"
+        },
+        {
+            "SKYGOLD": "SKY GOLD LIMITED"
+        },
+        {
+            "PFOCUS": "PRIME FOCUS LIMITED"
+        },
+        {
+            "ISMTLTD": "ISMT LIMITED             "
+        },
+        {
+            "SUNFLAG": "SUNFLAG IRON AND STEEL COMPANY LIMITED"
+        },
+        {
+            "FCL": "FINEOTEX CHEMICAL LIMITED"
+        },
+        {
+            "MOREPENLAB": "MOREPEN LABORATORIES LIMITED"
+        },
+        {
+            "NORTHARC": "NORTHERN ARC CAPITAL LIMITED"
+        },
+        {
+            "VENUSPIPES": "VENUS PIPES & TUBES LIMITED"
+        },
+        {
+            "V2RETAIL": "V2 RETAIL LIMITED"
+        },
+        {
+            "GUFICBIO": "GUFIC BIOSCIENCES LIMITED"
+        },
+        {
+            "JTLIND": "JTL INDUSTRIES LIMITED"
+        },
+        {
+            "FIEMIND": "FIEM INDUSTRIES LIMITED"
+        },
+        {
+            "CIGNITITEC": "CIGNITI TECHNOLOGIES LIMITED"
+        },
+        {
+            "WSTCSTPAPR": "WEST COAST PAPER MILLS LIMITED"
+        },
+        {
+            "IMFA": "INDIAN METALS & FERRO ALLOYS LIMITED"
+        },
+        {
+            "TCIEXP": "TCI EXPRESS LIMITED"
+        },
+        {
+            "KKCL": "KEWAL KIRAN CLOTHING LIMITED"
+        },
+        {
+            "KPEL": "K.P. ENERGY LIMITED"
+        },
+        {
+            "JSLL": "JEENA SIKHO LIFECARE LIMITED"
+        },
+        {
+            "GOKULAGRO": "GOKUL AGRO RESOURCES LIMITED"
+        },
+        {
+            "KRN": "KRN HEAT EXCHANGER AND REFRIGERATION LIMITED"
+        },
+        {
+            "SOTL": "SAVITA OIL TECHNOLOGIES LIMITED"
+        },
+        {
+            "SULA": "SULA VINEYARDS LIMITED"
+        },
+        {
+            "JNKINDIA": "JNK INDIA LIMITED"
+        },
+        {
+            "DCBBANK": "DCB BANK LIMITED"
+        },
+        {
+            "DCXINDIA": "DCX SYSTEMS LIMITED"
+        },
+        {
+            "VSTTILLERS": "V.S.T TILLERS TRACTORS LIMITED"
+        },
+        {
+            "INDIAGLYCO": "INDIA GLYCOLS LIMITED"
+        },
+        {
+            "KSL": "KALYANI STEELS LIMITED"
+        },
+        {
+            "DHANI": "DHANI SERVICES LIMITED"
+        },
+        {
+            "KDDL": "KDDL LIMITED"
+        },
+        {
+            "SPANDANA": "SPANDANA SPHOORTY FINANCIAL LIMITED"
+        },
+        {
+            "VEEDOL": "VEEDOL CORPORATION LIMITED"
+        },
+        {
+            "SEPC": "SEPC LIMITED"
+        },
+        {
+            "ARTEMISMED": "ARTEMIS MEDICARE SERVICES LIMITED"
+        },
+        {
+            "LUMAXTECH": "LUMAX AUTO TECHNOLOGIES LIMITED"
+        },
+        {
+            "POLYPLEX": "POLYPLEX CORPORATION LIMITED"
+        },
+        {
+            "SWARAJENG": "SWARAJ ENGINES LIMITED"
+        },
+        {
+            "HONDAPOWER": "HONDA INDIA POWER PRODUCTS LIMITED"
+        },
+        {
+            "KINGFA": "KINGFA SCIENCE & TECHNOLOGY (INDIA) LIMITED"
+        },
+        {
+            "LAOPALA": "LA OPALA RG LIMITED"
+        },
+        {
+            "ARVSMART": "ARVIND SMARTSPACES LIMITED"
+        },
+        {
+            "PARKHOTELS": "APEEJAY SURRENDRA PARK HOTELS LIMITED"
+        },
+        {
+            "MUTHOOTMF": "MUTHOOT MICROFIN LIMITED"
+        },
+        {
+            "HGS": "HINDUJA GLOBAL SOLUTIONS LIMITED"
+        },
+        {
+            "STYLAMIND": "STYLAM INDUSTRIES LIMITED"
+        },
+        {
+            "HMT": "HMT LIMITED"
+        },
+        {
+            "MPSLTD": "MPS LIMITED"
+        },
+        {
+            "INDRAMEDCO": "INDRAPRASTHA MEDICAL CORPORATION LIMITED"
+        },
+        {
+            "RPGLIFE": "RPG LIFE SCIENCES LIMITED"
+        },
+        {
+            "SANGHVIMOV": "SANGHVI MOVERS LIMITED"
+        },
+        {
+            "CARRARO": "CARRARO INDIA LIMITED"
+        },
+        {
+            "BEPL": "BHANSALI ENGINEERING POLYMERS LIMITED"
+        },
+        {
+            "JINDALPOLY": "JINDAL POLY FILMS LIMITED"
+        },
+        {
+            "DATAMATICS": "DATAMATICS GLOBAL SERVICES LIMITED"
+        },
+        {
+            "HPL": "HPL ELECTRIC & POWER LIMITED"
+        },
+        {
+            "DALMIASUG": "DALMIA BHARAT SUGAR AND INDUSTRIES LIMITED"
+        },
+        {
+            "ALEMBICLTD": "ALEMBIC LIMITED"
+        },
+        {
+            "SCILAL": "SHIPPING CORPORATION OF INDIA LAND AND ASSETS LIMITED"
+        },
+        {
+            "HATHWAY": "HATHWAY CABLE & DATACOM LIMITED"
+        },
+        {
+            "TCNSBRANDS": "TCNS CLOTHING CO. LIMITED"
+        },
+        {
+            "CARERATING": "CARE RATINGS LIMITED"
+        },
+        {
+            "SHK": "S H KELKAR AND COMPANY LIMITED"
+        },
+        {
+            "SBCL": "SHIVALIK BIMETAL CONTROLS LIMITED"
+        },
+        {
+            "MTNL": "MAHANAGAR TELEPHONE NIGAM LIMITED"
+        },
+        {
+            "SEAMECLTD": "SEAMEC LIMITED"
+        },
+        {
+            "INDOSTAR": "INDOSTAR CAPITAL FINANCE LIMITED"
+        },
+        {
+            "SERVOTECH": "SERVOTECH POWER SYSTEMS LIMITED"
+        },
+        {
+            "ASHIANA": "ASHIANA HOUSING LIMITED"
+        },
+        {
+            "SANDHAR": "SANDHAR TECHNOLOGIES LIMITED"
+        },
+        {
+            "GIPCL": "GUJARAT INDUSTRIES POWER COMPANY LIMITED"
+        },
+        {
+            "DPABHUSHAN": "D. P. ABHUSHAN LIMITED"
+        },
+        {
+            "EPACK": "EPACK DURABLE LIMITED"
+        },
+        {
+            "SINDHUTRAD": "SINDHU TRADE LINKS LIMITED"
+        },
+        {
+            "BAJAJCON": "BAJAJ CONSUMER CARE LIMITED"
+        },
+        {
+            "SSWL": "STEEL STRIPS WHEELS LIMITED"
+        },
+        {
+            "QUICKHEAL": "QUICK HEAL TECHNOLOGIES LIMITED"
+        },
+        {
+            "NUCLEUS": "NUCLEUS SOFTWARE EXPORTS LIMITED"
+        },
+        {
+            "DELTACORP": "DELTA CORP LIMITED"
+        },
+        {
+            "NAVNETEDUL": "NAVNEET EDUCATION LIMITED"
+        },
+        {
+            "TIRUMALCHM": "THIRUMALAI CHEMICALS LIMITED"
+        },
+        {
+            "BFUTILITIE": "BF UTILITIES LIMITED"
+        },
+        {
+            "MAHLOG": "MAHINDRA LOGISTICS LIMITED"
+        },
+        {
+            "RPSGVENT": "RPSG VENTURES LIMITED"
+        },
+        {
+            "GENSOL": "GENSOL ENGINEERING LIMITED"
+        },
+        {
+            "GOLDIAM": "GOLDIAM INTERNATIONAL LIMITED"
+        },
+        {
+            "VPRPL": "VISHNU PRAKASH R PUNGLIA LIMITED"
+        },
+        {
+            "MARINE": "MARINE ELECTRICALS (INDIA) LIMITED"
+        },
+        {
+            "PRAKASH": "PRAKASH INDUSTRIES LIMITED"
+        },
+        {
+            "GEOJITFSL": "GEOJIT FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "GOODLUCK": "GOODLUCK INDIA LIMITED"
+        },
+        {
+            "MAITHANALL": "MAITHAN ALLOYS LIMITED"
+        },
+        {
+            "KITEX": "KITEX GARMENTS LIMITED"
+        },
+        {
+            "SJS": "S.J.S. ENTERPRISES LIMITED"
+        },
+        {
+            "PRECWIRE": "PRECISION WIRES INDIA LIMITED"
+        },
+        {
+            "GTLINFRA": "GTL INFRASTRUCTURE LIMITED"
+        },
+        {
+            "DCAL": "DISHMAN CARBOGEN AMCIS LIMITED"
+        },
+        {
+            "FLAIR": "FLAIR WRITING INDUSTRIES LIMITED"
+        },
+        {
+            "SANATHAN": "SANATHAN TEXTILES LIMITED"
+        },
+        {
+            "TVSSRICHAK": "TVS SRICHAKRA LIMITED"
+        },
+        {
+            "PFS": "PTC INDIA FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "SAKSOFT": "SAKSOFT LIMITED"
+        },
+        {
+            "APOLLO": "APOLLO MICRO SYSTEMS LIMITED"
+        },
+        {
+            "CAPACITE": "CAPACITE INFRAPROJECTS LIMITED"
+        },
+        {
+            "REPCOHOME": "REPCO HOME FINANCE LIMITED"
+        },
+        {
+            "MARATHON": "MARATHON NEXTGEN REALTY LIMITED"
+        },
+        {
+            "INDOCO": "INDOCO REMEDIES LIMITED"
+        },
+        {
+            "BAJEL": "BAJEL PROJECTS LIMITED"
+        },
+        {
+            "KCP": "KCP LIMITED"
+        },
+        {
+            "SURAJEST": "SURAJ ESTATE DEVELOPERS LIMITED"
+        },
+        {
+            "ASHAPURMIN": "ASHAPURA MINECHEM LIMITED"
+        },
+        {
+            "WENDT": "WENDT (INDIA) LIMITED"
+        },
+        {
+            "GENESYS": "GENESYS INTERNATIONAL CORPORATION LIMITED"
+        },
+        {
+            "JASH": "JASH ENGINEERING LIMITED"
+        },
+        {
+            "POKARNA": "POKARNA LIMITED"
+        },
+        {
+            "ADFFOODS": "ADF FOODS LIMITED"
+        },
+        {
+            "EVEREADY": "EVEREADY INDUSTRIES INDIA LIMITED"
+        },
+        {
+            "SALASAR": "SALASAR TECHNO ENGINEERING LIMITED"
+        },
+        {
+            "FINOPB": "FINO PAYMENTS BANK LIMITED"
+        },
+        {
+            "SAGCEM": "SAGAR CEMENTS LIMITED"
+        },
+        {
+            "NSIL": "NALWA SONS INVESTMENTS LIMITED"
+        },
+        {
+            "TASTYBITE": "TASTY BITE EATABLES LIMITED"
+        },
+        {
+            "RPEL": "RAGHAV PRODUCTIVITY ENHANCERS LIMITED"
+        },
+        {
+            "HINDOILEXP": "HINDUSTAN OIL EXPLORATION COMPANY LIMITED"
+        },
+        {
+            "SUVEN": "SUVEN LIFE SCIENCES LIMITED"
+        },
+        {
+            "KOLTEPATIL": "KOLTE - PATIL DEVELOPERS LIMITED"
+        },
+        {
+            "PREMEXPLN": "PREMIER EXPLOSIVES LIMITED"
+        },
+        {
+            "SPECTRUM": "SPECTRUM ELECTRICAL INDUSTRIES LIMITED"
+        },
+        {
+            "NRBBEARING": "NRB BEARING LIMITED"
+        },
+        {
+            "DOLLAR": "DOLLAR INDUSTRIES LIMITED"
+        },
+        {
+            "ORIENTHOT": "ORIENTAL HOTELS LIMITED"
+        },
+        {
+            "SOMANYCERA": "SOMANY CERAMICS LIMITED"
+        },
+        {
+            "IDEAFORGE": "IDEAFORGE TECHNOLOGY LIMITED"
+        },
+        {
+            "FOSECOIND": "FOSECO INDIA LIMITED"
+        },
+        {
+            "VADILALIND": "VADILAL INDUSTRIES LIMITED"
+        },
+        {
+            "AJMERA": "AJMERA REALTY & INFRA INDIA LIMITED"
+        },
+        {
+            "HITECH": "HI-TECH PIPES LIMITED"
+        },
+        {
+            "AUTOAXLES": "AUTOMOTIVE AXLES LIMITED"
+        },
+        {
+            "GLOBUSSPR": "GLOBUS SPIRITS LIMITED"
+        },
+        {
+            "GEPIL": "GE POWER INDIA LIMITED"
+        },
+        {
+            "TCPLPACK": "TCPL PACKAGING LIMITED"
+        },
+        {
+            "NILKAMAL": "NILKAMAL LIMITED"
+        },
+        {
+            "ARKADE": "ARKADE DEVELOPERS LIMITED"
+        },
+        {
+            "SUMMITSEC": "SUMMIT SECURITIES LIMITED"
+        },
+        {
+            "RAJRATAN": "RAJRATAN GLOBAL WIRE LIMITED"
+        },
+        {
+            "DREDGECORP": "DREDGING CORPORATION OF INDIA LIMITED"
+        },
+        {
+            "STANLEY": "STANLEY LIFESTYLES LIMITED"
+        },
+        {
+            "VISHNU": "VISHNU CHEMICALS LIMITED"
+        },
+        {
+            "FUSION": "FUSION FINANCE LIMITED"
+        },
+        {
+            "THEJO": "THEJO ENGINEERING LIMITED"
+        },
+        {
+            "SHALBY": "SHALBY LIMITED"
+        },
+        {
+            "DEEPINDS": "DEEP INDUSTRIES LIMITED"
+        },
+        {
+            "VENKEYS": "VENKY'S (INDIA) LIMITED"
+        },
+        {
+            "HLEGLAS": "HLE GLASCOAT LIMITED"
+        },
+        {
+            "KICL": "KALYANI INVESTMENT COMPANY LIMITED"
+        },
+        {
+            "DAMCAPITAL": "DAM CAPITAL ADVISORS LIMITED"
+        },
+        {
+            "VINDHYATEL": "VINDHYA TELELINKS LIMITED"
+        },
+        {
+            "FILATEX": "FILATEX INDIA LIMITED"
+        },
+        {
+            "SIYSIL": "SIYARAM SILK MILLS LIMITED"
+        },
+        {
+            "MONARCH": "MONARCH NETWORTH CAPITAL LIMITED"
+        },
+        {
+            "MAYURUNIQ": "MAYUR UNIQUOTERS LIMITED"
+        },
+        {
+            "MMFL": "MM FORGINGS LIMITED"
+        },
+        {
+            "UNITECH": "UNITECH LIMITED"
+        },
+        {
+            "HUHTAMAKI": "HUHTAMAKI INDIA LIMITED"
+        },
+        {
+            "RANEHOLDIN": "RANE HOLDINGS LIMITED"
+        },
+        {
+            "SMLISUZU": "SML ISUZU LIMITED"
+        },
+        {
+            "VAKRANGEE": "VAKRANGEE LIMITED"
+        },
+        {
+            "SASKEN": "SASKEN TECHNOLOGIES LIMITED"
+        },
+        {
+            "KALAMANDIR": "SAI SILKS (KALAMANDIR) LIMITED"
+        },
+        {
+            "RPTECH": "RASHI PERIPHERALS LIMITED"
+        },
+        {
+            "HINDWAREAP": "HINDWARE HOME INNOVATION LIMITED"
+        },
+        {
+            "PSPPROJECT": "PSP PROJECTS LIMITED"
+        },
+        {
+            "KRSNAA": "KRSNAA DIAGNOSTICS LIMITED"
+        },
+        {
+            "CONFIPET": "CONFIDENCE PETROLEUM INDIA LIMITED"
+        },
+        {
+            "XPROINDIA": "XPRO INDIA LIMITED"
+        },
+        {
+            "LANDMARK": "LANDMARK CARS LIMITED"
+        },
+        {
+            "SENORES": "SENORES PHARMACEUTICALS LIMITED"
+        },
+        {
+            "STYLEBAAZA": "BAAZAR STYLE RETAIL LIMITED"
+        },
+        {
+            "STOVEKRAFT": "STOVE KRAFT LIMITED"
+        },
+        {
+            "SOLARA": "SOLARA ACTIVE PHARMA SCIENCES LIMITED"
+        },
+        {
+            "DCW": "DCW LIMITED"
+        },
+        {
+            "SABTNL": "SRI ADHIKARI BROTHERS TELEVISION NETWORK LIMITED"
+        },
+        {
+            "JYOTISTRUC": "JYOTI STRUCTURES LIMITED"
+        },
+        {
+            "ACCELYA": "ACCELYA SOLUTIONS INDIA LIMITED"
+        },
+        {
+            "EIHAHOTELS": "EIH ASSOCIATED HOTELS LIMITED"
+        },
+        {
+            "PENIND": "PENNAR INDUSTRIES LIMITED"
+        },
+        {
+            "SMSPHARMA": "SMS PHARMACEUTICALS LIMITED"
+        },
+        {
+            "DOLATALGO": "DOLAT ALGOTECH LIMITED"
+        },
+        {
+            "DISHTV": "DISH TV INDIA LIMITED"
+        },
+        {
+            "MANGLMCEM": "MANGALAM CEMENT LIMITED"
+        },
+        {
+            "BFINVEST": "BF INVESTMENT LIMITED"
+        },
+        {
+            "PRECAM": "PRECISION CAMSHAFTS LIMITED"
+        },
+        {
+            "IOLCP": "IOL CHEMICALS AND PHARMACEUTICALS LIMITED"
+        },
+        {
+            "INTERARCH": "INTERARCH BUILDING PRODUCTS LIMITED"
+        },
+        {
+            "MOLDTKPAC": "MOLD-TEK PACKAGING LIMITED"
+        },
+        {
+            "RAMRAT": "RAM RATNA WIRES LIMITED"
+        },
+        {
+            "JUBLINDS": "JUBILANT INDUSTRIES LIMITED"
+        },
+        {
+            "LUMAXIND": "LUMAX INDUSTRIES LIMITED"
+        },
+        {
+            "INDIANHUME": "INDIAN HUME PIPE COMPANY LIMITED"
+        },
+        {
+            "MANINDS": "MAN INDUSTRIES (INDIA) LIMITED"
+        },
+        {
+            "UDS": "UPDATER SERVICES LIMITED"
+        },
+        {
+            "INSECTICID": "INSECTICIDES (INDIA) LIMITED"
+        },
+        {
+            "MOL": "MEGHMANI ORGANICS LIMITED"
+        },
+        {
+            "THEMISMED": "THEMIS MEDICARE LIMITED"
+        },
+        {
+            "DREAMFOLKS": "DREAMFOLKS SERVICES LIMITED"
+        },
+        {
+            "PIXTRANS": "PIX TRANSMISSIONS LIMITED"
+        },
+        {
+            "ECOSMOBLTY": "ECOS (INDIA) MOBILITY & HOSPITALITY LIMITED"
+        },
+        {
+            "PARACABLES": "PARAMOUNT COMMUNICATIONS LIMITED"
+        },
+        {
+            "ESAFSFB": "ESAF SMALL FINANCE BANK LIMITED"
+        },
+        {
+            "DOLPHIN": "DOLPHIN OFFSHORE ENTERPRISES (INDIA) LIMITED"
+        },
+        {
+            "INDOTECH": "INDO TECH TRANSFORMERS LIMITED"
+        },
+        {
+            "TARSONS": "TARSONS PRODUCTS LIMITED"
+        },
+        {
+            "DEN": "DEN NETWORKS LIMITED"
+        },
+        {
+            "KMEW": "KNOWLEDGE MARINE & ENGINEERING WORKS LIMITED"
+        },
+        {
+            "HMAAGRO": "HMA AGRO INDUSTRIES LIMITED"
+        },
+        {
+            "PANAMAPET": "PANAMA PETROCHEM LIMITED"
+        },
+        {
+            "NELCO": "NELCO LIMITED"
+        },
+        {
+            "AEROFLEX": "AEROFLEX INDUSTRIES LIMITED"
+        },
+        {
+            "MOTISONS": "MOTISONS JEWELLERS LIMITED"
+        },
+        {
+            "PARAGMILK": "PARAG MILK FOODS LIMITED"
+        },
+        {
+            "FMGOETZE": "FEDERAL-MOGUL GOETZE (INDIA) LIMITED."
+        },
+        {
+            "VIDHIING": "VIDHI SPECIALTY FOOD INGREDIENTS LIMITED"
+        },
+        {
+            "IPL": "INDIA PESTICIDES LIMITED"
+        },
+        {
+            "OWAIS": "OWAIS METAL AND MINERAL PROCESSING LIMITED"
+        },
+        {
+            "NITINSPIN": "NITIN SPINNERS LIMITED"
+        },
+        {
+            "APOLLOPIPE": "APOLLO PIPES LIMITED"
+        },
+        {
+            "63MOONS": "63 MOONS TECHNOLOGIES LIMITED"
+        },
+        {
+            "DIAMONDYD": "PRATAAP SNACKS LIMITED"
+        },
+        {
+            "AXISCADES": "AXISCADES TECHNOLOGIES LIMITED"
+        },
+        {
+            "UGROCAP": "UGRO CAPITAL LIMITED"
+        },
+        {
+            "SANSTAR": "SANSTAR LIMITED"
+        },
+        {
+            "ASTEC": "ASTEC LIFESCIENCES LIMITED"
+        },
+        {
+            "RUPA": "RUPA & COMPANY LIMITED"
+        },
+        {
+            "CUPID": "CUPID LIMITED"
+        },
+        {
+            "UNIVCABLES": "UNIVERSAL CABLES LIMITED"
+        },
+        {
+            "TATVA": "TATVA CHINTAN PHARMA CHEM LIMITED"
+        },
+        {
+            "SPAL": "S. P. APPARELS LIMITED"
+        },
+        {
+            "CENTUM": "CENTUM ELECTRONICS LIMITED"
+        },
+        {
+            "CARYSIL": "CARYSIL LIMITED"
+        },
+        {
+            "BARBEQUE": "BARBEQUE NATION HOSPITALITY LIMITED"
+        },
+        {
+            "VSSL": "VARDHMAN SPECIAL STEELS LIMITED"
+        },
+        {
+            "GREENPOWER": "ORIENT GREEN POWER COMPANY LIMITED"
+        },
+        {
+            "RAMCOIND": "RAMCO INDUSTRIES LIMITED"
+        },
+        {
+            "TIL": "TIL LIMITED"
+        },
+        {
+            "MUKANDLTD": "MUKAND LIMITED"
+        },
+        {
+            "JITFINFRA": "JITF INFRALOGISTICS LIMITED"
+        },
+        {
+            "SANGHIIND": "SANGHI INDUSTRIES LIMITED"
+        },
+        {
+            "NIITLTD": "NIIT LIMITED"
+        },
+        {
+            "TTKHLTCARE": "TTK HEALTHCARE LIMITED"
+        },
+        {
+            "AHL": "ABANS HOLDINGS LIMITED"
+        },
+        {
+            "IKIO": "IKIO LIGHTING LIMITED"
+        },
+        {
+            "POCL": "PONDY OXIDES & CHEMICALS LIMITED"
+        },
+        {
+            "OMAXE": "OMAXE LIMITED"
+        },
+        {
+            "PNBGILTS": "PNB GILTS LIMITED"
+        },
+        {
+            "KIRIINDUS": "KIRI INDUSTRIES LIMITED"
+        },
+        {
+            "DEEDEV": "DEE DEVELOPMENT ENGINEERS LIMITED"
+        },
+        {
+            "AMRUTANJAN": "AMRUTANJAN HEALTH CARE LIMITED"
+        },
+        {
+            "KODYTECH": "KODY TECHNOLAB LIMITED"
+        },
+        {
+            "YASHO": "YASHO INDUSTRIES LIMITED"
+        },
+        {
+            "ATFL": "AGRO TECH FOODS LIMITED"
+        },
+        {
+            "COSMOFIRST": "COSMO FIRST LIMITED"
+        },
+        {
+            "APCOTEXIND": "APCOTEX INDUSTRIES LIMITED"
+        },
+        {
+            "SDBL": "SOM DISTILLERIES & BREWERIES LIMITED"
+        },
+        {
+            "HESTERBIO": "HESTER BIOSCIENCES LIMITED"
+        },
+        {
+            "GANDHAR": "GANDHAR OIL REFINERY (INDIA) LIMITED"
+        },
+        {
+            "IGARASHI": "IGARASHI MOTORS INDIA LIMITED"
+        },
+        {
+            "ALPEXSOLAR": "ALPEX SOLAR LIMITED"
+        },
+        {
+            "HUBTOWN": "HUBTOWN LIMITED"
+        },
+        {
+            "PLATIND": "PLATINUM INDUSTRIES LIMITED"
+        },
+        {
+            "ANDHRAPAP": "ANDHRA PAPER LIMITED"
+        },
+        {
+            "CANTABIL": "CANTABIL RETAIL INDIA LIMITED"
+        },
+        {
+            "GOCLCORP": "GOCL CORPORATION LIMITED"
+        },
+        {
+            "SURAKSHA": "SURAKSHA DIAGNOSTIC LIMITED"
+        },
+        {
+            "UNIPARTS": "UNIPARTS INDIA LIMITED"
+        },
+        {
+            "SBGLP": "SURATWWALA BUSINESS GROUP LIMITED"
+        },
+        {
+            "NAVKARCORP": "NAVKAR CORPORATION LIMITED"
+        },
+        {
+            "HIL": "HIL LIMITED"
+        },
+        {
+            "SESHAPAPER": "SESHASAYEE PAPER AND BOARDS LIMITED"
+        },
+        {
+            "BLKASHYAP": "B. L. KASHYAP AND SONS LIMITED"
+        },
+        {
+            "DLINKINDIA": "D-LINK (INDIA) LIMITED"
+        },
+        {
+            "SATIN": "SATIN CREDITCARE NETWORK LIMITED"
+        },
+        {
+            "IFGLEXPOR": "IFGL REFRACTORIES LIMITED"
+        },
+        {
+            "EKC": "EVEREST KANTO CYLINDER LIMITED"
+        },
+        {
+            "ALICON": "ALICON CASTALLOY LIMITED"
+        },
+        {
+            "SANGAMIND": "SANGAM (INDIA) LIMITED"
+        },
+        {
+            "TAJGVK": "TAJ GVK HOTELS & RESORTS LIMITED"
+        },
+        {
+            "TALBROAUTO": "TALBROS AUTOMOTIVE COMPONENTS LIMITED"
+        },
+        {
+            "UNIECOM": "UNICOMMERCE ESOLUTIONS LIMITED"
+        },
+        {
+            "MICEL": "MIC ELECTRONICS LIMITED"
+        },
+        {
+            "EXPLEOSOL": "EXPLEO SOLUTIONS LIMITED"
+        },
+        {
+            "BLSE": "BLS E-SERVICES LIMITED"
+        },
+        {
+            "VERANDA": "VERANDA LEARNING SOLUTIONS LIMITED"
+        },
+        {
+            "AWHCL": "ANTONY WASTE HANDLING CELL LIMITED"
+        },
+        {
+            "JAGRAN": "JAGRAN PRAKASHAN LIMITED"
+        },
+        {
+            "DIVGIITTS": "DIVGI TORQTRANSFER SYSTEMS LIMITED"
+        },
+        {
+            "JINDRILL": "JINDAL DRILLING AND INDUSTRIES LIMITED"
+        },
+        {
+            "HARIOMPIPE": "HARIOM PIPE INDUSTRIES LIMITED"
+        },
+        {
+            "MBAPL": "MADHYA BHARAT AGRO PRODUCTS LIMITED"
+        },
+        {
+            "YATRA": "YATRA ONLINE LIMITED"
+        },
+        {
+            "SHRIRAMPPS": "SHRIRAM PROPERTIES LIMITED"
+        },
+        {
+            "VERTOZ": "VERTOZ LIMITED"
+        },
+        {
+            "MASTERTR": "MASTER TRUST LIMITED"
+        },
+        {
+            "WINDLAS": "WINDLAS BIOTECH LIMITED"
+        },
+        {
+            "JPASSOCIAT": "JAIPRAKASH ASSOCIATES LIMITED"
+        },
+        {
+            "GMBREW": "GM BREWERIES LIMITED"
+        },
+        {
+            "UDAICEMENT": "UDAIPUR CEMENT WORKS LIMITED"
+        },
+        {
+            "WEL": "WONDER ELECTRICALS LIMITED"
+        },
+        {
+            "STERTOOLS": "STERLING TOOLS LIMITED"
+        },
+        {
+            "WHEELS": "WHEELS INDIA LIMITED"
+        },
+        {
+            "RAMASTEEL": "RAMA STEEL TUBES LIMITED"
+        },
+        {
+            "ROSSTECH": "ROSSELL TECHSYS LIMITED"
+        },
+        {
+            "BSHSL": "BOMBAY SUPER HYBRID SEEDS LIMITED"
+        },
+        {
+            "RELTD": "RAVINDRA ENERGY LIMITED"
+        },
+        {
+            "GPTINFRA": "GPT INFRAPROJECTS LIMITED"
+        },
+        {
+            "SIRCA": "SIRCA PAINTS INDIA LIMITED"
+        },
+        {
+            "GKWLIMITED": "GKW LIMITED"
+        },
+        {
+            "CAMLINFINE": "CAMLIN FINE SCIENCES LIMITED"
+        },
+        {
+            "IGPL": "IG PETROCHEMICALS LIMITED"
+        },
+        {
+            "DANISH": "DANISH POWER LIMITED"
+        },
+        {
+            "SALZERELEC": "SALZER ELECTRONICS LIMITED"
+        },
+        {
+            "GRPLTD": "GRP LIMITED"
+        },
+        {
+            "ROTO": "ROTO PUMPS LIMITED"
+        },
+        {
+            "SYNCOMF": "SYNCOM FORMULATIONS (INDIA) LIMITED"
+        },
+        {
+            "SIGACHI": "SIGACHI INDUSTRIES LIMITED"
+        },
+        {
+            "DPSCLTD": "DPSC LIMITED"
+        },
+        {
+            "MUFIN": "MUFIN GREEN FINANCE LIMITED"
+        },
+        {
+            "HERANBA": "HERANBA INDUSTRIES LIMITED"
+        },
+        {
+            "EXCELINDUS": "EXCEL INDUSTRIES LIMITED"
+        },
+        {
+            "GNA": "GNA AXLES LIMITED"
+        },
+        {
+            "SUYOG": "SUYOG TELEMATICS LIMITED"
+        },
+        {
+            "SURYODAY": "SURYODAY SMALL FINANCE BANK LIMITED"
+        },
+        {
+            "RIIL": "RELIANCE INDUSTRIAL INFRASTRUCTURE LIMITED"
+        },
+        {
+            "ATULAUTO": "ATUL AUTO LIMITED"
+        },
+        {
+            "GTPL": "GTPL HATHWAY LIMITED"
+        },
+        {
+            "SADHNANIQ": "SADHANA NITROCHEM LIMITED"
+        },
+        {
+            "ADORWELD": "ADOR WELDING LIMITED"
+        },
+        {
+            "PANACEABIO": "PANACEA BIOTEC LIMITED"
+        },
+        {
+            "SAHASRA": "SAHASRA ELECTRONIC SOLUTIONS LIMITED"
+        },
+        {
+            "AGARIND": "AGARWAL INDUSTRIAL CORPORATION LIMITED"
+        },
+        {
+            "DSSL": "DYNACONS SYSTEMS & SOLUTIONS LIMITED"
+        },
+        {
+            "GODAVARIB": "GODAVARI BIOREFINERIES LIMITED"
+        },
+        {
+            "BIGBLOC": "BIGBLOC CONSTRUCTION LIMITED"
+        },
+        {
+            "HIRECT": "HIND RECTIFIERS LIMITED"
+        },
+        {
+            "SWELECTES": "SWELECT ENERGY SYSTEMS LIMITED"
+        },
+        {
+            "DCMSRIND": "DCM SHRIRAM INDUSTRIES LIMITED"
+        },
+        {
+            "BCG": "BRIGHTCOM GROUP LIMITED  "
+        },
+        {
+            "WALCHANNAG": "WALCHANDNAGAR INDUSTRIES LIMITED"
+        },
+        {
+            "IRMENERGY": "IRM ENERGY LIMITED"
+        },
+        {
+            "BHARATWIRE": "BHARAT WIRE ROPES LIMITED"
+        },
+        {
+            "PENINLAND": "PENINSULA LAND LIMITED"
+        },
+        {
+            "INDNIPPON": "INDIA NIPPON ELECTRICALS LIMITED"
+        },
+        {
+            "KOKUYOCMLN": "KOKUYO CAMLIN LIMITED"
+        },
+        {
+            "ARMANFIN": "ARMAN FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "MADRASFERT": "MADRAS FERTILIZERS LIMITED"
+        },
+        {
+            "ZOTA": "ZOTA HEALTH CARE LIMITED"
+        },
+        {
+            "BOROSCI": "BOROSIL SCIENTIFIC LIMITED"
+        },
+        {
+            "SPIC": "SOUTHERN PETROCHEMICALS INDUSTRIES CORPORATION  LIMITED"
+        },
+        {
+            "OAL": "ORIENTAL AROMATICS LIMITED"
+        },
+        {
+            "NDRAUTO": "NDR AUTO COMPONENTS LIMITED"
+        },
+        {
+            "HIMATSEIDE": "HIMATSINGKA SEIDE LIMITED"
+        },
+        {
+            "HITECHGEAR": "THE HI-TECH GEARS LIMITED"
+        },
+        {
+            "OMINFRAL": "OM INFRA LIMITED"
+        },
+        {
+            "BETA": "BETA DRUGS LIMITED"
+        },
+        {
+            "TEXINFRA": "TEXMACO INFRASTRUCTURE & HOLDINGS LIMITED"
+        },
+        {
+            "AMNPLST": "AMINES & PLASTICIZERS LIMITED"
+        },
+        {
+            "MANGCHEFER": "MANGALORE CHEMICALS & FERTILIZERS LIMITED"
+        },
+        {
+            "DYCL": "DYNAMIC CABLES LIMITED"
+        },
+        {
+            "BCLIND": "BCL INDUSTRIES LIMITED"
+        },
+        {
+            "RML": "RANE (MADRAS) LIMITED"
+        },
+        {
+            "MSPL": "MSP STEEL & POWER LIMITED"
+        },
+        {
+            "ASALCBR": "ASSOCIATED ALCOHOLS & BREWERIES LIMITED"
+        },
+        {
+            "EVERESTIND": "EVEREST INDUSTRIES LIMITED"
+        },
+        {
+            "CEWATER": "CONCORD ENVIRO SYSTEMS LIMITED"
+        },
+        {
+            "MONTECARLO": "MONTE CARLO FASHIONS LIMITED"
+        },
+        {
+            "TFCILTD": "TOURISM FINANCE CORPORATION OF INDIA LIMITED"
+        },
+        {
+            "ALLDIGI": "ALLDIGI TECH LIMITED"
+        },
+        {
+            "BUTTERFLY": "BUTTERFLY GANDHIMATHI APPLIANCES LIMITED"
+        },
+        {
+            "EIMCOELECO": "EIMCO ELECON (INDIA) LIMITED"
+        },
+        {
+            "SMCGLOBAL": "SMC GLOBAL SECURITIES LIMITED"
+        },
+        {
+            "5PAISA": "5PAISA CAPITAL LIMITED"
+        },
+        {
+            "MATRIMONY": "MATRIMONY.COM LIMITED"
+        },
+        {
+            "YUKEN": "YUKEN INDIA LIMITED"
+        },
+        {
+            "IMPAL": "INDIA MOTOR PARTS AND ACCESSORIES LIMITED"
+        },
+        {
+            "LIKHITHA": "LIKHITHA INFRASTRUCTURE LIMITED"
+        },
+        {
+            "KABRAEXTRU": "KABRA EXTRUSION TECHNIK LIMITED"
+        },
+        {
+            "SUBEXLTD": "SUBEX LIMITED"
+        },
+        {
+            "FAIRCHEMOR": "FAIRCHEM ORGANICS LIMITED"
+        },
+        {
+            "SPORTKING": "SPORTKING INDIA LIMITED"
+        },
+        {
+            "TECHLABS": "TRIDENT TECHLABS LIMITED"
+        },
+        {
+            "TBZ": "TRIBHOVANDAS BHIMJI ZAVERI LIMITED"
+        },
+        {
+            "STEELCAS": "STEELCAST LIMITED"
+        },
+        {
+            "WINDMACHIN": "WINDSOR MACHINES LIMITED"
+        },
+        {
+            "CENTRUM": "CENTRUM CAPITAL LIMITED"
+        },
+        {
+            "VINCOFE": "VINTAGE COFFEE AND BEVERAGES LIMITED"
+        },
+        {
+            "ARIHANTSUP": "ARIHANT SUPERSTRUCTURES LIMITED"
+        },
+        {
+            "DVL": "DHUNSERI VENTURES LIMITED"
+        },
+        {
+            "CLSEL": "CHAMAN LAL SETIA EXPORTS LIMITED"
+        },
+        {
+            "HEXATRADEX": "HEXA TRADEX LIMITED"
+        },
+        {
+            "TNPL": "TAMIL NADU NEWSPRINT & PAPERS LIMITED"
+        },
+        {
+            "RICOAUTO": "RICO AUTO INDUSTRIES LIMITED"
+        },
+        {
+            "MAMATA": "MAMATA MACHINERY LIMITED"
+        },
+        {
+            "RAMCOSYS": "RAMCO SYSTEMS LIMITED"
+        },
+        {
+            "SHANKARA": "SHANKARA BUILDING PRODUCTS LIMITED"
+        },
+        {
+            "ORIENTTECH": "ORIENT TECHNOLOGIES LIMITED"
+        },
+        {
+            "PVSL": "POPULAR VEHICLES AND SERVICES LIMITED"
+        },
+        {
+            "PUNJABCHEM": "PUNJAB CHEMICALS & CROP PROTECTION LIMITED"
+        },
+        {
+            "ASIANENE": "ASIAN ENERGY SERVICES LIMITED"
+        },
+        {
+            "GPTHEALTH": "GPT HEALTHCARE LIMITED"
+        },
+        {
+            "ANDHRSUGAR": "THE ANDHRA SUGARS LIMITED"
+        },
+        {
+            "SOLEX": "SOLEX ENERGY LIMITED"
+        },
+        {
+            "KRISHANA": "KRISHANA PHOSCHEM LIMITED"
+        },
+        {
+            "AGIIL": "AGI INFRA LIMITED"
+        },
+        {
+            "KELLTONTEC": "KELLTON TECH SOLUTIONS LIMITED"
+        },
+        {
+            "JGCHEM": "J.G.CHEMICALS LIMITED"
+        },
+        {
+            "RISHABH": "RISHABH INSTRUMENTS LIMITED"
+        },
+        {
+            "ACLGATI": "ALLCARGO GATI LIMITED"
+        },
+        {
+            "CENTENKA": "CENTURY ENKA LIMITED"
+        },
+        {
+            "VIMTALABS": "VIMTA LABS LIMITED"
+        },
+        {
+            "KAMDHENU": "KAMDHENU LIMITED"
+        },
+        {
+            "VASCONEQ": "VASCON ENGINEERS LIMITED"
+        },
+        {
+            "BESTAGRO": "BEST AGROLIFE LIMITED"
+        },
+        {
+            "REMUS": "REMUS PHARMACEUTICALS LIMITED"
+        },
+        {
+            "ADSL": "ALLIED DIGITAL SERVICES LIMITED"
+        },
+        {
+            "SHREDIGCEM": "SHREE DIGVIJAY CEMENT CO.LIMITED"
+        },
+        {
+            "KERNEX": "KERNEX MICROSYSTEMS (INDIA) LIMITED"
+        },
+        {
+            "LINCOLN": "LINCOLN PHARMACEUTICALS LIMITED"
+        },
+        {
+            "SPCENET": "SPACENET ENTERPRISES INDIA LIMITED"
+        },
+        {
+            "WEALTH": "WEALTH FIRST PORTFOLIO MANAGERS LIMITED"
+        },
+        {
+            "SIGNPOST": "SIGNPOST INDIA LIMITED"
+        },
+        {
+            "ONEPOINT": "ONE POINT ONE SOLUTIONS LIMITED"
+        },
+        {
+            "VLEGOV": "VL E GOVERNANCE & IT SOLUTIONS LIMITED"
+        },
+        {
+            "MACPOWER": "MACPOWER CNC MACHINES LIMITED"
+        },
+        {
+            "HERCULES": "HERCULES HOISTS LIMITED"
+        },
+        {
+            "VHL": "VARDHMAN HOLDINGS LIMITED"
+        },
+        {
+            "TVTODAY": "TV TODAY NETWORK LIMITED"
+        },
+        {
+            "MANALIPETC": "MANALI PETROCHEMICALS LIMITED"
+        },
+        {
+            "CAPITALSFB": "CAPITAL SMALL FINANCE BANK LIMITED"
+        },
+        {
+            "BLISSGVS": "BLISS GVS PHARMA LIMITED"
+        },
+        {
+            "ESTER": "ESTER INDUSTRIES LIMITED"
+        },
+        {
+            "WCIL": "WESTERN CARRIERS (INDIA) LIMITED"
+        },
+        {
+            "CHEMFAB": "CHEMFAB ALKALIS LIMITED"
+        },
+        {
+            "GRMOVER": "GRM OVERSEAS LIMITED"
+        },
+        {
+            "SAURASHCEM": "SAURASHTRA CEMENT LIMITED"
+        },
+        {
+            "RGL": "RENAISSANCE GLOBAL LIMITED"
+        },
+        {
+            "KROSS": "KROSS LIMITED"
+        },
+        {
+            "SPMLINFRA": "SPML INFRA LIMITED"
+        },
+        {
+            "DHAMPURSUG": "DHAMPUR SUGAR MILLS LIMITED"
+        },
+        {
+            "NGLFINE": "NGL FINE-CHEM LIMITED"
+        },
+        {
+            "XCHANGING": "XCHANGING SOLUTIONS LIMITED"
+        },
+        {
+            "KECL": "KIRLOSKAR ELECTRIC COMPANY LIMITED"
+        },
+        {
+            "CREST": "CREST VENTURES LIMITED"
+        },
+        {
+            "KOPRAN": "KOPRAN LIMITED"
+        },
+        {
+            "SELAN": "SELAN EXPLORATION TECHNOLOGY LIMITED"
+        },
+        {
+            "MUKKA": "MUKKA PROTEINS LIMITED"
+        },
+        {
+            "AVADHSUGAR": "AVADH SUGAR & ENERGY LIMITED"
+        },
+        {
+            "HLVLTD": "HLV LIMITED"
+        },
+        {
+            "SATINDLTD": "SAT INDUSTRIES LIMITED"
+        },
+        {
+            "AVTNPL": "AVT NATURAL PRODUCTS LIMITED"
+        },
+        {
+            "RAJRILTD": "RAJ RAYON INDUSTRIES LIMITED"
+        },
+        {
+            "PPL": "PRAKASH PIPES LIMITED"
+        },
+        {
+            "VLSFINANCE": "VLS FINANCE LIMITED"
+        },
+        {
+            "DWARKESH": "DWARIKESH SUGAR INDUSTRIES LIMITED"
+        },
+        {
+            "SNOWMAN": "SNOWMAN LOGISTICS LIMITED"
+        },
+        {
+            "RKSWAMY": "R K SWAMY LIMITED"
+        },
+        {
+            "PDMJEPAPER": "PUDUMJEE PAPER PRODUCTS LIMITED"
+        },
+        {
+            "GULPOLY": "GULSHAN POLYOLS LIMITED"
+        },
+        {
+            "JAGSNPHARM": "JAGSONPAL PHARMACEUTICALS LIMITED"
+        },
+        {
+            "INDOAMIN": "INDO AMINES LIMITED"
+        },
+        {
+            "SANDESH": "THE SANDESH LIMITED"
+        },
+        {
+            "ASAL": "AUTOMOTIVE STAMPINGS AND ASSEMBLIES LIMITED"
+        },
+        {
+            "CONTROLPR": "CONTROL PRINT LIMITED"
+        },
+        {
+            "SAHANA": "SAHANA SYSTEM LIMITED"
+        },
+        {
+            "ELECTHERM": "ELECTROTHERM (INDIA) LIMITED"
+        },
+        {
+            "SIMPLEXINF": "SIMPLEX INFRASTRUCTURES LIMITED"
+        },
+        {
+            "OSWALGREEN": "OSWAL GREENTECH LIMITED"
+        },
+        {
+            "STEELXIND": "STEEL EXCHANGE INDIA LIMITED"
+        },
+        {
+            "KUANTUM": "KUANTUM PAPERS LIMITED"
+        },
+        {
+            "GICHSGFIN": "GIC HOUSING FINANCE LIMITED"
+        },
+        {
+            "GALAPREC": "GALA PRECISION ENGINEERING LIMITED"
+        },
+        {
+            "UTTAMSUGAR": "UTTAM SUGAR MILLS LIMITED"
+        },
+        {
+            "ICEMAKE": "ICE MAKE REFRIGERATION LIMITED"
+        },
+        {
+            "HEUBACHIND": "HEUBACH COLORANTS INDIA LIMITED"
+        },
+        {
+            "RADHIKAJWE": "RADHIKA JEWELTECH LIMITED"
+        },
+        {
+            "NDTV": "NEW DELHI TELEVISION LIMITED"
+        },
+        {
+            "DIFFNKG": "DIFFUSION ENGINEERS LIMITED"
+        },
+        {
+            "KSOLVES": "KSOLVES INDIA LIMITED"
+        },
+        {
+            "ARROWGREEN": "ARROW GREENTECH LIMITED"
+        },
+        {
+            "MVGJL": "MANOJ VAIBHAV GEMS N JEWELLERS LIMITED"
+        },
+        {
+            "MUFTI": "CREDO BRANDS MARKETING LIMITED"
+        },
+        {
+            "DHUNINV": "DHUNSERI INVESTMENTS LIMITED"
+        },
+        {
+            "MAXIND": "MAX INDIA LIMITED"
+        },
+        {
+            "PAKKA": "PAKKA LIMITED"
+        },
+        {
+            "ROSSELLIND": "ROSSELL INDIA LIMITED"
+        },
+        {
+            "CREATIVE": "CREATIVE NEWTECH LIMITED"
+        },
+        {
+            "KOTHARIPET": "KOTHARI PETROCHEMICALS LIMITED"
+        },
+        {
+            "APTECHT": "APTECH LIMITED"
+        },
+        {
+            "INDORAMA": "INDO RAMA SYNTHETICS (INDIA) LIMITED"
+        },
+        {
+            "HARDWYN": "HARDWYN INDIA LIMITED"
+        },
+        {
+            "NACLIND": "NACL INDUSTRIES LIMITED"
+        },
+        {
+            "C2C": "C2C ADVANCED SYSTEMS LIMITED"
+        },
+        {
+            "SRHHYPOLTD": "SREE RAYALASEEMA HI-STRENGTH HYPO LIMITED"
+        },
+        {
+            "NELCAST": "NELCAST LIMITED"
+        },
+        {
+            "UNIENTER": "UNIPHOS ENTERPRISES LIMITED"
+        },
+        {
+            "SATIA": "SATIA INDUSTRIES LIMITED"
+        },
+        {
+            "VILAS": "VILAS TRANSCORE LIMITED"
+        },
+        {
+            "VINYAS": "VINYAS INNOVATIVE TECHNOLOGIES LIMITED"
+        },
+        {
+            "MUNJALAU": "MUNJAL AUTO INDUSTRIES LIMITED"
+        },
+        {
+            "FAZE3Q": "FAZE THREE LIMITED"
+        },
+        {
+            "ANUHPHR": "ANUH PHARMA LIMITED"
+        },
+        {
+            "BAJAJHCARE": "BAJAJ HEALTHCARE LIMITED"
+        },
+        {
+            "ATL": "ALLCARGO TERMINALS LIMITED"
+        },
+        {
+            "MAGADSUGAR": "MAGADH SUGAR & ENERGY LIMITED"
+        },
+        {
+            "BLAL": "BEML LAND ASSETS LIMITED"
+        },
+        {
+            "ELIN": "ELIN ELECTRONICS LIMITED"
+        },
+        {
+            "GGBL": "GANESH GREEN BHARAT LIMITED"
+        },
+        {
+            "SHALPAINTS": "SHALIMAR PAINTS LIMITED"
+        },
+        {
+            "JAYBARMARU": "JAY BHARAT MARUTI LIMITED"
+        },
+        {
+            "GANESHBE": "GANESH BENZOPLAST LIMITED"
+        },
+        {
+            "DHARMAJ": "DHARMAJ CROP GUARD LIMITED"
+        },
+        {
+            "AGSTRA": "AGS TRANSACT TECHNOLOGIES LIMITED"
+        },
+        {
+            "BASILIC": "BASILIC FLY STUDIO LIMITED"
+        },
+        {
+            "SUTLEJTEX": "SUTLEJ TEXTILES AND INDUSTRIES LIMITED"
+        },
+        {
+            "TREL": "TRANSINDIA REAL ESTATE LIMITED"
+        },
+        {
+            "NAHARSPING": "NAHAR SPINNING MILLS LIMITED"
+        },
+        {
+            "VALIANTORG": "VALIANT ORGANICS LIMITED"
+        },
+        {
+            "ZEEMEDIA": "ZEE MEDIA CORPORATION LIMITED"
+        },
+        {
+            "ZUARIIND": "ZUARI INDUSTRIES LIMITED"
+        },
+        {
+            "SARTELE": "SAR TELEVENTURE LIMITED"
+        },
+        {
+            "INFOBEAN": "INFOBEANS TECHNO. LIMITED"
+        },
+        {
+            "AIMTRON": "AIMTRON ELECTRONICS LIMITED"
+        },
+        {
+            "URJA": "URJA GLOBAL LIMITED"
+        },
+        {
+            "STCINDIA": "THE STATE TRADING CORPORATION OF INDIA LIMITED"
+        },
+        {
+            "KRYSTAL": "KRYSTAL INTEGRATED SERVICES LIMITED"
+        },
+        {
+            "GANDHITUBE": "GANDHI SPECIAL TUBES LIMITED"
+        },
+        {
+            "CELLECOR": "CELLECOR GADGETS LIMITED"
+        },
+        {
+            "SSEGL": "SATHLOKHAR SYNERGYS E&C GLOBAL LIMITED"
+        },
+        {
+            "THEINVEST": "THE INVESTMENT TRUST OF INDIA LIMITED"
+        },
+        {
+            "KAMOPAINTS": "KAMDHENU VENTURES LIMITED"
+        },
+        {
+            "SASTASUNDR": "SASTASUNDAR VENTURES LIMITED"
+        },
+        {
+            "DENTALKART": "VASA DENTICITY LIMITED"
+        },
+        {
+            "KRITI": "KRITI INDUSTRIES (INDIA) LIMITED"
+        },
+        {
+            "KRISHNADEF": "KRISHNA DEFENCE AND ALLIED INDUSTRIES LIMITED"
+        },
+        {
+            "ARIHANTCAP": "ARIHANT CAPITAL MARKETS LIMITED"
+        },
+        {
+            "NINSYS": "NINTEC SYSTEMS LIMITED"
+        },
+        {
+            "EMKAYTOOLS": "EMKAY TAPS AND CUTTING TOOLS LIMITED"
+        },
+        {
+            "AYMSYNTEX": "AYM SYNTEX LIMITED"
+        },
+        {
+            "NCLIND": "NCL INDUSTRIES LIMITED"
+        },
+        {
+            "ENIL": "ENTERTAINMENT NETWORK (INDIA) LIMITED"
+        },
+        {
+            "APS": "AUSTRALIAN PREMIUM SOLAR (INDIA) LIMITED"
+        },
+        {
+            "RSWM": "RSWM LIMITED"
+        },
+        {
+            "ASIANTILES": "ASIAN GRANITO INDIA LIMITED"
+        },
+        {
+            "ORIENTPPR": "ORIENT PAPER & INDUSTRIES LIMITED"
+        },
+        {
+            "KOTYARK": "KOTYARK INDUSTRIES LIMITED"
+        },
+        {
+            "BODALCHEM": "BODAL CHEMICALS LIMITED"
+        },
+        {
+            "DHANBANK": "DHANLAXMI BANK LIMITED"
+        },
+        {
+            "BIRLAMONEY": "ADITYA BIRLA MONEY LIMITED"
+        },
+        {
+            "INNOVANA": "INNOVANA THINKLABS LIMITED"
+        },
+        {
+            "GVKPIL": "GVK POWER & INFRASTRUCTURE LIMITED"
+        },
+        {
+            "GHCLTEXTIL": "GHCL TEXTILES LIMITED"
+        },
+        {
+            "SICALLOG": "SICAL LOGISTICS LIMITED"
+        },
+        {
+            "RATNAVEER": "RATNAVEER PRECISION ENGINEERING LIMITED"
+        },
+        {
+            "SHIVALIK": "SHIVALIK RASAYAN LIMITED"
+        },
+        {
+            "AMBIKCO": "AMBIKA COTTON MILLS LIMITED"
+        },
+        {
+            "GFLLIMITED": "GFL LIMITED"
+        },
+        {
+            "ROHLTD": "ROYAL ORCHID HOTELS LIMITED"
+        },
+        {
+            "LINC": "LINC LIMITED"
+        },
+        {
+            "PRIMESECU": "PRIME SECURITIES LIMITED"
+        },
+        {
+            "20MICRONS": "20 MICRONS LIMITED"
+        },
+        {
+            "RUSHIL": "RUSHIL DECOR LIMITED"
+        },
+        {
+            "SBC": "SBC EXPORTS LIMITED"
+        },
+        {
+            "RACLGEAR": "RACL GEARTECH LIMITED"
+        },
+        {
+            "RITCO": "RITCO LOGISTICS LIMITED"
+        },
+        {
+            "MINDTECK": "MINDTECK (INDIA) LIMITED"
+        },
+        {
+            "CHEMCON": "CHEMCON SPECIALITY CHEMICALS LIMITED"
+        },
+        {
+            "ESFL": "ESSEN SPECIALITY FILMS LIMITED"
+        },
+        {
+            "SARVESHWAR": "SARVESHWAR FOODS LIMITED"
+        },
+        {
+            "FILATFASH": "FILATEX FASHIONS LIMITED"
+        },
+        {
+            "ZODIAC": "ZODIAC ENERGY LIMITED"
+        },
+        {
+            "SILVERTUC": "SILVER TOUCH TECHNOLOGIES LIMITED"
+        },
+        {
+            "GIRIRAJ": "GIRIRAJ CIVIL DEVELOPERS LIMITED"
+        },
+        {
+            "CSLFINANCE": "CSL FINANCE LIMITED"
+        },
+        {
+            "ESSARSHPNG": "ESSAR SHIPPING LIMITED"
+        },
+        {
+            "MALLCOM": "MALLCOM (INDIA) LIMITED"
+        },
+        {
+            "TRACXN": "TRACXN TECHNOLOGIES LIMITED"
+        },
+        {
+            "VHLTD": "VICEROY HOTELS LIMITED"
+        },
+        {
+            "STEL": "STEL HOLDINGS LIMITED"
+        },
+        {
+            "GARUDA": "GARUDA CONSTRUCTION AND ENGINEERING LIMITED"
+        },
+        {
+            "VISAKAIND": "VISAKA INDUSTRIES LIMITED"
+        },
+        {
+            "JAYAGROGN": "JAYANT AGRO ORGANICS LIMITED"
+        },
+        {
+            "OSWALAGRO": "OSWAL AGRO MILLS LIMITED"
+        },
+        {
+            "UGARSUGAR": "THE UGAR SUGAR WORKS LIMITED"
+        },
+        {
+            "ALLETEC": "ALL E TECHNOLOGIES LIMITED"
+        },
+        {
+            "ELDEHSG": "ELDECO HOUSING AND INDUSTRIES LIMITED"
+        },
+        {
+            "JPOLYINVST": "JINDAL POLY INVESTMENT AND FINANCE COMPANY LIMITED"
+        },
+        {
+            "ZUARI": "ZUARI AGRO CHEMICALS LIMITED"
+        },
+        {
+            "DBOL": "DHAMPUR BIO ORGANICS LIMITED"
+        },
+        {
+            "BHAGERIA": "BHAGERIA INDUSTRIES LIMITED"
+        },
+        {
+            "DECCANCE": "DECCAN CEMENTS LIMITED"
+        },
+        {
+            "MMP": "MMP INDUSTRIES LIMITED"
+        },
+        {
+            "ONWARDTEC": "ONWARD TECHNOLOGIES LIMITED"
+        },
+        {
+            "RUBYMILLS": "THE RUBY MILLS LIMITED"
+        },
+        {
+            "FOODSIN": "FOODS & INNS LIMITED"
+        },
+        {
+            "SJLOGISTIC": "S J LOGISTICS (INDIA) LIMITED"
+        },
+        {
+            "JINDALPHOT": "JINDAL PHOTO LIMITED"
+        },
+        {
+            "CAREERP": "CAREER POINT LIMITED"
+        },
+        {
+            "RADIANTCMS": "RADIANT CASH MANAGEMENT SERVICES LIMITED"
+        },
+        {
+            "ONMOBILE": "ONMOBILE GLOBAL LIMITED"
+        },
+        {
+            "REPRO": "REPRO INDIA LIMITED"
+        },
+        {
+            "COFFEEDAY": "COFFEE DAY ENTERPRISES LIMITED"
+        },
+        {
+            "SHREEPUSHK": "SHREE PUSHKAR CHEMICALS & FERTILISERS LIMITED"
+        },
+        {
+            "GEECEE": "GEECEE VENTURES LIMITED"
+        },
+        {
+            "VMARCIND": "V MARC INDIA LIMITED"
+        },
+        {
+            "GSLSU": "GLOBAL SURFACES LIMITED"
+        },
+        {
+            "SAKUMA": "SAKUMA EXPORTS LIMITED"
+        },
+        {
+            "HPAL": "HP ADHESIVES LIMITED"
+        },
+        {
+            "SUKHJITS": "SUKHJIT STARCH & CHEMICALS LIMITED"
+        },
+        {
+            "TIRUPATI": "SHREE TIRUPATI BALAJEE FIBC LIMITED"
+        },
+        {
+            "MAANALU": "MAAN ALUMINIUM LIMITED"
+        },
+        {
+            "GLOSTERLTD": "GLOSTER LIMITED"
+        },
+        {
+            "LIBERTSHOE": "LIBERTY SHOES LIMITED"
+        },
+        {
+            "SPENCERS": "SPENCER'S RETAIL LIMITED"
+        },
+        {
+            "NECLIFE": "NECTAR LIFESCIENCES LIMITED"
+        },
+        {
+            "ACL": "ANDHRA CEMENTS LIMITED"
+        },
+        {
+            "TPLPLASTEH": "TPL PLASTECH LIMITED"
+        },
+        {
+            "SARLAPOLY": "SARLA PERFORMANCE FIBERS LIMITED"
+        },
+        {
+            "WSI": "W S INDUSTRIES (I) LIMITED"
+        },
+        {
+            "FOCUS": "FOCUS LIGHTING AND FIXTURES LIMITED"
+        },
+        {
+            "TNPETRO": "TAMILNADU PETROPRODUCTS LIMITED"
+        },
+        {
+            "CHEVIOT": "CHEVIOT COMPANY LIMITED"
+        },
+        {
+            "TRANSWORLD": "TRANSWORLD SHIPPING LINES LIMITED"
+        },
+        {
+            "CHEMBOND": "CHEMBOND CHEMICALS LIMITED"
+        },
+        {
+            "RBL": "RANE BRAKE LINING LIMITED"
+        },
+        {
+            "KDL": "KORE DIGITAL LIMITED"
+        },
+        {
+            "HINDCOMPOS": "HINDUSTAN COMPOSITES LIMITED"
+        },
+        {
+            "SPECIALITY": "SPECIALITY RESTAURANTS LIMITED"
+        },
+        {
+            "DENORA": "DE NORA INDIA LIMITED"
+        },
+        {
+            "DBEIL": "DEEPAK BUILDERS & ENGINEERS INDIA LIMITED"
+        },
+        {
+            "SURAJLTD": "SURAJ LIMITED"
+        },
+        {
+            "DIGISPICE": "DIGISPICE TECHNOLOGIES LIMITED"
+        },
+        {
+            "APEX": "APEX FROZEN FOODS LIMITED"
+        },
+        {
+            "ALBERTDAVD": "ALBERT DAVID LIMITED"
+        },
+        {
+            "SCHAND": "S CHAND AND COMPANY LIMITED"
+        },
+        {
+            "TAC": "TAC INFOSEC LIMITED"
+        },
+        {
+            "TOLINS": "TOLINS TYRES LIMITED"
+        },
+        {
+            "MANBA": "MANBA FINANCE LIMITED"
+        },
+        {
+            "NDL": "NANDAN DENIM LIMITED"
+        },
+        {
+            "PARSVNATH": "PARSVNATH DEVELOPERS LIMITED"
+        },
+        {
+            "WANBURY": "WANBURY LIMITED"
+        },
+        {
+            "VRAJ": "VRAJ IRON AND STEEL LIMITED"
+        },
+        {
+            "VIKASLIFE": "VIKAS LIFECARE LIMITED"
+        },
+        {
+            "CCCL": "CONSOLIDATED CONSTRUCTION CONSORTIUM LIMITED"
+        },
+        {
+            "BIL": "BHARTIYA INTERNATIONAL LIMITED"
+        },
+        {
+            "PASHUPATI": "PASHUPATI COTSPIN LIMITED"
+        },
+        {
+            "INDSWFTLAB": "IND-SWIFT LABORATORIES LIMITED"
+        },
+        {
+            "DMCC": "DMCC SPECIALITY CHEMICALS LIMITED"
+        },
+        {
+            "KHAICHEM": "KHAITAN CHEMICALS & FERTILIZERS LIMITED"
+        },
+        {
+            "PVP": "PVP VENTURES LIMITED"
+        },
+        {
+            "ANNAPURNA": "ANNAPURNA SWADISHT LIMITED"
+        },
+        {
+            "JAYBEE": "JAY BEE LAMINATIONS LIMITED"
+        },
+        {
+            "AFFORDABLE": "AFFORDABLE ROBOTIC & AUTOMATION LIMITED"
+        },
+        {
+            "PLASTIBLEN": "PLASTIBLENDS INDIA LIMITED"
+        },
+        {
+            "BIRLACABLE": "BIRLA CABLE LIMITED"
+        },
+        {
+            "RPPINFRA": "R.P.P. INFRA PROJECTS LIMITED"
+        },
+        {
+            "RBMINFRA": "RBM INFRACON LIMITED"
+        },
+        {
+            "EMAMIPAP": "EMAMI PAPER MILLS LIMITED"
+        },
+        {
+            "INDOTHAI": "INDO THAI SECURITIES LIMITED"
+        },
+        {
+            "VISHNUINFR": "VISHNUSURYA PROJECTS AND INFRA LIMITED"
+        },
+        {
+            "RVTH": "REVATHI EQUIPMENT INDIA LIMITED"
+        },
+        {
+            "NRL": "NUPUR RECYCLERS LIMITED"
+        },
+        {
+            "FOCE": "FOCE INDIA LIMITED"
+        },
+        {
+            "TVSELECT": "TVS ELECTRONICS LIMITED"
+        },
+        {
+            "MENONBE": "MENON BEARINGS LIMITED"
+        },
+        {
+            "NITCO": "NITCO LIMITED"
+        },
+        {
+            "VINYLINDIA": "VINYL CHEMICALS (INDIA) LIMITED"
+        },
+        {
+            "PYRAMID": "PYRAMID TECHNOPLAST LIMITED"
+        },
+        {
+            "LOKESHMACH": "LOKESH MACHINES LIMITED"
+        },
+        {
+            "ASHIMASYN": "ASHIMA LIMITED"
+        },
+        {
+            "BALAJITELE": "BALAJI TELEFILMS LIMITED"
+        },
+        {
+            "BEDMUTHA": "BEDMUTHA INDUSTRIES LIMITED"
+        },
+        {
+            "HMVL": "HINDUSTAN MEDIA VENTURES LIMITED"
+        },
+        {
+            "SAKAR": "SAKAR HEALTHCARE LIMITED"
+        },
+        {
+            "LGHL": "LAXMI GOLDORNA HOUSE LIMITED"
+        },
+        {
+            "GOACARBON": "GOA CARBON LIMITED"
+        },
+        {
+            "KHADIM": "KHADIM INDIA LIMITED"
+        },
+        {
+            "DEEPENR": "DEEP ENE RESOURCES LIMITED "
+        },
+        {
+            "CONSOFINVT": "CONSOLIDATED FINVEST & HOLDINGS LIMITED"
+        },
+        {
+            "MBLINFRA": "MBL INFRASTRUCTURE LIMITED"
+        },
+        {
+            "NAHARPOLY": "NAHAR POLY FILMS LIMITED"
+        },
+        {
+            "RBZJEWEL": "RBZ JEWELLERS LIMITED"
+        },
+        {
+            "NRAIL": "N R AGARWAL INDUSTRIES LIMITED"
+        },
+        {
+            "MEGATHERM": "MEGATHERM INDUCTION LIMITED"
+        },
+        {
+            "KRITINUT": "KRITI NUTRIENTS LIMITED"
+        },
+        {
+            "COOLCAPS": "COOL CAPS INDUSTRIES LIMITED"
+        },
+        {
+            "DONEAR": "DONEAR INDUSTRIES LIMITED"
+        },
+        {
+            "GANESHIN": "GANESH INFRAWORLD LIMITED"
+        },
+        {
+            "RSSOFTWARE": "R. S. SOFTWARE (INDIA) LIMITED"
+        },
+        {
+            "ADVANIHOTR": "ADVANI HOTELS & RESORTS (INDIA) LIMITED"
+        },
+        {
+            "SKMEGGPROD": "SKM EGG PRODUCTS EXPORT (INDIA) LIMITED"
+        },
+        {
+            "SILINV": "SIL INVESTMENTS LIMITED"
+        },
+        {
+            "ABSMARINE": "ABS MARINE SERVICES LIMITED"
+        },
+        {
+            "CYBERTECH": "CYBERTECH SYSTEMS AND SOFTWARE LIMITED"
+        },
+        {
+            "TCLCONS": "TANTIA CONSTRUCTIONS LIMITED"
+        },
+        {
+            "IRIS": "IRIS BUSINESS SERVICES LIMITED"
+        },
+        {
+            "KNAGRI": "KN AGRI RESOURCES LIMITED"
+        },
+        {
+            "MOLDTECH": "MOLD-TEK TECHNOLOGIES LIMITED"
+        },
+        {
+            "RACE": "RACE ECO CHAIN LIMITED"
+        },
+        {
+            "MOS": "MOS UTILITY LIMITED"
+        },
+        {
+            "PCCL": "PETRO CARBON AND CHEMICALS LIMITED"
+        },
+        {
+            "DAVANGERE": "DAVANGERE SUGAR COMPANY LIMITED"
+        },
+        {
+            "SUPREMEPWR": "SUPREME POWER EQUIPMENT LIMITED"
+        },
+        {
+            "BCONCEPTS": "BRAND CONCEPTS LIMITED"
+        },
+        {
+            "ALANKIT": "ALANKIT LIMITED"
+        },
+        {
+            "SREEL": "SREELEATHERS LIMITED"
+        },
+        {
+            "IITL": "INDUSTRIAL INVESTMENT TRUST LIMITED"
+        },
+        {
+            "INDOBORAX": "INDO BORAX & CHEMICALS LIMITED"
+        },
+        {
+            "TGL": "TEERTH GOPICON LIMITED"
+        },
+        {
+            "NBIFIN": "N. B. I. INDUSTRIAL FINANCE COMPANY LIMITED"
+        },
+        {
+            "MUNJALSHOW": "MUNJAL SHOWA LIMITED"
+        },
+        {
+            "NAGAFERT": "NAGARJUNA FERTILIZERS AND CHEMICALS LIMITED"
+        },
+        {
+            "SRM": "SRM CONTRACTORS LIMITED"
+        },
+        {
+            "NOVAAGRI": "NOVA AGRITECH LIMITED"
+        },
+        {
+            "KRONOX": "KRONOX LAB SCIENCES LIMITED"
+        },
+        {
+            "IZMO": "IZMO LIMITED"
+        },
+        {
+            "REMSONSIND": "REMSONS INDUSTRIES LIMITED"
+        },
+        {
+            "DPWIRES": "D P WIRES LIMITED"
+        },
+        {
+            "VIKASECO": "VIKAS ECOTECH LIMITED"
+        },
+        {
+            "PAVNAIND": "PAVNA INDUSTRIES LIMITED"
+        },
+        {
+            "NAHARINDUS": "NAHAR INDUSTRIAL ENTERPRISES LIMITED"
+        },
+        {
+            "ATMASTCO": "ATMASTCO LIMITED"
+        },
+        {
+            "DRONE": "DRONE DESTINATION LIMITED"
+        },
+        {
+            "SAHAJSOLAR": "SAHAJ SOLAR LIMITED"
+        },
+        {
+            "AVG": "AVG LOGISTICS LIMITED"
+        },
+        {
+            "DICIND": "DIC INDIA LIMITED"
+        },
+        {
+            "KORE": "JAY JALARAM TECHNOLOGIES LIMITED"
+        },
+        {
+            "TARACHAND": "TARA CHAND INFRALOGISTIC SOLUTIONS LIMITED"
+        },
+        {
+            "MANAKSIA": "MANAKSIA LIMITED"
+        },
+        {
+            "BALAJEE": "SHREE TIRUPATI BALAJEE AGRO TRADING COMPANY LIMITED"
+        },
+        {
+            "SPCL": "SHIVALIC POWER CONTROL LIMITED"
+        },
+        {
+            "FCSSOFT": "FCS SOFTWARE SOLUTIONS LIMITED"
+        },
+        {
+            "GENUSPAPER": "GENUS PAPER & BOARDS LIMITED"
+        },
+        {
+            "EFFWA": "EFFWA INFRA & RESEARCH LIMITED"
+        },
+        {
+            "MEDICAMEQ": "MEDICAMEN BIOTECH LIMITED"
+        },
+        {
+            "ASMS": "BARTRONICS INDIA LIMITED"
+        },
+        {
+            "SGIL": "SYNERGY GREEN INDUSTRIES LIMITED"
+        },
+        {
+            "WTICAB": "WISE TRAVEL INDIA LIMITED"
+        },
+        {
+            "RMDRIP": "R M DRIP AND SPRINKLERS SYSTEMS LIMITED"
+        },
+        {
+            "KAYA": "KAYA LIMITED"
+        },
+        {
+            "PRECOT": "PRECOT LIMITED"
+        },
+        {
+            "ORIENTCER": "ORIENT CERATECH LIMITED"
+        },
+        {
+            "AURUM": "AURUM PROPTECH LIMITED"
+        },
+        {
+            "EMKAY": "EMKAY GLOBAL FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "XTGLOBAL": "XTGLOBAL INFOTECH LIMITED"
+        },
+        {
+            "MIRZAINT": "MIRZA INTERNATIONAL LIMITED"
+        },
+        {
+            "KRISHIVAL": "KRISHIVAL FOODS LIMITED"
+        },
+        {
+            "AARTISURF": "AARTI SURFACTANTS LIMITED"
+        },
+        {
+            "HINDMOTORS": "HINDUSTAN MOTORS LIMITED"
+        },
+        {
+            "ORICONENT": "ORICON ENTERPRISES LIMITED"
+        },
+        {
+            "HTMEDIA": "HT MEDIA LIMITED"
+        },
+        {
+            "HIGREEN": "HI-GREEN CARBON LIMITED"
+        },
+        {
+            "BPL": "BPL LIMITED"
+        },
+        {
+            "KAMATHOTEL": "KAMAT HOTELS (I) LIMITED"
+        },
+        {
+            "PTL": "PTL ENTERPRISES LIMITED"
+        },
+        {
+            "SSDL": "SARASWATI SAREE DEPOT LIMITED"
+        },
+        {
+            "ACCENTMIC": "ACCENT MICROCELL LIMITED"
+        },
+        {
+            "RCOM": "RELIANCE COMMUNICATIONS L"
+        },
+        {
+            "CLEDUCATE": "CL EDUCATE LIMITED"
+        },
+        {
+            "MUTHOOTCAP": "MUTHOOT CAPITAL SERVICES LIMITED"
+        },
+        {
+            "HCL-INSYS": "HCL INFOSYSTEMS LIMITED"
+        },
+        {
+            "KCPSUGIND": "KCP SUGAR AND INDUSTRIES CORPORATION LIMITED"
+        },
+        {
+            "INDOUS": "INDO US BIOTECH LIMITED"
+        },
+        {
+            "KANORICHEM": "KANORIA CHEMICALS & INDUSTRIES LIMITED"
+        },
+        {
+            "PREMIERPOL": "PREMIER POLYFILM LIMITED"
+        },
+        {
+            "LAWSIKHO": "ADDICTIVE LEARNING TECHNOLOGY LIMITED"
+        },
+        {
+            "SHIVAMAUTO": "SHIVAM AUTOTECH LIMITED"
+        },
+        {
+            "VINSYS": "VINSYS IT SERVICES INDIA LIMITED"
+        },
+        {
+            "INTLCONV": "INTERNATIONAL CONVEYORS LIMITED"
+        },
+        {
+            "IRISDOREME": "IRIS CLOTHINGS LIMITED"
+        },
+        {
+            "MODISONLTD": "MODISON LIMITED"
+        },
+        {
+            "BALAXI": "BALAXI PHARMACEUTICALS LIMITED"
+        },
+        {
+            "3IINFOLTD": "3I INFOTECH LIMITED"
+        },
+        {
+            "NAHARCAP": "NAHAR CAPITAL AND FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "MAZDA": "MAZDA LIMITED"
+        },
+        {
+            "ZIMLAB": "ZIM LABORATORIES LIMITED"
+        },
+        {
+            "KILITCH": "KILITCH DRUGS (INDIA) LIMITED"
+        },
+        {
+            "GEEKAYWIRE": "GEEKAY WIRES LIMITED"
+        },
+        {
+            "DIAMINESQ": "DIAMINES & CHEMICALS LIMITED"
+        },
+        {
+            "SINCLAIR": "SINCLAIRS HOTELS LIMITED"
+        },
+        {
+            "AXITA": "AXITA COTTON LIMITED"
+        },
+        {
+            "URAVI": "URAVI T AND WEDGE LAMPS LIMITED"
+        },
+        {
+            "ASAHISONG": "ASAHI SONGWON COLORS LIMITED"
+        },
+        {
+            "MIRCELECTR": "MIRC ELECTRONICS LIMITED"
+        },
+        {
+            "TRF": "TRF LIMITED"
+        },
+        {
+            "IFBAGRO": "IFB AGRO INDUSTRIES LIMITED"
+        },
+        {
+            "UYFINCORP": "U. Y. FINCORP LIMITED"
+        },
+        {
+            "PROV": "PROVENTUS AGROCOM LIMITED"
+        },
+        {
+            "APCL": "ANJANI PORTLAND CEMENT LIMITED"
+        },
+        {
+            "SADBHAV": "SADBHAV ENGINEERING LIMITED"
+        },
+        {
+            "SRD": "SHANKAR LAL RAMPAL DYE-CHEM LIMITED"
+        },
+        {
+            "VALIANTLAB": "VALIANT LABORATORIES LIMITED"
+        },
+        {
+            "VIVIANA": "VIVIANA POWER TECH LIMITED"
+        },
+        {
+            "TEMBO": "TEMBO GLOBAL INDUSTRIES LIMITED"
+        },
+        {
+            "ORIENTBELL": "ORIENT BELL LIMITED"
+        },
+        {
+            "MANAKCOAT": "MANAKSIA COATED METALS & INDUSTRIES LIMITED"
+        },
+        {
+            "FROG": "FROG CELLSAT LIMITED"
+        },
+        {
+            "NILAINFRA": "NILA INFRASTRUCTURES LIMITED"
+        },
+        {
+            "INSPIRISYS": "INSPIRISYS SOLUTIONS LIMITED"
+        },
+        {
+            "GOKUL": "GOKUL REFOILS AND SOLVENT LIMITED"
+        },
+        {
+            "UTSSAV": "UTSSAV CZ GOLD JEWELS LIMITED"
+        },
+        {
+            "BANSWRAS": "BANSWARA SYNTEX LIMITED"
+        },
+        {
+            "ALMONDZ": "ALMONDZ GLOBAL SECURITIES LIMITED"
+        },
+        {
+            "ELGIRUBCO": "ELGI RUBBER COMPANY LIMITED"
+        },
+        {
+            "UNIDT": "UNITED DRILLING TOOLS LIMITED"
+        },
+        {
+            "KOTHARIPRO": "KOTHARI PRODUCTS LIMITED"
+        },
+        {
+            "RADIOCITY": "MUSIC BROADCAST LIMITED"
+        },
+        {
+            "ORBTEXP": "ORBIT EXPORTS LIMITED"
+        },
+        {
+            "MEGASOFT": "MEGASOFT LIMITED"
+        },
+        {
+            "SHREEKARNI": "SHREE KARNI FABCOM LIMITED"
+        },
+        {
+            "IL&FSENGG": "IL&FS ENGINEERING AND CONSTRUCTION COMPANY LIMITED"
+        },
+        {
+            "LYKALABS": "LYKA LABS LIMITED"
+        },
+        {
+            "SOFTTECH": "SOFTTECH ENGINEERS LIMITED"
+        },
+        {
+            "SRGHFL": "SRG HOUSING FINANCE LIMITED"
+        },
+        {
+            "TRUST": "TRUST FINTECH LIMITED"
+        },
+        {
+            "AUTOIND": "AUTOLINE INDUSTRIES LIMITED"
+        },
+        {
+            "LEMERITE": "LE MERITE EXPORTS LIMITED"
+        },
+        {
+            "DYNPRO": "DYNEMIC PRODUCTS LIMITED"
+        },
+        {
+            "KAPSTON": "KAPSTON SERVICES LIMITED"
+        },
+        {
+            "SWARAJ": "SWARAJ SUITING LIMITED"
+        },
+        {
+            "DUGLOBAL": "DUDIGITAL GLOBAL LIMITED"
+        },
+        {
+            "EUROBOND": "EURO PANEL PRODUCTS LIMITED"
+        },
+        {
+            "ZTECH": "Z-TECH (INDIA) LIMITED"
+        },
+        {
+            "OCCLLTD": "OCCL LIMITED"
+        },
+        {
+            "UFO": "UFO MOVIEZ INDIA LIMITED"
+        },
+        {
+            "DCI": "DC INFOTECH AND COMMUNICATION LIMITED"
+        },
+        {
+            "HARRMALAYA": "HARRISONS  MALAYALAM LIMITED"
+        },
+        {
+            "NILASPACES": "NILA SPACES LIMITED"
+        },
+        {
+            "VSTL": "VIBHOR STEEL TUBES LIMITED"
+        },
+        {
+            "VARDHACRLC": "VARDHMAN ACRYLICS LIMITED"
+        },
+        {
+            "PHANTOMFX": "PHANTOM DIGITAL EFFECTS LIMITED"
+        },
+        {
+            "BBTCL": "B&B TRIPLEWALL CONTAINERS LIMITED"
+        },
+        {
+            "ESCONET": "ESCONET TECHNOLOGIES LIMITED"
+        },
+        {
+            "EIFFL": "EURO INDIA FRESH FOODS LIMITED"
+        },
+        {
+            "VENUSREM": "VENUS REMEDIES LIMITED"
+        },
+        {
+            "VIPULLTD": "VIPUL LIMITED"
+        },
+        {
+            "SHEMAROO": "SHEMAROO ENTERTAINMENT LIMITED"
+        },
+        {
+            "VIESL": "VISION INFRA EQUIPMENT SOLUTIONS LIMITED"
+        },
+        {
+            "SEJALLTD": "SEJAL GLASS LIMITED"
+        },
+        {
+            "JETAIRWAYS": "JET AIRWAYS (INDIA) LIMITED"
+        },
+        {
+            "NAMOEWASTE": "NAMO EWASTE MANAGEMENT LIMITED"
+        },
+        {
+            "PRATHAM": "PRATHAM EPC PROJECTS LIMITED"
+        },
+        {
+            "RUBFILA": "RUBFILA INTERNATIONAL LIMITED"
+        },
+        {
+            "SHREERAMA": "SHREE RAMA MULTI-TECH LIMITED"
+        },
+        {
+            "KOTARISUG": "KOTHARI SUGARS AND CHEMICALS LIMITED"
+        },
+        {
+            "AFIL": "AKME FINTRADE (INDIA) LIMITED"
+        },
+        {
+            "APOLSINHOT": "APOLLO SINDOORI HOTELS LIMITED"
+        },
+        {
+            "KRISHCA": "KRISHCA STRAPPING SOLUTIONS LIMITED"
+        },
+        {
+            "EMMIL": "ENERGY MISSION MACHINERIES (INDIA) LIMITED"
+        },
+        {
+            "KRITIKA": "KRITIKA WIRES LIMITED"
+        },
+        {
+            "PRITIKAUTO": "PRITIKA AUTO INDUSTRIES LIMITED"
+        },
+        {
+            "SAKHTISUG": "SAKTHI SUGARS LIMITED"
+        },
+        {
+            "MAWANASUG": "MAWANA SUGARS LIMITED"
+        },
+        {
+            "CGRAPHICS": "CREATIVE GRAPHICS SOLUTIONS INDIA LIMITED"
+        },
+        {
+            "SHERA": "SHERA ENERGY LIMITED"
+        },
+        {
+            "AIRAN": "AIRAN LIMITED"
+        },
+        {
+            "BEWLTD": "BEW ENGINEERING LIMITED"
+        },
+        {
+            "HITECHCORP": "HITECH CORPORATION LIMITED"
+        },
+        {
+            "PODDARMENT": "PODDAR PIGMENTS LIMITED"
+        },
+        {
+            "TBI": "TBI CORN LIMITED"
+        },
+        {
+            "NIPPOBATRY": "INDO-NATIONAL LIMITED"
+        },
+        {
+            "DYNAMIC": "DYNAMIC SERVICES & SECURITY LIMITED"
+        },
+        {
+            "NDGL": "NAGA DHUNSERI GROUP LIMITED"
+        },
+        {
+            "SAAKSHI": "SAAKSHI MEDTECH AND PANELS LIMITED"
+        },
+        {
+            "MANORG": "MANGALAM ORGANICS LIMITED"
+        },
+        {
+            "OBSCP": "OBSC PERFECTION LIMITED"
+        },
+        {
+            "PASUPTAC": "PASUPATI ACRYLON LIMITED"
+        },
+        {
+            "S&SPOWER": "S&S POWER SWITCHGEARS LIMITED"
+        },
+        {
+            "ATLANTAA": "ATLANTAA LIMITED"
+        },
+        {
+            "PROZONER": "PROZONE REALTY LIMITED"
+        },
+        {
+            "KATARIA": "KATARIA INDUSTRIES LIMITED"
+        },
+        {
+            "MGEL": "MANGALAM GLOBAL ENTERPRISE LIMITED"
+        },
+        {
+            "DJML": "DJ MEDIAPRINT & LOGISTICS LIMITED"
+        },
+        {
+            "AVPINFRA": "AVP INFRACON LIMITED"
+        },
+        {
+            "CINELINE": "CINELINE INDIA LIMITED"
+        },
+        {
+            "DCMNVL": "DCM NOUVELLE LIMITED"
+        },
+        {
+            "MANOMAY": "MANOMAY TEX INDIA LIMITED"
+        },
+        {
+            "SCPL": "SHEETAL COOL PRODUCTS LIMITED"
+        },
+        {
+            "BRNL": "BHARAT ROAD NETWORK LIMITED"
+        },
+        {
+            "PONNIERODE": "PONNI SUGARS (ERODE) LIMITED"
+        },
+        {
+            "ABAN": "ABAN OFFSHORE LIMITED"
+        },
+        {
+            "EMAMIREAL": "EMAMI REALTY LIMITED     "
+        },
+        {
+            "NEPHROCARE": "NEPHRO CARE INDIA LIMITED"
+        },
+        {
+            "EXXARO": "EXXARO TILES LIMITED"
+        },
+        {
+            "ABINFRA": "A B INFRABUILD LIMITED"
+        },
+        {
+            "CHAVDA": "CHAVDA INFRA LIMITED"
+        },
+        {
+            "NATHBIOGEN": "NATH BIO-GENES (INDIA) LIMITED"
+        },
+        {
+            "TCL": "THAAI CASTING LIMITED"
+        },
+        {
+            "RUCHIRA": "RUCHIRA PAPERS LIMITED"
+        },
+        {
+            "MANAKSTEEL": "MANAKSIA STEELS LIMITED"
+        },
+        {
+            "TIRUPATIFL": "TIRUPATI FORGE LIMITED"
+        },
+        {
+            "UCAL": "UCAL LIMITED"
+        },
+        {
+            "UNIVPHOTO": "UNIVERSUS PHOTO IMAGINGS LIMITED"
+        },
+        {
+            "OSIAHYPER": "OSIA HYPER RETAIL LIMITED"
+        },
+        {
+            "SINTERCOM": "SINTERCOM INDIA LIMITED"
+        },
+        {
+            "LAL": "LORENZINI APPARELS LIMITED"
+        },
+        {
+            "ESSENTIA": "INTEGRA ESSENTIA LIMITED"
+        },
+        {
+            "TRU": "TRUCAP FINANCE LIMITED"
+        },
+        {
+            "SIGMA": "SIGMA SOLVE LIMITED"
+        },
+        {
+            "SAHYADRI": "SAHYADRI INDUSTRIES LIMITED"
+        },
+        {
+            "MEDICO": "MEDICO REMEDIES LIMITED"
+        },
+        {
+            "GLOBALVECT": "GLOBAL VECTRA HELICORP LIMITED"
+        },
+        {
+            "SUMIT": "SUMIT WOODS LIMITED"
+        },
+        {
+            "IVC": "IL&FS INVESTMENT MANAGERS LIMITED"
+        },
+        {
+            "BAHETI": "BAHETI RECYCLING INDUSTRIES LIMITED"
+        },
+        {
+            "JAYSREETEA": "JAYSHREE TEA & INDUSTRIES LIMITED"
+        },
+        {
+            "WINSOL": "WINSOL ENGINEERS LIMITED"
+        },
+        {
+            "PURVFLEXI": "PURV FLEXIPACK LIMITED"
+        },
+        {
+            "SHIVAUM": "SHIV AUM STEELS LIMITED"
+        },
+        {
+            "GLOBAL": "GLOBAL EDUCATION LIMITED"
+        },
+        {
+            "INFINIUM": "INFINIUM PHARMACHEM LIMITED"
+        },
+        {
+            "GUJAPOLLO": "GUJARAT APOLLO INDUSTRIES LIMITED"
+        },
+        {
+            "ARIES": "ARIES AGRO LIMITED"
+        },
+        {
+            "SMSLIFE": "SMS LIFESCIENCES INDIA LIMITED"
+        },
+        {
+            "IEML": "INDIAN EMULSIFIERS LIMITED"
+        },
+        {
+            "ASIANHOTNR": "ASIAN HOTELS (NORTH) LIMITED"
+        },
+        {
+            "SKP": "SKP BEARING INDUSTRIES LIMITED"
+        },
+        {
+            "TRIGYN": "TRIGYN TECHNOLOGIES LIMITED"
+        },
+        {
+            "VIPCLOTHNG": "VIP CLOTHING LIMITED"
+        },
+        {
+            "BYKE": "THE BYKE HOSPITALITY LIMITED"
+        },
+        {
+            "MWL": "MANGALAM WORLDWIDE LIMITED"
+        },
+        {
+            "NDLVENTURE": "NDL VENTURES LIMITED"
+        },
+        {
+            "MKPL": "M K PROTEINS LIMITED"
+        },
+        {
+            "SUNDRMBRAK": "SUNDARAM BRAKE LININGS LIMITED"
+        },
+        {
+            "AVONMORE": "AVONMORE CAPITAL & MANAGEMENT SERVICES  LIMITED"
+        },
+        {
+            "GULFPETRO": "GP PETROLEUMS LIMITED"
+        },
+        {
+            "PLAZACABLE": "PLAZA WIRES LIMITED"
+        },
+        {
+            "MAHEPC": "MAHINDRA EPC IRRIGATION LIMITED"
+        },
+        {
+            "SYSTANGO": "SYSTANGO TECHNOLOGIES LIMITED"
+        },
+        {
+            "VARDMNPOLY": "VARDHMAN POLYTEX LIMITED"
+        },
+        {
+            "BASML": "BANNARI AMMAN SPINNING MILLS LIMITED"
+        },
+        {
+            "KARNIKA": "KARNIKA INDUSTRIES LIMITED"
+        },
+        {
+            "PARIN": "PARIN ENTERPRISES LIMITED"
+        },
+        {
+            "SHREYANIND": "SHREYANS INDUSTRIES LIMITED"
+        },
+        {
+            "PELATRO": "PELATRO LIMITED"
+        },
+        {
+            "UMAEXPORTS": "UMA EXPORTS LIMITED"
+        },
+        {
+            "RNFI": "RNFI SERVICES LIMITED"
+        },
+        {
+            "STARPAPER": "STAR PAPER MILLS LIMITED"
+        },
+        {
+            "CCHHL": "COUNTRY CLUB HOSPITALITY & HOLIDAYS LIMITED"
+        },
+        {
+            "LORDSCHLO": "LORDS CHLORO ALKALI LIMITED"
+        },
+        {
+            "GPECO": "GP ECO SOLUTIONS INDIA LIMITED"
+        },
+        {
+            "DRCSYSTEMS": "DRC SYSTEMS INDIA LIMITED"
+        },
+        {
+            "ETML": "EMERALD TYRE MANUFACTURERS LIMITED"
+        },
+        {
+            "RHL": "ROBUST HOTELS LIMITED"
+        },
+        {
+            "GOYALSALT": "GOYAL SALT LIMITED"
+        },
+        {
+            "BGRENERGY": "BGR ENERGY SYSTEMS LIMITED"
+        },
+        {
+            "GOLDTECH": "AION-TECH SOLUTIONS LIMITED"
+        },
+        {
+            "RAMAPHO": "RAMA PHOSPHATES LIMITED"
+        },
+        {
+            "REPL": "RUDRABHISHEK ENTERPRISES LIMITED"
+        },
+        {
+            "SOUTHWEST": "SOUTH WEST PINNACLE EXPLORATION LIMITED"
+        },
+        {
+            "SHYAMCENT": "SHYAM CENTURY FERROUS LIMITED"
+        },
+        {
+            "COASTCORP": "COASTAL CORPORATION LIMITED"
+        },
+        {
+            "NEWJAISA": "NEWJAISA TECHNOLOGIES LIMITED"
+        },
+        {
+            "TREJHARA": "TREJHARA SOLUTIONS LIMITED"
+        },
+        {
+            "KMSUGAR": "K.M.SUGAR MILLS LIMITED"
+        },
+        {
+            "RVHL": "RAVINDER HEIGHTS LIMITED"
+        },
+        {
+            "BROOKS": "BROOKS LABORATORIES LIMITED"
+        },
+        {
+            "KCEIL": "KAY CEE ENERGY & INFRA LIMITED"
+        },
+        {
+            "SPECTSTM": "SPECTRUM TALENT MANAGEMENT LIMITED"
+        },
+        {
+            "REFRACTORY": "REFRACTORY SHAPES LIMITED"
+        },
+        {
+            "WELINV": "WELSPUN INVESTMENTS AND COMMERCIALS LIMITED"
+        },
+        {
+            "ABCOTS": "A B COTSPIN INDIA LIMITED"
+        },
+        {
+            "RANASUG": "RANA SUGARS LIMITED"
+        },
+        {
+            "INFOLLION": "INFOLLION RESEARCH SERVICES LIMITED"
+        },
+        {
+            "OSELDEVICE": "OSEL DEVICES LIMITED"
+        },
+        {
+            "INTENTECH": "INTENSE TECHNOLOGIES LIMITED"
+        },
+        {
+            "MURUDCERA": "MURUDESHWAR CERAMICS LIMITED"
+        },
+        {
+            "MCLEODRUSS": "MCLEOD RUSSEL INDIA LIMITED"
+        },
+        {
+            "USK": "UDAYSHIVAKUMAR INFRA LIMITED"
+        },
+        {
+            "BHAGYANGR": "BHAGYANAGAR INDIA LIMITED"
+        },
+        {
+            "VISASTEEL": "VISA STEEL LIMITED"
+        },
+        {
+            "ZODIACLOTH": "ZODIAC CLOTHING COMPANY LIMITED"
+        },
+        {
+            "SHRADHA": "SHRADHA INFRAPROJECTS LIMITED"
+        },
+        {
+            "VISHWARAJ": "VISHWARAJ SUGAR INDUSTRIES LIMITED"
+        },
+        {
+            "A2ZINFRA": "A2Z INFRA ENGINEERING LIMITED"
+        },
+        {
+            "RANEENGINE": "RANE ENGINE VALVE LIMITED"
+        },
+        {
+            "PILITA": "PIL ITALICA LIFESTYLE LIMITED"
+        },
+        {
+            "EFACTOR": "E FACTOR EXPERIENCES LIMITED"
+        },
+        {
+            "ROCKINGDCE": "ROCKINGDEALS CIRCULAR ECONOMY LIMITED"
+        },
+        {
+            "ODIGMA": "ODIGMA CONSULTANCY SOLUTIONS LIMITED"
+        },
+        {
+            "FRESHARA": "FRESHARA AGRO EXPORTS LIMITED"
+        },
+        {
+            "RAJTV": "RAJ TELEVISION NETWORK LIMITED"
+        },
+        {
+            "DEVIT": "DEV INFORMATION TECHNOLOGY LIMITED"
+        },
+        {
+            "SVLL": "SHREE VASU LOGISTICS LIMITED"
+        },
+        {
+            "MARALOVER": "MARAL OVERSEAS LIMITED"
+        },
+        {
+            "TECHERA": "TECHERA ENGINEERING (INDIA) LIMITED"
+        },
+        {
+            "NECCLTD": "NORTH EASTERN CARRYING CORPORATION LIMITED"
+        },
+        {
+            "RUCHINFRA": "RUCHI INFRASTRUCTURE LIMITED"
+        },
+        {
+            "INDOWIND": "INDOWIND ENERGY LIMITED"
+        },
+        {
+            "VIRINCHI": "VIRINCHI LIMITED"
+        },
+        {
+            "SURANAT&P": "SURANA TELECOM AND POWER LIMITED"
+        },
+        {
+            "FELIX": "FELIX INDUSTRIES LIMITED"
+        },
+        {
+            "RAJMET": "RAJNANDINI METAL LIMITED"
+        },
+        {
+            "K2INFRA": "K2 INFRAGEN LIMITED"
+        },
+        {
+            "SDREAMS": "S D RETAIL LIMITED"
+        },
+        {
+            "POSITRON": "POSITRON ENERGY LIMITED"
+        },
+        {
+            "PAR": "PAR DRUGS AND CHEMICALS LIMITED"
+        },
+        {
+            "LAKSHYA": "LAKSHYA POWERTECH LIMITED"
+        },
+        {
+            "AARON": "AARON INDUSTRIES LIMITED"
+        },
+        {
+            "MEGASTAR": "MEGASTAR FOODS LIMITED"
+        },
+        {
+            "LANCORHOL": "LANCOR HOLDINGS LIMITED"
+        },
+        {
+            "MODIRUBBER": "MODI RUBBER LIMITED"
+        },
+        {
+            "PROPEQUITY": "P. E. ANALYTICS LIMITED"
+        },
+        {
+            "SURANI": "SURANI STEEL TUBES LIMITED"
+        },
+        {
+            "KCK": "KCK INDUSTRIES LIMITED"
+        },
+        {
+            "MAGNUM": "MAGNUM VENTURES LIMITED"
+        },
+        {
+            "NURECA": "NURECA LIMITED"
+        },
+        {
+            "KBCGLOBAL": "KBC GLOBAL LIMITED"
+        },
+        {
+            "ZEELEARN": "ZEE LEARN LIMITED"
+        },
+        {
+            "NIRMAN": "NIRMAN AGRI GENETICS LIMITED"
+        },
+        {
+            "RAMANEWS": "SHREE RAMA NEWSPRINT LIMITED"
+        },
+        {
+            "PPAP": "PPAP AUTOMOTIVE LIMITED"
+        },
+        {
+            "GOLDKART": "GOLDKART JEWELS LIMITED"
+        },
+        {
+            "MAHASTEEL": "MAHAMAYA STEEL INDUSTRIES LIMITED"
+        },
+        {
+            "RPPL": "RAJSHREE POLYPACK LIMITED"
+        },
+        {
+            "CRAYONS": "CRAYONS ADVERTISING LIMITED"
+        },
+        {
+            "GOLDSTAR": "GOLDSTAR POWER LIMITED"
+        },
+        {
+            "LGBFORGE": "LGB FORGE LIMITED        "
+        },
+        {
+            "TTL": "T T LIMITED"
+        },
+        {
+            "THOMASCOTT": "THOMAS SCOTT (INDIA) LIMITED"
+        },
+        {
+            "IEL": "INDIABULLS ENTERPRISES LIMITED"
+        },
+        {
+            "PRLIND": "PREMIER ROADLINES LIMITED"
+        },
+        {
+            "CROWN": "CROWN LIFTERS LIMITED"
+        },
+        {
+            "VETO": "VETO SWITCHGEARS AND CABLES LIMITED"
+        },
+        {
+            "RKEC": "RKEC PROJECTS LIMITED"
+        },
+        {
+            "MANCREDIT": "MANGAL CREDIT AND FINCORP LIMITED"
+        },
+        {
+            "AURDIS": "AURANGABAD DISTILLERY LIMITED"
+        },
+        {
+            "COMSYN": "COMMERCIAL SYN BAGS LIMITED"
+        },
+        {
+            "CORDSCABLE": "CORDS CABLE INDUSTRIES LIMITED"
+        },
+        {
+            "NOIDATOLL": "NOIDA TOLL BRIDGE COMPANY LIMITED"
+        },
+        {
+            "TAKE": "TAKE SOLUTIONS LIMITED"
+        },
+        {
+            "OMAXAUTO": "OMAX AUTOS LIMITED"
+        },
+        {
+            "SUPREMEINF": "SUPREME INFRASTRUCTURE INDIA LIMITED"
+        },
+        {
+            "USHAFIN": "USHA FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "ANLON": "ANLON TECHNOLOGY SOLUTIONS LIMITED"
+        },
+        {
+            "STARTECK": "STARTECK FINANCE LIMITED"
+        },
+        {
+            "ALPHAGEO": "ALPHAGEO (INDIA) LIMITED"
+        },
+        {
+            "PARAGON": "PARAGON FINE AND SPECIALITY CHEMICAL LIMITED"
+        },
+        {
+            "SHIVATEX": "SHIVA TEXYARN LIMITED"
+        },
+        {
+            "DTIL": "DHUNSERI TEA & INDUSTRIES LIMITED"
+        },
+        {
+            "DELPHIFX": "DELPHI WORLD MONEY LIMITED"
+        },
+        {
+            "ROXHITECH": "ROX HI TECH LIMITED"
+        },
+        {
+            "JEYYAM": "JEYYAM GLOBAL FOODS LIMITED"
+        },
+        {
+            "AKANKSHA": "AKANKSHA POWER AND INFRASTRUCTURE LIMITED"
+        },
+        {
+            "OCCL": "ORIENTAL CARBON & CHEMICALS LIMITED"
+        },
+        {
+            "DUCON": "DUCON INFRATECHNOLOGIES LIMITED"
+        },
+        {
+            "SONAMLTD": "SONAM LIMITED"
+        },
+        {
+            "GINNIFILA": "GINNI FILAMENTS LIMITED"
+        },
+        {
+            "AHLEAST": "ASIAN HOTELS (EAST) LIMITED"
+        },
+        {
+            "SADHAV": "SADHAV SHIPPING LIMITED"
+        },
+        {
+            "UNITEDPOLY": "UNITED POLYFAB GUJARAT LIMITED"
+        },
+        {
+            "INDTERRAIN": "INDIAN TERRAIN FASHIONS LIMITED"
+        },
+        {
+            "TUNWAL": "TUNWAL E-MOTORS LIMITED"
+        },
+        {
+            "KANPRPLA": "KANPUR PLASTIPACK LIMITED"
+        },
+        {
+            "INVENTURE": "INVENTURE GROWTH & SECURITIES LIMITED"
+        },
+        {
+            "IPHL": "INDIAN PHOSPHATE LIMITED"
+        },
+        {
+            "AKSHARCHEM": "AKSHARCHEM INDIA LIMITED"
+        },
+        {
+            "VR": "V R INFRASPACE LIMITED"
+        },
+        {
+            "INNOMET": "INNOMET ADVANCED MATERIALS LIMITED"
+        },
+        {
+            "PIGL": "POWER & INSTRUMENTATION (GUJARAT) LIMITED"
+        },
+        {
+            "CANARYS": "CANARYS AUTOMATIONS LIMITED"
+        },
+        {
+            "CMNL": "CHAMAN METALLICS LIMITED"
+        },
+        {
+            "NITIRAJ": "NITIRAJ ENGINEERS LIMITED"
+        },
+        {
+            "HINDCON": "HINDCON CHEMICALS LIMITED"
+        },
+        {
+            "SMARTLINK": "SMARTLINK HOLDINGS LIMITED"
+        },
+        {
+            "DIGIKORE": "DIGIKORE STUDIOS LIMITED"
+        },
+        {
+            "MADHUSUDAN": "MADHUSUDAN MASALA LIMITED"
+        },
+        {
+            "PRAXIS": "PRAXIS HOME RETAIL LIMITED"
+        },
+        {
+            "MASON": "MASON INFRATECH LIMITED"
+        },
+        {
+            "KONSTELEC": "KONSTELEC ENGINEERS LIMITED"
+        },
+        {
+            "EQUIPPP": "EQUIPPP SOCIAL IMPACT TECHNOLOGIES LIMITED"
+        },
+        {
+            "PANSARI": "PANSARI DEVELOPERS LIMITED"
+        },
+        {
+            "DGCONTENT": "DIGICONTENT LIMITED"
+        },
+        {
+            "ZEAL": "ZEAL GLOBAL SERVICES LIMITED"
+        },
+        {
+            "GENCON": "GENERIC ENGINEERING CONSTRUCTION AND PROJECTS LIMITED"
+        },
+        {
+            "PRAENG": "PRAJAY ENGINEERS SYNDICATE LIMITED"
+        },
+        {
+            "AERON": "AERON COMPOSITE LIMITED"
+        },
+        {
+            "UNIVASTU": "UNIVASTU INDIA LIMITED"
+        },
+        {
+            "LOYALTEX": "LOYAL TEXTILE MILLS LIMITED"
+        },
+        {
+            "ARHAM": "ARHAM TECHNOLOGIES LIMITED"
+        },
+        {
+            "PANACHE": "PANACHE DIGILIFE LIMITED"
+        },
+        {
+            "SUPERHOUSE": "SUPERHOUSE LIMITED"
+        },
+        {
+            "RBS": "RAMDEVBABA SOLVENT LIMITED"
+        },
+        {
+            "SMLT": "SARTHAK METALS LIMITED"
+        },
+        {
+            "GRCL": "GAYATRI RUBBERS AND CHEMICALS LIMITED"
+        },
+        {
+            "TIPSFILMS": "TIPS FILMS LIMITED"
+        },
+        {
+            "COMPUSOFT": "COMPUCOM SOFTWARE LIMITED"
+        },
+        {
+            "JMA": "JULLUNDUR MOTOR AGENCY (DELHI) LIMITED"
+        },
+        {
+            "SADBHIN": "SADBHAV INFRASTRUCTURE PROJECT LIMITED"
+        },
+        {
+            "ARCHIDPLY": "ARCHIDPLY INDUSTRIES LIMITED"
+        },
+        {
+            "ONDOOR": "ON DOOR CONCEPTS LIMITED"
+        },
+        {
+            "DCG": "DCG CABLES & WIRES LIMITED"
+        },
+        {
+            "ANIKINDS": "ANIK INDUSTRIES LIMITED"
+        },
+        {
+            "BSL": "BSL LIMITED"
+        },
+        {
+            "ISFT": "INTRASOFT TECHNOLOGIES LIMITED"
+        },
+        {
+            "UMANGDAIRY": "UMANG DAIRIES LIMITED"
+        },
+        {
+            "AGARWALTUF": "AGARWAL TOUGHENED GLASS INDIA LIMITED"
+        },
+        {
+            "LLOYDS": "LLOYDS LUXURIES LIMITED"
+        },
+        {
+            "NIRAJ": "NIRAJ CEMENT STRUCTURALS LIMITED"
+        },
+        {
+            "MAHAPEXLTD": "MAHA RASHTRA APEX CORPORATION LIMITED"
+        },
+        {
+            "SONAMAC": "SONA MACHINERY LIMITED"
+        },
+        {
+            "OSWALSEEDS": "SHREEOSWAL SEEDS AND CHEMICALS LIMITED"
+        },
+        {
+            "SAH": "SAH POLYMERS LIMITED"
+        },
+        {
+            "RAJSREESUG": "RAJSHREE SUGARS & CHEMICALS LIMITED"
+        },
+        {
+            "OILCOUNTUB": "OIL COUNTRY TUBULAR LIMITED"
+        },
+        {
+            "YASHOPTICS": "YASH OPTICS & LENS LIMITED"
+        },
+        {
+            "ALPA": "ALPA LABORATORIES LIMITED"
+        },
+        {
+            "ENSER": "ENSER COMMUNICATIONS LIMITED"
+        },
+        {
+            "TAINWALCHM": "TAINWALA CHEMICAL AND PLASTIC (I) LIMITED"
+        },
+        {
+            "SURANASOL": "SURANA SOLAR LIMITED"
+        },
+        {
+            "EMMBI": "EMMBI INDUSTRIES LIMITED"
+        },
+        {
+            "DPEL": "DIVINE POWER ENERGY LIMITED"
+        },
+        {
+            "SECL": "SALASAR EXTERIORS AND CONTOUR LIMITED"
+        },
+        {
+            "AARTECH": "AARTECH SOLONICS LIMITED"
+        },
+        {
+            "SHREEOSFM": "SHREE OSFM E-MOBILITY LIMITED"
+        },
+        {
+            "ASPINWALL": "ASPINWALL AND COMPANY LIMITED"
+        },
+        {
+            "SHAH": "SHAH METACORP LIMITED"
+        },
+        {
+            "UNITEDTEA": "THE UNITED NILGIRI TEA ESTATES COMPANY LIMITED"
+        },
+        {
+            "AMJLAND": "AMJ LAND HOLDINGS LIMITED"
+        },
+        {
+            "TROM": "TROM INDUSTRIES LIMITED"
+        },
+        {
+            "LAGNAM": "LAGNAM SPINTEX LIMITED"
+        },
+        {
+            "MAXPOSURE": "MAXPOSURE LIMITED"
+        },
+        {
+            "UNIHEALTH": "UNIHEALTH HOSPITALS LIMITED"
+        },
+        {
+            "ESPRIT": "ESPRIT STONES LIMITED"
+        },
+        {
+            "ENVIRO": "ENVIROTECH SYSTEMS LIMITED"
+        },
+        {
+            "DELAPLEX": "DELAPLEX LIMITED"
+        },
+        {
+            "IVP": "IVP LIMITED"
+        },
+        {
+            "CORALFINAC": "CORAL INDIA FINANCE & HOUSING LIMITED"
+        },
+        {
+            "SIGIND": "SIGNET INDUSTRIES LIMITED"
+        },
+        {
+            "KLL": "KAUSHALYA LOGISTICS LIMITED"
+        },
+        {
+            "CAPTRUST": "CAPITAL TRUST LIMITED"
+        },
+        {
+            "INCREDIBLE": "INCREDIBLE INDUSTRIES LIMITED"
+        },
+        {
+            "HINDNATGLS": "HINDUSTHAN NATIONAL GLASS & INDUSTRIES LIMITED"
+        },
+        {
+            "GRETEX": "GRETEX INDUSTRIES LIMITED"
+        },
+        {
+            "SSFL": "SRIVARI SPICES AND FOODS LIMITED"
+        },
+        {
+            "GTL": "GTL LIMITED"
+        },
+        {
+            "INDBANK": "INDBANK MERCHANT BANKING SERVICES LIMITED"
+        },
+        {
+            "SHIGAN": "SHIGAN QUANTUM TECHNOLOGIES LIMITED"
+        },
+        {
+            "WORTH": "WORTH PERIPHERALS LIMITED"
+        },
+        {
+            "INM": "INTERIORS & MORE LIMITED"
+        },
+        {
+            "LOVABLE": "LOVABLE LINGERIE LIMITED"
+        },
+        {
+            "QMSMEDI": "QMS MEDICAL ALLIED SERVICES LIMITED"
+        },
+        {
+            "SOMICONVEY": "SOMI CONVEYOR BELTINGS LIMITED"
+        },
+        {
+            "AARVI": "AARVI ENCON LIMITED"
+        },
+        {
+            "GILLANDERS": "GILLANDERS ARBUTHNOT & COMPANY LIMITED"
+        },
+        {
+            "TEXMOPIPES": "TEXMO PIPES AND PRODUCTS LIMITED"
+        },
+        {
+            "GVPTECH": "GVP INFOTECH LIMITED"
+        },
+        {
+            "CTE": "CAMBRIDGE TECHNOLOGY ENTERPRISES LIMITED"
+        },
+        {
+            "URBAN": "URBAN ENVIRO WASTE MANAGEMENT LIMITED"
+        },
+        {
+            "SALSTEEL": "S.A.L. STEEL LIMITED"
+        },
+        {
+            "MODTHREAD": "MODERN THREADS (INDIA) LIMITED"
+        },
+        {
+            "BEACON": "BEACON TRUSTEESHIP LIMITED"
+        },
+        {
+            "WEIZMANIND": "WEIZMANN LIMITED"
+        },
+        {
+            "IL&FSTRANS": "IL&FS TRANSPORTATION NETWORKS LIMITED"
+        },
+        {
+            "PURPLEUTED": "PURPLE UNITED SALES LIMITED"
+        },
+        {
+            "RAJPUTANA": "RAJPUTANA BIODIESEL LIMITED"
+        },
+        {
+            "DENEERS": "DE NEERS TOOLS LIMITED"
+        },
+        {
+            "GSS": "GSS INFOTECH LIMITED"
+        },
+        {
+            "BAGFILMS": "B.A.G FILMS AND MEDIA LIMITED"
+        },
+        {
+            "CENTEXT": "CENTURY EXTRUSIONS LIMITED"
+        },
+        {
+            "BALPHARMA": "BAL PHARMA LIMITED"
+        },
+        {
+            "DHRUV": "DHRUV CONSULTANCY SERVICES LIMITED"
+        },
+        {
+            "PRITIKA": "PRITIKA ENGINEERING COMPONENTS LIMITED"
+        },
+        {
+            "KALYANIFRG": "KALYANI FORGE LIMITED"
+        },
+        {
+            "ARVEE": "ARVEE LABORATORIES (INDIA) LIMITED"
+        },
+        {
+            "SATECH": "S A TECH SOFTWARE INDIA LIMITED"
+        },
+        {
+            "KHFM": "KHFM HOSPITALITY AND FACILITY MANAGEMENT SERVICES LIMITED"
+        },
+        {
+            "MANAKALUCO": "MANAKSIA ALUMINIUM COMPANY LIMITED"
+        },
+        {
+            "JHS": "JHS SVENDGAARD LABORATORIES LIMITED"
+        },
+        {
+            "PRITI": "PRITI INTERNATIONAL LIMITED"
+        },
+        {
+            "QUESTLAB": "QUEST LABORATORIES LIMITED"
+        },
+        {
+            "MHLXMIRU": "MAHALAXMI RUBTECH LIMITED"
+        },
+        {
+            "MAITREYA": "MAITREYA MEDICARE LIMITED"
+        },
+        {
+            "FLEXITUFF": "FLEXITUFF VENTURES INTERNATIONAL LIMITED"
+        },
+        {
+            "BAFNAPH": "BAFNA PHARMACEUTICALS LIMITED"
+        },
+        {
+            "HDIL": "HOUSING DEVELOPMENT AND INFRASTRUCTURE LIMITED"
+        },
+        {
+            "AIROLAM": "AIRO LAM LIMITED"
+        },
+        {
+            "MAHESHWARI": "MAHESHWARI LOGISTICS LIMITED"
+        },
+        {
+            "NAMAN": "NAMAN IN-STORE (INDIA) LIMITED"
+        },
+        {
+            "RAJINDLTD": "RAJPUTANA INDUSTRIES LIMITED"
+        },
+        {
+            "VITAL": "VITAL CHEMTECH LIMITED"
+        },
+        {
+            "KREBSBIO": "KREBS BIOCHEMICALS AND INDUSTRIES LIMITED"
+        },
+        {
+            "VAISHALI": "VAISHALI PHARMA LIMITED"
+        },
+        {
+            "FIDEL": "FIDEL SOFTECH LIMITED"
+        },
+        {
+            "BAIDFIN": "BAID FINSERV LIMITED"
+        },
+        {
+            "XELPMOC": "XELPMOC DESIGN AND TECH LIMITED"
+        },
+        {
+            "DUCOL": "DUCOL ORGANICS AND COLOURS LIMITED"
+        },
+        {
+            "MANGALAM": "MANGALAM DRUGS AND ORGANICS LIMITED"
+        },
+        {
+            "SYLVANPLY": "SYLVAN PLYBOARD (INDIA) LIMITED"
+        },
+        {
+            "MDL": "MARVEL DECOR LIMITED"
+        },
+        {
+            "KEYFINSERV": "KEYNOTE FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "GANGESSECU": "GANGES SECURITIES LIMITED"
+        },
+        {
+            "HILTON": "HILTON METAL FORGING LIMITED"
+        },
+        {
+            "USASEEDS": "UPSURGE SEEDS OF AGRICULTURE LIMITED"
+        },
+        {
+            "MUKTAARTS": "MUKTA ARTS LIMITED"
+        },
+        {
+            "RHFL": "RELIANCE HOME FINANCE LIMITED"
+        },
+        {
+            "DCM": "DCM  LIMITED"
+        },
+        {
+            "JOCIL": "JOCIL LIMITED"
+        },
+        {
+            "LAMBODHARA": "LAMBODHARA TEXTILES LIMITED"
+        },
+        {
+            "SIL": "STANDARD INDUSTRIES LIMITED"
+        },
+        {
+            "ATAM": "ATAM VALVES LIMITED"
+        },
+        {
+            "SELMC": "SEL MANUFACTURING COMPANY LIMITED"
+        },
+        {
+            "SUNLITE": "SUNLITE RECYCLING INDUSTRIES LIMITED"
+        },
+        {
+            "RULKA": "RULKA ELECTRICALS LIMITED"
+        },
+        {
+            "PRIZOR": "PRIZOR VIZTECH LIMITED"
+        },
+        {
+            "SIKKO": "SIKKO INDUSTRIES LIMITED"
+        },
+        {
+            "CHETANA": "CHETANA EDUCATION LIMITED"
+        },
+        {
+            "ANMOL": "ANMOL INDIA LIMITED"
+        },
+        {
+            "GREENCHEF": "GREENCHEF APPLIANCES LIMITED"
+        },
+        {
+            "SHEKHAWATI": "SHEKHAWATI INDUSTRIES LIMITED"
+        },
+        {
+            "FORCAS": "FORCAS STUDIO LIMITED"
+        },
+        {
+            "TARMAT": "TARMAT LIMITED"
+        },
+        {
+            "SPLIL": "SPL INDUSTRIES LIMITED"
+        },
+        {
+            "SETCO": "SETCO AUTOMOTIVE LIMITED"
+        },
+        {
+            "FONEBOX": "FONEBOX RETAIL LIMITED"
+        },
+        {
+            "MRO-TEK": "MRO-TEK REALTY LIMITED"
+        },
+        {
+            "EROSMEDIA": "EROS INTL MEDIA LIMITED"
+        },
+        {
+            "AISL": "ANI INTEGRATED SERVICES LIMITED"
+        },
+        {
+            "AKI": "AKI INDIA LIMITED"
+        },
+        {
+            "APEXECO": "APEX ECOTECH LIMITED"
+        },
+        {
+            "HOMESFY": "HOMESFY REALTY LIMITED"
+        },
+        {
+            "UHTL": "UNITED HEAT TRANSFER LIMITED"
+        },
+        {
+            "JAINAM": "JAINAM FERRO ALLOYS (I) LIMITED"
+        },
+        {
+            "LATTEYS": "LATTEYS INDUSTRIES LIMITED"
+        },
+        {
+            "AMBEY": "AMBEY LABORATORIES LIMITED"
+        },
+        {
+            "REGENCERAM": "REGENCY CERAMICS LIMITED"
+        },
+        {
+            "BHANDARI": "BHANDARI HOSIERY EXPORTS LIMITED"
+        },
+        {
+            "RELCHEMQ": "RELIANCE CHEMOTEX INDUSTRIES LIMITED"
+        },
+        {
+            "ENFUSE": "ENFUSE SOLUTIONS LIMITED"
+        },
+        {
+            "ANSALAPI": "ANSAL PROP & INFRA LIMITED"
+        },
+        {
+            "IPSL": "INTEGRATED PERSONNEL SERVICES LIMITED"
+        },
+        {
+            "GICL": "GLOBE INTERNATIONAL CARRIERS LIMITED"
+        },
+        {
+            "INDIANCARD": "INDIAN CARD CLOTHING COMPANY LIMITED"
+        },
+        {
+            "MITCON": "MITCON CONSULTANCY & ENGINEERING SERVICES LIMITED"
+        },
+        {
+            "ZENITHDRUG": "ZENITH DRUGS LIMITED"
+        },
+        {
+            "DIGIDRIVE": "DIGIDRIVE DISTRIBUTORS LIMITED"
+        },
+        {
+            "HVAX": "HVAX TECHNOLOGIES LIMITED"
+        },
+        {
+            "TOUCHWOOD": "TOUCHWOOD ENTERTAINMENT LIMITED"
+        },
+        {
+            "WIPL": "THE WESTERN INDIA PLYWOODS LIMITED"
+        },
+        {
+            "KAKATCEM": "KAKATIYA CEMENT SUGAR & INDUSTRIES LIMITED"
+        },
+        {
+            "HPIL": "HINDPRAKASH INDUSTRIES LIMITED"
+        },
+        {
+            "RAPPID": "RAPPID VALVES (INDIA) LIMITED"
+        },
+        {
+            "SHRITECH": "SHRI TECHTEX LIMITED"
+        },
+        {
+            "SURYALAXMI": "SURYALAKSHMI COTTON MILLS LIMITED"
+        },
+        {
+            "ACCURACY": "ACCURACY SHIPPING LIMITED"
+        },
+        {
+            "PULZ": "PULZ ELECTRONICS LIMITED"
+        },
+        {
+            "DRSDILIP": "DRS DILIP ROADLINES LIMITED"
+        },
+        {
+            "DBSTOCKBRO": "DB (INTERNATIONAL) STOCK BROKERS LIMITED"
+        },
+        {
+            "BHARATGEAR": "BHARAT GEARS LIMITED"
+        },
+        {
+            "EFORCE": "ELECTRO FORCE (INDIA) LIMITED"
+        },
+        {
+            "ASHALOG": "ASHAPURA LOGISTICS LIMITED"
+        },
+        {
+            "PATINTLOG": "PATEL INTEGRATED LOGISTICS LIMITED"
+        },
+        {
+            "BEARDSELL": "BEARDSELL LIMITED"
+        },
+        {
+            "ARTNIRMAN": "ART NIRMAN LIMITED"
+        },
+        {
+            "PRAMARA": "PRAMARA PROMOTIONS LIMITED"
+        },
+        {
+            "AKSHOPTFBR": "AKSH OPTIFIBRE LIMITED"
+        },
+        {
+            "ZENITHEXPO": "ZENITH EXPORTS LIMITED"
+        },
+        {
+            "PRAKASHSTL": "PRAKASH STEELAGE LIMITED"
+        },
+        {
+            "KOHINOOR": "KOHINOOR FOODS LIMITED"
+        },
+        {
+            "ALUWIND": "ALUWIND ARCHITECTURAL LIMITED"
+        },
+        {
+            "SALONA": "SALONA COTSPIN LIMITED"
+        },
+        {
+            "DESTINY": "DESTINY LOGISTICS & INFRA LIMITED"
+        },
+        {
+            "BTML": "BODHI TREE MULTIMEDIA LIMITED"
+        },
+        {
+            "AAREYDRUGS": "AAREY DRUGS & PHARMACEUTICALS LIMITED"
+        },
+        {
+            "PKTEA": "THE PERIA KARAMALAI TEA & PRODUCE COMPANY LIMITED"
+        },
+        {
+            "DECCANTRAN": "DECCAN TRANSCON LEASING LIMITED"
+        },
+        {
+            "GAYAPROJ": "GAYATRI PROJECTS LIMITED"
+        },
+        {
+            "KEL": "KUNDAN EDIFICE LIMITED"
+        },
+        {
+            "VISESHINFO": "VISESH INFOTECNICS LIMITED"
+        },
+        {
+            "SRIVASAVI": "SRIVASAVI ADHESIVE TAPES LIMITED"
+        },
+        {
+            "IBLFL": "IBL FINANCE LIMITED"
+        },
+        {
+            "3RDROCK": "3RD ROCK MULTIMEDIA LIMITED"
+        },
+        {
+            "AVROIND": "AVRO INDIA LIMITED"
+        },
+        {
+            "SOTAC": "SOTAC PHARMACEUTICALS LIMITED"
+        },
+        {
+            "ASCOM": "ASCOM LEASING & INVESTMENTS LIMITED"
+        },
+        {
+            "PALASHSECU": "PALASH SECURITIES LIMITED"
+        },
+        {
+            "MADHAVBAUG": "VAIDYA SANE AYURVED LABORATORIES LIMITED"
+        },
+        {
+            "AAATECH": "AAA TECHNOLOGIES LIMITED"
+        },
+        {
+            "STEELCITY": "STEEL CITY SECURITIES LIMITED"
+        },
+        {
+            "PRUDMOULI": "PRUDENTIAL SUGAR CORPORATION LIMITED"
+        },
+        {
+            "PIONEEREMB": "PIONEER EMBROIDERIES LIMITED"
+        },
+        {
+            "VASWANI": "VASWANI INDUSTRIES LIMITED"
+        },
+        {
+            "TOTAL": "TOTAL TRANSPORT SYSTEMS LIMITED"
+        },
+        {
+            "LOTUSEYE": "LOTUS EYE HOSPITAL AND INSTITUTE LIMITED"
+        },
+        {
+            "AUSOMENT": "AUSOM ENTERPRISE LIMITED"
+        },
+        {
+            "SWASTIK": "SWASTIK PIPE LIMITED"
+        },
+        {
+            "CUBEXTUB": "CUBEX TUBINGS LIMITED"
+        },
+        {
+            "TFL": "TRANSWARRANTY FINANCE LIMITED"
+        },
+        {
+            "SHUBHSHREE": "SHUBHSHREE BIOFUELS ENERGY LIMITED"
+        },
+        {
+            "GLOBE": "GLOBE TEXTILES (INDIA) LIMITED"
+        },
+        {
+            "LPDC": "LANDMARK PROPERTY DEVELOPMENT COMPANY LIMITED"
+        },
+        {
+            "SFML": "SUPREME FACILITY MANAGEMENT LIMITED"
+        },
+        {
+            "BAWEJA": "BAWEJA STUDIOS LIMITED"
+        },
+        {
+            "APRAMEYA": "APRAMEYA ENGINEERING LIMITED"
+        },
+        {
+            "SHAHALLOYS": "SHAH ALLOYS LIMITED"
+        },
+        {
+            "SEMAC": "SEMAC CONSULTANTS LIMITED"
+        },
+        {
+            "VEEKAYEM": "VEEKAYEM FASHION AND APPARELS LIMITED"
+        },
+        {
+            "TPHQ": "TEAMO PRODUCTIONS HQ LIMITED"
+        },
+        {
+            "FIBERWEB": "FIBERWEB (INDIA) LIMITED"
+        },
+        {
+            "FRETAIL": "FUTURE RETAIL LIMITED    "
+        },
+        {
+            "DHANLAXMI": "DHANLAXMI CROP SCIENCE LIMITED"
+        },
+        {
+            "MOTOGENFIN": "THE MOTOR & GENERAL FINANCE LIMITED"
+        },
+        {
+            "ZENITHSTL": "ZENITH STEEL PIPES & INDUSTRIES LIMITED"
+        },
+        {
+            "NMSTEEL": "NEWMALAYALAM STEEL LIMITED"
+        },
+        {
+            "MACOBSTECH": "MACOBS TECHNOLOGIES LIMITED"
+        },
+        {
+            "PSFL": "PARAMOUNT SPECIALITY FORGINGS LIMITED"
+        },
+        {
+            "AESTHETIK": "AESTHETIK ENGINEERS LIMITED"
+        },
+        {
+            "GOYALALUM": "GOYAL ALUMINIUMS LIMITED"
+        },
+        {
+            "SUNDARAM": "SUNDARAM MULTI PAP LIMITED"
+        },
+        {
+            "DTL": "DIENSTEN TECH LIMITED"
+        },
+        {
+            "SOMATEX": "SOMA TEXTILES & INDUSTRIES LIMITED"
+        },
+        {
+            "AHLADA": "AHLADA ENGINEERS LIMITED"
+        },
+        {
+            "HOLMARC": "HOLMARC OPTO-MECHATRONICS LIMITED"
+        },
+        {
+            "TRANSTEEL": "TRANSTEEL SEATING TECHNOLOGIES LIMITED"
+        },
+        {
+            "TERASOFT": "TERA SOFTWARE LIMITED"
+        },
+        {
+            "EXCEL": "EXCEL REALTY N INFRA LIMITED"
+        },
+        {
+            "SAMPANN": "SAMPANN UTPADAN INDIA LIMITED"
+        },
+        {
+            "SEL": "SUNGARNER ENERGIES LIMITED"
+        },
+        {
+            "LASA": "LASA SUPERGENERICS LIMITED"
+        },
+        {
+            "AJOONI": "AJOONI BIOTECH LIMITED"
+        },
+        {
+            "SCML": "SHARP CHUCKS AND MACHINES LIMITED"
+        },
+        {
+            "PARTYCRUS": "PARTY CRUISERS LIMITED"
+        },
+        {
+            "AUSL": "ADITYA ULTRA STEEL LIMITED"
+        },
+        {
+            "AMDIND": "AMD INDUSTRIES LIMITED"
+        },
+        {
+            "BRACEPORT": "BRACE PORT LOGISTICS LIMITED"
+        },
+        {
+            "BVCL": "BARAK VALLEY CEMENTS LIMITED"
+        },
+        {
+            "IDENTICAL": "IDENTICAL BRAINS STUDIOS LIMITED"
+        },
+        {
+            "FCONSUMER": "FUTURE CONSUMER LIMITED  "
+        },
+        {
+            "AARVEEDEN": "AARVEE DENIMS & EXPORTS LIMITED"
+        },
+        {
+            "BANKA": "BANKA BIOLOO LIMITED"
+        },
+        {
+            "WOMANCART": "WOMANCART LIMITED"
+        },
+        {
+            "MASTER": "MASTER COMPONENTS LIMITED"
+        },
+        {
+            "DHARIWAL": "DHARIWALCORP LIMITED"
+        },
+        {
+            "INDSWFTLTD": "IND-SWIFT LIMITED"
+        },
+        {
+            "SKIL": "SKIL INFRASTRUCTURE LIMITED"
+        },
+        {
+            "GROBTEA": "THE GROB TEA COMPANY LIMITED"
+        },
+        {
+            "AGRITECH": "AGRI-TECH (INDIA) LIMITED"
+        },
+        {
+            "TIMESGTY": "TIMES GUARANTY LIMITED"
+        },
+        {
+            "ENERGYDEV": "ENERGY DEVELOPMENT COMPANY LIMITED"
+        },
+        {
+            "ALKALI": "ALKALI METALS LIMITED"
+        },
+        {
+            "YAARI": "YAARI DIGI INT SER LIMITED"
+        },
+        {
+            "VINNY": "VINNY OVERSEAS LIMITED"
+        },
+        {
+            "AAKASH": "AAKASH EXPLORATION SERVICES LIMITED"
+        },
+        {
+            "PALREDTEC": "PALRED TECHNOLOGIES LIMITED"
+        },
+        {
+            "BLUEPEBBLE": "BLUE PEBBLE LIMITED"
+        },
+        {
+            "NAGREEKEXP": "NAGREEKA EXPORTS LIMITED"
+        },
+        {
+            "OBCL": "ORISSA BENGAL CARRIER LIMITED"
+        },
+        {
+            "LAMOSAIC": "LAMOSAIC INDIA LIMITED"
+        },
+        {
+            "AVIANSH": "AVI ANSH TEXTILE LIMITED"
+        },
+        {
+            "MARCO": "MARCO CABLES & CONDUCTORS LIMITED"
+        },
+        {
+            "SECURKLOUD": "SECUREKLOUD TECHNOLOGIES LIMITED"
+        },
+        {
+            "PARAMATRIX": "PARAMATRIX TECHNOLOGIES LIMITED"
+        },
+        {
+            "CEREBRAINT": "CEREBRA INTEGRATED TECHNOLOGIES LIMITED"
+        },
+        {
+            "HECPROJECT": "HEC INFRA PROJECTS LIMITED"
+        },
+        {
+            "ASPIRE": "ASPIRE & INNOVATIVE ADVERTISING LIMITED"
+        },
+        {
+            "TOKYOPLAST": "TOKYO PLAST INTERNATIONAL LIMITED"
+        },
+        {
+            "PARASPETRO": "PARAS PETROFILS LIMITED"
+        },
+        {
+            "SUVIDHAA": "SUVIDHAA INFOSERVE LIMITED"
+        },
+        {
+            "VLINFRA": "V.L.INFRAPROJECTS LIMITED"
+        },
+        {
+            "GRAPHISAD": "GRAPHISADS LIMITED"
+        },
+        {
+            "MCL": "MADHAV COPPER LIMITED"
+        },
+        {
+            "SAIFL": "SAMEERA AGRO AND INFRA LIMITED"
+        },
+        {
+            "DIVYADHAN": "DIVYADHAN RECYCLING INDUSTRIES LIMITED"
+        },
+        {
+            "DANGEE": "DANGEE DUMS LIMITED"
+        },
+        {
+            "MCON": "MCON RASAYAN INDIA LIMITED"
+        },
+        {
+            "ARIHANTACA": "ARIHANT ACADEMY LIMITED"
+        },
+        {
+            "CADSYS": "CADSYS (INDIA) LIMITED"
+        },
+        {
+            "SAMBHAAV": "SAMBHAAV MEDIA LIMITED"
+        },
+        {
+            "DURLAX": "DURLAX TOP SURFACE LIMITED"
+        },
+        {
+            "CINEVISTA": "CINEVISTA LIMITED"
+        },
+        {
+            "GLOBALPET": "GLOBAL PET INDUSTRIES LIMITED"
+        },
+        {
+            "BIOFILCHEM": "BIOFIL CHEMICALS & PHARMACEUTICALS LIMITED"
+        },
+        {
+            "ARSHIYA": "ARSHIYA LIMITED"
+        },
+        {
+            "MIEL": "MANGLAM INFRA & ENGINEERING LIMITED"
+        },
+        {
+            "NEELAM": "NEELAM LINENS AND GARMENTS (INDIA) LIMITED"
+        },
+        {
+            "ORIENTLTD": "ORIENT PRESS LIMITED"
+        },
+        {
+            "DAMODARIND": "DAMODAR INDUSTRIES LIMITED"
+        },
+        {
+            "SECMARK": "SECMARK CONSULTANCY LIMITED"
+        },
+        {
+            "ARVINDPORT": "ARVIND PORT AND INFRA LIMITED"
+        },
+        {
+            "ABHAPOWER": "ABHA POWER AND STEEL LIMITED"
+        },
+        {
+            "MYMUDRA": "MY MUDRA FINCORP LIMITED"
+        },
+        {
+            "21STCENMGM": "21ST CENTURY MANAGEMENT SERVICES LIMITED"
+        },
+        {
+            "MOKSH": "MOKSH ORNAMENTS LIMITED"
+        },
+        {
+            "ONYX": "ONYX BIOTEC LIMITED"
+        },
+        {
+            "LCCINFOTEC": "LCC INFOTECH LIMITED"
+        },
+        {
+            "RILINFRA": "RACHANA INFRASTRUCTURE LIMITED"
+        },
+        {
+            "DELTAMAGNT": "DELTA MANUFACTURING LIMITED"
+        },
+        {
+            "SATIPOLY": "SATI POLY PLAST LIMITED"
+        },
+        {
+            "SLONE": "SLONE INFOSYSTEMS LIMITED"
+        },
+        {
+            "ASTRON": "ASTRON PAPER & BOARD MILL LIMITED"
+        },
+        {
+            "DIGJAMLMTD": "DIGJAM LIMITED"
+        },
+        {
+            "UNILEX": "UNILEX COLOURS AND CHEMICALS LIMITED"
+        },
+        {
+            "BLBLIMITED": "BLB LIMITED"
+        },
+        {
+            "HISARMETAL": "HISAR METAL INDUSTRIES LIMITED"
+        },
+        {
+            "MHHL": "MOHINI HEALTH & HYGIENE LIMITED"
+        },
+        {
+            "SIMBHALS": "SIMBHAOLI SUGARS LIMITED"
+        },
+        {
+            "GANGAFORGE": "GANGA FORGING LIMITED"
+        },
+        {
+            "MEP": "MEP INFRASTRUCTURE DEVELOPERS LIMITED"
+        },
+        {
+            "PRECISION": "PRECISION METALIKS LIMITED"
+        },
+        {
+            "PROLIFE": "PROLIFE INDUSTRIES LIMITED"
+        },
+        {
+            "MAL": "MANGALAM ALLOYS LIMITED"
+        },
+        {
+            "GSMFOILS": "GSM FOILS LIMITED"
+        },
+        {
+            "DOLLEX": "DOLLEX AGROTECH LIMITED"
+        },
+        {
+            "FORGEAUTO": "FORGE AUTO INTERNATIONAL LIMITED"
+        },
+        {
+            "AUROIMPEX": "AURO IMPEX & CHEMICALS LIMITED"
+        },
+        {
+            "ATALREAL": "ATAL REALTECH LIMITED"
+        },
+        {
+            "SYNOPTICS": "SYNOPTICS TECHNOLOGIES LIMITED"
+        },
+        {
+            "PPSL": "PICTUREPOST STUDIOS LIMITED"
+        },
+        {
+            "WOL3D": "WOL 3D INDIA LIMITED"
+        },
+        {
+            "PRANIK": "PRANIK LOGISTICS LIMITED"
+        },
+        {
+            "CLOUD": "VARANIUM CLOUD LIMITED"
+        },
+        {
+            "SILKFLEX": "SILKFLEX POLYMERS (INDIA) LIMITED"
+        },
+        {
+            "AVSL": "AVSL INDUSTRIES LIMITED"
+        },
+        {
+            "DIL": "DEBOCK INDUSTRIES LIMITED"
+        },
+        {
+            "ARABIAN": "ARABIAN PETROLEUM LIMITED"
+        },
+        {
+            "MADHUCON": "MADHUCON PROJECTS LIMITED"
+        },
+        {
+            "HBSL": "HB STOCKHOLDINGS LIMITED"
+        },
+        {
+            "PNC": "PRITISH NANDY COMMUNICATIONS LIMITED"
+        },
+        {
+            "HOVS": "HOV SERVICES LIMITED"
+        },
+        {
+            "CELEBRITY": "CELEBRITY FASHIONS LIMITED"
+        },
+        {
+            "ARCHIES": "ARCHIES LIMITED"
+        },
+        {
+            "SIDDHIKA": "SIDDHIKA COATINGS LIMITED"
+        },
+        {
+            "KONTOR": "KONTOR SPACE LIMITED"
+        },
+        {
+            "AGROPHOS": "AGRO PHOS INDIA LIMITED"
+        },
+        {
+            "PATTECH": "PATTECH FITWELL TUBE COMPONENTS LIMITED"
+        },
+        {
+            "BABAFP": "BABA FOOD PROCESSING (INDIA) LIMITED"
+        },
+        {
+            "KARMAENG": "KARMA ENERGY LIMITED"
+        },
+        {
+            "LEXUS": "LEXUS GRANITO (INDIA) LIMITED"
+        },
+        {
+            "MAHICKRA": "MAHICKRA CHEMICALS LIMITED"
+        },
+        {
+            "SERVICE": "SERVICE CARE LIMITED"
+        },
+        {
+            "PRESSTONIC": "PRESSTONIC ENGINEERING LIMITED"
+        },
+        {
+            "AGNI": "AGNI GREEN POWER LIMITED"
+        },
+        {
+            "CLSL": "CROP LIFE SCIENCE LIMITED"
+        },
+        {
+            "TREEHOUSE": "TREE HOUSE EDUCATION & ACCESSORIES LIMITED"
+        },
+        {
+            "PREMIUM": "PREMIUM PLAST LIMITED"
+        },
+        {
+            "AKSHAR": "AKSHAR SPINTEX LIMITED"
+        },
+        {
+            "SAJHOTELS": "SAJ HOTELS LIMITED"
+        },
+        {
+            "OMFURN": "OMFURN INDIA LIMITED"
+        },
+        {
+            "RADIOWALLA": "RADIOWALLA NETWORK LIMITED"
+        },
+        {
+            "AROGRANITE": "ARO GRANITE INDUSTRIES LIMITED"
+        },
+        {
+            "SVPGLOB": "SVP GLOBAL TEXTILES LIMITED"
+        },
+        {
+            "DEEM": "DEEM ROLL TECH LIMITED"
+        },
+        {
+            "BULKCORP": "BULKCORP INTERNATIONAL LIMITED"
+        },
+        {
+            "KAVVERITEL": "KAVVERI TELECOM PRODUCTS LIMITED"
+        },
+        {
+            "RELIABLE": "RELIABLE DATA SERVICES LIMITED"
+        },
+        {
+            "AMEYA": "AMEYA PRECISION ENGINEERS LIMITED"
+        },
+        {
+            "AKIKO": "AKIKO GLOBAL SERVICES LIMITED"
+        },
+        {
+            "MEDIORG": "MEDICAMEN ORGANICS LIMITED"
+        },
+        {
+            "TRIDHYA": "TRIDHYA TECH LIMITED"
+        },
+        {
+            "NIBL": "NRB INDUSTRIAL BEARINGS LIMITED"
+        },
+        {
+            "ARISTO": "ARISTO BIO-TECH AND LIFESCIENCE LIMITED"
+        },
+        {
+            "3PLAND": "3P LAND HOLDINGS LIMITED"
+        },
+        {
+            "PENTAGON": "PENTAGON RUBBER LIMITED"
+        },
+        {
+            "BMETRICS": "BOMBAY METRICS SUPPLY CHAIN LIMITED"
+        },
+        {
+            "QUICKTOUCH": "QUICKTOUCH TECHNOLOGIES LIMITED"
+        },
+        {
+            "SHIVAMILLS": "SHIVA MILLS LIMITED"
+        },
+        {
+            "CPS": "C P S SHAPERS LIMITED"
+        },
+        {
+            "BALKRISHNA": "BALKRISHNA PAPER MILLS LIMITED"
+        },
+        {
+            "ROML": "RAJ OIL MILLS LIMITED"
+        },
+        {
+            "JFLLIFE": "JFL LIFE SCIENCES LIMITED"
+        },
+        {
+            "MBECL": "MCNALLY BHARAT ENGINEERING COMPANY LIMITED"
+        },
+        {
+            "BANG": "BANG OVERSEAS LIMITED"
+        },
+        {
+            "MALUPAPER": "MALU PAPER MILLS LIMITED"
+        },
+        {
+            "SITINET": "SITI NETWORKS LIMITED"
+        },
+        {
+            "BANARBEADS": "BANARAS BEADS LIMITED"
+        },
+        {
+            "WEWIN": "WE WIN LIMITED"
+        },
+        {
+            "HRHNEXT": "HRH NEXT SERVICES LIMITED"
+        },
+        {
+            "SANGANI": "SANGANI HOSPITALS LIMITED"
+        },
+        {
+            "VISHWAS": "VISHWAS AGRI SEEDS LIMITED"
+        },
+        {
+            "MARSHALL": "MARSHALL MACHINES LIMITED"
+        },
+        {
+            "RCDL": "RAJGOR CASTOR DERIVATIVES LIMITED"
+        },
+        {
+            "MAGSON": "MAGSON RETAIL AND DISTRIBUTION LIMITED"
+        },
+        {
+            "KEEPLEARN": "DSJ KEEP LEARNING LIMITED"
+        },
+        {
+            "REXPIPES": "REX PIPES AND CABLES INDUSTRIES LIMITED"
+        },
+        {
+            "VIAZ": "VIAZ TYRES LIMITED"
+        },
+        {
+            "MVKAGRO": "M.V.K. AGRO FOOD PRODUCT LIMITED"
+        },
+        {
+            "VDEAL": "VDEAL SYSTEM LIMITED"
+        },
+        {
+            "JETFREIGHT": "JET FREIGHT LOGISTICS LIMITED"
+        },
+        {
+            "SEYAIND": "SEYA INDUSTRIES LIMITED"
+        },
+        {
+            "FMNL": "FUTURE MARKET NETWORKS LIMITED"
+        },
+        {
+            "SHEETAL": "SHEETAL UNIVERSAL LIMITED"
+        },
+        {
+            "SILGO": "SILGO RETAIL LIMITED"
+        },
+        {
+            "GOLDENTOBC": "GOLDEN TOBACCO LIMITED"
+        },
+        {
+            "LFIC": "LAKSHMI FINANCE & INDUSTRIAL CORPORATION LIMITED"
+        },
+        {
+            "AMBANIORGO": "AMBANI ORGOCHEM LIMITED"
+        },
+        {
+            "VERTEXPLUS": "VERTEXPLUS TECHNOLOGIES LIMITED"
+        },
+        {
+            "MILTON": "MILTON INDUSTRIES LIMITED"
+        },
+        {
+            "MANUGRAPH": "MANUGRAPH INDIA LIMITED"
+        },
+        {
+            "ORIENTALTL": "ORIENTAL TRIMEX LIMITED"
+        },
+        {
+            "RKDL": "RAVI KUMAR DISTILLERIES LIMITED"
+        },
+        {
+            "UMA": "UMA CONVERTER LIMITED"
+        },
+        {
+            "VSCL": "VADIVARHE SPECIALITY CHEMICALS LIMITED"
+        },
+        {
+            "SUPREMEENG": "SUPREME ENGINEERING LIMITED"
+        },
+        {
+            "DNAMEDIA": "DILIGENT MEDIA CORPORATION LIMITED"
+        },
+        {
+            "ROLLT": "ROLLATAINERS LIMITED"
+        },
+        {
+            "YUDIZ": "YUDIZ SOLUTIONS LIMITED"
+        },
+        {
+            "GSTL": "GLOBESECURE TECHNOLOGIES LIMITED"
+        },
+        {
+            "UCL": "USHANTI COLOUR CHEM LIMITED"
+        },
+        {
+            "SIGNORIA": "SIGNORIA CREATION LIMITED"
+        },
+        {
+            "ITALIANE": "ITALIAN EDIBLES LIMITED"
+        },
+        {
+            "COMMITTED": "COMMITTED CARGO CARE LIMITED"
+        },
+        {
+            "AKG": "AKG EXIM LIMITED"
+        },
+        {
+            "JAIPURKURT": "NANDANI CREATION LIMITED"
+        },
+        {
+            "MONOPHARMA": "MONO PHARMACARE LIMITED"
+        },
+        {
+            "PHOGLOBAL": "PHOENIX OVERSEAS LIMITED"
+        },
+        {
+            "BURNPUR": "BURNPUR CEMENT LIMITED"
+        },
+        {
+            "GODHA": "GODHA CABCON & INSULATION LIMITED"
+        },
+        {
+            "ROLTA": "ROLTA INDIA LIMITED"
+        },
+        {
+            "VELS": "VELS FILM INTERNATIONAL LIMITED"
+        },
+        {
+            "QVCEL": "QVC EXPORTS LIMITED"
+        },
+        {
+            "MFML": "MAHALAXMI FABRIC MILLS LIMITED"
+        },
+        {
+            "AGARWALFT": "AGARWAL FLOAT GLASS INDIA LIMITED"
+        },
+        {
+            "ABMINTLLTD": "ABM INTERNATIONAL LIMITED"
+        },
+        {
+            "TVVISION": "TV VISION LIMITED"
+        },
+        {
+            "AKASH": "AKASH INFRA PROJECTS LIMITED"
+        },
+        {
+            "SPPPOLY": "SPP POLYMER LIMITED"
+        },
+        {
+            "KTL": "KALAHRIDHAAN TRENDZ LIMITED"
+        },
+        {
+            "PEARLPOLY": "PEARL POLYMERS LIMITED"
+        },
+        {
+            "UWCSL": "ULTRA WIRING CONNECTIVITY SYSTEM LIMITED"
+        },
+        {
+            "AATMAJ": "AATMAJ HEALTHCARE LIMITED"
+        },
+        {
+            "CELLPOINT": "CELL POINT (INDIA) LIMITED"
+        },
+        {
+            "PARAMOUNT": "PARAMOUNT DYE TEC LIMITED"
+        },
+        {
+            "DKEGL": "D.K. ENTERPRISES GLOBAL LIMITED"
+        },
+        {
+            "WINNY": "WINNY IMMIGRATION & EDUCATION SERVICES LIMITED"
+        },
+        {
+            "LRRPL": "LEAD RECLAIM AND RUBBER PRODUCTS LIMITED"
+        },
+        {
+            "SUPERSPIN": "SUPER SPINNING MILLS LIMITED"
+        },
+        {
+            "ICDSLTD": "ICDS LIMITED"
+        },
+        {
+            "LAXMICOT": "LAXMI COTSPIN LIMITED"
+        },
+        {
+            "VISAMAN": "VISAMAN GLOBAL SALES LIMITED"
+        },
+        {
+            "MICROPRO": "MICROPRO SOFTWARE SOLUTIONS LIMITED"
+        },
+        {
+            "KANANIIND": "KANANI INDUSTRIES LIMITED"
+        },
+        {
+            "GTECJAINX": "G-TEC JAINX EDUCATION LIMITED"
+        },
+        {
+            "THESL": "THINKING HATS ENTERTAINMENT SOLUTIONS LIMITED"
+        },
+        {
+            "ASHOKAMET": "ASHOKA METCAST LIMITED"
+        },
+        {
+            "ADL": "ARCHIDPLY DECOR LIMITED"
+        },
+        {
+            "KSHITIJPOL": "KSHITIJ POLYLINE LIMITED"
+        },
+        {
+            "ANKITMETAL": "ANKIT MET & POW LIMITED     "
+        },
+        {
+            "ISHAN": "ISHAN INTERNATIONAL LIMITED"
+        },
+        {
+            "HOACFOODS": "HOAC FOODS INDIA LIMITED"
+        },
+        {
+            "VINEETLAB": "VINEET LABORATORIES LIMITED"
+        },
+        {
+            "IDEALTECHO": "IDEAL TECHNOPLAST INDUSTRIES LIMITED"
+        },
+        {
+            "KALANA": "KALANA ISPAT LIMITED"
+        },
+        {
+            "COUNCODOS": "COUNTRY CONDO'S LIMITED"
+        },
+        {
+            "SRPL": "SHREE RAM PROTEINS LIMITED"
+        },
+        {
+            "TECHIN": "TECHINDIA NIRMAN LIMITED "
+        },
+        {
+            "NEXTMEDIA": "NEXT MEDIAWORKS LIMITED"
+        },
+        {
+            "AILIMITED": "ABHISHEK INTEGRATIONS LIMITED"
+        },
+        {
+            "MEGAFLEX": "MEGA FLEX PLASTICS LIMITED"
+        },
+        {
+            "SHRENIK": "SHRENIK LIMITED"
+        },
+        {
+            "SONUINFRA": "SONU INFRATECH LIMITED"
+        },
+        {
+            "NARMADA": "NARMADA AGROBASE LIMITED"
+        },
+        {
+            "NGIL": "NAKODA GROUP OF INDUSTRIES LIMITED"
+        },
+        {
+            "BINANIIND": "BINANI INDUSTRIES LIMITED"
+        },
+        {
+            "TAPIFRUIT": "TAPI FRUIT PROCESSING LIMITED"
+        },
+        {
+            "WALPAR": "WALPAR NUTRITIONS LIMITED"
+        },
+        {
+            "PODDARHOUS": "PODDAR HOUSE & DVPT LIMITED"
+        },
+        {
+            "AMBICAAGAR": "AMBICA AGARBATHIES & AROMA INDUSTRIES LIMITED"
+        },
+        {
+            "SGL": "STL GLOBAL LIMITED"
+        },
+        {
+            "TNTELE": "TAMILNADU TELECOMMUNICATION LIMITED"
+        },
+        {
+            "PERFECT": "PERFECT INFRAENGINEERS LIMITED"
+        },
+        {
+            "MANDEEP": "MANDEEP AUTO INDUSTRIES LIMITED"
+        },
+        {
+            "TIMESCAN": "TIMESCAN LOGISTICS (INDIA) LIMITED"
+        },
+        {
+            "CONTI": "CONTINENTAL SEEDS AND CHEMICALS LIMITED"
+        },
+        {
+            "SAGARDEEP": "SAGARDEEP ALLOYS LIMITED"
+        },
+        {
+            "ADROITINFO": "ADROIT INFOTECH LIMITED"
+        },
+        {
+            "MADHAV": "MADHAV MARBLES AND GRANITES LIMITED"
+        },
+        {
+            "TARAPUR": "TARAPUR TRANSFORMERS LIMITED"
+        },
+        {
+            "JETKNIT": "JET KNITWEARS LIMITED"
+        },
+        {
+            "FLFL": "FUTURE LIFESTYLE FASHIONS LIMITED"
+        },
+        {
+            "KKVAPOW": "KKV AGRO POWERS LIMITED"
+        },
+        {
+            "LIBAS": "LIBAS CONSUMER PRODUCTS LIMITED"
+        },
+        {
+            "ASLIND": "ASL INDUSTRIES LIMITED"
+        },
+        {
+            "KHANDSE": "KHANDWALA SECURITIES LIMITED"
+        },
+        {
+            "TGBHOTELS": "TGB BANQUETS AND HOTELS LIMITED"
+        },
+        {
+            "MASKINVEST": "MASK INVESTMENTS LIMITED"
+        },
+        {
+            "TECILCHEM": "TECIL CHEMICALS AND HYDRO POWER LIMITED"
+        },
+        {
+            "ATLASCYCLE": "ATLAS CYCLES (HARYANA) LIMITED"
+        },
+        {
+            "GATECH": "GACM TECHNOLOGIES LIMITED"
+        },
+        {
+            "NIDAN": "NIDAN LABORATORIES AND HEALTHCARE LIMITED"
+        },
+        {
+            "BIRDYS": "GRILL SPLENDOUR SERVICES LIMITED"
+        },
+        {
+            "ARSSINFRA": "ARSS INFRASTRUCTURE PROJECTS LIMITED"
+        },
+        {
+            "KRIDHANINF": "KRIDHAN INFRA LIMITED"
+        },
+        {
+            "KHAITANLTD": "KHAITAN (INDIA) LIMITED"
+        },
+        {
+            "YCCL": "YASONS CHEMEX CARE LIMITED"
+        },
+        {
+            "GAJANAND": "GAJANAND INTERNATIONAL LIMITED"
+        },
+        {
+            "VERA": "VERA SYNTHETIC LIMITED"
+        },
+        {
+            "INSPIRE": "INSPIRE FILMS LIMITED"
+        },
+        {
+            "CYBERMEDIA": "CYBER MEDIA (INDIA) LIMITED"
+        },
+        {
+            "MOHITIND": "MOHIT INDUSTRIES LIMITED"
+        },
+        {
+            "SANGINITA": "SANGINITA CHEMICALS LIMITED"
+        },
+        {
+            "BIKEWO": "BIKEWO GREEN TECH LIMITED"
+        },
+        {
+            "VIJIFIN": "VIJI FINANCE LIMITED"
+        },
+        {
+            "MORARJEE": "MORARJEE TEXTILES LIMITED"
+        },
+        {
+            "SUMEETINDS": "SUMEET IND LIMITED       "
+        },
+        {
+            "WILLAMAGOR": "WILLIAMSON MAGOR & COMPANY LIMITED"
+        },
+        {
+            "UNIINFO": "UNIINFO TELECOM SERVICES LIMITED"
+        },
+        {
+            "VERITAAS": "VERITAAS ADVERTISING LIMITED"
+        },
+        {
+            "MITTAL": "MITTAL LIFE STYLE LIMITED"
+        },
+        {
+            "JIWANRAM": "JIWANRAM SHEODUTTRAI INDUSTRIES LIMITED"
+        },
+        {
+            "GLOBALE": "GLOBALE TESSILE LIMITED"
+        },
+        {
+            "HYBRIDFIN": "HYBRID FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "MOXSH": "MOXSH OVERSEAS EDUCON LIMITED"
+        },
+        {
+            "HAVISHA": "SRI HAVISHA HOSPITALITY AND INFRASTRUCTURE LIMITED"
+        },
+        {
+            "TIJARIA": "TIJARIA POLYPIPES LIMITED"
+        },
+        {
+            "NAGREEKCAP": "NAGREEKA CAPITAL & INFRASTRUCTURE LIMITED"
+        },
+        {
+            "SHANTHALA": "SHANTHALA FMCG PRODUCTS LIMITED"
+        },
+        {
+            "BLUECHIP": "BLUE CHIP INDIA LIMITED"
+        },
+        {
+            "KANDARP": "KANDARP DIGI SMART BPO LIMITED"
+        },
+        {
+            "MAKS": "MAKS ENERGY SOLUTIONS INDIA LIMITED"
+        },
+        {
+            "SPRL": "SP REFRACTORIES LIMITED"
+        },
+        {
+            "CMRSL": "CYBER MEDIA RESEARCH & SERVICES LIMITED"
+        },
+        {
+            "FEL": "FUTURE ENTERPRISES LIMITED"
+        },
+        {
+            "SANWARIA": "SANWARIA CONSUMER LIMITED"
+        },
+        {
+            "GOENKA": "GOENKA DIAMOND&JEWELS LIMITED"
+        },
+        {
+            "INFOMEDIA": "INFOMEDIA PRESS LIMITED"
+        },
+        {
+            "POLYSIL": "POLYSIL IRRIGATION SYSTEMS LIMITED"
+        },
+        {
+            "ACEINTEG": "ACE INTEGRATED SOLUTIONS LIMITED"
+        },
+        {
+            "NKIND": "NK INDUSTRIES LIMITED"
+        },
+        {
+            "DHTL": "DOCMODE HEALTH TECHNOLOGIES LIMITED"
+        },
+        {
+            "SUULD": "SUUMAYA INDUSTRIES LIMITED"
+        },
+        {
+            "KAUSHALYA": "KAUSHALYA INFRASTRUCTURE DEVELOPMENT CORPORATION LIMITED"
+        },
+        {
+            "OLIL": "ONECLICK LOGISTICS INDIA LIMITED"
+        },
+        {
+            "GAYAHWS": "GAYATRI HIGHWAYS LIMITED "
+        },
+        {
+            "AGUL": "A G UNIVERSAL LIMITED"
+        },
+        {
+            "MARINETRAN": "MARINETRANS INDIA LIMITED"
+        },
+        {
+            "CBAZAAR": "NET AVENUE TECHNOLOGIES LIMITED"
+        },
+        {
+            "VIVIDHA": "VISAGAR POLYTEX LIMITED"
+        },
+        {
+            "EXCELLENT": "EXCELLENT WIRES AND PACKAGING LIMITED"
+        },
+        {
+            "SABAR": "SABAR FLEX INDIA LIMITED"
+        },
+        {
+            "MINDPOOL": "MINDPOOL TECHNOLOGIES LIMITED"
+        },
+        {
+            "CALSOFT": "CALIFORNIA SOFTWARE COMPANY LIMITED"
+        },
+        {
+            "IMPEXFERRO": "IMPEX FERRO TECH LIMITED"
+        },
+        {
+            "QFIL": "QUALITY FOILS (INDIA) LIMITED"
+        },
+        {
+            "FALCONTECH": "FALCON TECHNOPROJECTS INDIA LIMITED"
+        },
+        {
+            "RETAIL": "JHS SVENDGAARD RETAIL VENTURES LIMITED"
+        },
+        {
+            "HEADSUP": "HEADS UP VENTURES LIMITED"
+        },
+        {
+            "QUADPRO": "QUADPRO ITES LIMITED"
+        },
+        {
+            "EDUCOMP": "EDUCOMP SOLUTIONS LIMITED   "
+        },
+        {
+            "GUJRAFFIA": "GUJARAT RAFFIA INDUSTRIES LIMITED"
+        },
+        {
+            "VILINBIO": "VILIN BIO MED LIMITED"
+        },
+        {
+            "WINSOME": "WINSOME YARNS LIMITED"
+        },
+        {
+            "COMPINFO": "COMPUAGE INFOCOM LIMITED   "
+        },
+        {
+            "ANTGRAPHIC": "ANTARCTICA LIMITED"
+        },
+        {
+            "SHUBHLAXMI": "SHUBHLAXMI JEWEL ART LIMITED"
+        },
+        {
+            "BOSS": "BOSS PACKAGING SOLUTIONS LIMITED"
+        },
+        {
+            "GFSTEELS": "GRAND FOUNDRY LIMITED       "
+        },
+        {
+            "BALCO": "SOLVE PLASTIC PRODUCTS LIMITED"
+        },
+        {
+            "SUNREST": "SUNREST LIFESCIENCE LIMITED"
+        },
+        {
+            "PLADAINFO": "PLADA INFOTECH SERVICES LIMITED"
+        },
+        {
+            "MTEDUCARE": "MT EDUCARE LIMITED"
+        },
+        {
+            "SECURCRED": "SECUR CREDENTIALS LIMITED"
+        },
+        {
+            "ONELIFECAP": "ONELIFE CAPITAL ADVISORS LIMITED"
+        },
+        {
+            "INDIFRA": "INDIFRA LIMITED"
+        },
+        {
+            "SILLYMONKS": "SILLY MONKS ENTERTAINMENT LIMITED"
+        },
+        {
+            "SAHAJ": "SAHAJ FASHIONS LIMITED"
+        },
+        {
+            "AHIMSA": "AHIMSA INDUSTRIES LIMITED"
+        },
+        {
+            "LYPSAGEMS": "LYPSA GEMS & JEWELLERY LIMITED"
+        },
+        {
+            "BOHRAIND": "BOHRA INDUSTRIES LIMITED "
+        },
+        {
+            "RADAAN": "RADAAN MEDIAWORKS INDIA LIMITED"
+        },
+        {
+            "GLFL": "GUJARAT LEASE FINANCING LIMITED"
+        },
+        {
+            "SHYAMTEL": "SHYAM TELECOM LIMITED"
+        },
+        {
+            "SAROJA": "SAROJA PHARMA INDUSTRIES INDIA LIMITED"
+        },
+        {
+            "RICHA": "RICHA INFO SYSTEMS LIMITED"
+        },
+        {
+            "NORBTEAEXP": "NORBEN TEA & EXPORTS LIMITED"
+        },
+        {
+            "UMESLTD": "USHA MARTIN EDUCATION & SOLUTIONS LIMITED"
+        },
+        {
+            "RITEZONE": "RITE ZONE CHEMCON INDIA LIMITED"
+        },
+        {
+            "NTL": "NEUEON TOWERS LIMITED    "
+        },
+        {
+            "SHANTI": "SHANTI OVERSEAS (INDIA) LIMITED"
+        },
+        {
+            "TCIFINANCE": "TCI FINANCE LIMITED"
+        },
+        {
+            "OMKARCHEM": "OMKAR SPECIALITY CHEMICALS LIMITED"
+        },
+        {
+            "MPTODAY": "MADHYA PRADESH TODAY MEDIA LIMITED"
+        },
+        {
+            "BRIGHT": "BRIGHT SOLAR LIMITED     "
+        },
+        {
+            "TRANSWIND": "TRANSWIND INFRASTRUCTURES LIMITED"
+        },
+        {
+            "ORTINGLOBE": "ORTIN GLOBAL LIMITED"
+        },
+        {
+            "ARENTERP": "RAJDARSHAN INDUSTRIES LIMITED"
+        },
+        {
+            "VCL": "VAXTEX COTFAB LIMITED"
+        },
+        {
+            "VIVO": "VIVO COLLABORATION SOLUTIONS LIMITED"
+        },
+        {
+            "AMJUMBO": "A AND M JUMBO BAGS LIMITED"
+        },
+        {
+            "ALPSINDUS": "ALPS INDUSTRIES LIMITED"
+        },
+        {
+            "AMIABLE": "AMIABLE LOGISTICS (INDIA) LIMITED"
+        },
+        {
+            "MANAV": "MANAV INFRA PROJECTS LIMITED"
+        },
+        {
+            "JAKHARIA": "JAKHARIA FABRIC LIMITED"
+        },
+        {
+            "DCMFINSERV": "DCM FINANCIAL SERVICES LIMITED"
+        },
+        {
+            "CREATIVEYE": "CREATIVE EYE LIMITED"
+        },
+        {
+            "SABEVENTS": "SAB EVENTS & GOVERNANCE NOW MEDIA LIMITED"
+        },
+        {
+            "SMVD": "SMVD POLY PACK LIMITED"
+        },
+        {
+            "BLUECOAST": "BLUE COAST HOTELS LIMITED"
+        },
+        {
+            "DRL": "DHANUKA REALTY LIMITED"
+        },
+        {
+            "PREMIER": "PREMIER LIMITED"
+        },
+        {
+            "NIRAJISPAT": "NIRAJ ISPAT INDUSTRIES LIMITED"
+        },
+        {
+            "UNIVAFOODS": "UNIVA FOODS LIMITED      "
+        },
+        {
+            "EUROTEXIND": "EUROTEX INDUSTRIES AND EXPORTS LIMITED"
+        },
+        {
+            "FSC": "FUTURE SUPPLY CHAIN SOLUTIONS LIMITED"
+        },
+        {
+            "SETUINFRA": "SETUBANDHAN INFRASTRUCTURE LIMITED"
+        },
+        {
+            "ACCORD": "ACCORD SYNERGY LIMITED"
+        },
+        {
+            "BKMINDST": "BKM INDUSTRIES LIMITED   "
+        },
+        {
+            "CMICABLES": "CMI LIMITED              "
+        },
+        {
+            "ITTL": "INNOVATIVE TYRES & TUBES LIMITED"
+        },
+        {
+            "JALAN": "JALAN TRANSOLUTIONS (INDIA) LIMITED"
+        },
+        {
+            "LAKPRE": "LAKSHMI PRE SCRE LIMITED   "
+        },
+        {
+            "MELSTAR": "MELSTAR INFORMATION TECH "
+        },
+        {
+            "SANCO": "SANCO INDUSTRIES LIMITED"
+        },
+        {
+            "ORTEL": "ORTEL COMMUNICATIONS LIMITED   "
+        },
+        {
+            "BGLOBAL": "BHARATIYA GLOBAL INFO LIMITED   "
+        },
+        {
+            "QUINTEGRA": "QUINTEGRA SOLUTIONS LIMITED    "
+        },
+        {
+            "GANGOTRI": "GANGOTRI TEXTILES LIMITED   "
+        },
+        {
+            "CMMIPL": "CMM INFRAPROJECTS LIMITED"
+        },
+        {
+            "VASA": "VASA RETAIL AND OVERSEAS LIMITED   "
+        },
+        {
+            "RAJVIR": "RAJVIR INDUSTRIES LIMITED"
+        }
+    ]
+}

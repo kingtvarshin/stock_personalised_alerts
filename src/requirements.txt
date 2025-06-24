@@ -1,0 +1,7 @@
+pandas
+openpyxl
+aiohttp
+stock-indicators
+nsepython
+tqdm
+dotenv

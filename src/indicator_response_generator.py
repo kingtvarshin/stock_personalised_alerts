@@ -1,9 +1,14 @@
+import json, os, asyncio, datetime, pandas as pd
+from concurrent.futures import ThreadPoolExecutor
+from tqdm import tqdm
 from nsepython import equity_history
 from stock_indicators import indicators, Quote
 from stock_indicators import CandlePart
 from dateutil import parser 
-import pandas as pd
-import datetime
+from constant_vars import indicators_data_csv
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def indicators_response(symbol,backdays=0):
     try:
@@ -179,7 +184,7 @@ def indicators_response(symbol,backdays=0):
             
         # latest rsi
         if not df_rsi.empty:
-            print(df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0])
+            # print(df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0])
             if df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]<=34:
                 y = 'buy'
             elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=65:
@@ -211,3 +216,73 @@ def indicators_response(symbol,backdays=0):
     except Exception:
         print(Exception)
         return '','','','','','','','','',''
+
+
+def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
+
+    # Load the final 52-week analysis result
+    with open(fiftytwo_weeks_analysis_json) as f:
+        stock_summary = json.load(f)
+
+    # Prepare executor and loop
+    executor = ThreadPoolExecutor(max_workers=4)
+    try:
+        loop = asyncio.get_running_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+    # Your indicators_response function must be synchronous — we’ll wrap it in executor
+    def get_stock_data(symbol, data):
+        try:
+            close_price, sma200, sma100, sma50, sma20, sma10, boll_signal, rsi_signal, stoch_signal, supertrend_signal = indicators_response(symbol,backdays)
+
+            return {
+                "symbol": symbol,
+                "category": data.get('category', ''),
+                "PE_ratio": data.get('PE_ratio', ''),
+                "perc_high": data.get('perc_high', ''),
+                "perc_low": data.get('perc_low', ''),
+                "close_price": close_price,
+                "sma200": sma200,
+                "sma100": sma100,
+                "sma50": sma50,
+                "sma20": sma20,
+                "sma10": sma10,
+                "bollinger_signal": boll_signal,
+                "rsi_signal": rsi_signal,
+                "stoch_signal": stoch_signal,
+                "supertrend_signal": supertrend_signal
+            }
+        except Exception as e:
+            print(f"[!] Error processing {symbol}: {e}")
+            return None
+
+    async def process_all_stocks():
+        loop = asyncio.get_event_loop()
+        tasks = [
+            loop.run_in_executor(executor, get_stock_data, symbol, data)
+            for symbol, data in stock_summary.items()
+        ]
+
+        # Optional: wrap with tqdm for progress bar
+        results = []
+        for f in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc="Processing"):
+            result = await f
+            if result:
+                results.append(result)
+        return results
+
+    # Run the async processing
+    final_results = loop.run_until_complete(process_all_stocks())
+
+    # Save to CSV using pandas
+    df = pd.DataFrame(final_results)
+    df['PE_ratio'] = pd.to_numeric(df['PE_ratio'], errors='coerce')  # convert to float, NaN if invalid
+    df.to_csv(indicators_data_csv, index=False)
+    df = df[(df['PE_ratio'] < float(os.getenv('PE_RATIO_MAX'))) & (df['PE_ratio'] > float(os.getenv('PE_RATIO_MIN')))]
+    df[df['category']=='large'].to_csv(f'indicators_data_large_cap.csv', index=False)
+    df[df['category']=='mid'].to_csv(f'indicators_data_mid_cap.csv', index=False)
+    df[df['category']=='small'].to_csv(f'indicators_data_small_cap.csv', index=False)
+
+    print(f"✅ Done! CSV saved as {indicators_data_csv}")
