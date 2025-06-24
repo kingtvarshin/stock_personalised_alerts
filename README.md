@@ -18,7 +18,7 @@ or
 
 docker build -t stock-analyzer .
 
-docker run --rm --env-file .env truenas_ip:port/stock-analyzer
+docker run --rm --env-file .env stock-analyzer
 
 ----
 
