@@ -19,6 +19,12 @@ or
 
 docker build -t stock-analyzer .
 
+docker run --rm --env-file .env truenas_ip:port/stock-analyzer
+
+----
+
+for my reference:
+
 docker tag stock-analyzer truenas_ip:port/stock-analyzer
 
 docker push truenas_ip:port/stock-analyzer
