@@ -1,5 +1,6 @@
 import json, os, asyncio, datetime, pandas as pd
 from concurrent.futures import ThreadPoolExecutor
+from threading import Lock
 from tqdm import tqdm
 import yfinance as yf
 from stock_indicators import indicators, Quote
@@ -8,6 +9,19 @@ from constant_vars import indicators_data_csv, indicators_result_csv_path_large,
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Thread-safe yfinance cache — avoids duplicate fetches for the same symbol within a run
+_yf_cache: dict = {}
+_yf_cache_lock = Lock()
+
+# Per-cap thresholds for indicator signals
+# Large caps are more stable — tighter overbought/oversold levels
+# Small caps are more volatile — wider bands needed
+_THRESHOLDS = {
+    'large': {'rsi_buy': 40, 'rsi_sell': 60, 'stoch_buy': 30, 'stoch_sell': 70, 'boll_buy': 0.1,  'boll_sell': 0.55},
+    'mid':   {'rsi_buy': 37, 'rsi_sell': 63, 'stoch_buy': 27, 'stoch_sell': 73, 'boll_buy': 0.05, 'boll_sell': 0.58},
+    'small': {'rsi_buy': 34, 'rsi_sell': 65, 'stoch_buy': 25, 'stoch_sell': 75, 'boll_buy': 0.0,  'boll_sell': 0.60},
+}
 
 
 def _signal_to_int(signal):
@@ -50,7 +64,16 @@ def _composite_score(close_price, sma200, boll_signal, rsi_signal, stoch_signal,
     else:
         label = 'Strong Sell'
 
-    return round(score, 3), label
+    # Confidence: count how many of the 4 directional indicators agree with the overall label
+    signals = [boll, rsi, stoch, st]
+    if score > 0:
+        confidence = sum(1 for s in signals if s == 1)
+    elif score < 0:
+        confidence = sum(1 for s in signals if s == -1)
+    else:
+        confidence = 0
+
+    return round(score, 3), label, confidence
 
 
 def _generate_ai_summary(symbol, category, close_price, sma200, sma50, boll_signal, rsi_signal,
@@ -117,28 +140,54 @@ def _generate_ai_summary(symbol, category, close_price, sma200, sma50, boll_sign
     return ' '.join(parts)
 
 
-def indicators_response(symbol, backdays=0):
+def indicators_response(symbol, backdays=0, category='small'):
     try:
         end_datetime   = datetime.datetime.now() - datetime.timedelta(days=backdays)
         start_datetime = end_datetime - datetime.timedelta(days=365)
 
-        ticker = yf.Ticker(f"{symbol}.NS")
-        a = ticker.history(start=start_datetime.strftime('%Y-%m-%d'),
-                           end=end_datetime.strftime('%Y-%m-%d'),
-                           interval='1d')
+        # Use cached data if already fetched this run
+        cache_key = f"{symbol}_{backdays}"
+        with _yf_cache_lock:
+            if cache_key in _yf_cache:
+                a = _yf_cache[cache_key]
+            else:
+                ticker = yf.Ticker(f"{symbol}.NS")
+                raw = ticker.history(start=start_datetime.strftime('%Y-%m-%d'),
+                                     end=end_datetime.strftime('%Y-%m-%d'),
+                                     interval='1d')
+                if raw.empty:
+                    print(f"[!] No data from yfinance for {symbol}")
+                    _yf_cache[cache_key] = None
+                    _yf_cache[cache_key + '_info'] = {}
+                else:
+                    raw = raw.reset_index()
+                    raw['CH_TIMESTAMP']        = raw['Date'].astype(str).str[:10]
+                    raw['CH_OPENING_PRICE']    = raw['Open']
+                    raw['CH_TRADE_HIGH_PRICE'] = raw['High']
+                    raw['CH_TRADE_LOW_PRICE']  = raw['Low']
+                    raw['CH_CLOSING_PRICE']    = raw['Close']
+                    raw['CH_TOT_TRADED_VAL']   = raw['Volume']
+                    _yf_cache[cache_key] = raw
+                    # cache ticker.info separately to avoid Pandas attribute warning
+                    try:
+                        _yf_cache[cache_key + '_info'] = ticker.info
+                    except Exception:
+                        _yf_cache[cache_key + '_info'] = {}
+                a = _yf_cache[cache_key]
 
-        if a.empty:
-            print(f"[!] No data from yfinance for {symbol}")
-            return '','','','','','','','','','',''
+        if a is None:
+            return '','','','','','','','','',{'direction':'','trend_change':False,'signal':''},'','',''
 
-        a = a.reset_index()
-        # normalise column names to match rest of code
-        a['CH_TIMESTAMP']       = a['Date'].astype(str).str[:10]
-        a['CH_OPENING_PRICE']   = a['Open']
-        a['CH_TRADE_HIGH_PRICE']= a['High']
-        a['CH_TRADE_LOW_PRICE'] = a['Low']
-        a['CH_CLOSING_PRICE']   = a['Close']
-        a['CH_TOT_TRADED_VAL']  = a['Volume']
+        # Graceful handling for stocks with < 200 days of history
+        n_days = len(a)
+        if n_days < 50:
+            print(f"[!] {symbol}: only {n_days} days of data — skipping (too short for indicators)")
+            return '','','','','','','','','',{'direction':'','trend_change':False,'signal':''},'','',''
+        if n_days < 200:
+            print(f"[!] {symbol}: only {n_days} days — SMA200/Bollinger200 will be unavailable")
+
+        # Per-cap thresholds
+        thr = _THRESHOLDS.get(category, _THRESHOLDS['small'])
 
         quotes_list = [
             Quote(datetime.datetime.strptime(d, '%Y-%m-%d'), o, h, l, c, v)
@@ -295,31 +344,32 @@ def indicators_response(symbol, backdays=0):
         if not df_sma10.empty:
             w10 = df_sma10[df_sma10['date']==df_sma10['date'].max()]['sma10'].values[0]
         
-        # latest bollinger_band
+        # latest bollinger_band — per-cap thresholds
         if not df_bollinger_bands.empty:
-            # print('bollinger_band')
-            if df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]<=0:
+            pb = df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]
+            if pb <= thr['boll_buy']:
                 x = 'buy'
-            elif df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]>=0.6:
+            elif pb >= thr['boll_sell']:
                 x = 'sell'
             else:
                 x = 'hold'
             
-        # latest rsi
+        # latest rsi — per-cap thresholds
         if not df_rsi.empty:
-            # print(df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0])
-            if df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]<=34:
+            rsi_val = df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]
+            if rsi_val <= thr['rsi_buy']:
                 y = 'buy'
-            elif df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]>=65:
+            elif rsi_val >= thr['rsi_sell']:
                 y = 'sell'
             else:
                 y = 'hold'
                
-        # latest stoch
-        if not df_stoch.empty: 
-            if df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] >= 75:
+        # latest stoch — per-cap thresholds
+        if not df_stoch.empty:
+            osc_val = df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0]
+            if osc_val >= thr['stoch_sell']:
                 z = 'sell'
-            elif df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0] <= 25:
+            elif osc_val <= thr['stoch_buy']:
                 z = 'buy'
             else:
                 z = 'hold'
@@ -366,11 +416,11 @@ def indicators_response(symbol, backdays=0):
         except Exception:
             pass
 
-        # sector & industry (best-effort)
+        # sector & industry (best-effort — use cached ticker.info)
         sector = ''
         industry = ''
         try:
-            info = ticker.info
+            info = _yf_cache.get(cache_key + '_info', {})
             sector   = info.get('sector', '')   or ''
             industry = info.get('industry', '') or ''
         except Exception:
@@ -399,9 +449,10 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     # Your indicators_response function must be synchronous — we’ll wrap it in executor
     def get_stock_data(symbol, data):
         try:
-            close_price, sma200, sma100, sma50, sma20, sma10, boll_signal, rsi_signal, stoch_signal, supertrend_signal, volume_signal, sector, industry = indicators_response(symbol, backdays)
+            category = data.get('category', 'small')
+            close_price, sma200, sma100, sma50, sma20, sma10, boll_signal, rsi_signal, stoch_signal, supertrend_signal, volume_signal, sector, industry = indicators_response(symbol, backdays, category)
 
-            score, score_label = _composite_score(close_price, sma200, boll_signal, rsi_signal, stoch_signal, supertrend_signal)
+            score, score_label, confidence = _composite_score(close_price, sma200, boll_signal, rsi_signal, stoch_signal, supertrend_signal)
             ai_summary = _generate_ai_summary(
                 symbol, data.get('category', ''), close_price, sma200, sma50,
                 boll_signal, rsi_signal, stoch_signal, supertrend_signal,
@@ -432,6 +483,7 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
                 "sector": sector,
                 "industry": industry,
                 "composite_score": score,
+                "confidence": confidence,
                 "signal": score_label,
                 "ai_summary": ai_summary,
             }
@@ -465,6 +517,10 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     df[df['category']=='large'].to_csv(indicators_result_csv_path_large, index=False)
     df[df['category']=='mid'].to_csv(indicators_result_csv_path_mid, index=False)
     df[df['category']=='small'].to_csv(indicators_result_csv_path_small, index=False)
+
+    # Clear cache after run to free memory
+    with _yf_cache_lock:
+        _yf_cache.clear()
 
     print(f"✅ Done! CSV saved as {indicators_data_csv}")
 
