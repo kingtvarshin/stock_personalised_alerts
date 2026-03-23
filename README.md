@@ -64,11 +64,11 @@ docker image rm <Image_id>
 - [x] Improve supertrend logic — structured signal dict with direction, trend_change flag, and plain-English signal string
 
 ### Algorithm Improvements
-- [ ] Tune RSI/stoch/bollinger thresholds per market-cap category (large caps behave differently from small caps)
-- [ ] Add a confidence level to each signal based on how many indicators agree
-- [ ] Use `nse_fno()` instead of `nse_eq()` for FNO-listed stocks to reduce latency
-- [ ] Cache NSE API responses within a run to avoid duplicate fetches for the same symbol
-- [ ] Handle stocks with < 200 days of history gracefully (currently SMA200 is silently empty)
+- [x] Tune RSI/stoch/bollinger thresholds per market-cap category (large caps behave differently from small caps)
+- [x] Add a confidence level to each signal based on how many indicators agree
+- [x] Use `nse_fno()` instead of `nse_eq()` for FNO-listed stocks to reduce latency — superseded by yfinance migration
+- [x] Cache NSE API responses within a run to avoid duplicate fetches for the same symbol
+- [x] Handle stocks with < 200 days of history gracefully (currently SMA200 is silently empty)
 
 ### Mail & Output
 - [ ] Add a summary section at the top of the email: total stocks scanned, how many flagged, breakdown by cap
