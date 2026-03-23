@@ -71,10 +71,10 @@ docker image rm <Image_id>
 - [x] Handle stocks with < 200 days of history gracefully (currently SMA200 is silently empty)
 
 ### Mail & Output
-- [ ] Add a summary section at the top of the email: total stocks scanned, how many flagged, breakdown by cap
-- [ ] Colour-code cells in the HTML table (green = buy, red = sell, grey = hold)
-- [ ] Add sparkline-style mini charts or links to NSE chart page per stock
-- [ ] Send a separate alert email if any stock has all 4 indicators aligned (strong signal)
+- [x] Add a summary section at the top of the email: total stocks scanned, how many flagged, breakdown by cap
+- [x] Colour-code cells in the HTML table (green = buy, red = sell, grey = hold)
+- [x] Add sparkline-style mini charts or links to NSE chart page per stock
+- [x] Send a separate alert email if any stock has all 4 indicators aligned (strong signal)
 - [ ] Support Telegram / WhatsApp notification as an alternative to email
 
 ### Code Quality
