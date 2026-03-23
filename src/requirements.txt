@@ -5,3 +5,6 @@ stock-indicators
 nsepython
 tqdm
 dotenv
+groq
+yfinance
+openai

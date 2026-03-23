@@ -1,1 +1,34 @@
-symbol,category,PE_ratio,perc_high,perc_low,close_price,sma200,sma100,sma50,sma20,sma10,bollinger_signal,rsi_signal,stoch_signal,supertrend_signal
+symbol,category,PE_ratio,perc_high,perc_low,close_price,sma200,sma100,sma50,sma20,sma10,bollinger_signal,rsi_signal,stoch_signal,supertrend_signal,volume_signal,composite_score,signal,ai_summary
+CASTROLIND,mid,19.18,,2.516881522406379,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+KANSAINER,mid,22.45,,3.7175882536707205,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+APLLTD,mid,20.09,,2.8374233128834354,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ARE&M,mid,20.27,,2.6962942890048227,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+UTIAMC,mid,17.02,,2.9267486082786824,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+IRCON,mid,20.89,,4.273504273504273,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AFCONS,mid,19.49,,3.8461538461538463,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+CAPLIPOINT,mid,19.6,,3.144290123456781,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+INDIAMART,mid,18.2,,5.031314141360988,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+IEX,mid,23.33,,1.9028927382882532,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+INDGN,mid,24.17,,3.356973995271865,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+NEWGEN,mid,19.25,,2.0767335445265807,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+RITES,mid,20.79,,3.783783783783784,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SBFC,mid,22.75,,4.878048780487805,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+JYOTHYLAB,mid,22.15,,3.7147843430565883,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SANOFI,mid,22.56,,3.603465695129039,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+JKLAKSHMI,mid,15.01,,3.185101383691597,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TIMETECHNO,mid,17.63,,3.6073059360730597,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TCI,mid,19.89,,4.858657243816254,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+GALAXYSURF,mid,20.01,,5.0699745547073825,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+DODLA,mid,22.55,,4.760916917332224,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AJAXENGG,mid,24.11,,5.496453900709223,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+FDC,mid,23.35,,1.7230769230769298,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AURIONPRO,mid,21.79,,3.945012787723788,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+DHANUKA,mid,16.37,,3.25746952863768,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AHLUCONT,mid,18.15,,4.985401459854011,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SUNTECK,mid,24.07,,5.466182321397685,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SWSOLAR,mid,23.76,,5.646970830216905,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TEXRAIL,mid,23.89,,4.830409356725141,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+RAJESHEXPO,mid,16.72,,2.9895868323815944,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+INDIGOPNTS,mid,23.61,,3.072625698324022,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+RSYSTEMS,mid,15.33,,3.9792041591681615,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ZAGGLE,mid,22.05,,5.92863306431146,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).

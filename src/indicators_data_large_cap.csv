@@ -1,18 +1,50 @@
-symbol,category,PE_ratio,perc_high,perc_low,close_price,sma200,sma100,sma50,sma20,sma10,bollinger_signal,rsi_signal,stoch_signal,supertrend_signal
-HDFCBANK,large,20.6,3.2409958423082723,,1964.7,1780.3610000000003,1828.6779999999999,1927.3569999999995,1941.8400000000001,1940.95,sell,hold,sell,probability to rise more
-RELIANCE,large,24.56,11.231974142217807,,1466.2,1567.8122500000006,1317.042,1397.3310000000006,1431.8349999999998,1438.56,hold,hold,buy,probability to rise more
-KOTAKBANK,large,22.61,7.411268951735519,,2169.8,1929.4657499999998,2059.1209999999987,2126.028,2105.0650000000005,2138.7400000000002,sell,hold,sell,trend change to lower bandprobability to rise more
-BAJAJFINSV,large,18.09,7.962529274004685,,1986.2,1833.5935000000006,1934.4034999999997,2015.1659999999997,2000.3949999999998,1999.8899999999999,sell,hold,hold,probability to fall more
-GRASIM,large,23.14,6.767439840152897,,2712.6,2589.984250000002,2578.1169999999997,2682.993,2629.5350000000008,2691.6,sell,hold,hold,probability to rise more
-SHRIRAMFIN,large,15.04,10.94530768704224,,666.35,1727.916749999999,630.9439999999997,656.512,664.2225000000001,670.5550000000001,hold,hold,buy,probability to rise more
-CIPLA,large,22.89,12.981404776592937,12.973782771535584,,,,,,,,,,
-IOB,large,21.11,,11.492537313432841,37.22,47.467950000000016,41.1441,37.92,38.916000000000004,38.025,hold,hold,buy,probability to fall more
-DRREDDY,large,19.39,7.26631914399679,,1325.3,2180.4860000000017,1199.6374999999998,1233.54,1301.6199999999997,1336.87,hold,hold,buy,probability to rise more
-TORNTPOWER,large,22.9,,15.469041209360116,1390.1,1546.3327500000012,1415.7269999999996,1456.1970000000001,1404.8500000000001,1405.6399999999999,hold,hold,buy,probability to fall more
-AUROPHARMA,large,18.13,,9.207920792079207,1097.2,1249.486,1155.4669999999999,1174.967,1142.17,1128.27,hold,hold,buy,probability to fall more
-MUTHOOTFIN,large,19.55,3.329712723322974,,2606.4,2133.311,2256.4675,2263.1019999999994,2424.125,2603.7200000000003,sell,sell,sell,probability to rise more
-ASHOKLEY,large,20.72,12.321934630644241,,235.15,222.44565000000003,221.23660000000007,231.65740000000002,236.98399999999998,235.754,sell,hold,hold,probability to rise more
-UCOBANK,large,15.36,,13.502424468481914,29.95,39.82279999999998,34.299400000000006,31.341600000000003,32.105500000000006,31.342000000000002,hold,buy,buy,probability to fall more
-ABCAPITAL,large,22.73,3.041825095057034,,260.28,196.89514999999992,193.05810000000005,217.7478,237.94850000000002,250.45299999999997,sell,sell,sell,probability to rise more
-LTF,large,17.96,4.997463216641296,,190.05,155.92039999999994,159.8424000000001,175.09520000000003,183.76600000000002,189.586,sell,hold,sell,probability to rise more
-M&MFIN,large,16.62,,14.557181196433195,,,,,,,,,,
+symbol,category,PE_ratio,perc_high,perc_low,close_price,sma200,sma100,sma50,sma20,sma10,bollinger_signal,rsi_signal,stoch_signal,supertrend_signal,volume_signal,composite_score,signal,ai_summary
+HDFCBANK,large,15.57,,2.343229929436829,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+RELIANCE,large,19.65,13.698970095545352,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TCS,large,16.83,,2.50425894378195,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+INFY,large,17.63,,3.4153567607604316,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ICICIBANK,large,15.81,,1.0721885742347468,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+LT,large,23.73,,14.99342393686979,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ITC,large,18.24,,2.309666381522669,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+HCLTECH,large,21.06,,4.122678585189181,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+KOTAKBANK,large,19.52,,1.9843487982112815,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+NTPC,large,16.4,6.121673003802275,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+WIPRO,large,15.08,,1.5664961636828634,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+POWERGRID,large,17.63,8.975155279503099,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TMPV,large,15.4,,2.0003279226102717,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+GRASIM,large,18.82,15.03860355824102,6.123115885788983,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+IRFC,large,17.66,,3.480662983425421,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AMBUJACEM,large,19.27,,3.168316831683171,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+CIPLA,large,21.27,,1.400356159948191,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+LODHA,large,23.84,,5.877616747181958,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+DRREDDY,large,19.68,8.603319562223675,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+INDUSTOWER,large,16.08,13.800623052959498,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ZYDUSLIFE,large,17.5,,13.081761006289309,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+LUPIN,large,21.07,4.016655450874832,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+NHPC,large,21.5,,7.7492320580843295,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SUZLON,large,17.81,,9.347996857816183,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+OFSS,large,23.45,,4.819953484641911,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+YESBANK,large,18.37,,14.418316831683159,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TORNTPOWER,large,22.74,15.658536585365852,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AUROPHARMA,large,21.07,3.886952568570992,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+OBEROIRLTY,large,23.61,,3.909731205979579,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+UPL,large,22.47,,4.950326908380738,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SAIL,large,24.11,13.084834433149052,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+FEDERALBNK,large,15.68,14.98344370860927,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+MPHASIS,large,21.86,,2.9500123122383695,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+HEXT,large,18.63,,9.582708645677167,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+IREDA,large,17.36,,3.648648648648646,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+GODREJIND,large,16.31,,3.493696293043972,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+KPITTECH,large,23.25,,5.456873099695955,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+NIACL,large,19.22,,5.071884984025566,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+GUJGASLTD,large,21.07,,4.880952380952374,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+IGL,large,16.68,,4.124949939927918,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AEGISLOG,large,22.14,,4.9009562841529934,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+MRPL,large,15.51,12.571240167679335,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SHYAMMETL,large,22.92,,6.060402684563755,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+FSL,large,21.52,,6.435643564356436,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+EMAMILTD,large,21.77,,1.6563408774813535,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+BRIGADE,large,19.73,,7.138103161397667,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SAGILITY,large,20.92,,4.194857916102833,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+KEC,large,19.93,,3.863898500576683,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AADHARHFC,large,18.76,,12.633028671591331,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).

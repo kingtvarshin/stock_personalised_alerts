@@ -1,6 +1,59 @@
-symbol,category,PE_ratio,perc_high,perc_low,close_price,sma200,sma100,sma50,sma20,sma10,bollinger_signal,rsi_signal,stoch_signal,supertrend_signal
-KORE,small,23.35,,2.0247933884297544,,,,,,,,,,
-OSIAHYPER,small,16.87,,3.906646372399795,20.01,,,22.841400000000007,21.278000000000002,20.588,,buy,,probability to fall more
-LAKSHYA,small,17.74,,3.4246575342465753,,,,,,,,,,
-FONEBOX,small,18.38,,3.312500000000007,,,,,,,,,,
-YCCL,small,15.48,,1.5564202334630433,,,,,,,,,,
+symbol,category,PE_ratio,perc_high,perc_low,close_price,sma200,sma100,sma50,sma20,sma10,bollinger_signal,rsi_signal,stoch_signal,supertrend_signal,volume_signal,composite_score,signal,ai_summary
+PDSL,small,20.51,,3.608143519451719,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+NIITMTS,small,21.24,,3.5451035451035535,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+NFL,small,22.88,,4.232804232804228,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+VSTIND,small,15.89,,3.8062283737024227,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+HEIDELBERG,small,23.84,,3.629738630789698,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+HERITGFOOD,small,17.45,,4.857336956521744,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+VAIBHAVGBL,small,16.36,,4.389743589743591,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+GREENPLY,small,20.27,,4.041225928939526,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ADVENZYMES,small,20.88,,3.9575289575289574,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ROSSARI,small,16.73,,3.311007203336288,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+NAVNETEDUL,small,21.44,,3.0364372469635628,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+PROTEAN,small,22.68,,3.125000000000009,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+BBL,small,19.92,,4.990639696817505,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+KKCL,small,17.83,,4.0185094982951775,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TCPLPACK,small,17.43,,1.9255455712451863,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+FCL,small,24.91,,4.347826086956532,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+JTLIND,small,24.97,,4.6643682822956745,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+LAOPALA,small,19.78,,3.348314606741577,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TAJGVK,small,16.12,,3.6724137931034404,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+KRSNAA,small,23.69,,2.151380541764659,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+HATHWAY,small,19.27,,4.055496264674502,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ACCELYA,small,15.57,,2.3157894736842186,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+WINDLAS,small,22.97,,4.495268138801265,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ASALCBR,small,15.83,,4.57614942528736,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+PRECAM,small,22.48,,4.848210240145001,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TTKHLTCARE,small,16.45,,3.238840835911355,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ARIHANTSUP,small,20.16,,3.9292730844793713,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SYNCOMF,small,16.07,,3.9787798408487998,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TINNARUBR,small,23.58,,4.339464882943152,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SALZERELEC,small,17.63,,4.758706706322569,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+HARIOMPIPE,small,15.06,,2.6963657678780812,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+GPTHEALTH,small,24.42,,2.1374685666387236,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+STERTOOLS,small,23.77,,4.723707664884128,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+INDOFARM,small,20.53,,3.3057851239669422,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+GEECEE,small,24.58,,4.040000000000009,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+RKSWAMY,small,21.49,,4.3446513326031315,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+RSWM,small,23.91,,3.7089534609024284,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+APTECHT,small,16.18,,4.21262458471761,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+VISAKAIND,small,16.17,,3.4332425068119905,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SPECIALITY,small,20.4,,4.932141674942072,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+DIGISPICE,small,16.23,,4.907975460122704,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+TPLPLASTEH,small,17.05,,3.4482758620689653,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ADVANIHOTR,small,19.78,,4.790419161676644,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SREEL,small,17.61,,1.810202962150292,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+MEGATHERM,small,15.26,,2.6863313141954146,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+VINYLINDIA,small,18.52,,3.523035230352303,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+UNIDT,small,17.7,,4.982088364070579,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+AARTISURF,small,16.71,,4.202056325435842,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+VARDHACRLC,small,19.14,,3.1111111111111014,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+UNIHEALTH,small,16.2,2.93398533007335,,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+GOYALSALT,small,18.85,,0.04631773969430028,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SPCL,small,15.76,,1.640513552068482,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+SPECTSTM,small,22.91,,3.8112522686025434,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+RAPIDFLEET,small,17.62,,2.280701754385968,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+ZENITHDRUG,small,18.61,,3.4482758620689578,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+EFORCE,small,23.17,,2.9023746701847,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+KONSTELEC,small,18.08,,2.8667790893760587,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).
+JFLLIFE,small,23.68,,3.991596638655471,,,,,,,,,,,,0.0,Hold,Momentum indicators are mixed — no clear directional signal. Overall signal: Hold (score: 0.0).

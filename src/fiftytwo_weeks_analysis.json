@@ -1,2485 +1,3718 @@
 {
   "RELIANCE": {
-    "perc_high": 13.38255366670803,
+    "perc_high": 13.698970095545352,
     "PE_ratio": 19.65,
     "category": "large"
   },
-  "TCS": {
-    "perc_low": 2.4508552463620275,
-    "PE_ratio": 16.83,
-    "category": "large"
-  },
   "HDFCBANK": {
-    "perc_low": 3.0844155844155843,
+    "perc_low": 2.343229929436829,
     "PE_ratio": 15.57,
     "category": "large"
   },
   "BHARTIARTL": {
-    "perc_high": 15.658772131524486,
-    "PE_ratio": 28.41,
-    "perc_low": 14.341013824884799,
+    "perc_low": 11.171860761800625,
+    "PE_ratio": 30.36,
+    "category": "large"
+  },
+  "TCS": {
+    "perc_low": 2.50425894378195,
+    "PE_ratio": 16.83,
     "category": "large"
   },
   "ICICIBANK": {
-    "perc_low": 2.733650512055487,
+    "perc_low": 1.0721885742347468,
     "PE_ratio": 15.81,
     "category": "large"
   },
   "INFY": {
-    "perc_low": 4.090198337585388,
+    "perc_low": 3.4153567607604316,
     "PE_ratio": 17.63,
-    "category": "large"
-  },
-  "SBIN": {
-    "perc_high": 14.635134040657652,
-    "PE_ratio": 11.81,
-    "category": "large"
-  },
-  "LICI": {
-    "perc_low": 4.934033387183642,
-    "PE_ratio": 9.27,
-    "category": "large"
-  },
-  "HINDUNILVR": {
-    "perc_low": 1.488641855969076,
-    "PE_ratio": 46.41,
-    "category": "large"
-  },
-  "ITC": {
-    "perc_low": 3.9212386401884807,
-    "PE_ratio": 18.24,
-    "category": "large"
-  },
-  "HCLTECH": {
-    "perc_low": 4.222855821838634,
-    "PE_ratio": 21.06,
     "category": "large"
   },
   "BAJFINANCE": {
-    "perc_low": 2.7708269758925903,
+    "perc_low": 3.6193368767400544,
     "PE_ratio": 27.95,
     "category": "large"
   },
-  "SUNPHARMA": {
-    "perc_high": 5.234442523768371,
-    "PE_ratio": 34.87,
-    "perc_low": 15.071059431524544,
+  "HINDUNILVR": {
+    "perc_low": 1.6159135559921458,
+    "PE_ratio": 46.41,
     "category": "large"
   },
-  "NTPC": {
-    "perc_high": 4.816223067173637,
-    "PE_ratio": 16.4,
+  "LICI": {
+    "perc_low": 3.513731825525044,
+    "PE_ratio": 9.27,
+    "category": "large"
+  },
+  "LT": {
+    "perc_low": 14.99342393686979,
+    "PE_ratio": 23.73,
+    "category": "large"
+  },
+  "ITC": {
+    "perc_low": 2.309666381522669,
+    "PE_ratio": 18.24,
     "category": "large"
   },
   "MARUTI": {
-    "perc_low": 15.340274606784234,
+    "perc_low": 13.03455415956489,
     "PE_ratio": 27,
     "category": "large"
   },
-  "AXISBANK": {
-    "perc_high": 15.412818162589009,
-    "PE_ratio": 14.2,
-    "category": "large"
-  },
-  "ONGC": {
-    "perc_high": 9.897610921501707,
-    "PE_ratio": 7.55,
+  "HCLTECH": {
+    "perc_low": 4.122678585189181,
+    "PE_ratio": 21.06,
     "category": "large"
   },
   "KOTAKBANK": {
-    "perc_low": 2.545754781890739,
+    "perc_low": 1.9843487982112815,
     "PE_ratio": 19.52,
     "category": "large"
   },
-  "ADANIENT": {
-    "perc_low": 6.839826839826844,
-    "PE_ratio": 66.14,
+  "SUNPHARMA": {
+    "perc_high": 5.2722558340535945,
+    "PE_ratio": 34.87,
+    "perc_low": 14.651162790697672,
+    "category": "large"
+  },
+  "AXISBANK": {
+    "perc_low": 14.796338451106699,
+    "PE_ratio": 14.2,
     "category": "large"
   },
   "ULTRACEMCO": {
-    "perc_low": 3.792679466565781,
+    "perc_low": 3.6793441997902967,
     "PE_ratio": 41.31,
     "category": "large"
   },
-  "POWERGRID": {
-    "perc_high": 7.888198757763969,
-    "PE_ratio": 17.63,
-    "category": "large"
-  },
-  "HAL": {
-    "perc_low": 8.510013836284603,
-    "PE_ratio": 28.59,
-    "category": "large"
-  },
-  "TITAN": {
-    "perc_high": 7.7082952676776815,
-    "PE_ratio": 74.72,
-    "category": "large"
-  },
-  "ADANIPORTS": {
-    "perc_high": 14.267676767676768,
-    "PE_ratio": 25.32,
-    "category": "large"
-  },
-  "DMART": {
-    "perc_low": 9.039387928591669,
-    "PE_ratio": 85.67,
-    "category": "large"
-  },
-  "COALINDIA": {
-    "perc_high": 4.1596638655462215,
-    "PE_ratio": 9.97,
-    "category": "large"
-  },
-  "WIPRO": {
-    "perc_low": 2.4616368286445036,
-    "PE_ratio": 15.08,
-    "category": "large"
-  },
-  "BAJAJ-AUTO": {
-    "perc_high": 12.324531265338177,
-    "PE_ratio": 25.53,
-    "category": "large"
-  },
-  "ASIANPAINT": {
-    "perc_low": 2.8622953851845043,
-    "PE_ratio": 52.88,
-    "category": "large"
-  },
   "BAJAJFINSV": {
-    "perc_low": 1.8741554550261497,
+    "perc_low": 1.5774378585086097,
     "PE_ratio": 14.08,
     "category": "large"
   },
-  "ADANIGREEN": {
-    "perc_low": 15.947712418300652,
-    "PE_ratio": 84.78,
+  "TITAN": {
+    "perc_high": 10.595194591631639,
+    "PE_ratio": 74.72,
     "category": "large"
   },
-  "TRENT": {
-    "perc_low": 4.9622217684296475,
-    "PE_ratio": 78.09,
+  "NTPC": {
+    "perc_high": 6.121673003802275,
+    "PE_ratio": 16.4,
     "category": "large"
   },
-  "NESTLEIND": {
-    "perc_high": 12.145628170695327,
-    "PE_ratio": 72.41,
-    "perc_low": 12.104283054003725,
+  "HAL": {
+    "perc_low": 4.232686980609424,
+    "PE_ratio": 28.59,
     "category": "large"
   },
-  "JSWSTEEL": {
-    "perc_high": 11.419008328792717,
-    "PE_ratio": 32.73,
+  "ONGC": {
+    "perc_high": 9.93174061433448,
+    "PE_ratio": 7.55,
     "category": "large"
   },
   "BEL": {
-    "perc_high": 10.296757841377126,
+    "perc_high": 14.33097475974231,
     "PE_ratio": 52.52,
     "category": "large"
   },
-  "IRFC": {
-    "perc_low": 3.117048346055993,
-    "PE_ratio": 17.66,
+  "ADANIENT": {
+    "perc_low": 3.528455284552841,
+    "PE_ratio": 66.14,
     "category": "large"
   },
-  "DLF": {
-    "perc_low": 6.366755623332058,
-    "PE_ratio": 51.72,
+  "DMART": {
+    "perc_low": 6.319070558231794,
+    "PE_ratio": 85.67,
     "category": "large"
   },
-  "VBL": {
-    "perc_low": 2.4124999999999943,
-    "PE_ratio": 44.25,
+  "JSWSTEEL": {
+    "perc_high": 13.224877403284822,
+    "PE_ratio": 32.73,
     "category": "large"
   },
-  "TATASTEEL": {
-    "perc_high": 10.67683067683067,
-    "PE_ratio": 26.05,
+  "WIPRO": {
+    "perc_low": 1.5664961636828634,
+    "PE_ratio": 15.08,
     "category": "large"
   },
-  "VEDL": {
-    "perc_high": 13.691868017666925,
-    "PE_ratio": 14.51,
+  "POWERGRID": {
+    "perc_high": 8.975155279503099,
+    "PE_ratio": 17.63,
     "category": "large"
   },
-  "GRASIM": {
-    "perc_high": 12.44377307821416,
-    "PE_ratio": 18.82,
-    "perc_low": 9.756801319043685,
+  "ASIANPAINT": {
+    "perc_low": 2.1555763823805063,
+    "PE_ratio": 52.88,
+    "category": "large"
+  },
+  "BAJAJ-AUTO": {
+    "perc_high": 13.4877785412781,
+    "PE_ratio": 25.53,
+    "category": "large"
+  },
+  "COALINDIA": {
+    "perc_high": 5.325630252100845,
+    "PE_ratio": 9.97,
+    "category": "large"
+  },
+  "NESTLEIND": {
+    "perc_high": 12.682781259325573,
+    "PE_ratio": 72.41,
+    "perc_low": 10.707635009310987,
     "category": "large"
   },
   "INDIGO": {
-    "perc_low": 5.2540272614622054,
+    "perc_low": 4.395716211747342,
     "PE_ratio": 30.96,
     "category": "large"
   },
+  "TATASTEEL": {
+    "perc_high": 13.605913605913603,
+    "PE_ratio": 26.05,
+    "category": "large"
+  },
+  "TMPV": {
+    "perc_low": 2.0003279226102717,
+    "PE_ratio": 15.4,
+    "category": "large"
+  },
+  "GRASIM": {
+    "perc_high": 15.03860355824102,
+    "PE_ratio": 18.82,
+    "perc_low": 6.123115885788983,
+    "category": "large"
+  },
   "SBILIFE": {
-    "perc_high": 11.350844277673545,
+    "perc_high": 14.545028142589114,
     "PE_ratio": 76.74,
     "category": "large"
   },
-  "PFC": {
-    "perc_high": 7.442017563611801,
-    "PE_ratio": 4.08,
+  "DLF": {
+    "perc_low": 3.8304491541901706,
+    "PE_ratio": 51.72,
     "category": "large"
   },
-  "ABB": {
-    "perc_high": 4.638388770216661,
-    "PE_ratio": 79.93,
-    "category": "large"
-  },
-  "TECHM": {
-    "perc_low": 15.015710269555143,
-    "PE_ratio": 28.4,
-    "category": "large"
-  },
-  "PIDILITIND": {
-    "perc_low": 3.9036735946008023,
-    "PE_ratio": 58.39,
-    "category": "large"
-  },
-  "HINDALCO": {
-    "perc_high": 15.517576228393859,
-    "PE_ratio": 11.34,
-    "category": "large"
-  },
-  "AMBUJACEM": {
-    "perc_low": 2.2355050806933705,
-    "PE_ratio": 19.27,
-    "category": "large"
-  },
-  "HDFCLIFE": {
-    "perc_low": 2.9650032404406925,
-    "PE_ratio": 71.19,
-    "category": "large"
-  },
-  "RECLTD": {
-    "perc_low": 6.5420560747663545,
-    "PE_ratio": 5.04,
+  "TRENT": {
+    "perc_low": 2.972567698685717,
+    "PE_ratio": 78.09,
     "category": "large"
   },
   "DIVISLAB": {
-    "perc_high": 14.721063423601782,
+    "perc_high": 15.230149190412218,
     "PE_ratio": 63.92,
     "category": "large"
   },
-  "GAIL": {
-    "perc_low": 3.4470654310586895,
-    "PE_ratio": 12.9,
+  "HDFCLIFE": {
+    "perc_low": 2.8847757211939227,
+    "PE_ratio": 71.19,
     "category": "large"
   },
-  "BPCL": {
-    "perc_low": 12.919847328244282,
-    "PE_ratio": 5.51,
+  "IRFC": {
+    "perc_low": 3.480662983425421,
+    "PE_ratio": 17.66,
     "category": "large"
   },
-  "TATAPOWER": {
-    "perc_high": 4.170151750507824,
-    "PE_ratio": 28.88,
+  "ADANIGREEN": {
+    "perc_low": 12.810457516339868,
+    "PE_ratio": 84.78,
     "category": "large"
   },
-  "GODREJCP": {
-    "perc_low": 2.3299437259354354,
-    "PE_ratio": 53.25,
-    "category": "large"
-  },
-  "BRITANNIA": {
-    "perc_high": 11.742424242424242,
-    "PE_ratio": 55.65,
-    "category": "large"
-  },
-  "LODHA": {
-    "perc_low": 5.401994194118399,
-    "PE_ratio": 23.84,
-    "category": "large"
-  },
-  "BANKBARODA": {
-    "perc_high": 15.43778801843318,
-    "PE_ratio": 7.57,
-    "category": "large"
-  },
-  "CIPLA": {
-    "perc_low": 2.3150396632669503,
-    "PE_ratio": 21.27,
-    "category": "large"
-  },
-  "JSWENERGY": {
-    "perc_high": 12.763385146804831,
-    "PE_ratio": 33.36,
+  "VBL": {
+    "perc_low": 4.004173731576879,
+    "PE_ratio": 44.25,
     "category": "large"
   },
   "TVSMOTOR": {
-    "perc_high": 13.095717884130984,
+    "perc_high": 14.811083123425691,
     "PE_ratio": 262.83,
     "category": "large"
   },
-  "CHOLAFIN": {
-    "perc_low": 8.048430427262348,
-    "PE_ratio": 25.33,
+  "PIDILITIND": {
+    "perc_low": 2.3023791250959325,
+    "PE_ratio": 58.39,
     "category": "large"
   },
-  "BAJAJHFL": {
-    "perc_low": 5.286233245646999,
-    "PE_ratio": 27.28,
+  "BPCL": {
+    "perc_low": 7.251908396946565,
+    "PE_ratio": 5.51,
     "category": "large"
   },
-  "SWIGGY": {
-    "perc_low": 7.764662486167448,
-    "PE_ratio": "NA",
+  "TECHM": {
+    "perc_low": 15.544898296676035,
+    "PE_ratio": 28.4,
     "category": "large"
   },
   "BAJAJHLDNG": {
-    "perc_low": 4.804708400214018,
+    "perc_low": 3.2728063498967055,
     "PE_ratio": 165.01,
     "category": "large"
   },
-  "NTPCGREEN": {
-    "perc_high": 15.759945596735808,
-    "PE_ratio": 153.4,
+  "BRITANNIA": {
+    "perc_high": 13.304924242424242,
+    "PE_ratio": 55.65,
     "category": "large"
   },
-  "HAVELLS": {
-    "perc_low": 5.159587233021359,
-    "PE_ratio": 53.58,
+  "AMBUJACEM": {
+    "perc_low": 3.168316831683171,
+    "PE_ratio": 19.27,
     "category": "large"
   },
-  "ADANIENSOL": {
-    "perc_high": 5.816240516999159,
-    "PE_ratio": 51.48,
+  "TATACAP": {
+    "perc_high": 15.627552409474552,
+    "PE_ratio": "NA",
+    "perc_low": 3.6420566908371823,
     "category": "large"
   },
-  "CGPOWER": {
-    "perc_high": 14.908156228449625,
-    "PE_ratio": 94.66,
+  "CHOLAFIN": {
+    "perc_low": 5.229455709711842,
+    "PE_ratio": 25.33,
+    "category": "large"
+  },
+  "ICICIAMC": {
+    "perc_low": 9.66403162055336,
+    "PE_ratio": "NA",
+    "category": "large"
+  },
+  "PFC": {
+    "perc_high": 12.992569241161911,
+    "PE_ratio": 4.08,
+    "category": "large"
+  },
+  "TATAPOWER": {
+    "perc_high": 7.659218544628992,
+    "PE_ratio": 28.88,
+    "category": "large"
+  },
+  "CIPLA": {
+    "perc_low": 1.400356159948191,
+    "PE_ratio": 21.27,
     "category": "large"
   },
   "TORNTPHARM": {
-    "perc_high": 6.181266590822894,
+    "perc_high": 6.899551629525515,
     "PE_ratio": 62.69,
     "category": "large"
   },
-  "DRREDDY": {
-    "perc_high": 6.631876494890193,
-    "PE_ratio": 19.68,
+  "GODREJCP": {
+    "perc_low": 2.42914979757085,
+    "PE_ratio": 53.25,
     "category": "large"
   },
-  "IOB": {
-    "perc_low": 9.762282091917598,
-    "PE_ratio": 13.54,
+  "LODHA": {
+    "perc_low": 5.877616747181958,
+    "PE_ratio": 23.84,
     "category": "large"
   },
-  "ZYDUSLIFE": {
-    "perc_low": 12.70440251572327,
-    "PE_ratio": 17.5,
-    "category": "large"
-  },
-  "TATACONSUM": {
-    "perc_high": 14.530264558931941,
-    "PE_ratio": 67.89,
-    "perc_low": 11.716477122454377,
-    "category": "large"
-  },
-  "UNITDSPR": {
-    "perc_low": 3.2601880877742877,
-    "PE_ratio": 53.51,
-    "category": "large"
-  },
-  "RVNL": {
-    "perc_low": 3.778289221327205,
-    "PE_ratio": 54.83,
-    "category": "large"
-  },
-  "DABUR": {
-    "perc_low": 1.3992537313432836,
-    "PE_ratio": 41.7,
-    "category": "large"
-  },
-  "ICICIPRULI": {
-    "perc_low": 7.759604412324091,
-    "PE_ratio": 58.44,
-    "category": "large"
-  },
-  "INDUSTOWER": {
-    "perc_high": 10.768431983385259,
-    "PE_ratio": 16.08,
-    "category": "large"
-  },
-  "CUMMINSIND": {
-    "perc_high": 9.264086625225588,
-    "PE_ratio": 62.23,
-    "category": "large"
-  },
-  "NAUKRI": {
-    "perc_low": 7.84524449220849,
-    "PE_ratio": 37.18,
-    "category": "large"
-  },
-  "INDHOTEL": {
-    "perc_low": 5.949579831932769,
-    "PE_ratio": 46.05,
-    "category": "large"
-  },
-  "APOLLOHOSP": {
-    "perc_high": 11.074757701092661,
-    "PE_ratio": 57.69,
-    "category": "large"
-  },
-  "MANKIND": {
-    "perc_low": 4.103320282707075,
-    "PE_ratio": 44.13,
-    "category": "large"
-  },
-  "OFSS": {
-    "perc_low": 7.065522495789558,
-    "PE_ratio": 23.45,
-    "category": "large"
-  },
-  "ICICIGI": {
-    "perc_high": 14.33267269299559,
-    "PE_ratio": 32.38,
-    "perc_low": 6.430376770704761,
-    "category": "large"
-  },
-  "JINDALSTEL": {
-    "perc_high": 10.06210203600346,
-    "PE_ratio": 0,
-    "category": "large"
-  },
-  "LUPIN": {
-    "perc_high": 4.731662180349932,
-    "PE_ratio": 21.07,
+  "GAIL": {
+    "perc_low": 4.539101007871689,
+    "PE_ratio": 12.9,
     "category": "large"
   },
   "MAXHEALTH": {
-    "perc_low": 4.304990361961882,
+    "perc_low": 4.015849218248019,
     "PE_ratio": 64.25,
     "category": "large"
   },
-  "SUZLON": {
-    "perc_low": 11.887928777166797,
-    "PE_ratio": 17.81,
-    "category": "large"
-  },
-  "UNIONBANK": {
-    "perc_high": 15.32921310039418,
-    "PE_ratio": 7.35,
-    "category": "large"
-  },
-  "SHREECEM": {
-    "perc_low": 3.7409757164734194,
-    "PE_ratio": 47.28,
-    "category": "large"
-  },
-  "IDBI": {
-    "perc_low": 6.866952789699567,
-    "PE_ratio": 8.45,
-    "category": "large"
-  },
-  "NHPC": {
-    "perc_low": 9.522479754258576,
-    "PE_ratio": 21.5,
-    "category": "large"
-  },
   "MAZDOCK": {
-    "perc_low": 13.495460746036978,
+    "perc_low": 8.316477727080281,
     "PE_ratio": 41.54,
     "category": "large"
   },
-  "OIL": {
-    "perc_high": 9.923664122137405,
-    "PE_ratio": 12.49,
+  "ABB": {
+    "perc_high": 8.83429966432713,
+    "PE_ratio": 79.93,
     "category": "large"
   },
-  "COLPAL": {
-    "perc_low": 2.082226707744611,
-    "PE_ratio": 38.68,
+  "CUMMINSIND": {
+    "perc_high": 11.890916382594746,
+    "PE_ratio": 62.23,
+    "category": "large"
+  },
+  "TATACONSUM": {
+    "perc_low": 9.44488292554591,
+    "PE_ratio": 67.89,
+    "category": "large"
+  },
+  "ADANIENSOL": {
+    "perc_high": 12.363023321157627,
+    "PE_ratio": 51.48,
+    "category": "large"
+  },
+  "APOLLOHOSP": {
+    "perc_high": 12.562503858262856,
+    "PE_ratio": 57.69,
+    "perc_low": 14.523669220192497,
+    "category": "large"
+  },
+  "INDHOTEL": {
+    "perc_low": 4.106321349463285,
+    "PE_ratio": 46.05,
+    "category": "large"
+  },
+  "DRREDDY": {
+    "perc_high": 8.603319562223675,
+    "PE_ratio": 19.68,
+    "category": "large"
+  },
+  "SHREECEM": {
+    "perc_low": 2.8002625246116826,
+    "PE_ratio": 47.28,
+    "category": "large"
+  },
+  "JINDALSTEL": {
+    "perc_high": 12.577627545004324,
+    "PE_ratio": 0,
+    "category": "large"
+  },
+  "IDBI": {
+    "perc_low": 6.101190476190467,
+    "PE_ratio": 8.45,
+    "category": "large"
+  },
+  "SWIGGY": {
+    "perc_low": 3.57801549243821,
+    "PE_ratio": "NA",
+    "category": "large"
+  },
+  "MANKIND": {
+    "perc_low": 2.83405004922025,
+    "PE_ratio": 44.13,
+    "category": "large"
+  },
+  "INDUSTOWER": {
+    "perc_high": 13.800623052959498,
+    "PE_ratio": 16.08,
+    "category": "large"
+  },
+  "UNITDSPR": {
+    "perc_low": 1.7766898294377762,
+    "PE_ratio": 53.51,
+    "category": "large"
+  },
+  "RECLTD": {
+    "perc_low": 5.441957816776679,
+    "PE_ratio": 5.04,
+    "category": "large"
+  },
+  "ZYDUSLIFE": {
+    "perc_low": 13.081761006289309,
+    "PE_ratio": 17.5,
+    "category": "large"
+  },
+  "ICICIGI": {
+    "perc_low": 4.114500675953683,
+    "PE_ratio": 32.38,
     "category": "large"
   },
   "DIXON": {
-    "perc_low": 8.982346832814123,
+    "perc_low": 5.919003115264798,
     "PE_ratio": 40.08,
     "category": "large"
   },
+  "HAVELLS": {
+    "perc_low": 3.7692747001713345,
+    "PE_ratio": 53.58,
+    "category": "large"
+  },
   "MARICO": {
-    "perc_high": 9.010448678549473,
+    "perc_high": 11.057160417947147,
     "PE_ratio": 55.21,
     "category": "large"
   },
-  "PERSISTENT": {
-    "perc_low": 14.38556743272395,
-    "PE_ratio": 41.37,
-    "category": "large"
-  },
   "HINDPETRO": {
-    "perc_low": 7.4183514774494625,
+    "perc_low": 4.121920404295627,
     "PE_ratio": 4.82,
     "category": "large"
   },
-  "GODREJPROP": {
-    "perc_low": 8.779661016949152,
-    "PE_ratio": 26.76,
+  "BAJAJHFL": {
+    "perc_low": 3.6238356513972043,
+    "PE_ratio": 27.28,
+    "category": "large"
+  },
+  "DABUR": {
+    "perc_low": 1.7674970344009462,
+    "PE_ratio": 41.7,
+    "category": "large"
+  },
+  "LUPIN": {
+    "perc_high": 4.016655450874832,
+    "PE_ratio": 21.07,
+    "category": "large"
+  },
+  "ICICIPRULI": {
+    "perc_low": 4.612019779383796,
+    "PE_ratio": 58.44,
+    "category": "large"
+  },
+  "PERSISTENT": {
+    "perc_low": 14.776027669651363,
+    "PE_ratio": 41.37,
+    "category": "large"
+  },
+  "NAUKRI": {
+    "perc_low": 4.245029554003224,
+    "PE_ratio": 37.18,
+    "category": "large"
+  },
+  "SRF": {
+    "perc_low": 2.504719949653863,
+    "PE_ratio": 39.69,
+    "category": "large"
+  },
+  "POWERINDIA": {
+    "perc_high": 8.812915479582147,
+    "PE_ratio": 126.45,
+    "category": "large"
+  },
+  "MEESHO": {
+    "perc_low": 14.614526919401078,
+    "PE_ratio": "NA",
+    "category": "large"
+  },
+  "NHPC": {
+    "perc_low": 7.7492320580843295,
+    "PE_ratio": 21.5,
+    "category": "large"
+  },
+  "POLICYBZR": {
+    "perc_low": 8.870967741935484,
+    "PE_ratio": 120.45,
+    "category": "large"
+  },
+  "SBICARD": {
+    "perc_low": 2.782385763836515,
+    "PE_ratio": 31.34,
+    "category": "large"
+  },
+  "SUZLON": {
+    "perc_low": 9.347996857816183,
+    "PE_ratio": 17.81,
+    "category": "large"
+  },
+  "IOB": {
+    "perc_low": 6.180665610142628,
+    "PE_ratio": 13.54,
+    "category": "large"
+  },
+  "OFSS": {
+    "perc_low": 4.819953484641911,
+    "PE_ratio": 23.45,
+    "category": "large"
+  },
+  "LENSKART": {
+    "perc_high": 11.003861003861,
+    "PE_ratio": "NA",
+    "category": "large"
+  },
+  "GVT&D": {
+    "perc_high": 14.476119029757442,
+    "PE_ratio": 84.29,
+    "category": "large"
+  },
+  "RVNL": {
+    "perc_low": 3.8017515923566925,
+    "PE_ratio": 54.83,
+    "category": "large"
+  },
+  "OIL": {
+    "perc_high": 10.906488549618317,
+    "PE_ratio": 12.49,
+    "category": "large"
+  },
+  "COROMANDEL": {
+    "perc_low": 3.101992204417494,
+    "PE_ratio": 26.84,
+    "category": "large"
+  },
+  "GICRE": {
+    "perc_low": 5.281941470378301,
+    "PE_ratio": 7.63,
+    "category": "large"
+  },
+  "YESBANK": {
+    "perc_low": 14.418316831683159,
+    "PE_ratio": 18.37,
+    "category": "large"
+  },
+  "VMM": {
+    "perc_low": 7.372793354101774,
+    "PE_ratio": 60.79,
     "category": "large"
   },
   "TORNTPOWER": {
-    "perc_high": 11.945121951219518,
+    "perc_high": 15.658536585365852,
     "PE_ratio": 22.74,
     "category": "large"
   },
   "AUROPHARMA": {
-    "perc_high": 4.659796938930142,
+    "perc_high": 3.886952568570992,
     "PE_ratio": 21.07,
-    "category": "large"
-  },
-  "POLICYBZR": {
-    "perc_low": 11.898826979472139,
-    "PE_ratio": 120.45,
-    "category": "large"
-  },
-  "INDIANB": {
-    "perc_high": 13.579999999999995,
-    "PE_ratio": 10.02,
-    "category": "large"
-  },
-  "IRCTC": {
-    "perc_low": 2.653159671972986,
-    "PE_ratio": 30.24,
-    "category": "large"
-  },
-  "SRF": {
-    "perc_low": 4.064470918009807,
-    "PE_ratio": 39.69,
-    "category": "large"
-  },
-  "GICRE": {
-    "perc_low": 6.852248394004283,
-    "PE_ratio": 7.63,
-    "category": "large"
-  },
-  "BHARATFORG": {
-    "perc_high": 11.841901317489024,
-    "PE_ratio": 68.79,
-    "category": "large"
-  },
-  "OBEROIRLTY": {
-    "perc_low": 5.954854890720165,
-    "PE_ratio": 23.61,
-    "category": "large"
-  },
-  "SBICARD": {
-    "perc_low": 2.5393340651298972,
-    "PE_ratio": 31.34,
-    "category": "large"
-  },
-  "ALKEM": {
-    "perc_high": 12.176624252127748,
-    "PE_ratio": 25.61,
-    "perc_low": 14.888819020566574,
-    "category": "large"
-  },
-  "JSWINFRA": {
-    "perc_low": 6.028806584362131,
-    "PE_ratio": 32.06,
-    "category": "large"
-  },
-  "KALYANKJIL": {
-    "perc_low": 12.115107913669071,
-    "PE_ratio": 34.17,
     "category": "large"
   },
   "NMDC": {
-    "perc_high": 10.043819188191874,
+    "perc_high": 14.03367158671587,
     "PE_ratio": 10.17,
     "category": "large"
   },
-  "PIIND": {
-    "perc_low": 3.778035984648435,
-    "PE_ratio": 32.5,
-    "category": "large"
-  },
-  "LINDEINDIA": {
-    "perc_high": 11.30876747141042,
-    "PE_ratio": 111.91,
-    "category": "large"
-  },
-  "PATANJALI": {
-    "perc_low": 2.2031564452918073,
-    "PE_ratio": 30.95,
+  "ALKEM": {
+    "perc_high": 13.853543439791016,
+    "PE_ratio": 25.61,
+    "perc_low": 14.325053937140183,
     "category": "large"
   },
   "BERGEPAINT": {
-    "perc_low": 7.38941447200204,
+    "perc_low": 6.047046791102014,
     "PE_ratio": 45.32,
     "category": "large"
   },
-  "PHOENIXLTD": {
-    "perc_low": 13.22638146167558,
-    "PE_ratio": 38.32,
+  "PATANJALI": {
+    "perc_low": 2.1755601255547163,
+    "PE_ratio": 30.95,
     "category": "large"
   },
-  "IREDA": {
-    "perc_low": 7.522084411528515,
-    "PE_ratio": 17.36,
+  "GODREJPROP": {
+    "perc_low": 3.593220338983051,
+    "PE_ratio": 26.76,
+    "category": "large"
+  },
+  "HDBFS": {
+    "perc_low": 2.309694209499032,
+    "PE_ratio": "NA",
+    "category": "large"
+  },
+  "JSWINFRA": {
+    "perc_low": 3.1910484873601277,
+    "PE_ratio": 32.06,
     "category": "large"
   },
   "SCHAEFFLER": {
-    "perc_high": 11.229491684759491,
+    "perc_high": 10.728115137542801,
     "PE_ratio": 56.88,
     "category": "large"
   },
-  "UCOBANK": {
-    "perc_low": 4.390243902439018,
-    "PE_ratio": 11.9,
+  "COLPAL": {
+    "perc_low": 2.7672273467173087,
+    "PE_ratio": 38.68,
     "category": "large"
   },
-  "BALKRISIND": {
-    "perc_low": 3.3296655982394827,
-    "PE_ratio": 31.01,
+  "OBEROIRLTY": {
+    "perc_low": 3.909731205979579,
+    "PE_ratio": 23.61,
     "category": "large"
   },
-  "VOLTAS": {
-    "perc_low": 15.798319327731091,
-    "PE_ratio": 68.64,
-    "category": "large"
-  },
-  "MPHASIS": {
-    "perc_low": 3.9005171140113184,
-    "PE_ratio": 21.86,
-    "category": "large"
-  },
-  "CONCOR": {
-    "perc_low": 3.546989051094893,
-    "PE_ratio": 27.38,
-    "category": "large"
-  },
-  "LTTS": {
-    "perc_low": 11.770764119601335,
-    "PE_ratio": 26.65,
-    "category": "large"
-  },
-  "POWERINDIA": {
-    "perc_high": 5.527065527065527,
-    "PE_ratio": 126.45,
-    "category": "large"
-  },
-  "SAIL": {
-    "perc_high": 8.976874145413467,
-    "PE_ratio": 24.11,
-    "category": "large"
-  },
-  "TATACOMM": {
-    "perc_low": 6.265882523778404,
-    "PE_ratio": 38.45,
-    "category": "large"
-  },
-  "UBL": {
-    "perc_low": 14.659910070658775,
-    "PE_ratio": 98.67,
-    "category": "large"
-  },
-  "PGHH": {
-    "perc_low": 3.864834142812855,
-    "PE_ratio": 36.66,
-    "category": "large"
-  },
-  "ASTRAL": {
-    "perc_high": 8.169842257024932,
-    "PE_ratio": 85.8,
-    "category": "large"
-  },
-  "PETRONET": {
-    "perc_low": 6.801793022802567,
-    "PE_ratio": 10.92,
-    "category": "large"
-  },
-  "HUDCO": {
-    "perc_low": 5.6677018633540435,
-    "PE_ratio": 12.42,
-    "category": "large"
-  },
-  "CENTRALBK": {
-    "perc_low": 5.923664122137398,
-    "PE_ratio": 6.54,
-    "category": "large"
-  },
-  "BSE": {
-    "perc_high": 13.755810350170439,
-    "PE_ratio": 54.43,
-    "category": "large"
-  },
-  "COROMANDEL": {
-    "perc_low": 8.622409099485191,
-    "PE_ratio": 26.84,
-    "category": "large"
-  },
-  "SJVN": {
-    "perc_low": 5.895357406042742,
-    "PE_ratio": 43.39,
-    "category": "large"
-  },
-  "COCHINSHIP": {
-    "perc_low": 13.91939896288433,
-    "PE_ratio": 48.53,
-    "category": "large"
-  },
-  "FEDERALBNK": {
-    "perc_high": 11.920529801324504,
-    "PE_ratio": 15.68,
-    "category": "large"
-  },
-  "PAGEIND": {
-    "perc_low": 9.042107029021976,
-    "PE_ratio": 46.07,
+  "BHARATFORG": {
+    "perc_high": 15.267372771893568,
+    "PE_ratio": 68.79,
     "category": "large"
   },
   "COFORGE": {
-    "perc_low": 12.191250867969446,
+    "perc_low": 8.520980061501833,
     "PE_ratio": 25.62,
     "category": "large"
   },
-  "AUBANK": {
-    "perc_high": 14.260969976905317,
-    "PE_ratio": 29.16,
+  "PHOENIXLTD": {
+    "perc_low": 9.083778966131915,
+    "PE_ratio": 38.32,
     "category": "large"
   },
-  "VMM": {
-    "perc_low": 9.013499480789209,
-    "PE_ratio": 60.79,
+  "IRCTC": {
+    "perc_low": 3.1977891827871954,
+    "PE_ratio": 30.24,
     "category": "large"
   },
   "BDL": {
-    "perc_low": 14.086879432624123,
+    "perc_low": 7.9214861549246285,
     "PE_ratio": 79,
     "category": "large"
   },
-  "KPITTECH": {
-    "perc_low": 8.769403104496732,
-    "PE_ratio": 23.25,
-    "category": "large"
-  },
-  "TATAELXSI": {
-    "perc_low": 6.425303361846034,
-    "PE_ratio": 41.85,
-    "category": "large"
-  },
-  "GVT&D": {
-    "perc_high": 8.859714928732188,
-    "PE_ratio": 84.29,
-    "category": "large"
-  },
-  "GLENMARK": {
-    "perc_high": 8.17267940293312,
-    "PE_ratio": 25.44,
-    "category": "large"
-  },
-  "GLAXO": {
-    "perc_low": 8.814124217448084,
-    "PE_ratio": 40.17,
-    "category": "large"
-  },
-  "ACC": {
-    "perc_low": 3.0316507301163806,
-    "PE_ratio": 10.33,
-    "category": "large"
-  },
-  "AWL": {
-    "perc_low": 14.486827501606408,
-    "PE_ratio": 27.22,
-    "category": "large"
-  },
-  "HONAUT": {
-    "perc_low": 3.102836879432624,
-    "PE_ratio": 48.85,
-    "category": "large"
-  },
-  "OLAELEC": {
-    "perc_low": 13.932584269662929,
-    "PE_ratio": "NA",
-    "category": "large"
-  },
-  "FLUOROCHEM": {
-    "perc_low": 9.682507028732088,
-    "PE_ratio": 52.44,
-    "category": "large"
-  },
-  "BIOCON": {
-    "perc_high": 12.942699141075419,
-    "PE_ratio": 51.43,
-    "category": "large"
-  },
   "UPL": {
-    "perc_low": 7.888256771673589,
+    "perc_low": 4.950326908380738,
     "PE_ratio": 22.47,
     "category": "large"
   },
-  "ESCORTS": {
-    "perc_low": 12.195649041924792,
-    "PE_ratio": 26.37,
+  "PIIND": {
+    "perc_low": 2.7226842965806464,
+    "PE_ratio": 32.5,
     "category": "large"
   },
-  "JUBLFOOD": {
-    "perc_low": 3.234080517452883,
-    "PE_ratio": 88.92,
+  "GLENMARK": {
+    "perc_high": 8.446842769485178,
+    "PE_ratio": 25.44,
     "category": "large"
   },
-  "APLAPOLLO": {
-    "perc_high": 15.355870339793173,
-    "PE_ratio": 47.97,
+  "SAIL": {
+    "perc_high": 13.084834433149052,
+    "PE_ratio": 24.11,
     "category": "large"
   },
-  "EXIDEIND": {
-    "perc_low": 5.860113421550098,
-    "PE_ratio": 30.75,
+  "FEDERALBNK": {
+    "perc_high": 14.98344370860927,
+    "PE_ratio": 15.68,
     "category": "large"
   },
-  "SONACOMS": {
-    "perc_high": 10.705987488829308,
-    "PE_ratio": 48.67,
+  "MPHASIS": {
+    "perc_low": 2.9500123122383695,
+    "PE_ratio": 21.86,
     "category": "large"
   },
-  "TATATECH": {
-    "perc_low": 4.442307692307697,
-    "PE_ratio": 80.28,
+  "KALYANKJIL": {
+    "perc_low": 8.978417266187048,
+    "PE_ratio": 34.17,
     "category": "large"
   },
-  "GUJGASLTD": {
-    "perc_low": 3.345349675558767,
-    "PE_ratio": 21.07,
+  "LINDEINDIA": {
+    "perc_high": 15.628970775095299,
+    "PE_ratio": 111.91,
     "category": "large"
   },
-  "3MINDIA": {
-    "perc_high": 15.52721535629766,
-    "PE_ratio": 110.96,
+  "SUNDARMFIN": {
+    "perc_low": 10.61904761904762,
+    "PE_ratio": 25.61,
     "category": "large"
   },
-  "MFSL": {
-    "perc_high": 14.346103038309115,
-    "PE_ratio": 318.07,
+  "BIOCON": {
+    "perc_high": 13.048593952229673,
+    "PE_ratio": 51.43,
     "category": "large"
   },
-  "DEEPAKNTR": {
-    "perc_low": 3.760869565217398,
-    "PE_ratio": 34.97,
+  "TATACOMM": {
+    "perc_low": 3.40867529807623,
+    "PE_ratio": 38.45,
     "category": "large"
   },
-  "BLUESTARCO": {
-    "perc_low": 15.239973701512161,
-    "PE_ratio": 65.31,
+  "LAURUSLABS": {
+    "perc_high": 15.854513584574933,
+    "PE_ratio": 63.31,
     "category": "large"
   },
-  "NIACL": {
-    "perc_low": 3.199381761978351,
-    "PE_ratio": 19.22,
+  "GODFRYPHLP": {
+    "perc_low": 5.6304266766100275,
+    "PE_ratio": 29.64,
     "category": "large"
   },
-  "PSB": {
-    "perc_low": 4.247787610619456,
-    "PE_ratio": 13.43,
+  "JKCEMENT": {
+    "perc_low": 8.302030595024226,
+    "PE_ratio": 36.72,
     "category": "large"
   },
-  "AJANTPHARM": {
-    "perc_high": 11.013011152416356,
-    "PE_ratio": 35.77,
+  "UBL": {
+    "perc_low": 12.24751980586683,
+    "PE_ratio": 98.67,
     "category": "large"
   },
-  "IPCALAB": {
-    "perc_high": 7.29679802955665,
-    "PE_ratio": 37.72,
+  "PAGEIND": {
+    "perc_low": 6.8612648884415375,
+    "PE_ratio": 46.07,
     "category": "large"
   },
-  "LICHSGFIN": {
-    "perc_low": 2.624481327800825,
-    "PE_ratio": 4.88,
+  "GLAXO": {
+    "perc_low": 6.512633427915142,
+    "PE_ratio": 40.17,
     "category": "large"
   },
-  "NLCINDIA": {
-    "perc_high": 10.660506502395613,
-    "PE_ratio": 13.4,
+  "BALKRISIND": {
+    "perc_low": 3.030899429246207,
+    "PE_ratio": 31.01,
     "category": "large"
   },
-  "IRB": {
-    "perc_low": 10.28720626631855,
-    "PE_ratio": 30.86,
+  "ITCHOTELS": {
+    "perc_low": 3.980309423347416,
+    "PE_ratio": 38.25,
     "category": "large"
   },
-  "CRISIL": {
-    "perc_low": 2.4126582278481057,
-    "PE_ratio": 38.19,
+  "COCHINSHIP": {
+    "perc_low": 8.897145890327064,
+    "PE_ratio": 48.53,
     "category": "large"
   },
-  "GODREJIND": {
-    "perc_low": 3.2539292730844793,
-    "PE_ratio": 16.31,
+  "HEXT": {
+    "perc_low": 9.582708645677167,
+    "PE_ratio": 18.63,
     "category": "large"
   },
-  "DALBHARAT": {
-    "perc_low": 12.797619047619047,
-    "PE_ratio": 28.35,
+  "LTTS": {
+    "perc_low": 6.9734219269103015,
+    "PE_ratio": 26.65,
     "category": "large"
   },
-  "SYNGENE": {
-    "perc_low": 7.94470998578995,
-    "PE_ratio": 42.24,
+  "VOLTAS": {
+    "perc_low": 9.663865546218489,
+    "PE_ratio": 68.64,
     "category": "large"
   },
-  "METROBRAND": {
-    "perc_low": 8.758960573476708,
-    "PE_ratio": 78.39,
+  "HUDCO": {
+    "perc_low": 2.8804841149773015,
+    "PE_ratio": 12.42,
     "category": "large"
   },
-  "KAYNES": {
-    "perc_low": 12.537558044250202,
-    "PE_ratio": 62.16,
+  "PGHH": {
+    "perc_low": 2.7195767195767195,
+    "PE_ratio": 36.66,
     "category": "large"
   },
-  "TATAINVEST": {
-    "perc_low": 7.759372275501308,
-    "PE_ratio": 105.61,
+  "PETRONET": {
+    "perc_low": 5.736137667304016,
+    "PE_ratio": 10.92,
     "category": "large"
   },
-  "IKS": {
-    "perc_low": 9.282018111254848,
-    "PE_ratio": 34.27,
+  "IREDA": {
+    "perc_low": 3.648648648648646,
+    "PE_ratio": 17.36,
     "category": "large"
   },
-  "IGL": {
-    "perc_low": 4.113009198423141,
-    "PE_ratio": 16.68,
-    "category": "large"
-  },
-  "ABFRL": {
-    "perc_low": 12.561924982307138,
+  "ANTHEM": {
+    "perc_low": 9.781576448243111,
     "PE_ratio": "NA",
     "category": "large"
   },
-  "APOLLOTYRE": {
-    "perc_low": 13.053333333333331,
-    "PE_ratio": 25.75,
+  "CONCOR": {
+    "perc_low": 4.42008486562942,
+    "PE_ratio": 27.38,
     "category": "large"
   },
-  "STARHEALTH": {
-    "perc_high": 15.917602996254681,
-    "PE_ratio": 59.61,
+  "DALBHARAT": {
+    "perc_low": 8.988095238095237,
+    "PE_ratio": 28.35,
     "category": "large"
   },
-  "GODIGIT": {
-    "perc_high": 15.259570005243836,
-    "PE_ratio": 58.99,
+  "JUBLFOOD": {
+    "perc_low": 1.7950465803226487,
+    "PE_ratio": 88.92,
     "category": "large"
   },
-  "MRPL": {
-    "perc_high": 12.51000894917809,
-    "PE_ratio": 15.51,
+  "ESCORTS": {
+    "perc_low": 9.213369831436383,
+    "PE_ratio": 26.37,
     "category": "large"
   },
-  "EMAMILTD": {
-    "perc_low": 3.035223582313259,
-    "PE_ratio": 21.77,
+  "KAYNES": {
+    "perc_low": 9.138365352514489,
+    "PE_ratio": 62.16,
+    "category": "large"
+  },
+  "FLUOROCHEM": {
+    "perc_low": 9.099636563121447,
+    "PE_ratio": 52.44,
+    "category": "large"
+  },
+  "ASTRAL": {
+    "perc_high": 12.432860292870474,
+    "PE_ratio": 85.8,
+    "category": "large"
+  },
+  "PWL": {
+    "perc_low": 14.204837879567686,
+    "PE_ratio": "NA",
+    "category": "large"
+  },
+  "UCOBANK": {
+    "perc_low": 4.054054054054058,
+    "PE_ratio": 11.9,
+    "category": "large"
+  },
+  "BLUESTARCO": {
+    "perc_low": 11.308349769888231,
+    "PE_ratio": 65.31,
+    "category": "large"
+  },
+  "NH": {
+    "perc_low": 13.779676785775822,
+    "PE_ratio": 40.85,
+    "category": "large"
+  },
+  "TATAINVEST": {
+    "perc_low": 4.551002615518748,
+    "PE_ratio": 105.61,
+    "category": "large"
+  },
+  "GODREJIND": {
+    "perc_low": 3.493696293043972,
+    "PE_ratio": 16.31,
+    "category": "large"
+  },
+  "CRISIL": {
+    "perc_low": 2.4163903241561915,
+    "PE_ratio": 38.19,
     "category": "large"
   },
   "KPRMILL": {
-    "perc_low": 5.721643009672146,
+    "perc_low": 2.7446300715990484,
     "PE_ratio": 33.34,
     "category": "large"
   },
   "CHOLAHLDNG": {
-    "perc_low": 8.866541422624978,
+    "perc_low": 6.63636363636363,
     "PE_ratio": 5.07,
     "category": "large"
   },
-  "SUNTV": {
-    "perc_high": 14.65866358113972,
-    "PE_ratio": 13.97,
+  "IPCALAB": {
+    "perc_high": 8.355911330049263,
+    "PE_ratio": 37.72,
     "category": "large"
   },
-  "CDSL": {
-    "perc_low": 12.325215297712742,
-    "PE_ratio": 52.09,
+  "PIRAMALFIN": {
+    "perc_high": 9.593246354566386,
+    "PE_ratio": "NA",
     "category": "large"
   },
-  "MANYAVAR": {
-    "perc_low": 11.816524908869999,
-    "PE_ratio": 23.81,
-    "category": "large"
-  },
-  "GODFRYPHLP": {
-    "perc_low": 8.07010067650349,
-    "PE_ratio": 29.64,
+  "SJVN": {
+    "perc_low": 4.885358909036402,
+    "PE_ratio": 43.39,
     "category": "large"
   },
   "MEDANTA": {
-    "perc_low": 3.0,
+    "perc_low": 3.5226455787203403,
     "PE_ratio": 49.07,
     "category": "large"
   },
-  "BRIGADE": {
-    "perc_low": 5.188343994314147,
-    "PE_ratio": 19.73,
+  "ACC": {
+    "perc_low": 2.757847533632294,
+    "PE_ratio": 10.33,
     "category": "large"
   },
-  "NBCC": {
-    "perc_low": 15.066666666666661,
-    "PE_ratio": 33.1,
+  "TATAELXSI": {
+    "perc_low": 4.187388104237122,
+    "PE_ratio": 41.85,
     "category": "large"
   },
-  "PPLPHARMA": {
-    "perc_low": 3.7964338781575138,
-    "PE_ratio": "NA",
+  "NLCINDIA": {
+    "perc_high": 13.244353182751537,
+    "PE_ratio": 13.4,
     "category": "large"
   },
-  "JBCHEPHARM": {
-    "perc_high": 5.239179954441914,
-    "PE_ratio": 45.55,
+  "AWL": {
+    "perc_low": 10.59641334190082,
+    "PE_ratio": 27.22,
     "category": "large"
   },
-  "DELHIVERY": {
-    "perc_high": 15.295918367346935,
-    "PE_ratio": 191.49,
+  "CENTRALBK": {
+    "perc_low": 3.343558282208577,
+    "PE_ratio": 6.54,
+    "category": "large"
+  },
+  "KPITTECH": {
+    "perc_low": 5.456873099695955,
+    "PE_ratio": 23.25,
+    "category": "large"
+  },
+  "CDSL": {
+    "perc_low": 8.98231317714603,
+    "PE_ratio": 52.09,
+    "category": "large"
+  },
+  "EXIDEIND": {
+    "perc_low": 2.9558343357965366,
+    "PE_ratio": 30.75,
+    "category": "large"
+  },
+  "HONAUT": {
+    "perc_low": 3.8688282977155493,
+    "PE_ratio": 48.85,
+    "category": "large"
+  },
+  "AJANTPHARM": {
+    "perc_high": 13.255885997521688,
+    "PE_ratio": 35.77,
+    "category": "large"
+  },
+  "METROBRAND": {
+    "perc_low": 4.222670250896063,
+    "PE_ratio": 78.39,
+    "category": "large"
+  },
+  "AIAENG": {
+    "perc_low": 13.305121455466335,
+    "PE_ratio": 27.62,
+    "category": "large"
+  },
+  "COHANCE": {
+    "perc_low": 12.917135358080237,
+    "PE_ratio": 47.37,
+    "category": "large"
+  },
+  "LICHSGFIN": {
+    "perc_low": 4.279400668319492,
+    "PE_ratio": 4.88,
     "category": "large"
   },
   "GILLETTE": {
-    "perc_low": 7.954808385173232,
+    "perc_low": 5.217925919070248,
     "PE_ratio": 42.02,
     "category": "large"
   },
-  "CARBORUNIV": {
-    "perc_low": 4.956663055254608,
-    "PE_ratio": 70.69,
+  "APOLLOTYRE": {
+    "perc_low": 11.466666666666667,
+    "PE_ratio": 25.75,
     "category": "large"
   },
-  "ABREL": {
-    "perc_low": 10.7304879177854,
+  "NIACL": {
+    "perc_low": 5.071884984025566,
+    "PE_ratio": 19.22,
+    "category": "large"
+  },
+  "NBCC": {
+    "perc_low": 10.613333333333324,
+    "PE_ratio": 33.1,
+    "category": "large"
+  },
+  "ITI": {
+    "perc_low": 14.937617501281835,
     "PE_ratio": "NA",
     "category": "large"
   },
-  "BASF": {
-    "perc_low": 2.214459295261242,
-    "PE_ratio": 38.62,
+  "GUJGASLTD": {
+    "perc_low": 4.880952380952374,
+    "PE_ratio": 21.07,
     "category": "large"
   },
-  "AEGISLOG": {
-    "perc_low": 4.943647540983595,
-    "PE_ratio": 22.14,
+  "IGL": {
+    "perc_low": 4.124949939927918,
+    "PE_ratio": 16.68,
     "category": "large"
   },
-  "SUNDRMFAST": {
-    "perc_low": 4.298356510745891,
-    "PE_ratio": 30.2,
+  "SONACOMS": {
+    "perc_high": 13.646112600536197,
+    "PE_ratio": 48.67,
     "category": "large"
   },
-  "TIMKEN": {
-    "perc_high": 12.880886426592797,
-    "PE_ratio": 54.69,
+  "AEGISVOPAK": {
+    "perc_low": 5.55717364711366,
+    "PE_ratio": "NA",
     "category": "large"
   },
-  "TATACHEM": {
-    "perc_low": 2.662018697512273,
-    "PE_ratio": 49.8,
+  "TATATECH": {
+    "perc_low": 3.740384615384624,
+    "PE_ratio": 80.28,
     "category": "large"
   },
-  "CROMPTON": {
-    "perc_low": 13.960441582336703,
-    "PE_ratio": 31.23,
+  "PINELABS": {
+    "perc_low": 5.030930438076,
+    "PE_ratio": "NA",
     "category": "large"
   },
-  "JYOTICNC": {
-    "perc_low": 10.440480524208235,
-    "PE_ratio": 47.48,
+  "IKS": {
+    "perc_low": 7.04236739974128,
+    "PE_ratio": 34.27,
+    "category": "large"
+  },
+  "JBCHEPHARM": {
+    "perc_high": 5.576309794988615,
+    "PE_ratio": 45.55,
+    "category": "large"
+  },
+  "IRB": {
+    "perc_low": 7.780678851174945,
+    "PE_ratio": 30.86,
     "category": "large"
   },
   "SUMICHEM": {
-    "perc_low": 5.107417916497764,
+    "perc_low": 4.039994595324953,
     "PE_ratio": 35.54,
     "category": "large"
   },
-  "LALPATHLAB": {
-    "perc_low": 15.242647434043786,
-    "PE_ratio": 39.59,
+  "AFFLE": {
+    "perc_low": 2.6725521669341856,
+    "PE_ratio": 41.28,
     "category": "large"
   },
-  "INOXWIND": {
-    "perc_low": 9.35475511790619,
-    "PE_ratio": 26.44,
+  "AEGISLOG": {
+    "perc_low": 4.9009562841529934,
+    "PE_ratio": 22.14,
+    "category": "large"
+  },
+  "NAVINFLUOR": {
+    "perc_high": 15.211773151471645,
+    "PE_ratio": 55.69,
+    "category": "large"
+  },
+  "SYNGENE": {
+    "perc_low": 7.143779873401364,
+    "PE_ratio": 42.24,
     "category": "large"
   },
   "EMCURE": {
-    "perc_high": 7.170787083753773,
+    "perc_high": 8.942986881937435,
     "PE_ratio": 30.15,
     "category": "large"
   },
-  "GRINDWELL": {
-    "perc_low": 4.620938628158845,
-    "PE_ratio": 39.81,
+  "LALPATHLAB": {
+    "perc_low": 10.896596302029302,
+    "PE_ratio": 39.59,
     "category": "large"
   },
-  "WHIRLPOOL": {
-    "perc_low": 12.941798242716512,
-    "PE_ratio": 30.41,
+  "PPLPHARMA": {
+    "perc_low": 1.7904903417533407,
+    "PE_ratio": "NA",
     "category": "large"
   },
-  "SKFINDIA": {
-    "perc_low": 3.5373972066309913,
-    "PE_ratio": 14.79,
+  "MRPL": {
+    "perc_high": 12.571240167679335,
+    "PE_ratio": 15.51,
     "category": "large"
   },
-  "ARE&M": {
-    "perc_low": 3.2561217736598307,
-    "PE_ratio": 20.27,
-    "category": "large"
-  },
-  "NH": {
-    "perc_low": 15.978084835119406,
-    "PE_ratio": 40.85,
-    "category": "large"
-  },
-  "NATCOPHARM": {
-    "perc_high": 10.46270066100094,
-    "PE_ratio": 11.12,
-    "category": "large"
-  },
-  "KEC": {
-    "perc_low": 9.669357939254123,
-    "PE_ratio": 19.93,
-    "category": "large"
-  },
-  "EIHOTEL": {
-    "perc_low": 5.773710482529125,
-    "PE_ratio": 26.96,
-    "category": "large"
-  },
-  "CESC": {
-    "perc_low": 15.044888502751231,
-    "PE_ratio": 13.16,
-    "category": "large"
-  },
-  "POLYMED": {
-    "perc_low": 4.334340053873165,
-    "PE_ratio": 36.33,
-    "category": "large"
-  },
-  "ANGELONE": {
-    "perc_low": 15.605250364608667,
-    "PE_ratio": 27.33,
-    "category": "large"
-  },
-  "PNBHOUSING": {
-    "perc_low": 11.115679824561406,
-    "PE_ratio": 9.44,
-    "category": "large"
-  },
-  "CASTROLIND": {
-    "perc_low": 4.339643529281526,
-    "PE_ratio": 19.18,
-    "category": "large"
-  },
-  "KANSAINER": {
-    "perc_low": 2.9036144578313214,
-    "PE_ratio": 22.45,
-    "category": "large"
-  },
-  "IRCON": {
-    "perc_low": 3.4743079795437954,
-    "PE_ratio": 20.89,
-    "category": "large"
-  },
-  "JWL": {
-    "perc_low": 9.301380991064189,
-    "PE_ratio": 43.33,
-    "category": "large"
-  },
-  "TRITURBINE": {
-    "perc_low": 5.4748603351955305,
-    "PE_ratio": 40.96,
+  "RAMCOCEM": {
+    "perc_low": 9.950071326676168,
+    "PE_ratio": 194.19,
     "category": "large"
   },
   "SHYAMMETL": {
-    "perc_low": 7.328859060402687,
+    "perc_low": 6.060402684563755,
     "PE_ratio": 22.92,
     "category": "large"
   },
   "FSL": {
-    "perc_low": 13.099009900990103,
+    "perc_low": 6.435643564356436,
     "PE_ratio": 21.52,
     "category": "large"
   },
-  "CAMS": {
-    "perc_low": 4.661050942639383,
-    "PE_ratio": 34.55,
+  "EMAMILTD": {
+    "perc_low": 1.6563408774813535,
+    "PE_ratio": 21.77,
     "category": "large"
   },
-  "AFFLE": {
-    "perc_low": 5.634028892455863,
-    "PE_ratio": 41.28,
+  "DEEPAKNTR": {
+    "perc_low": 4.757575757575754,
+    "PE_ratio": 34.97,
     "category": "large"
   },
-  "FIVESTAR": {
-    "perc_low": 6.292789512017487,
-    "PE_ratio": 9.32,
+  "INOXWIND": {
+    "perc_low": 4.895468121023238,
+    "PE_ratio": 26.44,
     "category": "large"
   },
-  "APLLTD": {
-    "perc_low": 5.360429447852768,
-    "PE_ratio": 20.09,
+  "EIHOTEL": {
+    "perc_low": 3.477238367209818,
+    "PE_ratio": 26.96,
+    "category": "large"
+  },
+  "WOCKPHARMA": {
+    "perc_low": 4.85148514851486,
+    "PE_ratio": 191.77,
+    "category": "large"
+  },
+  "PTCIL": {
+    "perc_high": 13.75148295249394,
+    "PE_ratio": 391.9,
+    "category": "large"
+  },
+  "ANANDRATHI": {
+    "perc_high": 11.763111940747885,
+    "PE_ratio": 67.82,
+    "category": "large"
+  },
+  "PNBHOUSING": {
+    "perc_low": 7.997532894736844,
+    "PE_ratio": 9.44,
+    "category": "large"
+  },
+  "BRIGADE": {
+    "perc_low": 7.138103161397667,
+    "PE_ratio": 19.73,
     "category": "large"
   },
   "ABSLAMC": {
-    "perc_high": 10.362620037265295,
+    "perc_high": 12.875639004347619,
     "PE_ratio": 26.79,
     "category": "large"
   },
-  "DEVYANI": {
-    "perc_low": 4.288499025341137,
+  "ANGELONE": {
+    "perc_low": 11.132717549829852,
+    "PE_ratio": 27.33,
+    "category": "large"
+  },
+  "TATACHEM": {
+    "perc_low": 3.973120537589244,
+    "PE_ratio": 49.8,
+    "category": "large"
+  },
+  "ASTRAZEN": {
+    "perc_low": 15.259368295341721,
+    "PE_ratio": 100.15,
+    "category": "large"
+  },
+  "CESC": {
+    "perc_low": 10.367796119316532,
+    "PE_ratio": 13.16,
+    "category": "large"
+  },
+  "SUNTV": {
+    "perc_high": 15.027480474399765,
+    "PE_ratio": 13.97,
+    "category": "large"
+  },
+  "SAGILITY": {
+    "perc_low": 4.194857916102833,
+    "PE_ratio": 20.92,
+    "category": "large"
+  },
+  "JYOTICNC": {
+    "perc_low": 7.746632690207505,
+    "PE_ratio": 47.48,
+    "category": "large"
+  },
+  "KEC": {
+    "perc_low": 3.863898500576683,
+    "PE_ratio": 19.93,
+    "category": "large"
+  },
+  "AADHARHFC": {
+    "perc_low": 12.633028671591331,
+    "PE_ratio": 18.76,
+    "category": "large"
+  },
+  "HATSUN": {
+    "perc_low": 11.072138430959903,
+    "PE_ratio": 61.18,
+    "category": "large"
+  },
+  "URBANCO": {
+    "perc_low": 12.442899702085402,
     "PE_ratio": "NA",
     "category": "large"
   },
-  "CYIENT": {
-    "perc_low": 3.3548465660009685,
-    "PE_ratio": 14.95,
+  "JSWHL": {
+    "perc_low": 7.276507276507277,
+    "PE_ratio": 140.15,
     "category": "large"
   },
-  "GSPL": {
-    "perc_low": 3.3366434955312716,
-    "PE_ratio": 8.93,
+  "PSB": {
+    "perc_low": 4.2105263157894655,
+    "PE_ratio": 13.43,
     "category": "large"
   },
-  "ASTERDM": {
-    "perc_high": 14.968587817536195,
-    "PE_ratio": 74.53,
+  "ATHERENERG": {
+    "perc_high": 9.907023495414,
+    "PE_ratio": "NA",
     "category": "large"
   },
-  "BIKAJI": {
-    "perc_low": 6.919247320901191,
-    "PE_ratio": 65.43,
+  "SUNDRMFAST": {
+    "perc_low": 3.6133061432577134,
+    "PE_ratio": 30.2,
     "category": "large"
   },
-  "CIEINDIA": {
-    "perc_high": 13.032319391634983,
-    "PE_ratio": 21.32,
+  "ABREL": {
+    "perc_low": 7.3511711878529855,
+    "PE_ratio": "NA",
+    "category": "large"
+  },
+  "OLAELEC": {
+    "perc_low": 10.112359550561797,
+    "PE_ratio": "NA",
+    "category": "large"
+  },
+  "CHALET": {
+    "perc_low": 2.8064146620847685,
+    "PE_ratio": 26.11,
     "category": "large"
   },
   "CHAMBLFERT": {
-    "perc_low": 9.06816760475297,
+    "perc_low": 6.566604127579738,
     "PE_ratio": 9.65,
     "category": "large"
   },
-  "VINATIORGA": {
-    "perc_low": 6.525679758308164,
-    "PE_ratio": 32.44,
-    "category": "large"
-  },
-  "SIGNATURE": {
-    "perc_low": 2.638522427440633,
-    "PE_ratio": 3191.58,
-    "category": "large"
-  },
-  "CONCORDBIO": {
-    "perc_low": 5.3527980535279855,
-    "PE_ratio": 36.62,
+  "CASTROLIND": {
+    "perc_low": 2.516881522406379,
+    "PE_ratio": 19.18,
     "category": "mid"
   },
-  "RELAXO": {
-    "perc_low": 2.4750646472109303,
-    "PE_ratio": 40.64,
+  "POLYMED": {
+    "perc_low": 2.079520878389619,
+    "PE_ratio": 36.33,
     "category": "mid"
   },
-  "BLUEDART": {
-    "perc_low": 2.594949294094253,
-    "PE_ratio": 41.64,
+  "BASF": {
+    "perc_low": 3.686417962221314,
+    "PE_ratio": 38.62,
     "category": "mid"
   },
-  "CHALET": {
-    "perc_low": 4.746835443037975,
-    "PE_ratio": 26.11,
+  "KANSAINER": {
+    "perc_low": 3.7175882536707205,
+    "PE_ratio": 22.45,
     "category": "mid"
   },
-  "AFCONS": {
-    "perc_low": 4.0147329650092,
-    "PE_ratio": 19.49,
-    "category": "mid"
-  },
-  "JYOTHYLAB": {
-    "perc_low": 2.789231142372059,
-    "PE_ratio": 22.15,
-    "category": "mid"
-  },
-  "TITAGARH": {
-    "perc_low": 5.385245901639348,
-    "PE_ratio": 38.55,
-    "category": "mid"
-  },
-  "SONATSOFTW": {
-    "perc_low": 4.600959441779321,
-    "PE_ratio": 14.39,
-    "category": "mid"
-  },
-  "CENTURYPLY": {
-    "perc_low": 5.278318411833395,
-    "PE_ratio": 58.41,
-    "category": "mid"
-  },
-  "LMW": {
-    "perc_low": 5.318518518518518,
-    "PE_ratio": 120.19,
-    "category": "mid"
-  },
-  "BBTC": {
-    "perc_low": 3.983469954610134,
-    "PE_ratio": 4.64,
-    "category": "mid"
-  },
-  "WOCKPHARMA": {
-    "perc_low": 5.327442827442827,
-    "PE_ratio": 191.77,
-    "category": "mid"
-  },
-  "IEX": {
-    "perc_low": 3.9337827459680854,
-    "PE_ratio": 23.33,
-    "category": "mid"
-  },
-  "NEWGEN": {
-    "perc_low": 4.936708860759491,
-    "PE_ratio": 19.25,
-    "category": "mid"
-  },
-  "APTUS": {
-    "perc_low": 2.256902761104436,
-    "PE_ratio": 11.76,
-    "category": "mid"
-  },
-  "BLS": {
-    "perc_low": 2.3270440251572375,
-    "PE_ratio": 14.52,
-    "category": "mid"
-  },
-  "PCBL": {
-    "perc_low": 3.400245800901275,
-    "PE_ratio": 40.54,
-    "category": "mid"
-  },
-  "MGL": {
-    "perc_low": 5.392670157068062,
-    "PE_ratio": 9.94,
-    "category": "mid"
-  },
-  "CLEAN": {
-    "perc_low": 5.248700816629551,
-    "PE_ratio": 30.25,
-    "category": "mid"
-  },
-  "GRINFRA": {
-    "perc_low": 5.643552739645668,
-    "PE_ratio": 7.79,
-    "category": "mid"
-  },
-  "RITES": {
-    "perc_low": 3.796124236793207,
-    "PE_ratio": 20.79,
-    "category": "mid"
-  },
-  "UTIAMC": {
-    "perc_low": 4.341026747195858,
-    "PE_ratio": 17.02,
-    "category": "mid"
-  },
-  "SANOFI": {
-    "perc_low": 2.0109580926995436,
-    "PE_ratio": 22.56,
-    "category": "mid"
-  },
-  "NIVABUPA": {
-    "perc_low": 5.615327929255716,
+  "DEVYANI": {
+    "perc_low": 5.424313089323745,
     "PE_ratio": "NA",
     "category": "mid"
   },
-  "CAPLIPOINT": {
-    "perc_low": 3.0644152595372107,
-    "PE_ratio": 19.6,
+  "CAMS": {
+    "perc_low": 3.7311006340432336,
+    "PE_ratio": 34.55,
     "category": "mid"
   },
-  "GRAVITA": {
-    "perc_low": 3.8524263400137615,
-    "PE_ratio": 27.19,
+  "BIKAJI": {
+    "perc_low": 4.98692093494221,
+    "PE_ratio": 65.43,
     "category": "mid"
   },
-  "RAILTEL": {
-    "perc_low": 5.2928988510077275,
-    "PE_ratio": 26.79,
-    "category": "mid"
-  },
-  "RAINBOW": {
-    "perc_low": 3.1376146788990864,
-    "PE_ratio": 43.55,
-    "category": "mid"
-  },
-  "AAVAS": {
-    "perc_low": 3.8110178093568288,
-    "PE_ratio": 13.87,
+  "APLLTD": {
+    "perc_low": 2.8374233128834354,
+    "PE_ratio": 20.09,
     "category": "mid"
   },
   "DEEPAKFERT": {
-    "perc_low": 3.5064358632933765,
+    "perc_low": 2.7591688429658174,
     "PE_ratio": 13.07,
     "category": "mid"
   },
-  "ZEEL": {
-    "perc_low": 5.488060326770014,
-    "PE_ratio": 12.26,
+  "ARE&M": {
+    "perc_low": 2.6962942890048227,
+    "PE_ratio": 20.27,
     "category": "mid"
   },
-  "WESTLIFE": {
-    "perc_low": 4.954902190465029,
-    "PE_ratio": 0,
+  "GRINDWELL": {
+    "perc_low": 2.7072633895818115,
+    "PE_ratio": 39.81,
+    "category": "mid"
+  },
+  "VINATIORGA": {
+    "perc_low": 4.697885196374626,
+    "PE_ratio": 32.44,
+    "category": "mid"
+  },
+  "SKFINDIA": {
+    "perc_low": 4.73433242506812,
+    "PE_ratio": 14.79,
+    "category": "mid"
+  },
+  "JUBLPHARMA": {
+    "perc_low": 5.756631257553591,
+    "PE_ratio": 28.38,
+    "category": "mid"
+  },
+  "FIVESTAR": {
+    "perc_low": 3.548720981812805,
+    "PE_ratio": 9.32,
+    "category": "mid"
+  },
+  "TRITURBINE": {
+    "perc_low": 4.835903977733973,
+    "PE_ratio": 40.96,
+    "category": "mid"
+  },
+  "CARBORUNIV": {
+    "perc_low": 2.597932535364514,
+    "PE_ratio": 70.69,
+    "category": "mid"
+  },
+  "VENTIVE": {
+    "perc_low": 2.6055194805194732,
+    "PE_ratio": 37.81,
+    "category": "mid"
+  },
+  "CENTURYPLY": {
+    "perc_low": 4.074074074074066,
+    "PE_ratio": 58.41,
+    "category": "mid"
+  },
+  "ABLBL": {
+    "perc_low": 2.408583315086493,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "CONCORDBIO": {
+    "perc_low": 3.345303345303332,
+    "PE_ratio": 36.62,
+    "category": "mid"
+  },
+  "CPPLUS": {
+    "perc_high": 5.3439454235361,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "UTIAMC": {
+    "perc_low": 2.9267486082786824,
+    "PE_ratio": 17.02,
+    "category": "mid"
+  },
+  "LMW": {
+    "perc_low": 5.384201215291132,
+    "PE_ratio": 120.19,
+    "category": "mid"
+  },
+  "IRCON": {
+    "perc_low": 4.273504273504273,
+    "PE_ratio": 20.89,
+    "category": "mid"
+  },
+  "APTUS": {
+    "perc_low": 4.699409419009628,
+    "PE_ratio": 11.76,
+    "category": "mid"
+  },
+  "SIGNATURE": {
+    "perc_low": 4.134615384615388,
+    "PE_ratio": 3191.58,
+    "category": "mid"
+  },
+  "AFCONS": {
+    "perc_low": 3.8461538461538463,
+    "PE_ratio": 19.49,
+    "category": "mid"
+  },
+  "CAPLIPOINT": {
+    "perc_low": 3.144290123456781,
+    "PE_ratio": 19.6,
+    "category": "mid"
+  },
+  "NIVABUPA": {
+    "perc_low": 4.657332350773782,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "INDIAMART": {
+    "perc_low": 5.031314141360988,
+    "PE_ratio": 18.2,
+    "category": "mid"
+  },
+  "RAINBOW": {
+    "perc_low": 2.389298892988938,
+    "PE_ratio": 43.55,
     "category": "mid"
   },
   "NUVOCO": {
-    "perc_low": 4.709240099892967,
+    "perc_low": 2.0736503396496286,
     "PE_ratio": 26.58,
     "category": "mid"
   },
-  "ALOKINDS": {
-    "perc_low": 5.275779376498802,
+  "BATAINDIA": {
+    "perc_low": 5.179282868525896,
+    "PE_ratio": 44.41,
+    "category": "mid"
+  },
+  "SWANCORP": {
+    "perc_low": 4.691358024691358,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "BLS": {
+    "perc_low": 5.285087719298251,
+    "PE_ratio": 14.52,
+    "category": "mid"
+  },
+  "THELEELA": {
+    "perc_low": 3.8823529411764763,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "BLUEDART": {
+    "perc_low": 3.6517139660258366,
+    "PE_ratio": 41.64,
+    "category": "mid"
+  },
+  "PCBL": {
+    "perc_low": 5.720430107526886,
+    "PE_ratio": 40.54,
+    "category": "mid"
+  },
+  "JWL": {
+    "perc_low": 5.361494719740045,
+    "PE_ratio": 43.33,
+    "category": "mid"
+  },
+  "IEX": {
+    "perc_low": 1.9028927382882532,
+    "PE_ratio": 23.33,
+    "category": "mid"
+  },
+  "BBTC": {
+    "perc_low": 4.74116738076842,
+    "PE_ratio": 4.64,
+    "category": "mid"
+  },
+  "CYIENT": {
+    "perc_low": 3.9483627204030256,
+    "PE_ratio": 14.95,
+    "category": "mid"
+  },
+  "INDGN": {
+    "perc_low": 3.356973995271865,
+    "PE_ratio": 24.17,
+    "category": "mid"
+  },
+  "AAVAS": {
+    "perc_low": 2.970577140701622,
+    "PE_ratio": 13.87,
+    "category": "mid"
+  },
+  "NEWGEN": {
+    "perc_low": 2.0767335445265807,
+    "PE_ratio": 19.25,
+    "category": "mid"
+  },
+  "MGL": {
+    "perc_low": 4.277494300293125,
+    "PE_ratio": 9.94,
+    "category": "mid"
+  },
+  "LEMONTREE": {
+    "perc_low": 4.678245156108821,
+    "PE_ratio": 27.09,
+    "category": "mid"
+  },
+  "NCC": {
+    "perc_low": 3.7037037037037033,
+    "PE_ratio": 11.12,
+    "category": "mid"
+  },
+  "SKFINDUS": {
+    "perc_low": 4.320136875623787,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "EMBDL": {
+    "perc_low": 4.492402554503427,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "RITES": {
+    "perc_low": 3.783783783783784,
+    "PE_ratio": 20.79,
+    "category": "mid"
+  },
+  "CCL": {
+    "perc_high": 5.683257918552032,
+    "PE_ratio": 38.68,
+    "category": "mid"
+  },
+  "SBFC": {
+    "perc_low": 4.878048780487805,
+    "PE_ratio": 22.75,
+    "category": "mid"
+  },
+  "RAILTEL": {
+    "perc_low": 4.916763453348814,
+    "PE_ratio": 26.79,
+    "category": "mid"
+  },
+  "CLEAN": {
+    "perc_low": 2.9324424647364515,
+    "PE_ratio": 30.25,
+    "category": "mid"
+  },
+  "TITAGARH": {
+    "perc_low": 4.3061003087707705,
+    "PE_ratio": 38.55,
+    "category": "mid"
+  },
+  "JYOTHYLAB": {
+    "perc_low": 3.7147843430565883,
+    "PE_ratio": 22.15,
+    "category": "mid"
+  },
+  "GRINFRA": {
+    "perc_low": 4.014354358007421,
+    "PE_ratio": 7.79,
+    "category": "mid"
+  },
+  "SANOFI": {
+    "perc_low": 3.603465695129039,
+    "PE_ratio": 22.56,
+    "category": "mid"
+  },
+  "RELAXO": {
+    "perc_low": 5.3491538611165135,
+    "PE_ratio": 40.64,
+    "category": "mid"
+  },
+  "TTML": {
+    "perc_low": 5.463044113350875,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "ZEEL": {
+    "perc_low": 3.2410727090204943,
+    "PE_ratio": 12.26,
+    "category": "mid"
+  },
+  "JKLAKSHMI": {
+    "perc_low": 3.185101383691597,
+    "PE_ratio": 15.01,
+    "category": "mid"
+  },
+  "SONATSOFTW": {
+    "perc_low": 3.326039387308531,
+    "PE_ratio": 14.39,
+    "category": "mid"
+  },
+  "AETHER": {
+    "perc_high": 5.279661016949149,
+    "PE_ratio": 68.32,
+    "category": "mid"
+  },
+  "NAZARA": {
+    "perc_low": 5.906406179009541,
+    "PE_ratio": 7.45,
+    "category": "mid"
+  },
+  "RKFORGE": {
+    "perc_low": 5.861702127659576,
+    "PE_ratio": 38.04,
+    "category": "mid"
+  },
+  "RELINFRA": {
+    "perc_low": 5.020297699594037,
+    "PE_ratio": 0.34,
+    "category": "mid"
+  },
+  "PGHL": {
+    "perc_low": 2.6455026455026456,
+    "PE_ratio": 27.49,
+    "category": "mid"
+  },
+  "TIMETECHNO": {
+    "perc_low": 3.6073059360730597,
+    "PE_ratio": 17.63,
+    "category": "mid"
+  },
+  "ABFRL": {
+    "perc_low": 5.328596802841918,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "SUDARSCHEM": {
+    "perc_low": 4.497389033942565,
     "PE_ratio": "NA",
     "category": "mid"
   },
   "RHIM": {
-    "perc_low": 3.771760154738888,
+    "perc_low": 4.6792774854217,
     "PE_ratio": 44.63,
     "category": "mid"
   },
-  "TANLA": {
-    "perc_low": 5.877976190476188,
-    "PE_ratio": 11.4,
+  "BIRLACORPN": {
+    "perc_low": 5.8082120582120496,
+    "PE_ratio": 10.94,
     "category": "mid"
   },
-  "QUESS": {
-    "perc_low": 4.995683453237414,
-    "PE_ratio": 11.45,
-    "category": "mid"
-  },
-  "PNCINFRA": {
-    "perc_low": 4.754098360655731,
-    "PE_ratio": 12.18,
-    "category": "mid"
-  },
-  "NETWORK18": {
-    "perc_low": 5.3,
+  "SAPPHIRE": {
+    "perc_low": 3.065883887801688,
     "PE_ratio": "NA",
-    "category": "mid"
-  },
-  "GALAXYSURF": {
-    "perc_low": 2.3743956918181377,
-    "PE_ratio": 20.01,
-    "category": "mid"
-  },
-  "RELINFRA": {
-    "perc_low": 5.986666666666659,
-    "PE_ratio": 0.34,
     "category": "mid"
   },
   "LATENTVIEW": {
-    "perc_low": 3.290710793531403,
+    "perc_low": 3.697183098591556,
     "PE_ratio": 27.9,
     "category": "mid"
   },
-  "JUSTDIAL": {
-    "perc_low": 3.163686382393402,
-    "PE_ratio": 7.72,
-    "category": "mid"
-  },
-  "HGINFRA": {
-    "perc_low": 4.45859872611465,
-    "PE_ratio": 8.35,
-    "category": "mid"
-  },
-  "JKLAKSHMI": {
-    "perc_low": 5.160560438604142,
-    "PE_ratio": 15.01,
-    "category": "mid"
-  },
-  "GNFC": {
-    "perc_low": 3.2098765432098766,
-    "PE_ratio": 9.73,
-    "category": "mid"
-  },
-  "KNRCON": {
-    "perc_low": 3.650575502490981,
-    "PE_ratio": 9.6,
-    "category": "mid"
-  },
-  "AURIONPRO": {
-    "perc_low": 3.0032266070985414,
-    "PE_ratio": 21.78,
-    "category": "mid"
-  },
-  "CCL": {
-    "perc_high": 5.438914027149313,
-    "PE_ratio": 38.68,
-    "category": "mid"
-  },
-  "TEXRAIL": {
-    "perc_low": 5.9323006310957975,
-    "PE_ratio": 23.89,
-    "category": "mid"
-  },
-  "MASTEK": {
-    "perc_low": 4.41769862251287,
-    "PE_ratio": 11.67,
-    "category": "mid"
-  },
-  "LLOYDSENGG": {
-    "perc_low": 5.06923837784373,
-    "PE_ratio": 34.78,
-    "category": "mid"
-  },
-  "CMSINFO": {
-    "perc_low": 2.898808465232095,
-    "PE_ratio": 14.17,
-    "category": "mid"
-  },
-  "RUSTOMJEE": {
-    "perc_low": 5.378378378378372,
-    "PE_ratio": 45,
-    "category": "mid"
-  },
-  "PGHL": {
-    "perc_low": 3.6423280423280504,
-    "PE_ratio": 27.49,
-    "category": "mid"
-  },
-  "FDC": {
-    "perc_low": 3.841500302480335,
-    "PE_ratio": 23.35,
-    "category": "mid"
-  },
-  "KTKBANK": {
-    "perc_high": 5.356769198577101,
-    "PE_ratio": 7.5,
+  "ALOKINDS": {
+    "perc_low": 2.8363047001620716,
+    "PE_ratio": "NA",
     "category": "mid"
   },
   "TCI": {
-    "perc_low": 2.38376463008698,
+    "perc_low": 4.858657243816254,
     "PE_ratio": 19.89,
     "category": "mid"
   },
-  "SUNTECK": {
-    "perc_low": 3.6677631578947296,
-    "PE_ratio": 24.07,
-    "category": "mid"
-  },
-  "MHRIL": {
-    "perc_low": 2.0703125000000044,
-    "PE_ratio": 55.97,
-    "category": "mid"
-  },
-  "EPIGRAL": {
-    "perc_low": 5.74468085106383,
-    "PE_ratio": 10.8,
-    "category": "mid"
-  },
-  "AHLUCONT": {
-    "perc_low": 3.6305466685213554,
-    "PE_ratio": 18.15,
-    "category": "mid"
-  },
-  "VMART": {
-    "perc_low": 4.896440780213144,
-    "PE_ratio": 39.46,
-    "category": "mid"
-  },
-  "PDSL": {
-    "perc_low": 4.134165366614674,
-    "PE_ratio": 20.51,
-    "category": "mid"
-  },
-  "MANINFRA": {
-    "perc_low": 5.218173639226271,
-    "PE_ratio": 14.79,
-    "category": "mid"
-  },
-  "IFBIND": {
-    "perc_low": 4.459923068926082,
-    "PE_ratio": 28.28,
-    "category": "mid"
-  },
-  "DHANUKA": {
-    "perc_low": 3.804405100642852,
-    "PE_ratio": 16.37,
-    "category": "mid"
-  },
-  "RESPONIND": {
-    "perc_low": 3.7027206370272148,
-    "PE_ratio": 22.49,
-    "category": "mid"
-  },
-  "EMUDHRA": {
-    "perc_low": 4.06317666539294,
-    "PE_ratio": 31.25,
-    "category": "mid"
-  },
-  "INDIGOPNTS": {
-    "perc_low": 3.7322073145814856,
-    "PE_ratio": 23.61,
-    "category": "mid"
-  },
-  "SPARC": {
-    "perc_low": 5.728372926938593,
+  "LOTUSDEV": {
+    "perc_low": 3.432514787596342,
     "PE_ratio": "NA",
-    "category": "mid"
-  },
-  "ASHOKA": {
-    "perc_low": 3.6870503597122255,
-    "PE_ratio": 5.99,
-    "category": "mid"
-  },
-  "ORIENTCEM": {
-    "perc_low": 3.064087978763741,
-    "PE_ratio": 8.3,
-    "category": "mid"
-  },
-  "NIITMTS": {
-    "perc_low": 5.931905931905945,
-    "PE_ratio": 21.24,
-    "category": "mid"
-  },
-  "VSTIND": {
-    "perc_low": 4.551432597463597,
-    "PE_ratio": 15.89,
-    "category": "mid"
-  },
-  "NFL": {
-    "perc_low": 4.969407551111772,
-    "PE_ratio": 22.88,
-    "category": "mid"
-  },
-  "GULFOILLUB": {
-    "perc_low": 3.1503841931942973,
-    "PE_ratio": 12.49,
     "category": "mid"
   },
   "PCJEWELLER": {
-    "perc_low": 5.3789731051344685,
-    "PE_ratio": 9.99,
+    "perc_low": 4.53400503778338,
+    "PE_ratio": 10.13,
     "category": "mid"
   },
-  "SHAREINDIA": {
-    "perc_low": 5.174813723081956,
-    "PE_ratio": 9.54,
+  "TANLA": {
+    "perc_low": 4.16666666666667,
+    "PE_ratio": 11.4,
+    "category": "mid"
+  },
+  "GMRP&UI": {
+    "perc_low": 5.934992799835421,
+    "PE_ratio": 0,
+    "category": "mid"
+  },
+  "BECTORFOOD": {
+    "perc_low": 4.851473792866159,
+    "PE_ratio": 40.17,
+    "category": "mid"
+  },
+  "GALAXYSURF": {
+    "perc_low": 5.0699745547073825,
+    "PE_ratio": 20.01,
+    "category": "mid"
+  },
+  "DODLA": {
+    "perc_low": 4.760916917332224,
+    "PE_ratio": 22.55,
+    "category": "mid"
+  },
+  "NETWORK18": {
+    "perc_low": 4.436860068259388,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "BORORENEW": {
+    "perc_low": 4.7256857855361565,
+    "PE_ratio": 35.36,
+    "category": "mid"
+  },
+  "KALPATARU": {
+    "perc_low": 3.912280701754378,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "GSFC": {
+    "perc_low": 3.3394420688250777,
+    "PE_ratio": 9.01,
+    "category": "mid"
+  },
+  "GARFIBRES": {
+    "perc_low": 4.214592274678104,
+    "PE_ratio": 28.59,
+    "category": "mid"
+  },
+  "MAXESTATES": {
+    "perc_low": 4.25714285714285,
+    "PE_ratio": 178.57,
+    "category": "mid"
+  },
+  "GNFC": {
+    "perc_low": 5.513751946030099,
+    "PE_ratio": 9.73,
+    "category": "mid"
+  },
+  "RUSTOMJEE": {
+    "perc_low": 3.7407870949798325,
+    "PE_ratio": 45,
+    "category": "mid"
+  },
+  "AJAXENGG": {
+    "perc_low": 5.496453900709223,
+    "PE_ratio": 24.11,
+    "category": "mid"
+  },
+  "PNCINFRA": {
+    "perc_low": 5.470969208044537,
+    "PE_ratio": 12.18,
+    "category": "mid"
+  },
+  "FDC": {
+    "perc_low": 1.7230769230769298,
+    "PE_ratio": 23.35,
+    "category": "mid"
+  },
+  "LLOYDSENGG": {
+    "perc_low": 5.982905982905988,
+    "PE_ratio": 41.52,
+    "category": "mid"
+  },
+  "TIPSMUSIC": {
+    "perc_low": 4.782608695652179,
+    "PE_ratio": 35,
+    "category": "mid"
+  },
+  "EPIGRAL": {
+    "perc_low": 3.4650455927051675,
+    "PE_ratio": 10.8,
+    "category": "mid"
+  },
+  "SFL": {
+    "perc_low": 4.7179383116883,
+    "PE_ratio": 62.21,
+    "category": "mid"
+  },
+  "MASTEK": {
+    "perc_low": 3.0676156583629828,
+    "PE_ratio": 11.67,
+    "category": "mid"
+  },
+  "GANESHHOU": {
+    "perc_low": 4.4955752212389335,
+    "PE_ratio": 11.73,
+    "category": "mid"
+  },
+  "AURIONPRO": {
+    "perc_low": 3.945012787723788,
+    "PE_ratio": 21.79,
+    "category": "mid"
+  },
+  "JUSTDIAL": {
+    "perc_low": 3.2595693779904353,
+    "PE_ratio": 7.72,
+    "category": "mid"
+  },
+  "MHRIL": {
+    "perc_low": 3.5179943388596797,
+    "PE_ratio": 55.97,
+    "category": "mid"
+  },
+  "CMSINFO": {
+    "perc_low": 3.1232976212093573,
+    "PE_ratio": 14.17,
+    "category": "mid"
+  },
+  "DHANUKA": {
+    "perc_low": 3.25746952863768,
+    "PE_ratio": 16.37,
+    "category": "mid"
+  },
+  "SYMPHONY": {
+    "perc_low": 5.06467729792622,
+    "PE_ratio": 32.25,
+    "category": "mid"
+  },
+  "AHLUCONT": {
+    "perc_low": 4.985401459854011,
+    "PE_ratio": 18.15,
+    "category": "mid"
+  },
+  "IFBIND": {
+    "perc_low": 4.46801671488268,
+    "PE_ratio": 28.28,
+    "category": "mid"
+  },
+  "BAJAJELEC": {
+    "perc_low": 5.476794508282336,
+    "PE_ratio": 122.99,
+    "category": "mid"
+  },
+  "SURYAROSNI": {
+    "perc_low": 5.186230532735241,
+    "PE_ratio": 14.33,
+    "category": "mid"
+  },
+  "PURVA": {
+    "perc_low": 4.248153618906941,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "VMART": {
+    "perc_low": 3.4259071558889067,
+    "PE_ratio": 39.46,
+    "category": "mid"
+  },
+  "IONEXCHANG": {
+    "perc_low": 5.8906691800188495,
+    "PE_ratio": 25.74,
+    "category": "mid"
+  },
+  "SUNTECK": {
+    "perc_low": 5.466182321397685,
+    "PE_ratio": 24.07,
+    "category": "mid"
+  },
+  "JUNIPER": {
+    "perc_low": 5.615773717353151,
+    "PE_ratio": 27.4,
+    "category": "mid"
+  },
+  "HGINFRA": {
+    "perc_low": 5.349344978165939,
+    "PE_ratio": 8.35,
+    "category": "mid"
+  },
+  "ICRA": {
+    "perc_low": 3.786564574983542,
+    "PE_ratio": 26.4,
+    "category": "mid"
+  },
+  "GULFOILLUB": {
+    "perc_low": 4.065315315315318,
+    "PE_ratio": 12.49,
+    "category": "mid"
+  },
+  "SWSOLAR": {
+    "perc_low": 5.646970830216905,
+    "PE_ratio": 23.76,
+    "category": "mid"
+  },
+  "PICCADIL": {
+    "perc_low": 4.41747572815534,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "MANINFRA": {
+    "perc_low": 4.962231260894824,
+    "PE_ratio": 14.79,
+    "category": "mid"
+  },
+  "SUPRIYA": {
+    "perc_low": 4.771746944644153,
+    "PE_ratio": 25.33,
     "category": "mid"
   },
   "GHCL": {
-    "perc_low": 3.944315545243619,
+    "perc_low": 2.7014218009478617,
     "PE_ratio": 7.86,
     "category": "mid"
   },
+  "EMUDHRA": {
+    "perc_low": 4.6814736002128,
+    "PE_ratio": 31.25,
+    "category": "mid"
+  },
+  "TEXRAIL": {
+    "perc_low": 4.830409356725141,
+    "PE_ratio": 23.89,
+    "category": "mid"
+  },
+  "RAJESHEXPO": {
+    "perc_low": 2.9895868323815944,
+    "PE_ratio": 16.72,
+    "category": "mid"
+  },
+  "SHOPERSTOP": {
+    "perc_low": 4.00434861387933,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "INDIGOPNTS": {
+    "perc_low": 3.072625698324022,
+    "PE_ratio": 23.61,
+    "category": "mid"
+  },
+  "CRIZAC": {
+    "perc_low": 5.6375411402484366,
+    "PE_ratio": "NA",
+    "category": "mid"
+  },
+  "AGI": {
+    "perc_low": 5.7324840764331215,
+    "PE_ratio": 9.59,
+    "category": "mid"
+  },
+  "KNRCON": {
+    "perc_low": 5.286738351254486,
+    "PE_ratio": 9.6,
+    "category": "mid"
+  },
+  "UNIMECH": {
+    "perc_low": 3.7774274076993826,
+    "PE_ratio": 60.69,
+    "category": "mid"
+  },
+  "GMMPFAUDLR": {
+    "perc_low": 4.617069164791037,
+    "PE_ratio": 33.58,
+    "category": "mid"
+  },
+  "ASHOKA": {
+    "perc_low": 3.992571959145773,
+    "PE_ratio": 5.99,
+    "category": "mid"
+  },
+  "ROUTE": {
+    "perc_low": 4.288939051918736,
+    "PE_ratio": 0,
+    "category": "mid"
+  },
   "ITDC": {
-    "perc_low": 3.803827751196167,
+    "perc_low": 4.728395061728389,
     "PE_ratio": 46.03,
     "category": "mid"
   },
-  "SIS": {
-    "perc_low": 2.3752531762106384,
-    "PE_ratio": 31.24,
-    "category": "mid"
-  },
-  "OPTIEMUS": {
-    "perc_low": 5.645285340716802,
-    "PE_ratio": 45.07,
-    "category": "mid"
-  },
-  "BBL": {
-    "perc_low": 5.971479500891266,
-    "PE_ratio": 19.92,
-    "category": "mid"
-  },
-  "HEIDELBERG": {
-    "perc_low": 2.846325468190121,
-    "PE_ratio": 23.84,
+  "RSYSTEMS": {
+    "perc_low": 3.9792041591681615,
+    "PE_ratio": 15.33,
     "category": "mid"
   },
   "ZAGGLE": {
-    "perc_low": 4.599941526167039,
+    "perc_low": 5.92863306431146,
     "PE_ratio": 22.05,
     "category": "mid"
   },
+  "PDSL": {
+    "perc_low": 3.608143519451719,
+    "PE_ratio": 20.51,
+    "category": "small"
+  },
+  "JSFB": {
+    "perc_low": 4.691247002398074,
+    "PE_ratio": 11.86,
+    "category": "small"
+  },
+  "GREAVESCOT": {
+    "perc_low": 4.722792607802866,
+    "PE_ratio": 97.16,
+    "category": "small"
+  },
+  "NIITMTS": {
+    "perc_low": 3.5451035451035535,
+    "PE_ratio": 21.24,
+    "category": "small"
+  },
+  "DBCORP": {
+    "perc_low": 2.952308856926568,
+    "PE_ratio": 11.49,
+    "category": "small"
+  },
+  "BOSCH-HCIL": {
+    "perc_low": 1.6323917740257554,
+    "PE_ratio": 103.38,
+    "category": "small"
+  },
+  "NFL": {
+    "perc_low": 4.232804232804228,
+    "PE_ratio": 22.88,
+    "category": "small"
+  },
+  "SPARC": {
+    "perc_low": 3.0927835051546415,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "PACEDIGITK": {
+    "perc_low": 4.5409996733093685,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "VSTIND": {
+    "perc_low": 3.8062283737024227,
+    "PE_ratio": 15.89,
+    "category": "small"
+  },
+  "HEIDELBERG": {
+    "perc_low": 3.629738630789698,
+    "PE_ratio": 23.84,
+    "category": "small"
+  },
+  "HERITGFOOD": {
+    "perc_low": 4.857336956521744,
+    "PE_ratio": 17.45,
+    "category": "small"
+  },
+  "ORIENTCEM": {
+    "perc_low": 3.459119496855339,
+    "PE_ratio": 8.3,
+    "category": "small"
+  },
+  "BHARATRAS": {
+    "perc_low": 3.319502074688812,
+    "PE_ratio": 14.95,
+    "category": "small"
+  },
   "RBA": {
-    "perc_low": 2.9568106312292257,
+    "perc_low": 3.296703296703302,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "UTKARSHBNK": {
-    "perc_low": 2.4576271186440604,
+  "AWFIS": {
+    "perc_low": 4.527323494216204,
+    "PE_ratio": 32.15,
+    "category": "small"
+  },
+  "63MOONS": {
+    "perc_low": 4.494382022471906,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "GATEWAY": {
-    "perc_low": 3.740157480314972,
-    "PE_ratio": 8.81,
+  "KIRLOSIND": {
+    "perc_low": 4.003663982290756,
+    "PE_ratio": 8.5,
     "category": "small"
   },
-  "SUPRIYA": {
-    "perc_low": 4.867256637168142,
-    "PE_ratio": 25.33,
-    "category": "small"
-  },
-  "HIKAL": {
-    "perc_low": 4.0326481257557365,
-    "PE_ratio": 83.09,
+  "BOROLTD": {
+    "perc_low": 3.597760149323369,
+    "PE_ratio": 33.94,
     "category": "small"
   },
   "UFLEX": {
-    "perc_low": 1.6365103146248623,
+    "perc_low": 3.165536118053079,
     "PE_ratio": 12.47,
     "category": "small"
   },
-  "GREENPANEL": {
-    "perc_low": 4.311028828352276,
-    "PE_ratio": "NA",
+  "VAIBHAVGBL": {
+    "perc_low": 4.389743589743591,
+    "PE_ratio": 16.36,
     "category": "small"
   },
-  "BALMLAWRIE": {
-    "perc_low": 4.1666666666666625,
-    "PE_ratio": 14.15,
+  "QUESS": {
+    "perc_low": 2.0408163265306123,
+    "PE_ratio": 11.45,
     "category": "small"
   },
-  "BHAGCHEM": {
-    "perc_low": 3.5388888888888914,
-    "PE_ratio": 177.04,
+  "GREENPLY": {
+    "perc_low": 4.041225928939526,
+    "PE_ratio": 20.27,
     "category": "small"
   },
-  "SULA": {
-    "perc_low": 4.699547992555167,
-    "PE_ratio": 41.38,
+  "KOLTEPATIL": {
+    "perc_low": 4.5921644187540185,
+    "PE_ratio": 85.97,
     "category": "small"
   },
-  "LAOPALA": {
-    "perc_low": 2.98761100756497,
-    "PE_ratio": 19.78,
+  "JINDWORLD": {
+    "perc_low": 4.895104895104898,
+    "PE_ratio": 34.6,
     "category": "small"
   },
-  "ALEMBICLTD": {
-    "perc_low": 3.220425968693873,
-    "PE_ratio": 14.65,
-    "category": "small"
-  },
-  "SCILAL": {
-    "perc_low": 3.8631889763779537,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "HATHWAY": {
-    "perc_low": 4.592901878914399,
-    "PE_ratio": 19.27,
-    "category": "small"
-  },
-  "NAVNETEDUL": {
-    "perc_low": 3.463100071650353,
-    "PE_ratio": 21.44,
-    "category": "small"
-  },
-  "INDOCO": {
-    "perc_low": 3.7433155080213902,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "KCP": {
-    "perc_low": 2.9136163982430587,
-    "PE_ratio": 7.54,
-    "category": "small"
-  },
-  "SALASAR": {
-    "perc_low": 3.524229074889871,
-    "PE_ratio": 55.45,
+  "HARSHA": {
+    "perc_low": 4.4810242341106505,
+    "PE_ratio": 29.92,
     "category": "small"
   },
   "NSIL": {
-    "perc_low": 2.635514018691589,
+    "perc_low": 4.49317738791423,
     "PE_ratio": 119.89,
     "category": "small"
   },
-  "AJMERA": {
-    "perc_low": 3.97172356059901,
-    "PE_ratio": 17.4,
-    "category": "small"
-  },
-  "NILKAMAL": {
-    "perc_low": 2.567287784679089,
-    "PE_ratio": 16.62,
-    "category": "small"
-  },
-  "STANLEY": {
-    "perc_low": 3.8906414300735945,
-    "PE_ratio": 33.42,
-    "category": "small"
-  },
-  "SHALBY": {
-    "perc_low": 4.026991728341323,
-    "PE_ratio": 373.95,
-    "category": "small"
-  },
-  "SIYSIL": {
-    "perc_low": 4.129225502781346,
-    "PE_ratio": 10.51,
-    "category": "small"
-  },
-  "RANEHOLDIN": {
-    "perc_low": 1.7578678763822075,
-    "PE_ratio": 14.37,
-    "category": "small"
-  },
-  "VAKRANGEE": {
-    "perc_low": 4.991087344028509,
-    "PE_ratio": 51.82,
-    "category": "small"
-  },
-  "KRSNAA": {
-    "perc_low": 4.109470776137455,
-    "PE_ratio": 23.69,
-    "category": "small"
-  },
-  "THEMISMED": {
-    "perc_low": 4.175111471422765,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "DREAMFOLKS": {
-    "perc_low": 4.094579008073822,
-    "PE_ratio": 9.51,
-    "category": "small"
-  },
-  "ESAFSFB": {
-    "perc_low": 3.69565217391305,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "DEN": {
-    "perc_low": 2.596899224806194,
-    "PE_ratio": 6.59,
-    "category": "small"
-  },
-  "ASTEC": {
-    "perc_low": 4.142599277978348,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "RUPA": {
-    "perc_low": 3.6398308597960374,
-    "PE_ratio": 14.29,
-    "category": "small"
-  },
-  "SANGHIIND": {
-    "perc_low": 2.799999999999997,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "TTKHLTCARE": {
-    "perc_low": 4.881101376720901,
-    "PE_ratio": 16.45,
-    "category": "small"
-  },
-  "IKIO": {
-    "perc_low": 3.5361771521757706,
-    "PE_ratio": 38.7,
-    "category": "small"
-  },
-  "PNBGILTS": {
-    "perc_low": 4.1740412979351005,
-    "PE_ratio": 5.1,
-    "category": "small"
-  },
-  "KIRIINDUS": {
-    "perc_low": 4.090724989874437,
-    "PE_ratio": 0,
-    "category": "small"
-  },
-  "AMRUTANJAN": {
-    "perc_low": 3.54455445544554,
-    "PE_ratio": 25.78,
-    "category": "small"
-  },
-  "PLATIND": {
-    "perc_low": 4.094448630997225,
-    "PE_ratio": 26,
-    "category": "small"
-  },
-  "UNIECOM": {
-    "perc_low": 2.911111111111116,
-    "PE_ratio": 50.48,
-    "category": "small"
-  },
-  "MICEL": {
-    "perc_low": 4.684061615844069,
-    "PE_ratio": 85.15,
-    "category": "small"
-  },
-  "EXPLEOSOL": {
-    "perc_low": 4.350607805502242,
-    "PE_ratio": 9.54,
-    "category": "small"
-  },
-  "JAGRAN": {
-    "perc_low": 3.0489836721092938,
+  "KSL": {
+    "perc_low": 4.614892425817808,
     "PE_ratio": 10.48,
     "category": "small"
   },
+  "ADVENZYMES": {
+    "perc_low": 3.9575289575289574,
+    "PE_ratio": 20.88,
+    "category": "small"
+  },
+  "SHAREINDIA": {
+    "perc_low": 3.121358415182287,
+    "PE_ratio": 9.54,
+    "category": "small"
+  },
+  "UNICHEMLAB": {
+    "perc_low": 3.827037773359845,
+    "PE_ratio": 27.01,
+    "category": "small"
+  },
+  "ROSSARI": {
+    "perc_low": 3.311007203336288,
+    "PE_ratio": 16.73,
+    "category": "small"
+  },
+  "BALMLAWRIE": {
+    "perc_low": 2.8162717925793452,
+    "PE_ratio": 14.15,
+    "category": "small"
+  },
+  "PRINCEPIPE": {
+    "perc_low": 4.54146555506801,
+    "PE_ratio": 61.17,
+    "category": "small"
+  },
+  "NAVNETEDUL": {
+    "perc_low": 3.0364372469635628,
+    "PE_ratio": 21.44,
+    "category": "small"
+  },
+  "GREENPANEL": {
+    "perc_low": 4.50577454860923,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "BBL": {
+    "perc_low": 4.990639696817505,
+    "PE_ratio": 19.92,
+    "category": "small"
+  },
+  "PROTEAN": {
+    "perc_low": 3.125000000000009,
+    "PE_ratio": 22.68,
+    "category": "small"
+  },
+  "BOMDYEING": {
+    "perc_low": 4.8030443278823425,
+    "PE_ratio": 116.99,
+    "category": "small"
+  },
+  "HIKAL": {
+    "perc_low": 4.21614828777883,
+    "PE_ratio": 83.09,
+    "category": "small"
+  },
+  "KIRIINDUS": {
+    "perc_low": 2.8480575141711633,
+    "PE_ratio": 0,
+    "category": "small"
+  },
+  "KKCL": {
+    "perc_low": 4.0185094982951775,
+    "PE_ratio": 17.83,
+    "category": "small"
+  },
+  "ARKADE": {
+    "perc_low": 4.149797570850211,
+    "PE_ratio": 12.98,
+    "category": "small"
+  },
+  "PARKHOTELS": {
+    "perc_low": 3.0340616353401324,
+    "PE_ratio": 28.14,
+    "category": "small"
+  },
+  "GATEWAY": {
+    "perc_low": 4.8951048951049,
+    "PE_ratio": 8.81,
+    "category": "small"
+  },
+  "JASH": {
+    "perc_low": 4.813443463400733,
+    "PE_ratio": 42.28,
+    "category": "small"
+  },
+  "PENIND": {
+    "perc_low": 4.963262857999704,
+    "PE_ratio": 14.44,
+    "category": "small"
+  },
+  "SAGCEM": {
+    "perc_low": 3.3468934911242467,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "SIYSIL": {
+    "perc_low": 4.279943225242936,
+    "PE_ratio": 10.51,
+    "category": "small"
+  },
+  "TCPLPACK": {
+    "perc_low": 1.9255455712451863,
+    "PE_ratio": 17.43,
+    "category": "small"
+  },
+  "SUNDROP": {
+    "perc_low": 3.0670767184772747,
+    "PE_ratio": 59.82,
+    "category": "small"
+  },
+  "EFCIL": {
+    "perc_low": 4.124705378187266,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "ORISSAMINE": {
+    "perc_low": 4.994873297202285,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "VEEDOL": {
+    "perc_low": 3.815480844409692,
+    "PE_ratio": 14.07,
+    "category": "small"
+  },
+  "FCL": {
+    "perc_low": 4.347826086956532,
+    "PE_ratio": 24.91,
+    "category": "small"
+  },
+  "GIPCL": {
+    "perc_low": 3.7881777286717684,
+    "PE_ratio": 14.19,
+    "category": "small"
+  },
+  "RPSGVENT": {
+    "perc_low": 4.084482457671492,
+    "PE_ratio": 14.02,
+    "category": "small"
+  },
+  "BCG": {
+    "perc_low": 3.823178016726408,
+    "PE_ratio": 2.03,
+    "category": "small"
+  },
+  "BFUTILITIE": {
+    "perc_low": 4.805776892430267,
+    "PE_ratio": 4.15,
+    "category": "small"
+  },
+  "EPACKPEB": {
+    "perc_low": 3.6745964316057753,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "JTLIND": {
+    "perc_low": 4.6643682822956745,
+    "PE_ratio": 24.97,
+    "category": "small"
+  },
+  "SAKSOFT": {
+    "perc_low": 4.9013480939201814,
+    "PE_ratio": 12.11,
+    "category": "small"
+  },
+  "MTNL": {
+    "perc_low": 3.659574468085104,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "ALEMBICLTD": {
+    "perc_low": 3.1048546243915265,
+    "PE_ratio": 14.65,
+    "category": "small"
+  },
+  "UTKARSHBNK": {
+    "perc_low": 3.1468531468531578,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "LAOPALA": {
+    "perc_low": 3.348314606741577,
+    "PE_ratio": 19.78,
+    "category": "small"
+  },
+  "INDOCO": {
+    "perc_low": 3.8983957219251297,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "TAJGVK": {
+    "perc_low": 3.6724137931034404,
+    "PE_ratio": 16.12,
+    "category": "small"
+  },
+  "KRSNAA": {
+    "perc_low": 2.151380541764659,
+    "PE_ratio": 23.69,
+    "category": "small"
+  },
+  "KCP": {
+    "perc_low": 4.1267896791976,
+    "PE_ratio": 7.54,
+    "category": "small"
+  },
+  "HATHWAY": {
+    "perc_low": 4.055496264674502,
+    "PE_ratio": 19.27,
+    "category": "small"
+  },
+  "DIAMONDYD": {
+    "perc_low": 2.9545454545454546,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "TASTYBITE": {
+    "perc_low": 3.2921494896784593,
+    "PE_ratio": 48.21,
+    "category": "small"
+  },
+  "HGS": {
+    "perc_low": 4.312235053354772,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "INSECTICID": {
+    "perc_low": 4.965252377468927,
+    "PE_ratio": 11.88,
+    "category": "small"
+  },
+  "SCILAL": {
+    "perc_low": 4.773869346733683,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "SUMMITSEC": {
+    "perc_low": 4.181431608788094,
+    "PE_ratio": 13.24,
+    "category": "small"
+  },
+  "SULA": {
+    "perc_low": 3.6566195065272327,
+    "PE_ratio": 41.38,
+    "category": "small"
+  },
+  "SYSTMTXC": {
+    "perc_low": 2.148674406515339,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "STUDDS": {
+    "perc_low": 3.0927835051546415,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "RANEHOLDIN": {
+    "perc_low": 4.421568627450972,
+    "PE_ratio": 14.37,
+    "category": "small"
+  },
+  "ACCELYA": {
+    "perc_low": 2.3157894736842186,
+    "PE_ratio": 15.57,
+    "category": "small"
+  },
+  "AMRUTANJAN": {
+    "perc_low": 2.9919678714859392,
+    "PE_ratio": 25.78,
+    "category": "small"
+  },
+  "MOBIKWIK": {
+    "perc_low": 3.7068965517241317,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "WINDLAS": {
+    "perc_low": 4.495268138801265,
+    "PE_ratio": 22.97,
+    "category": "small"
+  },
+  "SPIC": {
+    "perc_low": 4.162401910610721,
+    "PE_ratio": 7.73,
+    "category": "small"
+  },
+  "LAXMIDENTL": {
+    "perc_low": 4.969056059604628,
+    "PE_ratio": 28.39,
+    "category": "small"
+  },
+  "ASALCBR": {
+    "perc_low": 4.57614942528736,
+    "PE_ratio": 15.83,
+    "category": "small"
+  },
+  "PANAMAPET": {
+    "perc_low": 4.0,
+    "PE_ratio": 8.55,
+    "category": "small"
+  },
+  "PRECAM": {
+    "perc_low": 4.848210240145001,
+    "PE_ratio": 22.48,
+    "category": "small"
+  },
+  "ASTEC": {
+    "perc_low": 4.484598820335183,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "BFINVEST": {
+    "perc_low": 4.081632653061218,
+    "PE_ratio": 568.91,
+    "category": "small"
+  },
+  "NAVKARCORP": {
+    "perc_low": 4.286434694906715,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "HUHTAMAKI": {
+    "perc_low": 3.5352557899490473,
+    "PE_ratio": 10.48,
+    "category": "small"
+  },
+  "QUICKHEAL": {
+    "perc_low": 4.692956926658898,
+    "PE_ratio": 136.3,
+    "category": "small"
+  },
+  "PNBGILTS": {
+    "perc_low": 4.761904761904775,
+    "PE_ratio": 5.1,
+    "category": "small"
+  },
+  "SANGHIIND": {
+    "perc_low": 3.605470368835479,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "SANSTAR": {
+    "perc_low": 3.936708860759493,
+    "PE_ratio": 77.06,
+    "category": "small"
+  },
+  "EXPLEOSOL": {
+    "perc_low": 3.6794354838709777,
+    "PE_ratio": 9.54,
+    "category": "small"
+  },
+  "DEN": {
+    "perc_low": 2.2204599524187243,
+    "PE_ratio": 6.59,
+    "category": "small"
+  },
+  "TTKHLTCARE": {
+    "perc_low": 3.238840835911355,
+    "PE_ratio": 16.45,
+    "category": "small"
+  },
+  "ARIHANTSUP": {
+    "perc_low": 3.9292730844793713,
+    "PE_ratio": 20.16,
+    "category": "small"
+  },
+  "STANLEY": {
+    "perc_low": 4.250054581180412,
+    "PE_ratio": 33.42,
+    "category": "small"
+  },
+  "TARSONS": {
+    "perc_low": 3.757711721817156,
+    "PE_ratio": 46.21,
+    "category": "small"
+  },
+  "HIMATSEIDE": {
+    "perc_low": 4.952227156506517,
+    "PE_ratio": 5.46,
+    "category": "small"
+  },
+  "SYNCOMF": {
+    "perc_low": 3.9787798408487998,
+    "PE_ratio": 16.07,
+    "category": "small"
+  },
+  "IGARASHI": {
+    "perc_low": 4.562104562104558,
+    "PE_ratio": 72.81,
+    "category": "small"
+  },
+  "TINNARUBR": {
+    "perc_low": 4.339464882943152,
+    "PE_ratio": 23.58,
+    "category": "small"
+  },
+  "IKIO": {
+    "perc_low": 4.08144796380091,
+    "PE_ratio": 38.7,
+    "category": "small"
+  },
+  "JAGRAN": {
+    "perc_low": 2.205513784461153,
+    "PE_ratio": 10.48,
+    "category": "small"
+  },
+  "RUPA": {
+    "perc_low": 4.050847457627119,
+    "PE_ratio": 14.29,
+    "category": "small"
+  },
+  "SHRIRAMPPS": {
+    "perc_low": 2.7649769585253634,
+    "PE_ratio": 33.79,
+    "category": "small"
+  },
+  "ORIENTTECH": {
+    "perc_low": 4.038004750593831,
+    "PE_ratio": 32.16,
+    "category": "small"
+  },
+  "EKC": {
+    "perc_low": 3.2892097874047344,
+    "PE_ratio": 9.92,
+    "category": "small"
+  },
+  "ANDHRAPAP": {
+    "perc_low": 4.778851042196239,
+    "PE_ratio": 64.07,
+    "category": "small"
+  },
+  "ESAFSFB": {
+    "perc_low": 1.1403508771929738,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "NIITLTD": {
+    "perc_low": 4.324324324324322,
+    "PE_ratio": 27.56,
+    "category": "small"
+  },
+  "BIRLANU": {
+    "perc_low": 4.664210350025125,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "PAUSHAKLTD": {
+    "perc_low": 2.295918367346939,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "EXCELINDUS": {
+    "perc_low": 4.272434751519487,
+    "PE_ratio": 10.03,
+    "category": "small"
+  },
+  "VPRPL": {
+    "perc_low": 4.079885877318117,
+    "PE_ratio": 74.66,
+    "category": "small"
+  },
+  "SALZERELEC": {
+    "perc_low": 4.758706706322569,
+    "PE_ratio": 17.63,
+    "category": "small"
+  },
+  "ALLDIGI": {
+    "perc_low": 1.9625520110956973,
+    "PE_ratio": 14.67,
+    "category": "small"
+  },
+  "SURAJEST": {
+    "perc_low": 4.074054704251865,
+    "PE_ratio": 9.83,
+    "category": "small"
+  },
+  "CIFL": {
+    "perc_low": 4.381654381654368,
+    "PE_ratio": 0,
+    "category": "small"
+  },
+  "UNIECOM": {
+    "perc_low": 3.9582377237264836,
+    "PE_ratio": 50.48,
+    "category": "small"
+  },
+  "MONTECARLO": {
+    "perc_low": 4.315235008103718,
+    "PE_ratio": 11.26,
+    "category": "small"
+  },
+  "MADRASFERT": {
+    "perc_low": 3.7362258953168075,
+    "PE_ratio": 137.83,
+    "category": "small"
+  },
   "HARIOMPIPE": {
-    "perc_low": 4.59903702473851,
+    "perc_low": 2.6963657678780812,
     "PE_ratio": 15.06,
     "category": "small"
   },
   "BSHSL": {
-    "perc_low": 3.844169246646032,
+    "perc_low": 3.2537391760692786,
     "PE_ratio": 31.1,
     "category": "small"
   },
-  "CAMLINFINE": {
-    "perc_low": 4.864636209813875,
-    "PE_ratio": 398.8,
-    "category": "small"
-  },
-  "SYNCOMF": {
-    "perc_low": 4.5335658238884005,
-    "PE_ratio": 16.07,
-    "category": "small"
-  },
-  "SADHNANIQ": {
-    "perc_low": 2.8169014084507067,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
   "AGARIND": {
-    "perc_low": 3.1707317073170733,
+    "perc_low": 3.819883632684028,
     "PE_ratio": 10.57,
     "category": "small"
   },
-  "BCG": {
-    "perc_low": 4.878048780487805,
-    "PE_ratio": 2.03,
+  "CAPITALSFB": {
+    "perc_low": 2.764578833693307,
+    "PE_ratio": 8.04,
     "category": "small"
   },
-  "HIMATSEIDE": {
-    "perc_low": 4.264063704084263,
-    "PE_ratio": 5.46,
+  "MICEL": {
+    "perc_low": 4.992000000000008,
+    "PE_ratio": 85.15,
     "category": "small"
   },
-  "EVERESTIND": {
-    "perc_low": 4.5241809672386895,
+  "WALCHANNAG": {
+    "perc_low": 3.7076271186440675,
     "PE_ratio": "NA",
-    "category": "small"
-  },
-  "5PAISA": {
-    "perc_low": 4.177591330187027,
-    "PE_ratio": 31.5,
-    "category": "small"
-  },
-  "TBZ": {
-    "perc_low": 3.125,
-    "PE_ratio": 5.97,
-    "category": "small"
-  },
-  "CLSEL": {
-    "perc_low": 4.829545454545447,
-    "PE_ratio": 11.46,
     "category": "small"
   },
   "GPTHEALTH": {
-    "perc_low": 4.6421987598458125,
+    "perc_low": 2.1374685666387236,
     "PE_ratio": 24.42,
     "category": "small"
   },
+  "MEIL": {
+    "perc_low": 3.235983414458269,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "STLNETWORK": {
+    "perc_low": 3.05555555555556,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "BLUSPRING": {
+    "perc_low": 4.683947248749437,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "DVL": {
+    "perc_low": 3.659742828882298,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "OAL": {
+    "perc_low": 4.8535564853556465,
+    "PE_ratio": 1138.69,
+    "category": "small"
+  },
+  "STERTOOLS": {
+    "perc_low": 4.723707664884128,
+    "PE_ratio": 23.77,
+    "category": "small"
+  },
+  "5PAISA": {
+    "perc_low": 4.286226685796265,
+    "PE_ratio": 31.5,
+    "category": "small"
+  },
+  "PENINLAND": {
+    "perc_low": 3.6486486486486425,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
   "ESTER": {
-    "perc_low": 4.488888888888896,
+    "perc_low": 3.1555555555555594,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "SAURASHCEM": {
-    "perc_low": 4.6551724137931085,
-    "PE_ratio": 25.95,
+  "KOKUYOCMLN": {
+    "perc_low": 2.881921280853898,
+    "PE_ratio": 29.35,
     "category": "small"
   },
-  "RKSWAMY": {
-    "perc_low": 2.92336361518752,
-    "PE_ratio": 21.49,
-    "category": "small"
-  },
-  "INDOAMIN": {
-    "perc_low": 4.55992722310667,
-    "PE_ratio": 9.07,
-    "category": "small"
-  },
-  "SANDESH": {
-    "perc_low": 3.0434782608695654,
-    "PE_ratio": 6.37,
-    "category": "small"
-  },
-  "NDTV": {
-    "perc_low": 2.994269340974217,
+  "THEMISMED": {
+    "perc_low": 3.902777777777781,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "MUFTI": {
-    "perc_low": 3.3716993906567496,
-    "PE_ratio": 10.37,
+  "DHANBANK": {
+    "perc_low": 4.345794392523363,
+    "PE_ratio": 9.99,
     "category": "small"
   },
-  "BLAL": {
-    "perc_low": 3.902348807101895,
-    "PE_ratio": "NA",
+  "INDOFARM": {
+    "perc_low": 3.3057851239669422,
+    "PE_ratio": 20.53,
     "category": "small"
   },
-  "ELIN": {
-    "perc_low": 4.748578924355056,
-    "PE_ratio": 14.03,
+  "RADHIKAJWE": {
+    "perc_low": 3.8864786695589273,
+    "PE_ratio": 8.69,
     "category": "small"
   },
-  "SHALPAINTS": {
-    "perc_low": 4.017957351290699,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "ZUARIIND": {
-    "perc_low": 3.2556093268807644,
-    "PE_ratio": "NA",
+  "GKWLIMITED": {
+    "perc_low": 4.788600794206961,
+    "PE_ratio": 135.87,
     "category": "small"
   },
   "DENTALKART": {
-    "perc_low": 4.643557880967953,
+    "perc_low": 4.120340091563113,
     "PE_ratio": 44.71,
     "category": "small"
   },
-  "NINSYS": {
-    "perc_low": 4.678882761074534,
-    "PE_ratio": 17.61,
+  "SRHHYPOLTD": {
+    "perc_low": 2.1312462372065077,
+    "PE_ratio": 7.41,
     "category": "small"
   },
-  "ENIL": {
-    "perc_low": 2.778846153846154,
-    "PE_ratio": 108.08,
+  "XCHANGING": {
+    "perc_low": 4.017611447440846,
+    "PE_ratio": 10.92,
     "category": "small"
   },
-  "GVKPIL": {
-    "perc_low": 3.0888030888030915,
+  "MVGJL": {
+    "perc_low": 3.7204882684014353,
+    "PE_ratio": 6.1,
+    "category": "small"
+  },
+  "GICHSGFIN": {
+    "perc_low": 2.8332119446467487,
+    "PE_ratio": 5.27,
+    "category": "small"
+  },
+  "NCLIND": {
+    "perc_low": 3.3221578786955126,
+    "PE_ratio": 11.45,
+    "category": "small"
+  },
+  "EVERESTIND": {
+    "perc_low": 3.544183089637628,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "TVTODAY": {
+    "perc_low": 3.6448598130841177,
+    "PE_ratio": 0.83,
+    "category": "small"
+  },
+  "SANDESH": {
+    "perc_low": 3.368834080717484,
+    "PE_ratio": 6.37,
+    "category": "small"
+  },
+  "BLAL": {
+    "perc_low": 1.637318504788388,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "SNOWMAN": {
+    "perc_low": 3.9755351681957096,
+    "PE_ratio": 62.9,
+    "category": "small"
+  },
+  "DHUNINV": {
+    "perc_low": 3.2214765100671143,
     "PE_ratio": "NA",
     "category": "small"
   },
   "CHEMCON": {
-    "perc_low": 4.117848578280246,
+    "perc_low": 4.933952159942875,
     "PE_ratio": 25.36,
     "category": "small"
   },
-  "JAYAGROGN": {
-    "perc_low": 3.6060606060605993,
-    "PE_ratio": 11.82,
+  "ASAL": {
+    "perc_low": 4.865345528455278,
+    "PE_ratio": 32.37,
     "category": "small"
   },
-  "COFFEEDAY": {
-    "perc_low": 4.468085106382982,
-    "PE_ratio": "NA",
+  "MUFTI": {
+    "perc_low": 3.4559333795975142,
+    "PE_ratio": 10.37,
     "category": "small"
   },
-  "SAKUMA": {
-    "perc_low": 3.448275862068969,
-    "PE_ratio": 30.5,
+  "SATIA": {
+    "perc_low": 4.240097714186005,
+    "PE_ratio": 8.47,
     "category": "small"
   },
-  "GLOSTERLTD": {
-    "perc_low": 4.901960784313726,
-    "PE_ratio": 74.03,
+  "20MICRONS": {
+    "perc_low": 4.493055555555555,
+    "PE_ratio": 8.17,
     "category": "small"
   },
-  "SPENCERS": {
-    "perc_low": 4.470834788683203,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "CHEVIOT": {
-    "perc_low": 3.537981269510926,
-    "PE_ratio": 8.22,
-    "category": "small"
-  },
-  "VRAJ": {
-    "perc_low": 3.683870372080136,
-    "PE_ratio": 14.27,
-    "category": "small"
-  },
-  "EMAMIPAP": {
-    "perc_low": 2.6666666666666625,
-    "PE_ratio": 11.66,
-    "category": "small"
-  },
-  "RBZJEWEL": {
-    "perc_low": 4.259869886819358,
-    "PE_ratio": 8.81,
-    "category": "small"
-  },
-  "MEGATHERM": {
-    "perc_low": 3.130755064456716,
-    "PE_ratio": 15.26,
-    "category": "small"
-  },
-  "SILINV": {
-    "perc_low": 4.540237214640992,
-    "PE_ratio": 9.52,
+  "GEECEE": {
+    "perc_low": 4.040000000000009,
+    "PE_ratio": 24.58,
     "category": "small"
   },
   "NBIFIN": {
-    "perc_low": 2.3197674418604706,
+    "perc_low": 2.565597667638484,
     "PE_ratio": 25.07,
     "category": "small"
   },
-  "REMSONSIND": {
-    "perc_low": 4.290697674418602,
-    "PE_ratio": 12.07,
+  "PPL": {
+    "perc_low": 3.2825775129648114,
+    "PE_ratio": 11.3,
     "category": "small"
   },
-  "MANAKSIA": {
-    "perc_low": 4.081632653061225,
-    "PE_ratio": 6.16,
+  "RSWM": {
+    "perc_low": 3.7089534609024284,
+    "PE_ratio": 23.91,
     "category": "small"
   },
-  "FCSSOFT": {
-    "perc_low": 3.5460992907801447,
+  "RKSWAMY": {
+    "perc_low": 4.3446513326031315,
+    "PE_ratio": 21.49,
+    "category": "small"
+  },
+  "SUBEXLTD": {
+    "perc_low": 3.7179487179487185,
+    "PE_ratio": 138.92,
+    "category": "small"
+  },
+  "SAHASRA": {
+    "perc_low": 3.1818181818181817,
+    "PE_ratio": 374.7,
+    "category": "small"
+  },
+  "ZEEMEDIA": {
+    "perc_low": 4.384724186704379,
+    "PE_ratio": 210.98,
+    "category": "small"
+  },
+  "GLOSTERLTD": {
+    "perc_low": 3.8415841584158374,
+    "PE_ratio": 74.03,
+    "category": "small"
+  },
+  "CELLECOR": {
+    "perc_low": 2.7896995708154444,
+    "PE_ratio": 14.85,
+    "category": "small"
+  },
+  "JAYAGROGN": {
+    "perc_low": 2.7629068980370497,
+    "PE_ratio": 11.82,
+    "category": "small"
+  },
+  "APTECHT": {
+    "perc_low": 4.21262458471761,
+    "PE_ratio": 16.18,
+    "category": "small"
+  },
+  "MANBA": {
+    "perc_low": 3.6181818181818217,
+    "PE_ratio": 13.59,
+    "category": "small"
+  },
+  "VISAKAIND": {
+    "perc_low": 3.4332425068119905,
+    "PE_ratio": 16.17,
+    "category": "small"
+  },
+  "HINDCOMPOS": {
+    "perc_low": 2.6587301587301617,
+    "PE_ratio": 14.84,
+    "category": "small"
+  },
+  "ENIL": {
+    "perc_low": 2.153846153846149,
+    "PE_ratio": 108.08,
+    "category": "small"
+  },
+  "GFLLIMITED": {
+    "perc_low": 4.121212121212128,
+    "PE_ratio": 261.68,
+    "category": "small"
+  },
+  "CHEVIOT": {
+    "perc_low": 2.5598335067637903,
+    "PE_ratio": 8.22,
+    "category": "small"
+  },
+  "SHALPAINTS": {
+    "perc_low": 2.826936336474383,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "BPL": {
-    "perc_low": 4.856037816931667,
-    "PE_ratio": 4.18,
-    "category": "small"
-  },
-  "KAMATHOTEL": {
-    "perc_low": 4.9751811490842694,
-    "PE_ratio": 24.04,
-    "category": "small"
-  },
-  "HCL-INSYS": {
-    "perc_low": 4.631217838765001,
+  "GLOTTIS": {
+    "perc_low": 2.380952380952381,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "RADIOCITY": {
-    "perc_low": 3.2629558541266785,
+  "SILINV": {
+    "perc_low": 2.5634485397270783,
+    "PE_ratio": 9.52,
+    "category": "small"
+  },
+  "SPECIALITY": {
+    "perc_low": 4.932141674942072,
+    "PE_ratio": 20.4,
+    "category": "small"
+  },
+  "MOS": {
+    "perc_low": 4.166666666666666,
+    "PE_ratio": 25.75,
+    "category": "small"
+  },
+  "RADIANTCMS": {
+    "perc_low": 4.182621502209114,
+    "PE_ratio": 11.43,
+    "category": "small"
+  },
+  "BAHETI": {
+    "perc_low": 3.5051546391752577,
+    "PE_ratio": 26.35,
+    "category": "small"
+  },
+  "EMAMIPAP": {
+    "perc_low": 4.8333333333333295,
+    "PE_ratio": 11.66,
+    "category": "small"
+  },
+  "DIGISPICE": {
+    "perc_low": 4.907975460122704,
+    "PE_ratio": 16.23,
+    "category": "small"
+  },
+  "TPLPLASTEH": {
+    "perc_low": 3.4482758620689653,
+    "PE_ratio": 17.05,
+    "category": "small"
+  },
+  "RBZJEWEL": {
+    "perc_low": 2.878801552206477,
+    "PE_ratio": 8.81,
+    "category": "small"
+  },
+  "GVKPIL": {
+    "perc_low": 1.5686274509803935,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "VARDHACRLC": {
-    "perc_low": 4.663705583756353,
-    "PE_ratio": 19.14,
+  "ADVANIHOTR": {
+    "perc_low": 4.790419161676644,
+    "PE_ratio": 19.78,
     "category": "small"
   },
-  "APOLSINHOT": {
-    "perc_low": 4.75238095238096,
-    "PE_ratio": 28.03,
-    "category": "small"
-  },
-  "NEPHROCARE": {
-    "perc_low": 3.622047244094484,
-    "PE_ratio": 30.84,
-    "category": "small"
-  },
-  "NATHBIOGEN": {
-    "perc_low": 4.8676470588235325,
-    "PE_ratio": 6.77,
-    "category": "small"
-  },
-  "WINSOL": {
-    "perc_low": 4.622980251346491,
-    "PE_ratio": 10.31,
-    "category": "small"
-  },
-  "INFINIUM": {
-    "perc_low": 4.797979797979798,
-    "PE_ratio": 33.09,
-    "category": "small"
-  },
-  "GULFPETRO": {
-    "perc_low": 3.5000000000000018,
-    "PE_ratio": 5.32,
-    "category": "small"
-  },
-  "RHL": {
-    "perc_low": 3.2448377581120944,
-    "PE_ratio": 11.03,
-    "category": "small"
-  },
-  "GOYALSALT": {
-    "perc_low": 0.5094951366373295,
-    "PE_ratio": 18.85,
-    "category": "small"
-  },
-  "SHYAMCENT": {
-    "perc_low": 4.357798165137603,
+  "TRACXN": {
+    "perc_low": 4.708594007243989,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "SPECTSTM": {
-    "perc_low": 4.411764705882345,
-    "PE_ratio": 22.91,
-    "category": "small"
-  },
-  "INFOLLION": {
-    "perc_low": 4.946808510638294,
-    "PE_ratio": 20.47,
-    "category": "small"
-  },
-  "NIRMAN": {
-    "perc_low": 2.6519337016574647,
-    "PE_ratio": 1.31,
-    "category": "small"
-  },
-  "DTIL": {
-    "perc_low": 3.9603174603174676,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "INVENTURE": {
-    "perc_low": 4.081632653061228,
-    "PE_ratio": 14.78,
-    "category": "small"
-  },
-  "CANARYS": {
-    "perc_low": 4.709141274238215,
-    "PE_ratio": 8.09,
-    "category": "small"
-  },
-  "ZEAL": {
-    "perc_low": 3.5629453681710324,
-    "PE_ratio": 8.5,
-    "category": "small"
-  },
-  "AERON": {
-    "perc_low": 4.03371462974113,
-    "PE_ratio": 10.41,
-    "category": "small"
-  },
-  "TIPSFILMS": {
-    "perc_low": 4.8867313915857675,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "DCG": {
-    "perc_low": 3.1775700934579496,
-    "PE_ratio": 10.93,
-    "category": "small"
-  },
-  "BSL": {
-    "perc_low": 4.073918521629575,
-    "PE_ratio": 34.77,
-    "category": "small"
-  },
-  "AGARWALTUF": {
-    "perc_low": 4.325842696629207,
-    "PE_ratio": 7.1,
+  "SREEL": {
+    "perc_low": 1.810202962150292,
+    "PE_ratio": 17.61,
     "category": "small"
   },
   "DPEL": {
-    "perc_high": 3.048927452398163,
+    "perc_high": 2.8561099060014383,
     "PE_ratio": 82.85,
     "category": "small"
   },
-  "UNIHEALTH": {
-    "perc_high": 0.5944100164411339,
-    "PE_ratio": 16.2,
+  "MEGATHERM": {
+    "perc_low": 2.6863313141954146,
+    "PE_ratio": 15.26,
     "category": "small"
   },
-  "TEXMOPIPES": {
-    "perc_low": 4.448887778055489,
-    "PE_ratio": 6.58,
+  "VINYLINDIA": {
+    "perc_low": 3.523035230352303,
+    "PE_ratio": 18.52,
     "category": "small"
   },
-  "URBAN": {
-    "perc_low": 2.4580090126997134,
-    "PE_ratio": 9.12,
-    "category": "small"
-  },
-  "IL&FSTRANS": {
-    "perc_low": 3.7914691943128,
+  "CPEDU": {
+    "perc_low": 2.546021840873643,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "KREBSBIO": {
-    "perc_low": 4.9894736842105205,
-    "PE_ratio": "NA",
+  "SOFTTECH": {
+    "perc_low": 2.82258064516129,
+    "PE_ratio": 127.1,
     "category": "small"
   },
-  "SYLVANPLY": {
-    "perc_low": 4.76744186046511,
-    "PE_ratio": 11.99,
+  "NAHARINDUS": {
+    "perc_low": 3.3060707291786713,
+    "PE_ratio": 9.19,
     "category": "small"
   },
-  "FONEBOX": {
-    "perc_low": 4.411764705882353,
+  "MEDICAMEQ": {
+    "perc_low": 3.8050185109008643,
+    "PE_ratio": 47.69,
+    "category": "small"
+  },
+  "VRAJ": {
+    "perc_low": 4.688679245283018,
     "PE_ratio": 14.27,
     "category": "small"
   },
-  "AISL": {
-    "perc_low": 0.9646302250803768,
-    "PE_ratio": 10.51,
+  "HIGREEN": {
+    "perc_low": 2.4358974358974312,
+    "PE_ratio": 28.55,
     "category": "small"
   },
-  "JAINAM": {
-    "perc_low": 0.5833333333333397,
-    "PE_ratio": 28.73,
+  "SPENCERS": {
+    "perc_low": 3.1272210376687952,
+    "PE_ratio": "NA",
     "category": "small"
   },
-  "BHANDARI": {
-    "perc_low": 4.878048780487809,
-    "PE_ratio": 12.91,
+  "PLASTIBLEN": {
+    "perc_low": 3.4761831355017656,
+    "PE_ratio": 10.74,
+    "category": "small"
+  },
+  "AMANTA": {
+    "perc_low": 3.804347826086957,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "GSLSU": {
+    "perc_low": 3.8889903231696095,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "ALBERTDAVD": {
+    "perc_low": 3.9449112978524776,
+    "PE_ratio": 39.1,
+    "category": "small"
+  },
+  "SRGHFL": {
+    "perc_low": 4.134532990574124,
+    "PE_ratio": 13.21,
+    "category": "small"
+  },
+  "REMSONSIND": {
+    "perc_low": 4.618181818181821,
+    "PE_ratio": 12.07,
+    "category": "small"
+  },
+  "GLOBECIVIL": {
+    "perc_low": 3.5645472061656953,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "RUBFILA": {
+    "perc_low": 2.3965141612200433,
+    "PE_ratio": 11.63,
+    "category": "small"
+  },
+  "PATILAUTOM": {
+    "perc_low": 4.580152671755725,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "NILAINFRA": {
+    "perc_low": 3.422619047619054,
+    "PE_ratio": 9.27,
+    "category": "small"
+  },
+  "UNIDT": {
+    "perc_low": 4.982088364070579,
+    "PE_ratio": 17.7,
+    "category": "small"
+  },
+  "AARON": {
+    "perc_low": 4.1118669690098235,
+    "PE_ratio": 39.91,
+    "category": "small"
+  },
+  "PHANTOMFX": {
+    "perc_low": 3.2630667051689324,
+    "PE_ratio": 8.93,
+    "category": "small"
+  },
+  "AARTISURF": {
+    "perc_low": 4.202056325435842,
+    "PE_ratio": 16.71,
+    "category": "small"
+  },
+  "VIKASLIFE": {
+    "perc_low": 4.098360655737709,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "INFINIUM": {
+    "perc_low": 3.787878787878788,
+    "PE_ratio": 33.09,
+    "category": "small"
+  },
+  "FCSSOFT": {
+    "perc_low": 4.316546762589932,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "VGL": {
+    "perc_low": 4.964285714285716,
+    "PE_ratio": 9.19,
+    "category": "small"
+  },
+  "NECLIFE": {
+    "perc_low": 4.606525911708258,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "TRF": {
+    "perc_low": 4.681818181818187,
+    "PE_ratio": 14.55,
+    "category": "small"
+  },
+  "SKP": {
+    "perc_low": 4.241379310344832,
+    "PE_ratio": 47.12,
+    "category": "small"
+  },
+  "SSDL": {
+    "perc_low": 2.654545454545456,
+    "PE_ratio": 8.44,
+    "category": "small"
+  },
+  "VARDHACRLC": {
+    "perc_low": 3.1111111111111014,
+    "PE_ratio": 19.14,
+    "category": "small"
+  },
+  "SHRADHA": {
+    "perc_low": 4.918032786885246,
+    "PE_ratio": 10.39,
+    "category": "small"
+  },
+  "AFFORDABLE": {
+    "perc_low": 2.774774774774771,
+    "PE_ratio": 35.64,
+    "category": "small"
+  },
+  "NATHBIOGEN": {
+    "perc_low": 3.2867647058823524,
+    "PE_ratio": 6.77,
+    "category": "small"
+  },
+  "DIAMINESQ": {
+    "perc_low": 3.2300469483568053,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "AUTOIND": {
+    "perc_low": 4.362416107382561,
+    "PE_ratio": 31.24,
+    "category": "small"
+  },
+  "NAGAFERT": {
+    "perc_low": 4.724409448818902,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "UNIHEALTH": {
+    "perc_high": 2.93398533007335,
+    "PE_ratio": 16.2,
+    "category": "small"
+  },
+  "GLOBALVECT": {
+    "perc_low": 4.6472863048406445,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "GOYALSALT": {
+    "perc_low": 0.04631773969430028,
+    "PE_ratio": 18.85,
+    "category": "small"
+  },
+  "SUNDRMBRAK": {
+    "perc_low": 4.380060481904214,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "PODDARMENT": {
+    "perc_low": 4.875090953189417,
+    "PE_ratio": 14.96,
+    "category": "small"
+  },
+  "UFO": {
+    "perc_low": 4.63719766472059,
+    "PE_ratio": 13.66,
+    "category": "small"
+  },
+  "UCAL": {
+    "perc_low": 4.19354838709678,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "SHYAMDHANI": {
+    "perc_low": 0.08340283569640894,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "SUPREMEINF": {
+    "perc_low": 3.3333333333333375,
+    "PE_ratio": 0,
+    "category": "small"
+  },
+  "STARPAPER": {
+    "perc_low": 3.9926972535322967,
+    "PE_ratio": 5.23,
+    "category": "small"
+  },
+  "CUDML": {
+    "perc_low": 2.3153252480705557,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "EEPL": {
+    "perc_low": 3.3333333333333335,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "MURUDCERA": {
+    "perc_low": 3.9431616341030304,
+    "PE_ratio": 13.41,
+    "category": "small"
+  },
+  "SHETHJI": {
+    "perc_high": 4.650222401940962,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "CPCAP": {
+    "perc_low": 3.503740648379055,
+    "PE_ratio": 3.62,
+    "category": "small"
+  },
+  "SPCL": {
+    "perc_low": 1.640513552068482,
+    "PE_ratio": 15.76,
+    "category": "small"
+  },
+  "WORTHPERI": {
+    "perc_low": 4.668847097301712,
+    "PE_ratio": 10.36,
+    "category": "small"
+  },
+  "DHARARAIL": {
+    "perc_low": 1.831129196337739,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "BALAXI": {
+    "perc_low": 3.577712609970671,
+    "PE_ratio": 10.32,
+    "category": "small"
+  },
+  "MHLXMIRU": {
+    "perc_low": 4.368750000000006,
+    "PE_ratio": 8.46,
+    "category": "small"
+  },
+  "SPECTSTM": {
+    "perc_low": 3.8112522686025434,
+    "PE_ratio": 22.91,
+    "category": "small"
+  },
+  "POSITRON": {
+    "perc_low": 2.459016393442623,
+    "PE_ratio": 5.42,
+    "category": "small"
+  },
+  "ADDICTIVE": {
+    "perc_low": 3.0303030303030427,
+    "PE_ratio": 13.91,
+    "category": "small"
+  },
+  "RAJTV": {
+    "perc_low": 4.864253393665155,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "EMMIL": {
+    "perc_low": 2.8074337682878583,
+    "PE_ratio": 11.69,
+    "category": "small"
+  },
+  "NATCAPSUQ": {
+    "perc_low": 2.7429467084639456,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "ASPINWALL": {
+    "perc_low": 2.871410736579276,
+    "PE_ratio": 25.26,
+    "category": "small"
+  },
+  "GULFPETRO": {
+    "perc_low": 3.304284676833697,
+    "PE_ratio": 5.32,
+    "category": "small"
+  },
+  "AESTHETIK": {
+    "perc_low": 2.7450980392156863,
+    "PE_ratio": 13.35,
+    "category": "small"
+  },
+  "DTIL": {
+    "perc_low": 0.8,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "AERON": {
+    "perc_low": 2.564102564102564,
+    "PE_ratio": 10.41,
+    "category": "small"
+  },
+  "PURVFLEXI": {
+    "perc_low": 1.4851485148514887,
+    "PE_ratio": 6.17,
+    "category": "small"
+  },
+  "BEWLTD": {
+    "perc_low": 3.0888030888030777,
+    "PE_ratio": 8.67,
+    "category": "small"
+  },
+  "VIVIMEDLAB": {
+    "perc_low": 4.841402337228715,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "SMARTEN": {
+    "perc_low": 1.9607843137254901,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "CORALFINAC": {
+    "perc_low": 3.88513513513513,
+    "PE_ratio": 8.58,
+    "category": "small"
+  },
+  "CANARYS": {
+    "perc_low": 0.5633802816901489,
+    "PE_ratio": 8.09,
+    "category": "small"
+  },
+  "EMKAYTOOLS": {
+    "perc_low": 4.545454545454546,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "WEIZMANIND": {
+    "perc_low": 2.2854033464834616,
+    "PE_ratio": 13.52,
+    "category": "small"
+  },
+  "MAITREYA": {
+    "perc_low": 3.639417693169093,
+    "PE_ratio": 781.31,
+    "category": "small"
+  },
+  "TEXMOPIPES": {
+    "perc_low": 3.030303030303019,
+    "PE_ratio": 6.58,
+    "category": "small"
+  },
+  "GLOBALPET": {
+    "perc_low": 2.5287356321839116,
+    "PE_ratio": 28.68,
     "category": "small"
   },
   "INDIANCARD": {
-    "perc_low": 4.854368932038835,
+    "perc_low": 3.925444789607449,
     "PE_ratio": 7.4,
     "category": "small"
   },
-  "KAKATCEM": {
-    "perc_low": 4.82688391038696,
+  "KREBSBIO": {
+    "perc_low": 1.6170212765957406,
     "PE_ratio": "NA",
     "category": "small"
   },
-  "ARTNIRMAN": {
-    "perc_low": 4.6337817638265975,
-    "PE_ratio": 71.05,
+  "SHEEL": {
+    "perc_low": 4.3478260869565215,
+    "PE_ratio": "NA",
     "category": "small"
   },
-  "KEL": {
-    "perc_low": 0.3246753246753247,
-    "PE_ratio": 9.05,
+  "RPPL": {
+    "perc_low": 2.4503311258278213,
+    "PE_ratio": 7.87,
+    "category": "small"
+  },
+  "HPIL": {
+    "perc_low": 4.393609295570084,
+    "PE_ratio": 118.27,
+    "category": "small"
+  },
+  "INVENTURE": {
+    "perc_low": 4.12371134020619,
+    "PE_ratio": 14.78,
     "category": "small"
   },
   "STEELCITY": {
-    "perc_low": 4.670505438259745,
+    "perc_low": 4.7687861271676235,
     "PE_ratio": 8.66,
     "category": "small"
   },
-  "TOTAL": {
-    "perc_low": 3.196881091617935,
-    "PE_ratio": 6.34,
+  "BTML": {
+    "perc_low": 4.846526655896604,
+    "PE_ratio": 13.97,
+    "category": "small"
+  },
+  "ZEAL": {
+    "perc_low": 3.3333333333333335,
+    "PE_ratio": 8.5,
+    "category": "small"
+  },
+  "RAPIDFLEET": {
+    "perc_low": 2.280701754385968,
+    "PE_ratio": 17.62,
+    "category": "small"
+  },
+  "SADBHIN": {
+    "perc_low": 4.897959183673455,
+    "PE_ratio": 0.52,
+    "category": "small"
+  },
+  "ALCODIS": {
+    "perc_low": 1.5625,
+    "PE_ratio": 9.54,
+    "category": "small"
+  },
+  "URBAN": {
+    "perc_low": 2.456586192291407,
+    "PE_ratio": 9.12,
+    "category": "small"
+  },
+  "CEDAAR": {
+    "perc_low": 2.3923444976076556,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "TRUST": {
+    "perc_low": 4.906937394247037,
+    "PE_ratio": 9.83,
+    "category": "small"
+  },
+  "LOVABLE": {
+    "perc_low": 3.332265299583464,
+    "PE_ratio": 13.55,
+    "category": "small"
+  },
+  "MRIL": {
+    "perc_low": 1.5228426395939123,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "LAKSHYA": {
+    "perc_low": 1.0309278350515463,
+    "PE_ratio": 6.58,
+    "category": "small"
+  },
+  "SELLOWRAP": {
+    "perc_low": 2.8838659392049792,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "GENSOL": {
+    "perc_low": 0.19512195121950804,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "RAJMET": {
+    "perc_low": 4.776119402985065,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "CRAYONS": {
+    "perc_low": 3.092783505154634,
+    "PE_ratio": 10.39,
+    "category": "small"
+  },
+  "DTL": {
+    "perc_low": 3.260869565217391,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "PALASHSECU": {
+    "perc_low": 4.927184466019403,
+    "PE_ratio": 10.61,
+    "category": "small"
+  },
+  "REFRACTORY": {
+    "perc_low": 4.4189852700490935,
+    "PE_ratio": 9.63,
+    "category": "small"
+  },
+  "KAKATCEM": {
+    "perc_low": 2.3421588594704654,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "KLL": {
+    "perc_low": 1.876675603217166,
+    "PE_ratio": 5.82,
+    "category": "small"
+  },
+  "JYOTIGLOBL": {
+    "perc_low": 4.285714285714286,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "ZENITHDRUG": {
+    "perc_low": 3.4482758620689578,
+    "PE_ratio": 18.61,
+    "category": "small"
+  },
+  "KEL": {
+    "perc_low": 0.1298701298701225,
+    "PE_ratio": 9.05,
+    "category": "small"
+  },
+  "PATINTLOG": {
+    "perc_low": 4.106548279689245,
+    "PE_ratio": 7.71,
+    "category": "small"
+  },
+  "IL&FSTRANS": {
+    "perc_low": 2.8571428571428594,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "STUDIOLSD": {
+    "perc_low": 2.1276595744680775,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "ARCIIL": {
+    "perc_low": 4.651162790697675,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "EFORCE": {
+    "perc_low": 2.9023746701847,
+    "PE_ratio": 23.17,
     "category": "small"
   },
   "SFML": {
-    "perc_low": 2.449888641425393,
+    "perc_low": 2.0689655172413763,
     "PE_ratio": 7.48,
     "category": "small"
   },
-  "TPHQ": {
-    "perc_low": 4.1666666666666705,
-    "PE_ratio": 8.31,
-    "category": "small"
-  },
-  "NMSTEEL": {
-    "perc_low": 4.265402843601889,
-    "PE_ratio": 11.08,
-    "category": "small"
-  },
-  "PSFL": {
-    "perc_low": 4.081632653061225,
-    "PE_ratio": 9.93,
-    "category": "small"
-  },
-  "BRACEPORT": {
-    "perc_low": 2.586206896551724,
-    "PE_ratio": 12,
-    "category": "small"
-  },
-  "MIEL": {
-    "perc_low": 3.802281368821293,
-    "PE_ratio": 17.5,
-    "category": "small"
-  },
-  "NEELAM": {
-    "perc_low": 0.48309178743962045,
-    "PE_ratio": 6.57,
-    "category": "small"
-  },
-  "21STCENMGM": {
-    "perc_low": 3.918495297805643,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "MOKSH": {
-    "perc_low": 4.352030947775622,
-    "PE_ratio": 9.84,
-    "category": "small"
-  },
-  "MEP": {
-    "perc_low": 2.222222222222224,
-    "PE_ratio": "NA",
-    "category": "small"
-  },
-  "PROLIFE": {
-    "perc_low": 4.912280701754381,
-    "PE_ratio": 9.9,
-    "category": "small"
-  },
-  "SYNOPTICS": {
-    "perc_low": 2.4444444444444478,
-    "PE_ratio": 9.81,
-    "category": "small"
-  },
-  "AGNI": {
-    "perc_low": 3.9855072463768035,
-    "PE_ratio": 39.57,
-    "category": "small"
-  },
-  "JFLLIFE": {
-    "perc_low": 4.516806722689073,
-    "PE_ratio": 23.68,
+  "KONSTELEC": {
+    "perc_low": 2.8667790893760587,
+    "PE_ratio": 18.08,
     "category": "small"
   },
   "SANGANI": {
-    "perc_low": 2.9150823827629875,
+    "perc_low": 4.942965779467669,
     "PE_ratio": 29.12,
     "category": "small"
   },
-  "UMA": {
-    "perc_low": 2.8124999999999956,
-    "PE_ratio": 12.87,
+  "ANMOL": {
+    "perc_low": 4.695304695304701,
+    "PE_ratio": 5.77,
     "category": "small"
   },
-  "SPPPOLY": {
-    "perc_low": 4.958677685950411,
+  "DELTAMAGNT": {
+    "perc_low": 3.7304687499999933,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "GREENLEAF": {
+    "perc_low": 4.232804232804228,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "VIGOR": {
+    "perc_low": 2.2826086956521676,
     "PE_ratio": "NA",
     "category": "small"
   },
   "MEGAFLEX": {
-    "perc_high": 0.16123831022250887,
+    "perc_high": 1.064172847468562,
     "PE_ratio": 38.55,
     "category": "small"
   },
-  "SONUINFRA": {
-    "perc_low": 3.03687635574837,
-    "PE_ratio": 5.06,
+  "REXPRO": {
+    "perc_low": 4.615384615384608,
+    "PE_ratio": 8.32,
     "category": "small"
   },
-  "VERA": {
-    "perc_high": 4.897090134847414,
-    "PE_ratio": 12.15,
-    "perc_low": 3.0303030303030303,
+  "ORIENTALTL": {
+    "perc_low": 4.2769857433808545,
+    "PE_ratio": 5.53,
     "category": "small"
   },
-  "VERITAAS": {
-    "perc_low": 0.11441647597253354,
-    "PE_ratio": 8.85,
+  "SYNOPTICS": {
+    "perc_low": 1.1111111111111112,
+    "PE_ratio": 9.81,
     "category": "small"
   },
-  "EXCELLENT": {
-    "perc_high": 4.95430495430496,
-    "PE_ratio": 36.55,
+  "PSFL": {
+    "perc_low": 3.7499999999999942,
+    "PE_ratio": 9.93,
     "category": "small"
   },
-  "QUADPRO": {
-    "perc_low": 2.499999999999991,
-    "PE_ratio": 22.05,
+  "SWASTIK": {
+    "perc_low": 0.31250000000000444,
+    "PE_ratio": "NA",
     "category": "small"
   },
-  "SAROJA": {
-    "perc_low": 0.5328596802841994,
-    "PE_ratio": 8.92,
+  "PALREDTEC": {
+    "perc_low": 4.573502722323042,
+    "PE_ratio": "NA",
     "category": "small"
   },
-  "RITEZONE": {
-    "perc_low": 2.2364217252396146,
-    "PE_ratio": 14.82,
+  "AGSTRA": {
+    "perc_low": 3.308823529411759,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "SECL": {
+    "perc_low": 4.166666666666664,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "PRESSTONIC": {
+    "perc_low": 0.7668711656441718,
+    "PE_ratio": 9.3,
+    "category": "small"
+  },
+  "HBSL": {
+    "perc_low": 4.895104895104899,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "MCON": {
+    "perc_low": 3.75,
+    "PE_ratio": 13.42,
+    "category": "small"
+  },
+  "AROGRANITE": {
+    "perc_low": 3.387533875338753,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "VLINFRA": {
+    "perc_low": 4.651162790697675,
+    "PE_ratio": 4.85,
+    "category": "small"
+  },
+  "21STCENMGM": {
+    "perc_low": 3.5817077070674803,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "LASA": {
+    "perc_low": 3.399433427762043,
+    "PE_ratio": 131.24,
+    "category": "small"
+  },
+  "UCL": {
+    "perc_high": 4.882688649334172,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "MADHUCON": {
+    "perc_low": 4.738154613466344,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "GANGAFORGE": {
+    "perc_low": 4.444444444444431,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "MOHITIND": {
+    "perc_low": 4.9885583524027455,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "JFLLIFE": {
+    "perc_low": 3.991596638655471,
+    "PE_ratio": 23.68,
+    "category": "small"
+  },
+  "RADIOWALLA": {
+    "perc_low": 3.571428571428571,
+    "PE_ratio": 30.06,
+    "category": "small"
+  },
+  "GURUNANAK": {
+    "perc_low": 3.73443983402489,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "NEELAM": {
+    "perc_low": 1.9704433497536877,
+    "PE_ratio": 6.57,
+    "category": "small"
+  },
+  "THESL": {
+    "perc_low": 0.8032128514056338,
+    "PE_ratio": 4.71,
+    "category": "small"
+  },
+  "ARUNAYA": {
+    "perc_low": 3.7037037037037126,
+    "PE_ratio": 7.65,
+    "category": "small"
+  },
+  "MEP": {
+    "perc_low": 1.111111111111112,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "VILINBIO": {
+    "perc_high": 4.9479166666666625,
+    "PE_ratio": 203.02,
+    "category": "small"
+  },
+  "ASPIRE": {
+    "perc_low": 3.2863849765258184,
+    "PE_ratio": 6.62,
+    "category": "small"
+  },
+  "SRPL": {
+    "perc_low": 2.1739130434782505,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "MANDEEP": {
+    "perc_low": 2.0231213872832243,
+    "PE_ratio": 6.18,
+    "category": "small"
+  },
+  "SPPPOLY": {
+    "perc_low": 4.132231404958678,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "RETAIL": {
+    "perc_low": 3.565640194489465,
+    "PE_ratio": 112.59,
+    "category": "small"
+  },
+  "CMRSL": {
+    "perc_low": 0.0820344544708731,
+    "PE_ratio": 7.83,
+    "category": "small"
+  },
+  "GLFL": {
+    "perc_low": 2.5188916876574328,
+    "PE_ratio": 321.88,
+    "category": "small"
+  },
+  "IMPEXFERRO": {
+    "perc_low": 4.761904761904766,
+    "PE_ratio": "NA",
+    "category": "small"
+  },
+  "PLADAINFO": {
+    "perc_low": 1.6042780748663141,
+    "PE_ratio": "NA",
     "category": "small"
   }
 }
