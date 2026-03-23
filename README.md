@@ -57,9 +57,9 @@ docker image rm <Image_id>
 ## TODO
 
 ### AI & Analysis
-- [ ] Integrate an LLM (e.g. OpenAI / local Ollama) to interpret indicator combinations and generate a plain-English buy/sell/hold summary per stock
-- [ ] Score each stock with a composite signal score (weighted average of bollinger, RSI, stoch, supertrend) instead of individual labels
-- [ ] Add volume analysis — unusual volume spikes often precede major moves
+- [x] Integrate an LLM (e.g. OpenAI / local Ollama) to interpret indicator combinations and generate a plain-English buy/sell/hold summary per stock
+- [x] Score each stock with a composite signal score (weighted average of bollinger, RSI, stoch, supertrend) instead of individual labels
+- [x] Add volume analysis — unusual volume spikes often precede major moves
 - [ ] Add sector-level analysis — flag sectors with multiple stocks near 52w low/high
 - [ ] Improve supertrend logic — current string-append approach is fragile; return structured signal with trend direction + confirmation bar count
 
