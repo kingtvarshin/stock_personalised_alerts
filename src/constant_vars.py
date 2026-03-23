@@ -11,3 +11,4 @@ indicators_result_csv_path_large = _os.path.join(_dir, "indicators_data_large_ca
 indicators_result_csv_path_mid = _os.path.join(_dir, "indicators_data_mid_cap.csv")
 indicators_result_csv_path_small = _os.path.join(_dir, "indicators_data_small_cap.csv")
 indicators_result_csv_path_full = _os.path.join(_dir, "indicators_data.csv")
+sector_analysis_csv = _os.path.join(_dir, "sector_analysis.csv")

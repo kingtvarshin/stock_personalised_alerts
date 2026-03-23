@@ -4,7 +4,7 @@ import pandas as pd
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
-from constant_vars import indicators_result_csv_path_large, indicators_result_csv_path_mid, indicators_result_csv_path_small, indicators_result_csv_path_full
+from constant_vars import indicators_result_csv_path_large, indicators_result_csv_path_mid, indicators_result_csv_path_small, indicators_result_csv_path_full, sector_analysis_csv
 from dotenv import load_dotenv
 import os
 
@@ -113,6 +113,15 @@ def mail_message():
                     print(f"Skipping {df_label}: No data after filtering.")
             except Exception as e:
                 print(f"Error processing {df_label}: {e}")
+
+        # Sector-level alert table
+        try:
+            df_sec = pd.read_csv(sector_analysis_csv)
+            if not df_sec.empty:
+                sec_html = df_sec.to_html(index=False).replace('border="1"', 'border="1" style="border-collapse:collapse"')
+                email_body_parts.append(f'<h2>🏭 Sector Hotspots (2+ Buy Signals)</h2><div class="table-wrapper">{sec_html}</div>')
+        except Exception:
+            pass
 
         # Attach filtered datasets
         attach_if_not_empty(indicators_result_csv_path_large, "📊 Large Cap")
