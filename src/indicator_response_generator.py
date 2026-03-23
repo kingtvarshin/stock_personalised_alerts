@@ -1,28 +1,150 @@
 import json, os, asyncio, datetime, pandas as pd
 from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
-from nsepython import equity_history
+import yfinance as yf
 from stock_indicators import indicators, Quote
 from stock_indicators import CandlePart
-from dateutil import parser 
-from constant_vars import indicators_data_csv
+from constant_vars import indicators_data_csv, indicators_result_csv_path_large, indicators_result_csv_path_mid, indicators_result_csv_path_small, sector_analysis_csv
 from dotenv import load_dotenv
 
 load_dotenv()
 
-def indicators_response(symbol,backdays=0):
-    try:
 
-        series         = "EQ"
+def _signal_to_int(signal):
+    if signal == 'buy':
+        return 1
+    elif signal == 'sell':
+        return -1
+    return 0
+
+
+def _composite_score(close_price, sma200, boll_signal, rsi_signal, stoch_signal, supertrend_signal):
+    """Weighted composite signal score: -1 (strong sell) to +1 (strong buy)."""
+    boll  = _signal_to_int(boll_signal)
+    rsi   = _signal_to_int(rsi_signal)
+    stoch = _signal_to_int(stoch_signal)
+
+    if isinstance(supertrend_signal, dict):
+        direction = supertrend_signal.get('direction', '')
+        st = 1 if direction == 'bullish' else (-1 if direction == 'bearish' else 0)
+    else:
+        st = 1 if 'rise' in str(supertrend_signal) else (-1 if 'fall' in str(supertrend_signal) else 0)
+
+    sma_pos = 0
+    try:
+        if close_price != '' and sma200 != '':
+            sma_pos = 0.5 if float(close_price) > float(sma200) else -0.5
+    except (ValueError, TypeError):
+        pass
+
+    score = (boll * 0.20) + (rsi * 0.25) + (stoch * 0.20) + (st * 0.25) + (sma_pos * 0.10)
+
+    if score >= 0.5:
+        label = 'Strong Buy'
+    elif score >= 0.2:
+        label = 'Buy'
+    elif score >= -0.2:
+        label = 'Hold'
+    elif score >= -0.5:
+        label = 'Sell'
+    else:
+        label = 'Strong Sell'
+
+    return round(score, 3), label
+
+
+def _generate_ai_summary(symbol, category, close_price, sma200, sma50, boll_signal, rsi_signal,
+                         stoch_signal, supertrend_signal, score, score_label,
+                         pe_ratio, perc_high, perc_low, volume_signal):
+    """Plain-English summary. Uses Groq if GROQ_API_KEY is set, else rule-based."""
+    groq_key = os.getenv('GROQ_API_KEY', '').strip()
+
+    if groq_key:
+        try:
+            from groq import Groq
+            client = Groq(api_key=groq_key)
+            prompt = (
+                f"You are a stock analyst. Summarise the following technical indicators for {symbol} "
+                f"({category} cap) in 2-3 concise sentences suitable for a retail investor.\n\n"
+                f"Close: \u20b9{close_price}, SMA200: {sma200}, SMA50: {sma50}\n"
+                f"Bollinger: {boll_signal}, RSI: {rsi_signal}, Stochastic: {stoch_signal}, Supertrend: {supertrend_signal}\n"
+                f"Composite Score: {score} ({score_label})\n"
+                f"PE Ratio: {pe_ratio}, % from 52w High: {perc_high}, % from 52w Low: {perc_low}\n"
+                f"Volume: {volume_signal}\n\n"
+                "Focus on the actionable signal and key risks. Do not mention specific prices."
+            )
+            response = client.chat.completions.create(
+                model="llama3-8b-8192",
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=120,
+                temperature=0.3
+            )
+            return response.choices[0].message.content.strip()
+        except Exception:
+            pass
+
+    # Rule-based fallback
+    parts = []
+    try:
+        if close_price != '' and sma200 != '':
+            if float(close_price) > float(sma200):
+                parts.append(f"{symbol} is trading above its 200-day SMA, indicating a long-term uptrend.")
+            else:
+                parts.append(f"{symbol} is trading below its 200-day SMA, suggesting a long-term downtrend.")
+    except (ValueError, TypeError):
+        pass
+
+    buy_count  = sum(1 for s in [boll_signal, rsi_signal, stoch_signal] if s == 'buy')
+    sell_count = sum(1 for s in [boll_signal, rsi_signal, stoch_signal] if s == 'sell')
+    if buy_count >= 2:
+        parts.append(f"Short-term momentum indicators ({buy_count}/3) favour buying.")
+    elif sell_count >= 2:
+        parts.append(f"Short-term momentum indicators ({sell_count}/3) suggest caution.")
+    else:
+        parts.append("Momentum indicators are mixed — no clear directional signal.")
+
+    if supertrend_signal:
+        if isinstance(supertrend_signal, dict):
+            sig = supertrend_signal.get('signal', '')
+            if sig:
+                change = ' ⚡ Trend change!' if supertrend_signal.get('trend_change') else ''
+                parts.append(f"Supertrend: {sig}{change}.")
+        else:
+            parts.append(f"Supertrend: {supertrend_signal}.")
+    if volume_signal and volume_signal != 'Normal volume':
+        parts.append(volume_signal + ".")
+    parts.append(f"Overall signal: {score_label} (score: {score}).")
+    return ' '.join(parts)
+
+
+def indicators_response(symbol, backdays=0):
+    try:
         end_datetime   = datetime.datetime.now() - datetime.timedelta(days=backdays)
         start_datetime = end_datetime - datetime.timedelta(days=365)
-        end_date       = f'{end_datetime.day}-{end_datetime.month}-{end_datetime.year}'
-        start_date     = f'{start_datetime.day}-{start_datetime.month}-{start_datetime.year}'
-        a              =  equity_history(symbol,series,start_date,end_date)
-        quotes_list    = [
-            Quote(parser.parse(d),o,h,l,c,v) 
-            for d,o,h,l,c,v 
-            in zip(a['CH_TIMESTAMP'], a['CH_OPENING_PRICE'], a['CH_TRADE_HIGH_PRICE'], a['CH_TRADE_LOW_PRICE'], a['CH_CLOSING_PRICE'], a['CH_TOT_TRADED_VAL'])
+
+        ticker = yf.Ticker(f"{symbol}.NS")
+        a = ticker.history(start=start_datetime.strftime('%Y-%m-%d'),
+                           end=end_datetime.strftime('%Y-%m-%d'),
+                           interval='1d')
+
+        if a.empty:
+            print(f"[!] No data from yfinance for {symbol}")
+            return '','','','','','','','','','',''
+
+        a = a.reset_index()
+        # normalise column names to match rest of code
+        a['CH_TIMESTAMP']       = a['Date'].astype(str).str[:10]
+        a['CH_OPENING_PRICE']   = a['Open']
+        a['CH_TRADE_HIGH_PRICE']= a['High']
+        a['CH_TRADE_LOW_PRICE'] = a['Low']
+        a['CH_CLOSING_PRICE']   = a['Close']
+        a['CH_TOT_TRADED_VAL']  = a['Volume']
+
+        quotes_list = [
+            Quote(datetime.datetime.strptime(d, '%Y-%m-%d'), o, h, l, c, v)
+            for d, o, h, l, c, v
+            in zip(a['CH_TIMESTAMP'], a['CH_OPENING_PRICE'], a['CH_TRADE_HIGH_PRICE'],
+                   a['CH_TRADE_LOW_PRICE'], a['CH_CLOSING_PRICE'], a['CH_TOT_TRADED_VAL'])
         ]
 
         sma_dict = {
@@ -155,7 +277,8 @@ def indicators_response(symbol,backdays=0):
         df_super_trend = pd.DataFrame(super_trend_dict)
         # df_super_trend.to_csv(f'{symbol}_super_trend.csv')
 
-        v,w,w100,w50,w20,w10,x,y,z,aa = '','','','','','','','','',''
+        v,w,w100,w50,w20,w10,x,y,z = '','','','','','','','',''
+        aa = {'direction': '', 'trend_change': False, 'signal': ''}
         
         # close price
         v = a[a['CH_TIMESTAMP']==a['CH_TIMESTAMP'].max()]['CH_CLOSING_PRICE'].values[0]
@@ -201,21 +324,62 @@ def indicators_response(symbol,backdays=0):
             else:
                 z = 'hold'
                 
-        # latest super_trend
+        # latest super_trend — structured signal
+        def _is_empty(val):
+            return val is None or (isinstance(val, float) and pd.isna(val))
+
         if not df_super_trend.empty:
-            if df_super_trend.tail(5).tail(1)['lower_band'].values[0] is None and df_super_trend.tail(5).tail(1)['upper_band'].values[0] is not None:
-                if df_super_trend.tail(5).tail(2)['upper_band'].values[0] is None:
-                    aa += 'trend change to upper band...'
-                aa += 'probability to fall more'
-            elif df_super_trend.tail(5).tail(1)['lower_band'].values[0] is not None and df_super_trend.tail(5).tail(1)['upper_band'].values[0] is None:
-                if df_super_trend.tail(5).tail(2)['lower_band'].values[0] is None:
-                    aa += 'trend change to lower band'
-                aa += 'probability to rise more'
-                
-        return v,w,w100,w50,w20,w10,x,y,z,aa
-    except Exception:
-        print(Exception)
-        return '','','','','','','','','',''
+            last = df_super_trend.iloc[-1]
+            prev = df_super_trend.iloc[-2] if len(df_super_trend) >= 2 else None
+            lb_now = last['lower_band']
+            ub_now = last['upper_band']
+            lb_none = _is_empty(lb_now)
+            ub_none = _is_empty(ub_now)
+
+            if lb_none and not ub_none:
+                # upper band active → price below supertrend → bearish
+                aa['direction'] = 'bearish'
+                aa['signal'] = 'probability to fall more'
+                if prev is not None and not _is_empty(prev['lower_band']):
+                    aa['trend_change'] = True
+                    aa['signal'] = 'trend change to bearish — probability to fall more'
+            elif not lb_none and ub_none:
+                # lower band active → price above supertrend → bullish
+                aa['direction'] = 'bullish'
+                aa['signal'] = 'probability to rise more'
+                if prev is not None and _is_empty(prev['lower_band']):
+                    aa['trend_change'] = True
+                    aa['signal'] = 'trend change to bullish — probability to rise more'
+
+        # volume analysis
+        volume_signal = 'Normal volume'
+        try:
+            vol = a['CH_TOT_TRADED_VAL'].astype(float)
+            avg_30 = vol.tail(30).mean()
+            avg_5  = vol.tail(5).mean()
+            if avg_30 > 0:
+                ratio = avg_5 / avg_30
+                if ratio >= 1.5:
+                    volume_signal = f'Volume spike (5d avg is {ratio:.1f}x the 30d avg)'
+                elif ratio <= 0.5:
+                    volume_signal = f'Low volume (5d avg is {ratio:.1f}x the 30d avg)'
+        except Exception:
+            pass
+
+        # sector & industry (best-effort)
+        sector = ''
+        industry = ''
+        try:
+            info = ticker.info
+            sector   = info.get('sector', '')   or ''
+            industry = info.get('industry', '') or ''
+        except Exception:
+            pass
+
+        return v,w,w100,w50,w20,w10,x,y,z,aa,volume_signal,sector,industry
+    except Exception as e:
+        print(f"[!] Error in indicators_response for {symbol}: {e}")
+        return '','','','','','','','','',{'direction':'','trend_change':False,'signal':''},'','',''  
 
 
 def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
@@ -235,7 +399,16 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     # Your indicators_response function must be synchronous — we’ll wrap it in executor
     def get_stock_data(symbol, data):
         try:
-            close_price, sma200, sma100, sma50, sma20, sma10, boll_signal, rsi_signal, stoch_signal, supertrend_signal = indicators_response(symbol,backdays)
+            close_price, sma200, sma100, sma50, sma20, sma10, boll_signal, rsi_signal, stoch_signal, supertrend_signal, volume_signal, sector, industry = indicators_response(symbol, backdays)
+
+            score, score_label = _composite_score(close_price, sma200, boll_signal, rsi_signal, stoch_signal, supertrend_signal)
+            ai_summary = _generate_ai_summary(
+                symbol, data.get('category', ''), close_price, sma200, sma50,
+                boll_signal, rsi_signal, stoch_signal, supertrend_signal,
+                score, score_label,
+                data.get('PE_ratio', ''), data.get('perc_high', ''), data.get('perc_low', ''),
+                volume_signal
+            )
 
             return {
                 "symbol": symbol,
@@ -252,7 +425,15 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
                 "bollinger_signal": boll_signal,
                 "rsi_signal": rsi_signal,
                 "stoch_signal": stoch_signal,
-                "supertrend_signal": supertrend_signal
+                "supertrend_direction": supertrend_signal.get('direction', '') if isinstance(supertrend_signal, dict) else '',
+                "supertrend_signal": supertrend_signal.get('signal', '') if isinstance(supertrend_signal, dict) else str(supertrend_signal),
+                "supertrend_trend_change": supertrend_signal.get('trend_change', False) if isinstance(supertrend_signal, dict) else False,
+                "volume_signal": volume_signal,
+                "sector": sector,
+                "industry": industry,
+                "composite_score": score,
+                "signal": score_label,
+                "ai_summary": ai_summary,
             }
         except Exception as e:
             print(f"[!] Error processing {symbol}: {e}")
@@ -281,8 +462,32 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     df['PE_ratio'] = pd.to_numeric(df['PE_ratio'], errors='coerce')  # convert to float, NaN if invalid
     df.to_csv(indicators_data_csv, index=False)
     df = df[(df['PE_ratio'] < float(os.getenv('PE_RATIO_MAX'))) & (df['PE_ratio'] > float(os.getenv('PE_RATIO_MIN')))]
-    df[df['category']=='large'].to_csv(f'indicators_data_large_cap.csv', index=False)
-    df[df['category']=='mid'].to_csv(f'indicators_data_mid_cap.csv', index=False)
-    df[df['category']=='small'].to_csv(f'indicators_data_small_cap.csv', index=False)
+    df[df['category']=='large'].to_csv(indicators_result_csv_path_large, index=False)
+    df[df['category']=='mid'].to_csv(indicators_result_csv_path_mid, index=False)
+    df[df['category']=='small'].to_csv(indicators_result_csv_path_small, index=False)
 
     print(f"✅ Done! CSV saved as {indicators_data_csv}")
+
+    # Sector-level analysis — flag sectors with multiple buy signals
+    try:
+        df_all = pd.read_csv(indicators_data_csv)
+        if 'sector' in df_all.columns and df_all['sector'].notna().any():
+            df_sector = df_all[df_all['sector'].str.strip() != '']
+            if not df_sector.empty:
+                sector_groups = df_sector.groupby('sector').agg(
+                    total_flagged=('symbol', 'count'),
+                    buy_signals=('signal', lambda x: x.isin(['Buy', 'Strong Buy']).sum()),
+                    strong_buy=('signal', lambda x: (x == 'Strong Buy').sum()),
+                    sell_signals=('signal', lambda x: x.isin(['Sell', 'Strong Sell']).sum()),
+                    avg_score=('composite_score', lambda x: round(x.mean(), 3)),
+                    trend_changes=('supertrend_trend_change', lambda x: x.sum()),
+                    symbols=('symbol', lambda x: ', '.join(x.tolist()))
+                ).reset_index()
+                sector_groups = sector_groups[sector_groups['buy_signals'] >= 2].sort_values('buy_signals', ascending=False)
+                if not sector_groups.empty:
+                    sector_groups.to_csv(sector_analysis_csv, index=False)
+                    print(f"✅ Sector analysis saved: {len(sector_groups)} sectors with 2+ buy signals")
+                else:
+                    print("ℹ️ No sectors with 2+ buy signals today.")
+    except Exception as e:
+        print(f"[!] Sector analysis error: {e}")
