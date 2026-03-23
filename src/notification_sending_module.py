@@ -50,6 +50,8 @@ _HTML_HEAD = '''\
       .stat-lbl{{font-size:10px !important;}}
       .dtable{{font-size:11px !important;}}
       .dtable td,.dtable th{{padding:5px 3px !important;}}
+      /* Hide full cap-detail tables on mobile — Top Picks + attachments cover it */
+      .m-cap-hide{{display:none !important;max-height:0 !important;overflow:hidden !important;mso-hide:all;}}
     }}
   </style>
 </head>'''
@@ -93,6 +95,78 @@ def _preheader(text):
         '<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;'
         'font-size:1px;line-height:1px;color:#f0f4f8">'
         f'{safe}{padding}</div>'
+    )
+
+
+def _signal_legend():
+    """One-row colour key shown above every stock table so readers instantly
+    understand the green/red/grey row colouring without prior knowledge."""
+    items = [
+        ('Strong Buy', '#c6efce', '#1a6b1a'),
+        ('Buy',        '#e2efda', '#276221'),
+        ('Hold',       '#f2f2f2', '#555555'),
+        ('Sell',       '#fce4d6', '#a93226'),
+        ('Strong Sell','#f4b8b8', '#7b1818'),
+    ]
+    cells = ''.join(
+        f'<td bgcolor="{bg}" align="center" style="background-color:{bg};padding:5px 0;border-right:1px solid #e0e6ee">'
+        f'<span style="font-size:11px;font-weight:bold;color:{fg}">{lbl}</span></td>'
+        for lbl, bg, fg in items
+    )
+    return (
+        '<table border="0" cellpadding="0" cellspacing="0" width="600"'
+        ' style="width:600px;border:1px solid #dde3ea;border-bottom:none">'
+        f'<tr>{cells}</tr></table>'
+    )
+
+
+def _top_mover_banner(df_v):
+    """Highlighted single-stock callout for the day\'s highest composite score buy."""
+    if df_v.empty or 'signal' not in df_v.columns:
+        return ''
+    candidates = df_v[df_v['signal'].isin(['Buy', 'Strong Buy', 'Sell', 'Strong Sell'])]
+    if candidates.empty:
+        return ''
+    top = candidates.loc[candidates['composite_score'].abs().idxmax()]
+    sig  = str(top.get('signal', ''))
+    is_buy = sig in ('Buy', 'Strong Buy')
+    bg   = '#e8f5e9' if is_buy else '#fdecea'
+    bar  = '#1a7a1a' if is_buy else '#a93226'
+    icon = '🚀' if is_buy else '⚠️'
+    sym  = _e(str(top.get('symbol', '—')))
+    try:
+        price = f'₹{float(top["close_price"]):,.2f}'
+    except Exception:
+        price = '—'
+    try:
+        score = f'{float(top["composite_score"]):+.3f}'
+    except Exception:
+        score = '—'
+    try:
+        conf = f'{int(float(top["confidence"]))}/4'
+    except Exception:
+        conf = '—'
+    sector = _e(str(top.get('sector', '')))
+    sector_str = f' &middot; {sector}' if sector and sector != 'nan' else ''
+    return (
+        f'<table border="0" cellpadding="0" cellspacing="0" width="600"'
+        f' style="margin-bottom:4px"><tr>'
+        f'<td bgcolor="{bg}" style="background-color:{bg};border-left:5px solid {bar};'
+        f'border:1px solid {bar};border-radius:8px;padding:14px 16px">'
+        f'<div style="font-size:11px;font-weight:bold;color:{bar};letter-spacing:.5px;margin-bottom:6px">'
+        f'{icon} TOP MOVER TODAY</div>'
+        f'<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>'
+        f'<td style="vertical-align:middle">'
+        f'<a href="https://www.nseindia.com/get-quotes/equity?symbol={sym}"'
+        f' style="font-size:20px;font-weight:800;color:{bar};text-decoration:none">{sym}</a>'
+        f'<span style="font-size:12px;color:#555;margin-left:8px">{price}{sector_str}</span>'
+        f'</td>'
+        f'<td align="right" style="vertical-align:middle;white-space:nowrap">'
+        f'{_signal_badge(sig)}'
+        f'<span style="display:inline-block;margin-left:8px;font-size:12px;color:{bar};font-weight:bold">'
+        f'Score {score} &middot; Conf {conf}</span>'
+        f'</td></tr></table>'
+        f'</td></tr></table>'
     )
 
 
@@ -257,7 +331,8 @@ def _stock_table(df, cols_to_show=None):
             )
 
     return (
-        f'<table class="dtable" border="0" cellpadding="0" cellspacing="0" width="600"'
+        _signal_legend()
+        + f'<table class="dtable" border="0" cellpadding="0" cellspacing="0" width="600"'
         f' style="width:600px;max-width:600px;table-layout:fixed;font-size:13px;'
         f'border:1px solid #dde3ea;border-top:none">'
         f'<thead><tr>{th_cells}</tr></thead>'
@@ -394,7 +469,7 @@ def _dashboard_block(df_all, df_sec=None):
         + metrics_html + cap_html
         + '</td></tr></table>'
     )
-    return snapshot + _top_picks_block(df_v)
+    return _top_mover_banner(df_v) + snapshot + _top_picks_block(df_v)
 
 
 def _build_html(header_inner, body_parts, footer_text='', preheader=''):
@@ -432,7 +507,10 @@ def _build_html(header_inner, body_parts, footer_text='', preheader=''):
         # Footer
         '<tr><td bgcolor="#e8edf2" style="background-color:#e8edf2;'
         'padding:14px 18px;border-radius:0 0 8px 8px;border-top:1px solid #d0d8e4;text-align:center">'
-        f'<p style="font-size:11px;color:#888;margin:0">{footer}</p>'
+        f'<p style="font-size:11px;color:#888;margin:0 0 4px 0">{footer}</p>'
+        '<p style="font-size:10px;color:#aaa;margin:0">'
+        'To stop receiving these alerts, remove your email from the EMAIL_ID_LIST in the configuration.'
+        '</p>'
         '</td></tr>'
 
         '</table>'  # close wrapper
@@ -443,9 +521,10 @@ def _build_html(header_inner, body_parts, footer_text='', preheader=''):
 
 def _send_email(smtp_conn, sender, recipients, subject, html_body, attachments=None):
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = subject
-    msg['From']    = sender
-    msg['To']      = ', '.join(recipients) if isinstance(recipients, list) else recipients
+    msg['Subject']  = subject
+    msg['From']     = sender
+    msg['To']       = ', '.join(recipients) if isinstance(recipients, list) else recipients
+    msg['Reply-To'] = sender
     # UTF-8 charset so ₹ and emoji render correctly on all clients
     msg.attach(MIMEText(html_body, 'html', 'utf-8'))
     if attachments:
@@ -515,10 +594,14 @@ def mail_message():
                 df = df[df['close_price'].notna()]
                 df.dropna(axis=1, how='all', inplace=True)
                 if not df.empty:
+                    # Wrap in m-cap-hide div so mobile hides the full table;
+                    # Top Picks + CSV attachments already cover the essentials on small screens.
                     email_body_parts.append(
-                        _section_header(f'{icon} {label}', hdr_bg)
+                        '<div class="m-cap-hide" style="font-size:0;max-height:none">'
+                        + _section_header(f'{icon} {label}', hdr_bg)
                         + _stock_table(df)
                         + '<div style="height:8px"></div>'
+                        + '</div>'
                     )
                     attachments_to_send.append(df_path)
                 else:
