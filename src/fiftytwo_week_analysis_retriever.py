@@ -1,5 +1,7 @@
 import json
 import asyncio
+import io
+import contextlib
 from nsepython import nse_eq
 from constant_vars import fiftytwo_weeks_analysis_json
 from tqdm.asyncio import tqdm_asyncio
@@ -32,7 +34,8 @@ def retrieve_52week_analysis(output_json, large_perc_var, mid_perc_var, small_pe
                 threshold = large_perc_var  # default fallback
 
             try:
-                stock_data = await asyncio.to_thread(nse_eq, symbol)
+                with contextlib.redirect_stdout(io.StringIO()):
+                    stock_data = await asyncio.to_thread(nse_eq, symbol)
 
                 weeks52_high = stock_data['priceInfo']['weekHighLow']['max']
                 weeks52_low = stock_data['priceInfo']['weekHighLow']['min']

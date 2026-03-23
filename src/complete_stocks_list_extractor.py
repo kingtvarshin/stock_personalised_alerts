@@ -27,8 +27,8 @@ def complete_stocks_list_extractor(excel_name: str = '',
                 stocksdict['smallstocks'].append({stock_code: stock_full_name})
             else:
                 pass
-        except TypeError:
-            print(f"Error processing {stock_full_name}: {TypeError}")
+        except TypeError as e:
+            print(f"Error processing {stock_full_name}: {e}")
 
     # Serializing json
     stocksdict_json_object = json.dumps(stocksdict, indent=4)
