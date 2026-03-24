@@ -1,5 +1,6 @@
 import smtplib
 import datetime
+import logging
 import pandas as pd
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -9,9 +10,11 @@ from constant_vars import (
     indicators_result_csv_path_large, indicators_result_csv_path_mid,
     indicators_result_csv_path_small, indicators_result_csv_path_full,
     sector_analysis_csv,
+    SENDER_EMAIL, SENDER_EMAIL_PASS, EMAIL_RECIPIENTS,
 )
-from dotenv import load_dotenv
 import os
+
+logger = logging.getLogger(__name__)
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -537,12 +540,15 @@ def _send_email(smtp_conn, sender, recipients, subject, html_body, attachments=N
     smtp_conn.sendmail(sender, recipients, msg.as_string())
 
 
-def mail_message():
+def mail_message(dry_run=False):
     try:
-        load_dotenv()
-        EMAIL_ID_LIST = eval(os.getenv('EMAIL_ID_LIST'))  # noqa: S307 — TODO: replace with json.loads
-        SENDER_EMAIL = os.getenv('SENDER_EMAIL')
-        SENDER_EMAIL_PASSWORD = os.getenv('SENDER_EMAIL_PASSWORD')
+        email_id_list    = EMAIL_RECIPIENTS
+        sender_email     = SENDER_EMAIL
+        sender_password  = SENDER_EMAIL_PASS
+
+        if not email_id_list or not sender_email:
+            logger.error('EMAIL_RECIPIENTS or SENDER_EMAIL not configured — email skipped.')
+            return
 
         now_str    = datetime.datetime.now().strftime('%B %d, %Y')
         ts_str     = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
@@ -605,9 +611,9 @@ def mail_message():
                     )
                     attachments_to_send.append(df_path)
                 else:
-                    print(f'Skipping {label}: no data after filtering.')
+                    logger.warning('Skipping %s: no data after filtering.', label)
             except Exception as e:
-                print(f'Error processing {label}: {e}')
+                logger.error('Error processing %s: %s', label, e, exc_info=True)
 
         _attach_cap(indicators_result_csv_path_large, 'Large Cap', '🏦', '#1a3a5c')
         _attach_cap(indicators_result_csv_path_mid,   'Mid Cap',   '📊', '#1a5c4a')
@@ -621,70 +627,81 @@ def mail_message():
                 if indicators_result_csv_path_full not in attachments_to_send:
                     attachments_to_send.append(indicators_result_csv_path_full)
         except Exception as e:
-            print(f'Full report attachment error: {e}')
+            logger.error('Full report attachment error: %s', e)
 
         if not email_body_parts:
-            print('⚠️ No data to send. Email skipped.')
+            logger.warning('No data to send. Email skipped.')
             return
 
-        s = smtplib.SMTP('smtp.gmail.com', 587)
-        s.starttls()
-        s.login(SENDER_EMAIL, SENDER_EMAIL_PASSWORD)
-
-        # ── Main daily alert ──────────────────────────────────────────────
-        strong_prefix = '🚨 ' if _strong > 0 else ''
-        main_subject  = (
-            f'{strong_prefix}📈 {_buys} Buys · {_sells} Sells'
-            + (f' · {_strong}⚡ Strong' if _strong > 0 else '')
-            + f' · {date_short}'
+        # ── Build main email HTML ─────────────────────────────────────────
+        strong_prefix  = '\U0001f6a8 ' if _strong > 0 else ''
+        main_subject   = (
+            f'{strong_prefix}\U0001f4c8 {_buys} Buys \u00b7 {_sells} Sells'
+            + (f' \u00b7 {_strong}\u26a1 Strong' if _strong > 0 else '')
+            + f' \u00b7 {date_short}'
         )
         main_preheader = (
-            f'{_total} stocks scanned · {_buys} buys · {_sells} sells · {_holds} holds'
-            + (f' · {_strong} all-4-aligned signal{"s" if _strong > 1 else ""}' if _strong > 0 else '')
+            f'{_total} stocks scanned \u00b7 {_buys} buys \u00b7 {_sells} sells \u00b7 {_holds} holds'
+            + (f' \u00b7 {_strong} all-4-aligned signal{"s" if _strong > 1 else ""}' if _strong > 0 else '')
         )
         header_inner = (
-            f'<h1 style="margin:0 0 5px 0;font-size:24px;font-weight:700;color:#ffffff">📈 Daily Stock Alert</h1>'
+            f'<h1 style="margin:0 0 5px 0;font-size:24px;font-weight:700;color:#ffffff">\U0001f4c8 Daily Stock Alert</h1>'
             f'<p style="margin:0;font-size:13px;color:rgba(255,255,255,0.82)">{now_str}</p>'
         )
         main_html = _build_html(header_inner, email_body_parts, preheader=main_preheader)
-        _send_email(s, SENDER_EMAIL, EMAIL_ID_LIST, main_subject, main_html, attachments_to_send)
-        print('✅ Main alert email sent.')
 
-        # ── Strong signal alert (all 4 indicators aligned) ────────────────
+        # ── Build strong signal email HTML (if any) ───────────────────────
+        strong_html    = None
+        strong_subject = None
         if not df_all.empty and 'confidence' in df_all.columns:
-            try:
-                df_strong = df_all[
-                    (pd.to_numeric(df_all['confidence'], errors='coerce') == 4)
-                    & df_all['close_price'].notna()
-                ].copy()
-                if not df_strong.empty:
-                    n = len(df_strong)
-                    strong_subject  = f'🚨 {n} Strong Signal{"s" if n>1 else ""} · All 4 Indicators Aligned · {date_short}'
-                    strong_preheader = ', '.join(str(s) for s in df_strong['symbol'].tolist()[:8]) + (' …' if n > 8 else '')
-                    strong_header = (
-                        f'<h1 style="margin:0 0 5px 0;font-size:22px;font-weight:700;color:#ffffff">🚨 Strong Signal Alert</h1>'
-                        f'<p style="margin:0;font-size:13px;color:rgba(255,255,255,0.82)">{n} stock{"s" if n>1 else ""} with all 4 indicators aligned · {now_str}</p>'
-                    )
-                    strong_body = [
-                        '<table border="0" cellpadding="0" cellspacing="0" width="600"'
-                        ' style="margin-bottom:14px"><tr>'
-                        '<td bgcolor="#fff3cd" style="background-color:#fff3cd;border-left:4px solid #e6960c;'
-                        'padding:11px 14px;border-radius:4px;font-size:13px;color:#5a3e00">'
-                        '<b>Highest conviction signals — all 4 indicators agree on direction.</b>'
-                        '</td></tr></table>',
-                        _stock_table(df_strong),
-                    ]
-                    strong_html = _build_html(strong_header, strong_body, preheader=strong_preheader)
-                    _send_email(s, SENDER_EMAIL, EMAIL_ID_LIST, strong_subject, strong_html)
-                    print(f'✅ Strong signal alert sent ({n} stocks).')
-                else:
-                    print('ℹ️ No all-4-aligned stocks — strong signal email skipped.')
-            except Exception as e:
-                print(f'Strong signal alert skipped: {e}')
+            df_strong = df_all[
+                (pd.to_numeric(df_all['confidence'], errors='coerce') == 4)
+                & df_all['close_price'].notna()
+            ].copy()
+            if not df_strong.empty:
+                n               = len(df_strong)
+                strong_subject  = f'\U0001f6a8 {n} Strong Signal{"s" if n>1 else ""} \u00b7 All 4 Indicators Aligned \u00b7 {date_short}'
+                strong_preheader = ', '.join(str(sym) for sym in df_strong['symbol'].tolist()[:8]) + (' \u2026' if n > 8 else '')
+                strong_header = (
+                    f'<h1 style="margin:0 0 5px 0;font-size:22px;font-weight:700;color:#ffffff">\U0001f6a8 Strong Signal Alert</h1>'
+                    f'<p style="margin:0;font-size:13px;color:rgba(255,255,255,0.82)">{n} stock{"s" if n>1 else ""} with all 4 indicators aligned \u00b7 {now_str}</p>'
+                )
+                strong_body = [
+                    '<table border="0" cellpadding="0" cellspacing="0" width="600"'
+                    ' style="margin-bottom:14px"><tr>'
+                    '<td bgcolor="#fff3cd" style="background-color:#fff3cd;border-left:4px solid #e6960c;'
+                    'padding:11px 14px;border-radius:4px;font-size:13px;color:#5a3e00">'
+                    '<b>Highest conviction signals \u2014 all 4 indicators agree on direction.</b>'
+                    '</td></tr></table>',
+                    _stock_table(df_strong),
+                ]
+                strong_html = _build_html(strong_header, strong_body, preheader=strong_preheader)
 
-        s.quit()
+        # ── Send (or dry-run log) ─────────────────────────────────────────
+        if dry_run:
+            logger.info('DRY-RUN: would send "%s" to %s (%d chars)', main_subject, email_id_list, len(main_html))
+            if strong_html:
+                logger.info('DRY-RUN: would send "%s" to %s', strong_subject, email_id_list)
+            else:
+                logger.info('DRY-RUN: no strong signal email (no all-4-aligned stocks).')
+            return
+
+        conn = smtplib.SMTP('smtp.gmail.com', 587)
+        conn.starttls()
+        conn.login(sender_email, sender_password)
+
+        _send_email(conn, sender_email, email_id_list, main_subject, main_html, attachments_to_send)
+        logger.info('Main alert email sent.')
+
+        if strong_html:
+            _send_email(conn, sender_email, email_id_list, strong_subject, strong_html)
+            logger.info('Strong signal alert sent (%d stocks).', len(df_strong))
+        else:
+            logger.info('No all-4-aligned stocks \u2014 strong signal email skipped.')
+
+        conn.quit()
 
     except smtplib.SMTPException as e:
-        print(f'SMTP Error: {e}')
+        logger.error('SMTP Error: %s', e, exc_info=True)
     except Exception as e:
-        print(f'Unexpected error: {e}')
+        logger.error('Unexpected error: %s', e, exc_info=True)
