@@ -1,22 +1,25 @@
-import json, os, asyncio, datetime, pandas as pd
+﻿import json, os, asyncio, datetime, logging, pandas as pd
 from concurrent.futures import ThreadPoolExecutor
 from threading import Lock
 from tqdm import tqdm
 import yfinance as yf
 from stock_indicators import indicators, Quote
 from stock_indicators import CandlePart
-from constant_vars import indicators_data_csv, indicators_result_csv_path_large, indicators_result_csv_path_mid, indicators_result_csv_path_small, sector_analysis_csv
-from dotenv import load_dotenv
+from constant_vars import (
+    indicators_data_csv, indicators_result_csv_path_large,
+    indicators_result_csv_path_mid, indicators_result_csv_path_small,
+    sector_analysis_csv, GROQ_API_KEY, PE_RATIO_MAX, PE_RATIO_MIN,
+)
 
-load_dotenv()
+logger = logging.getLogger(__name__)
 
-# Thread-safe yfinance cache — avoids duplicate fetches for the same symbol within a run
+# Thread-safe yfinance cache â€” avoids duplicate fetches for the same symbol within a run
 _yf_cache: dict = {}
 _yf_cache_lock = Lock()
 
 # Per-cap thresholds for indicator signals
-# Large caps are more stable — tighter overbought/oversold levels
-# Small caps are more volatile — wider bands needed
+# Large caps are more stable â€” tighter overbought/oversold levels
+# Small caps are more volatile â€” wider bands needed
 _THRESHOLDS = {
     'large': {'rsi_buy': 40, 'rsi_sell': 60, 'stoch_buy': 30, 'stoch_sell': 70, 'boll_buy': 0.1,  'boll_sell': 0.55},
     'mid':   {'rsi_buy': 37, 'rsi_sell': 63, 'stoch_buy': 27, 'stoch_sell': 73, 'boll_buy': 0.05, 'boll_sell': 0.58},
@@ -80,7 +83,7 @@ def _generate_ai_summary(symbol, category, close_price, sma200, sma50, boll_sign
                          stoch_signal, supertrend_signal, score, score_label,
                          pe_ratio, perc_high, perc_low, volume_signal):
     """Plain-English summary. Uses Groq if GROQ_API_KEY is set, else rule-based."""
-    groq_key = os.getenv('GROQ_API_KEY', '').strip()
+    groq_key = GROQ_API_KEY
 
     if groq_key:
         try:
@@ -124,13 +127,13 @@ def _generate_ai_summary(symbol, category, close_price, sma200, sma50, boll_sign
     elif sell_count >= 2:
         parts.append(f"Short-term momentum indicators ({sell_count}/3) suggest caution.")
     else:
-        parts.append("Momentum indicators are mixed — no clear directional signal.")
+        parts.append("Momentum indicators are mixed â€” no clear directional signal.")
 
     if supertrend_signal:
         if isinstance(supertrend_signal, dict):
             sig = supertrend_signal.get('signal', '')
             if sig:
-                change = ' ⚡ Trend change!' if supertrend_signal.get('trend_change') else ''
+                change = ' âš¡ Trend change!' if supertrend_signal.get('trend_change') else ''
                 parts.append(f"Supertrend: {sig}{change}.")
         else:
             parts.append(f"Supertrend: {supertrend_signal}.")
@@ -145,7 +148,7 @@ def indicators_response(symbol, backdays=0, category='small'):
         end_datetime   = datetime.datetime.now() - datetime.timedelta(days=backdays)
         start_datetime = end_datetime - datetime.timedelta(days=365)
 
-        # Use cached data if already fetched this run
+        # Use cached data if already fetched this run (or pre-fetched by batch download)
         cache_key = f"{symbol}_{backdays}"
         with _yf_cache_lock:
             if cache_key in _yf_cache:
@@ -156,7 +159,7 @@ def indicators_response(symbol, backdays=0, category='small'):
                                      end=end_datetime.strftime('%Y-%m-%d'),
                                      interval='1d')
                 if raw.empty:
-                    print(f"[!] No data from yfinance for {symbol}")
+                    logger.warning('No data from yfinance for %s', symbol)
                     _yf_cache[cache_key] = None
                     _yf_cache[cache_key + '_info'] = {}
                 else:
@@ -168,12 +171,23 @@ def indicators_response(symbol, backdays=0, category='small'):
                     raw['CH_CLOSING_PRICE']    = raw['Close']
                     raw['CH_TOT_TRADED_VAL']   = raw['Volume']
                     _yf_cache[cache_key] = raw
-                    # cache ticker.info separately to avoid Pandas attribute warning
                     try:
                         _yf_cache[cache_key + '_info'] = ticker.info
                     except Exception:
                         _yf_cache[cache_key + '_info'] = {}
                 a = _yf_cache[cache_key]
+
+        # Lazily fetch ticker.info if batch-prefetch left it empty (runs in thread pool)
+        info_key = cache_key + '_info'
+        with _yf_cache_lock:
+            fetch_info = info_key not in _yf_cache or _yf_cache[info_key] == {}
+        if fetch_info:
+            try:
+                info = yf.Ticker(f"{symbol}.NS").info
+            except Exception:
+                info = {}
+            with _yf_cache_lock:
+                _yf_cache[info_key] = info
 
         if a is None:
             return '','','','','','','','','',{'direction':'','trend_change':False,'signal':''},'','',''
@@ -181,10 +195,10 @@ def indicators_response(symbol, backdays=0, category='small'):
         # Graceful handling for stocks with < 200 days of history
         n_days = len(a)
         if n_days < 50:
-            print(f"[!] {symbol}: only {n_days} days of data — skipping (too short for indicators)")
+            logger.warning('%s: only %d days of data â€” skipping (too short for indicators)', symbol, n_days)
             return '','','','','','','','','',{'direction':'','trend_change':False,'signal':''},'','',''
         if n_days < 200:
-            print(f"[!] {symbol}: only {n_days} days — SMA200/Bollinger200 will be unavailable")
+            logger.info('%s: only %d days â€” SMA200/Bollinger200 will be unavailable', symbol, n_days)
 
         # Per-cap thresholds
         thr = _THRESHOLDS.get(category, _THRESHOLDS['small'])
@@ -344,7 +358,7 @@ def indicators_response(symbol, backdays=0, category='small'):
         if not df_sma10.empty:
             w10 = df_sma10[df_sma10['date']==df_sma10['date'].max()]['sma10'].values[0]
         
-        # latest bollinger_band — per-cap thresholds
+        # latest bollinger_band â€” per-cap thresholds
         if not df_bollinger_bands.empty:
             pb = df_bollinger_bands[df_bollinger_bands['date']==df_bollinger_bands['date'].max()]['percent_b'].values[0]
             if pb <= thr['boll_buy']:
@@ -354,7 +368,7 @@ def indicators_response(symbol, backdays=0, category='small'):
             else:
                 x = 'hold'
             
-        # latest rsi — per-cap thresholds
+        # latest rsi â€” per-cap thresholds
         if not df_rsi.empty:
             rsi_val = df_rsi[df_rsi['date']==df_rsi['date'].max()]['rsi'].values[0]
             if rsi_val <= thr['rsi_buy']:
@@ -364,7 +378,7 @@ def indicators_response(symbol, backdays=0, category='small'):
             else:
                 y = 'hold'
                
-        # latest stoch — per-cap thresholds
+        # latest stoch â€” per-cap thresholds
         if not df_stoch.empty:
             osc_val = df_stoch[df_stoch['date']==df_stoch['date'].max()]['oscillator'].values[0]
             if osc_val >= thr['stoch_sell']:
@@ -374,7 +388,7 @@ def indicators_response(symbol, backdays=0, category='small'):
             else:
                 z = 'hold'
                 
-        # latest super_trend — structured signal
+        # latest super_trend â€” structured signal
         def _is_empty(val):
             return val is None or (isinstance(val, float) and pd.isna(val))
 
@@ -387,19 +401,19 @@ def indicators_response(symbol, backdays=0, category='small'):
             ub_none = _is_empty(ub_now)
 
             if lb_none and not ub_none:
-                # upper band active → price below supertrend → bearish
+                # upper band active â†’ price below supertrend â†’ bearish
                 aa['direction'] = 'bearish'
                 aa['signal'] = 'probability to fall more'
                 if prev is not None and not _is_empty(prev['lower_band']):
                     aa['trend_change'] = True
-                    aa['signal'] = 'trend change to bearish — probability to fall more'
+                    aa['signal'] = 'trend change to bearish â€” probability to fall more'
             elif not lb_none and ub_none:
-                # lower band active → price above supertrend → bullish
+                # lower band active â†’ price above supertrend â†’ bullish
                 aa['direction'] = 'bullish'
                 aa['signal'] = 'probability to rise more'
                 if prev is not None and _is_empty(prev['lower_band']):
                     aa['trend_change'] = True
-                    aa['signal'] = 'trend change to bullish — probability to rise more'
+                    aa['signal'] = 'trend change to bullish â€” probability to rise more'
 
         # volume analysis
         volume_signal = 'Normal volume'
@@ -416,7 +430,7 @@ def indicators_response(symbol, backdays=0, category='small'):
         except Exception:
             pass
 
-        # sector & industry (best-effort — use cached ticker.info)
+        # sector & industry (best-effort â€” use cached ticker.info)
         sector = ''
         industry = ''
         try:
@@ -428,8 +442,61 @@ def indicators_response(symbol, backdays=0, category='small'):
 
         return v,w,w100,w50,w20,w10,x,y,z,aa,volume_signal,sector,industry
     except Exception as e:
-        print(f"[!] Error in indicators_response for {symbol}: {e}")
+        logger.error('Error in indicators_response for %s: %s', symbol, e, exc_info=True)
         return '','','','','','','','','',{'direction':'','trend_change':False,'signal':''},'','',''  
+
+
+def _prefetch_yfinance(symbols: list, backdays: int) -> None:
+    """Batch-download 1-year price history for all symbols in a single yf.download() call.
+
+    Populates _yf_cache so individual indicators_response() calls find history
+    already cached and skip their per-stock network requests.  ticker.info
+    (sector / industry) is left as {} and fetched lazily in each worker thread.
+    """
+    end_dt   = datetime.datetime.now() - datetime.timedelta(days=backdays)
+    start_dt = end_dt - datetime.timedelta(days=365)
+    ns_tickers = [f"{sym}.NS" for sym in symbols]
+    try:
+        raw = yf.download(
+            ns_tickers,
+            start=start_dt.strftime('%Y-%m-%d'),
+            end=end_dt.strftime('%Y-%m-%d'),
+            interval='1d',
+            group_by='ticker',
+            auto_adjust=True,
+            threads=True,
+            progress=False,
+        )
+    except Exception as e:
+        logger.warning('yfinance batch download failed: %s — falling back to per-stock fetch', e)
+        return
+
+    multi = len(ns_tickers) > 1
+    with _yf_cache_lock:
+        for sym in symbols:
+            cache_key = f"{sym}_{backdays}"
+            if cache_key in _yf_cache:
+                continue
+            try:
+                df = raw[f"{sym}.NS"].copy() if multi else raw.copy()
+                df = df.dropna(subset=['Close'])
+                if df.empty:
+                    _yf_cache[cache_key] = None
+                    _yf_cache[cache_key + '_info'] = {}
+                    continue
+                df = df.reset_index()
+                df['CH_TIMESTAMP']        = df['Date'].astype(str).str[:10]
+                df['CH_OPENING_PRICE']    = df['Open']
+                df['CH_TRADE_HIGH_PRICE'] = df['High']
+                df['CH_TRADE_LOW_PRICE']  = df['Low']
+                df['CH_CLOSING_PRICE']    = df['Close']
+                df['CH_TOT_TRADED_VAL']   = df['Volume']
+                _yf_cache[cache_key] = df
+                _yf_cache[cache_key + '_info'] = {}  # fetched lazily per worker
+            except Exception:
+                _yf_cache[cache_key] = None
+                _yf_cache[cache_key + '_info'] = {}
+    logger.info('Batch download complete — %d symbols pre-cached.', len(symbols))
 
 
 def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
@@ -438,15 +505,19 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     with open(fiftytwo_weeks_analysis_json) as f:
         stock_summary = json.load(f)
 
+    # Batch-prefetch all price histories in one yfinance call (much faster than per-stock)
+    logger.info('Batch-downloading price history for %d stocks...', len(stock_summary))
+    _prefetch_yfinance(list(stock_summary.keys()), backdays)
+
     # Prepare executor and loop
-    executor = ThreadPoolExecutor(max_workers=4)
+    executor = ThreadPoolExecutor(max_workers=10)
     try:
         loop = asyncio.get_running_loop()
     except RuntimeError:
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
 
-    # Your indicators_response function must be synchronous — we’ll wrap it in executor
+    # Your indicators_response function must be synchronous â€” weâ€™ll wrap it in executor
     def get_stock_data(symbol, data):
         try:
             category = data.get('category', 'small')
@@ -488,7 +559,7 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
                 "ai_summary": ai_summary,
             }
         except Exception as e:
-            print(f"[!] Error processing {symbol}: {e}")
+            logger.error('Error processing %s: %s', symbol, e, exc_info=True)
             return None
 
     async def process_all_stocks():
@@ -513,7 +584,7 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     df = pd.DataFrame(final_results)
     df['PE_ratio'] = pd.to_numeric(df['PE_ratio'], errors='coerce')  # convert to float, NaN if invalid
     df.to_csv(indicators_data_csv, index=False)
-    df = df[(df['PE_ratio'] < float(os.getenv('PE_RATIO_MAX'))) & (df['PE_ratio'] > float(os.getenv('PE_RATIO_MIN')))]
+    df = df[(df['PE_ratio'] < PE_RATIO_MAX) & (df['PE_ratio'] > PE_RATIO_MIN)]
     df[df['category']=='large'].to_csv(indicators_result_csv_path_large, index=False)
     df[df['category']=='mid'].to_csv(indicators_result_csv_path_mid, index=False)
     df[df['category']=='small'].to_csv(indicators_result_csv_path_small, index=False)
@@ -522,9 +593,9 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
     with _yf_cache_lock:
         _yf_cache.clear()
 
-    print(f"✅ Done! CSV saved as {indicators_data_csv}")
+    print(f"âœ… Done! CSV saved as {indicators_data_csv}")
 
-    # Sector-level analysis — flag sectors with multiple buy signals
+    # Sector-level analysis â€” flag sectors with multiple buy signals
     try:
         df_all = pd.read_csv(indicators_data_csv)
         if 'sector' in df_all.columns and df_all['sector'].notna().any():
@@ -542,8 +613,8 @@ def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
                 sector_groups = sector_groups[sector_groups['buy_signals'] >= 2].sort_values('buy_signals', ascending=False)
                 if not sector_groups.empty:
                     sector_groups.to_csv(sector_analysis_csv, index=False)
-                    print(f"✅ Sector analysis saved: {len(sector_groups)} sectors with 2+ buy signals")
+                    logger.info('Sector analysis saved: %d sectors with 2+ buy signals', len(sector_groups))
                 else:
-                    print("ℹ️ No sectors with 2+ buy signals today.")
+                    logger.info('No sectors with 2+ buy signals today.')
     except Exception as e:
-        print(f"[!] Sector analysis error: {e}")
+        logger.error('Sector analysis error: %s', e, exc_info=True)
