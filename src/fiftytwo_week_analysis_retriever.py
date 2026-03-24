@@ -64,7 +64,7 @@ def retrieve_52week_analysis(output_json, large_perc_var, mid_perc_var, small_pe
                 return {}
 
     async def run_all():
-        sem = asyncio.Semaphore(5)
+        sem = asyncio.Semaphore(20)
         tasks = [worker(stock, sem) for stock in stock_list]
         results = await tqdm_asyncio.gather(*tasks, desc="Processing Stocks", total=len(stock_list))
 

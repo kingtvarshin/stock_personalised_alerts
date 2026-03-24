@@ -148,7 +148,7 @@ def indicators_response(symbol, backdays=0, category='small'):
         end_datetime   = datetime.datetime.now() - datetime.timedelta(days=backdays)
         start_datetime = end_datetime - datetime.timedelta(days=365)
 
-        # Use cached data if already fetched this run
+        # Use cached data if already fetched this run (or pre-fetched by batch download)
         cache_key = f"{symbol}_{backdays}"
         with _yf_cache_lock:
             if cache_key in _yf_cache:
@@ -171,12 +171,23 @@ def indicators_response(symbol, backdays=0, category='small'):
                     raw['CH_CLOSING_PRICE']    = raw['Close']
                     raw['CH_TOT_TRADED_VAL']   = raw['Volume']
                     _yf_cache[cache_key] = raw
-                    # cache ticker.info separately to avoid Pandas attribute warning
                     try:
                         _yf_cache[cache_key + '_info'] = ticker.info
                     except Exception:
                         _yf_cache[cache_key + '_info'] = {}
                 a = _yf_cache[cache_key]
+
+        # Lazily fetch ticker.info if batch-prefetch left it empty (runs in thread pool)
+        info_key = cache_key + '_info'
+        with _yf_cache_lock:
+            fetch_info = info_key not in _yf_cache or _yf_cache[info_key] == {}
+        if fetch_info:
+            try:
+                info = yf.Ticker(f"{symbol}.NS").info
+            except Exception:
+                info = {}
+            with _yf_cache_lock:
+                _yf_cache[info_key] = info
 
         if a is None:
             return '','','','','','','','','',{'direction':'','trend_change':False,'signal':''},'','',''
@@ -435,14 +446,71 @@ def indicators_response(symbol, backdays=0, category='small'):
         return '','','','','','','','','',{'direction':'','trend_change':False,'signal':''},'','',''  
 
 
+def _prefetch_yfinance(symbols: list, backdays: int) -> None:
+    """Batch-download 1-year price history for all symbols in a single yf.download() call.
+
+    Populates _yf_cache so individual indicators_response() calls find history
+    already cached and skip their per-stock network requests.  ticker.info
+    (sector / industry) is left as {} and fetched lazily in each worker thread.
+    """
+    end_dt   = datetime.datetime.now() - datetime.timedelta(days=backdays)
+    start_dt = end_dt - datetime.timedelta(days=365)
+    ns_tickers = [f"{sym}.NS" for sym in symbols]
+    try:
+        raw = yf.download(
+            ns_tickers,
+            start=start_dt.strftime('%Y-%m-%d'),
+            end=end_dt.strftime('%Y-%m-%d'),
+            interval='1d',
+            group_by='ticker',
+            auto_adjust=True,
+            threads=True,
+            progress=False,
+        )
+    except Exception as e:
+        logger.warning('yfinance batch download failed: %s — falling back to per-stock fetch', e)
+        return
+
+    multi = len(ns_tickers) > 1
+    with _yf_cache_lock:
+        for sym in symbols:
+            cache_key = f"{sym}_{backdays}"
+            if cache_key in _yf_cache:
+                continue
+            try:
+                df = raw[f"{sym}.NS"].copy() if multi else raw.copy()
+                df = df.dropna(subset=['Close'])
+                if df.empty:
+                    _yf_cache[cache_key] = None
+                    _yf_cache[cache_key + '_info'] = {}
+                    continue
+                df = df.reset_index()
+                df['CH_TIMESTAMP']        = df['Date'].astype(str).str[:10]
+                df['CH_OPENING_PRICE']    = df['Open']
+                df['CH_TRADE_HIGH_PRICE'] = df['High']
+                df['CH_TRADE_LOW_PRICE']  = df['Low']
+                df['CH_CLOSING_PRICE']    = df['Close']
+                df['CH_TOT_TRADED_VAL']   = df['Volume']
+                _yf_cache[cache_key] = df
+                _yf_cache[cache_key + '_info'] = {}  # fetched lazily per worker
+            except Exception:
+                _yf_cache[cache_key] = None
+                _yf_cache[cache_key + '_info'] = {}
+    logger.info('Batch download complete — %d symbols pre-cached.', len(symbols))
+
+
 def load_stocks_indicators_data(fiftytwo_weeks_analysis_json,backdays):
 
     # Load the final 52-week analysis result
     with open(fiftytwo_weeks_analysis_json) as f:
         stock_summary = json.load(f)
 
+    # Batch-prefetch all price histories in one yfinance call (much faster than per-stock)
+    logger.info('Batch-downloading price history for %d stocks...', len(stock_summary))
+    _prefetch_yfinance(list(stock_summary.keys()), backdays)
+
     # Prepare executor and loop
-    executor = ThreadPoolExecutor(max_workers=4)
+    executor = ThreadPoolExecutor(max_workers=10)
     try:
         loop = asyncio.get_running_loop()
     except RuntimeError:
