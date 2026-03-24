@@ -2,3 +2,13 @@
 __pycache__
 *.ipynb
 .env
+
+# Runtime-generated output files — regenerated each run, must not be committed
+src/indicators_data.csv
+src/indicators_data_large_cap.csv
+src/indicators_data_mid_cap.csv
+src/indicators_data_small_cap.csv
+src/sector_analysis.csv
+src/fiftytwo_weeks_analysis.json
+src/stocksdict.json
+src/time_analysis.json
