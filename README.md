@@ -78,11 +78,11 @@ docker image rm <Image_id>
 - [ ] Support Telegram / WhatsApp notification as an alternative to email
 
 ### Code Quality
-- [ ] Replace `eval(os.getenv(...))` with `os.getenv(...).lower() == 'true'` for `NEW_EXCEL_FLAG`
-- [ ] Centralise all `.env` variable reads into `constant_vars.py` so no module calls `os.getenv` directly
-- [ ] Add proper logging (Python `logging` module) instead of bare `print` statements, with log levels
-- [ ] Write unit tests for indicator signal logic and 52w threshold calculations
-- [ ] Add a `--dry-run` flag to test the pipeline without sending emails
+- [x] Replace `eval(os.getenv(...))` with safe parsing (`json.loads` for lists, `str.lower()` for booleans)
+- [x] Centralise all `.env` variable reads into `constant_vars.py` so no module calls `os.getenv` directly
+- [x] Add proper logging (Python `logging` module) instead of bare `print` statements, with log levels
+- [x] Write unit tests for indicator signal logic and 52w threshold calculations (`tests/test_indicators.py` — 36 tests)
+- [x] Add a `--dry-run` flag to test the pipeline without sending emails (`python src/main.py --dry-run`)
 
 ### Infrastructure
 - [ ] Add a cron job / TrueNAS scheduled task to run the container automatically each morning before market open
