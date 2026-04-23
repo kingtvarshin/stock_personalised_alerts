@@ -1,10 +1,16 @@
 import smtplib
 import datetime
+import io
 import logging
+from html.parser import HTMLParser
 import pandas as pd
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.lib.units import mm
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 from constant_vars import (
     indicators_data_csv,
     indicators_result_csv_path_large, indicators_result_csv_path_mid,
@@ -13,6 +19,7 @@ from constant_vars import (
     SENDER_EMAIL, SENDER_EMAIL_PASS, EMAIL_RECIPIENTS,
 )
 import os
+from xml.sax.saxutils import escape
 
 logger = logging.getLogger(__name__)
 
@@ -58,6 +65,95 @@ _HTML_HEAD = '''\
     }}
   </style>
 </head>'''
+
+
+class _EmailHTMLTextExtractor(HTMLParser):
+    """Convert the rendered email HTML into readable plain text for PDF export."""
+
+    _BLOCK_TAGS = {
+        'div', 'p', 'table', 'tr', 'td', 'th', 'thead', 'tbody', 'tfoot',
+        'section', 'article', 'header', 'footer', 'h1', 'h2', 'h3', 'h4',
+        'h5', 'h6', 'ul', 'ol', 'li'
+    }
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self._parts = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'br':
+            self._parts.append('\n')
+        elif tag == 'li':
+            self._parts.append('\n- ')
+        elif tag in self._BLOCK_TAGS:
+            self._parts.append('\n')
+
+    def handle_endtag(self, tag):
+        if tag in self._BLOCK_TAGS:
+            self._parts.append('\n')
+
+    def handle_data(self, data):
+        if data and not data.isspace():
+            self._parts.append(data)
+
+    def get_text(self):
+        lines = [' '.join(line.split()) for line in ''.join(self._parts).splitlines()]
+        cleaned = []
+        saw_blank = False
+        for line in lines:
+            if line:
+                cleaned.append(line)
+                saw_blank = False
+            elif cleaned and not saw_blank:
+                cleaned.append('')
+                saw_blank = True
+        return '\n'.join(cleaned).strip()
+
+
+def _build_pdf_attachment(subject, html_body, generated_at, filename):
+    extractor = _EmailHTMLTextExtractor()
+    extractor.feed(html_body)
+    pdf_text = extractor.get_text()
+    if not pdf_text:
+        raise ValueError('Email body could not be converted into PDF content.')
+
+    buffer = io.BytesIO()
+    styles = getSampleStyleSheet()
+    body_style = ParagraphStyle(
+        'PdfBody',
+        parent=styles['BodyText'],
+        fontName='Helvetica',
+        fontSize=9,
+        leading=12,
+        spaceAfter=4,
+    )
+    doc = SimpleDocTemplate(
+        buffer,
+        pagesize=A4,
+        leftMargin=12 * mm,
+        rightMargin=12 * mm,
+        topMargin=12 * mm,
+        bottomMargin=12 * mm,
+        title=subject,
+    )
+
+    story = [
+        Paragraph(escape(subject), styles['Title']),
+        Paragraph(escape(f'Generated: {generated_at}'), styles['Italic']),
+        Spacer(1, 6),
+    ]
+    for line in pdf_text.splitlines():
+        if line:
+            story.append(Paragraph(escape(line), body_style))
+        else:
+            story.append(Spacer(1, 4))
+
+    doc.build(story)
+    return {
+        'filename': filename,
+        'content': buffer.getvalue(),
+        'subtype': 'pdf',
+    }
 
 
 # ── HTML helpers ──────────────────────────────────────────────────────────────
@@ -531,12 +627,23 @@ def _send_email(smtp_conn, sender, recipients, subject, html_body, attachments=N
     # UTF-8 charset so ₹ and emoji render correctly on all clients
     msg.attach(MIMEText(html_body, 'html', 'utf-8'))
     if attachments:
-        for path in attachments:
+        for attachment in attachments:
             try:
-                with open(path, 'rb') as f:
-                    msg.attach(MIMEApplication(f.read(), Name=os.path.basename(path)))
-            except Exception:
-                pass
+                if isinstance(attachment, str):
+                    with open(attachment, 'rb') as f:
+                        part = MIMEApplication(f.read(), Name=os.path.basename(attachment))
+                        part['Content-Disposition'] = f'attachment; filename="{os.path.basename(attachment)}"'
+                        msg.attach(part)
+                elif isinstance(attachment, dict):
+                    filename = attachment['filename']
+                    part = MIMEApplication(
+                        attachment['content'],
+                        _subtype=attachment.get('subtype', 'octet-stream')
+                    )
+                    part['Content-Disposition'] = f'attachment; filename="{filename}"'
+                    msg.attach(part)
+            except Exception as e:
+                logger.warning('Skipping attachment %s: %s', attachment, e)
     smtp_conn.sendmail(sender, recipients, msg.as_string())
 
 
@@ -649,10 +756,21 @@ def mail_message(dry_run=False):
             f'<p style="margin:0;font-size:13px;color:rgba(255,255,255,0.82)">{now_str}</p>'
         )
         main_html = _build_html(header_inner, email_body_parts, preheader=main_preheader)
+        main_pdf_attachment = None
+        try:
+            main_pdf_attachment = _build_pdf_attachment(
+                main_subject,
+                main_html,
+                ts_str,
+                f'daily_stock_alert_{datetime.datetime.now().strftime("%Y%m%d_%H%M")}.pdf'
+            )
+        except Exception as e:
+            logger.error('PDF attachment generation error: %s', e, exc_info=True)
 
         # ── Build strong signal email HTML (if any) ───────────────────────
-        strong_html    = None
-        strong_subject = None
+        strong_html           = None
+        strong_subject        = None
+        strong_pdf_attachment = None
         if not df_all.empty and 'confidence' in df_all.columns:
             df_strong = df_all[
                 (pd.to_numeric(df_all['confidence'], errors='coerce') == 4)
@@ -676,6 +794,16 @@ def mail_message(dry_run=False):
                     _stock_table(df_strong),
                 ]
                 strong_html = _build_html(strong_header, strong_body, preheader=strong_preheader)
+                strong_pdf_attachment = None
+                try:
+                    strong_pdf_attachment = _build_pdf_attachment(
+                        strong_subject,
+                        strong_html,
+                        ts_str,
+                        f'strong_signal_alert_{datetime.datetime.now().strftime("%Y%m%d_%H%M")}.pdf'
+                    )
+                except Exception as e:
+                    logger.error('Strong signal PDF attachment generation error: %s', e, exc_info=True)
 
         # ── Send (or dry-run log) ─────────────────────────────────────────
         if dry_run:
@@ -690,11 +818,16 @@ def mail_message(dry_run=False):
         conn.starttls()
         conn.login(sender_email, sender_password)
 
-        _send_email(conn, sender_email, email_id_list, main_subject, main_html, attachments_to_send)
+        main_attachments = list(attachments_to_send)
+        if main_pdf_attachment:
+            main_attachments.append(main_pdf_attachment)
+
+        _send_email(conn, sender_email, email_id_list, main_subject, main_html, main_attachments)
         logger.info('Main alert email sent.')
 
         if strong_html:
-            _send_email(conn, sender_email, email_id_list, strong_subject, strong_html)
+            strong_attachments = [strong_pdf_attachment] if strong_pdf_attachment else None
+            _send_email(conn, sender_email, email_id_list, strong_subject, strong_html, strong_attachments)
             logger.info('Strong signal alert sent (%d stocks).', len(df_strong))
         else:
             logger.info('No all-4-aligned stocks \u2014 strong signal email skipped.')

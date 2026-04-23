@@ -8,3 +8,4 @@ dotenv
 groq
 yfinance
 openai
+reportlab
