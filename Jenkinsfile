@@ -60,9 +60,9 @@ pipeline {
       steps {
         script {
           def permissionDenied = sh(
-            script: 'docker info > /dev/null 2>&1; echo $?',
-            returnStdout: true
-          ).trim() != '0'
+            script: 'docker info > /dev/null 2>&1',
+            returnStatus: true
+          ) != 0
 
           if (permissionDenied) {
             echo '[fix-socket] Docker socket not accessible — fixing permissions via SSH'
