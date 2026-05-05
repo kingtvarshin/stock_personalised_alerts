@@ -168,7 +168,7 @@ pipeline {
         rm -f "$APP_DIR/.env"
       '''
       script {
-        if (fileExists('.remote_dir')) {
+        if (env.REMOTE_DIR) {
           withCredentials([sshUserPrivateKey(
             credentialsId: env.SSH_CREDS_ID,
             keyFileVariable: 'SSH_KEY_FILE',
@@ -176,13 +176,11 @@ pipeline {
           )]) {
             sh """
               set +e
-              REMOTE_DIR=\$(cat .remote_dir)
               ssh -i "\$SSH_KEY_FILE" \\
                   -o StrictHostKeyChecking=no \\
                   -o BatchMode=yes \\
                   "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                  "rm -rf '\$REMOTE_DIR'"
-              rm -f .remote_dir
+                  "rm -rf '${env.REMOTE_DIR}'"
             """
           }
         }
