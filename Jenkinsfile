@@ -95,22 +95,21 @@ pipeline {
             keyFileVariable: 'SSH_KEY_FILE',
             usernameVariable: 'SSH_USER_FROM_CRED'
           )]) {
+            env.REMOTE_DIR = "/tmp/stock-personalised-alerts-${BUILD_NUMBER}"
             sh """
               set -euo pipefail
-              REMOTE_DIR="/tmp/stock-personalised-alerts-${BUILD_NUMBER}"
-              echo "$REMOTE_DIR" > .remote_dir
 
               ssh -i "\$SSH_KEY_FILE" \\
                   -o StrictHostKeyChecking=no \\
                   -o BatchMode=yes \\
                   "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                  "rm -rf '$REMOTE_DIR' && mkdir -p '$REMOTE_DIR'"
+                  "rm -rf '${env.REMOTE_DIR}' && mkdir -p '${env.REMOTE_DIR}'"
 
               tar --exclude=.git -czf - . | ssh -i "\$SSH_KEY_FILE" \\
                   -o StrictHostKeyChecking=no \\
                   -o BatchMode=yes \\
                   "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                  "tar -xzf - -C '$REMOTE_DIR'"
+                  "tar -xzf - -C '${env.REMOTE_DIR}'"
             """
           }
         }
@@ -127,13 +126,11 @@ pipeline {
           )]) {
             sh """
               set -euo pipefail
-              REMOTE_DIR=\$(cat .remote_dir)
-
               ssh -i "\$SSH_KEY_FILE" \\
                   -o StrictHostKeyChecking=no \\
                   -o BatchMode=yes \\
                   "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                  "cd '\$REMOTE_DIR/$APP_DIR' && docker build -t '$IMAGE_NAME:$BUILD_NUMBER' -t '$IMAGE_NAME:latest' ."
+                  "cd '${env.REMOTE_DIR}/$APP_DIR' && docker build -t '$IMAGE_NAME:$BUILD_NUMBER' -t '$IMAGE_NAME:latest' ."
             """
           }
         }
@@ -150,19 +147,13 @@ pipeline {
           )]) {
             sh """
               set -euo pipefail
-              REMOTE_DIR=\$(cat .remote_dir)
-
-              if [ "$DRY_RUN" = "true" ]; then
-                RUN_CMD="python3 main.py --dry-run"
-              else
-                RUN_CMD="python3 main.py"
-              fi
+              REMOTE_RUN_CMD="${DRY_RUN == 'true' ? 'python3 main.py --dry-run' : 'python3 main.py'}"
 
               ssh -i "\$SSH_KEY_FILE" \\
                   -o StrictHostKeyChecking=no \\
                   -o BatchMode=yes \\
                   "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                  "cd '\$REMOTE_DIR/$APP_DIR' && docker run --rm --env-file .env '$IMAGE_NAME:$BUILD_NUMBER' $RUN_CMD"
+                  "cd '${env.REMOTE_DIR}/$APP_DIR' && docker run --rm --env-file .env '$IMAGE_NAME:$BUILD_NUMBER' \$REMOTE_RUN_CMD"
             """
           }
         }
