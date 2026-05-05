@@ -13,7 +13,7 @@ pipeline {
   }
 
   parameters {
-    string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Branch to checkout and run')
+    string(name: 'BRANCH_NAME', defaultValue: 'feature/pdf_output_for_summary', description: 'Branch to checkout and run')
     string(name: 'IMAGE_NAME', defaultValue: 'stock-analyzer', description: 'Docker image name')
     booleanParam(name: 'DRY_RUN', defaultValue: false, description: 'Run pipeline with --dry-run (no emails sent)')
   }
