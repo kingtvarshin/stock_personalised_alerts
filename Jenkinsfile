@@ -26,7 +26,10 @@ pipeline {
   }
 
   environment {
-    APP_DIR = 'src'
+    APP_DIR    = 'src'
+    // Promote parameters → shell env vars so sh steps can reference them directly
+    IMAGE_NAME = "${params.IMAGE_NAME}"
+    DRY_RUN    = "${params.DRY_RUN}"
   }
 
   stages {
