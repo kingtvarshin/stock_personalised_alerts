@@ -52,6 +52,28 @@ docker image ls
 
 docker image rm <Image_id>
 
+## Jenkins Scheduling (TrueNAS)
+
+This repo includes a ready `Jenkinsfile` at project root.
+
+1. Create a Pipeline job in Jenkins and point it to this repository.
+2. The pipeline has a built-in cron trigger: `H 8 * * 1-5` (weekdays around 08:00).
+3. Add Jenkins credentials for `.env`:
+	- Type: `Secret file`
+	- ID: `stock-alert-env-file` (or update `ENV_FILE_CREDENTIAL_ID` parameter)
+	- File content: your full `.env` values
+4. Run with parameters:
+	- `BRANCH_NAME`: branch to run (default `main`)
+	- `USE_JENKINS_SECRET_ENV=true`: use secret file credential as `src/.env`
+	- `DRY_RUN=true/false`: test without sending emails or perform real send
+5. Jenkins will:
+	- Checkout the selected branch
+	- Create `src/.env` from Jenkins secret (or `ENV_FILE_CONTENT` parameter)
+	- Build Docker image from `src/Dockerfile`
+	- Run `main.py` inside the container
+
+If your repo is private, set `GIT_CREDENTIALS_ID` in Jenkins build parameters.
+
 ----
 
 ## TODO

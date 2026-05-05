@@ -67,7 +67,7 @@ _HTML_HEAD = '''\
 </head>'''
 
 
-class _EmailHTMLTextExtractor(HTMLParser):
+class _EmailHTMLTextExtractor(HTMLParser): 
     """Convert the rendered email HTML into readable plain text for PDF export."""
 
     _BLOCK_TAGS = {
