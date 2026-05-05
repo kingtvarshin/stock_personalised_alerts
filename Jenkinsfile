@@ -13,65 +13,74 @@ pipeline {
   }
 
   parameters {
-    string(name: 'REPO_URL', defaultValue: '', description: 'Git repository URL. Leave empty to use GIT_URL from job SCM.')
     string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Branch to checkout and run')
-    string(name: 'GIT_CREDENTIALS_ID', defaultValue: '', description: 'Optional Jenkins credentials ID for private repo access')
-
-    booleanParam(name: 'USE_JENKINS_SECRET_ENV', defaultValue: true, description: 'Use Jenkins Secret File credential as src/.env')
-    string(name: 'ENV_FILE_CREDENTIAL_ID', defaultValue: 'stock-alert-env-file', description: 'Jenkins Secret File credentials ID containing .env content')
-    text(name: 'ENV_FILE_CONTENT', defaultValue: '', description: 'Used only when USE_JENKINS_SECRET_ENV=false. Paste .env content here.')
-
     string(name: 'IMAGE_NAME', defaultValue: 'stock-analyzer', description: 'Docker image name')
     booleanParam(name: 'DRY_RUN', defaultValue: false, description: 'Run pipeline with --dry-run (no emails sent)')
   }
 
   environment {
-    APP_DIR    = 'src'
-    // Promote parameters → shell env vars so sh steps can reference them directly
-    IMAGE_NAME = "${params.IMAGE_NAME}"
-    DRY_RUN    = "${params.DRY_RUN}"
+    APP_DIR          = 'src'
+    IMAGE_NAME       = "${params.IMAGE_NAME}"
+    DRY_RUN          = "${params.DRY_RUN}"
+    SSH_CREDS_ID     = 'truenas-ssh'
+    TRUENAS_SSH_HOST = '192.168.29.65'
   }
 
   stages {
     stage('Checkout') {
       steps {
-        script {
-          def repoUrl = params.REPO_URL?.trim() ? params.REPO_URL.trim() : (env.GIT_URL ?: '')
-          if (!repoUrl) {
-            error('No repository URL found. Set REPO_URL parameter or configure SCM in Jenkins job.')
-          }
-
-          def remoteConfig = [url: repoUrl]
-          if (params.GIT_CREDENTIALS_ID?.trim()) {
-            remoteConfig.credentialsId = params.GIT_CREDENTIALS_ID.trim()
-          }
-
-          checkout([
-            $class: 'GitSCM',
-            branches: [[name: "*/${params.BRANCH_NAME}"]],
-            userRemoteConfigs: [remoteConfig],
-            extensions: [[$class: 'CleanBeforeCheckout']]
-          ])
-        }
+        checkout([
+          $class: 'GitSCM',
+          branches: [[name: "*/${params.BRANCH_NAME}"]],
+          userRemoteConfigs: scm.userRemoteConfigs,
+          extensions: [[$class: 'CleanBeforeCheckout']]
+        ])
       }
     }
 
     stage('Prepare .env') {
       steps {
+        withCredentials([file(credentialsId: 'stock-alert-env-file', variable: 'ENV_FILE_SECRET')]) {
+          sh '''#!/bin/bash
+            set -euo pipefail
+            cp "$ENV_FILE_SECRET" "$APP_DIR/.env"
+            chmod 600 "$APP_DIR/.env"
+          '''
+        }
+      }
+    }
+
+    // ---------------------------------------------------------------
+    stage('Fix Docker Socket') {
+    // ---------------------------------------------------------------
+    // Checks if /var/run/docker.sock is world-readable. If not (i.e.
+    // permission denied), SSHes into TrueNAS and fixes it. No-ops on
+    // every build where the socket is already accessible.
+    // ---------------------------------------------------------------
+      steps {
         script {
-          if (params.USE_JENKINS_SECRET_ENV) {
-            withCredentials([file(credentialsId: params.ENV_FILE_CREDENTIAL_ID, variable: 'ENV_FILE_SECRET')]) {
-              sh '''#!/bin/bash
-                set -euo pipefail
-                cp "$ENV_FILE_SECRET" "$APP_DIR/.env"
-                chmod 600 "$APP_DIR/.env"
-              '''
+          def permissionDenied = sh(
+            script: 'docker info > /dev/null 2>&1; echo $?',
+            returnStdout: true
+          ).trim() != '0'
+
+          if (permissionDenied) {
+            echo '[fix-socket] Docker socket not accessible — fixing permissions via SSH'
+            withCredentials([sshUserPrivateKey(
+              credentialsId: env.SSH_CREDS_ID,
+              keyFileVariable: 'SSH_KEY_FILE',
+              usernameVariable: 'SSH_USER_FROM_CRED'
+            )]) {
+              sh """
+                ssh -i "\$SSH_KEY_FILE" \\
+                    -o StrictHostKeyChecking=no \\
+                    -o BatchMode=yes \\
+                    "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                    'chmod 666 /var/run/docker.sock && echo "[fix-socket] chmod applied OK"'
+              """
             }
           } else {
-            if (!params.ENV_FILE_CONTENT?.trim()) {
-              error('ENV_FILE_CONTENT is empty while USE_JENKINS_SECRET_ENV=false')
-            }
-            writeFile file: "${env.APP_DIR}/.env", text: params.ENV_FILE_CONTENT
+            echo '[fix-socket] Docker socket is accessible — no action needed'
           }
         }
       }
