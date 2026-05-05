@@ -53,53 +53,65 @@ pipeline {
     // ---------------------------------------------------------------
     stage('Fix Docker Socket') {
     // ---------------------------------------------------------------
-    // Checks if /var/run/docker.sock is world-readable. If not (i.e.
-    // permission denied), SSHes into TrueNAS and fixes it. No-ops on
-    // every build where the socket is already accessible.
-    // ---------------------------------------------------------------
-    // ---------------------------------------------------------------
-    // Locates the Docker CLI binary (it may not be on PATH but present
-    // at a known system path). Then checks if the socket is accessible.
-    // If permission is denied, SSHes into TrueNAS to chmod it. No-ops
-    // when Docker is already working.
+    // Checks Docker access on the TrueNAS host over SSH. If docker info
+    // fails there, it fixes /var/run/docker.sock permissions remotely.
     // ---------------------------------------------------------------
       steps {
         script {
+          if (!env.TRUENAS_REGISTRY_HOST?.trim()) {
+            error('TRUENAS_REGISTRY_HOST is not set in Jenkins environment variables')
+          }
           env.TRUENAS_SSH_HOST = env.TRUENAS_REGISTRY_HOST.split(':')[0]
 
-          // Resolve docker binary — fall back to known system paths if not on PATH
-          env.DOCKER_CMD = sh(
-            script: 'command -v docker 2>/dev/null || ls /usr/bin/docker /usr/local/bin/docker 2>/dev/null | head -1 || echo ""',
-            returnStdout: true
-          ).trim()
-
-          if (!env.DOCKER_CMD) {
-            error('[fix-socket] Docker CLI not found. Install docker-ce-cli in the Jenkins container.')
+          withCredentials([sshUserPrivateKey(
+            credentialsId: env.SSH_CREDS_ID,
+            keyFileVariable: 'SSH_KEY_FILE',
+            usernameVariable: 'SSH_USER_FROM_CRED'
+          )]) {
+            sh """
+              set -euo pipefail
+              ssh -i "\$SSH_KEY_FILE" \\
+                  -o StrictHostKeyChecking=no \\
+                  -o BatchMode=yes \\
+                  "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                  'if docker info >/dev/null 2>&1; then
+                     echo "[fix-socket] Docker socket is accessible - no action needed"
+                   else
+                     echo "[fix-socket] Docker socket not accessible - fixing permissions via SSH"
+                     chmod 666 /var/run/docker.sock
+                     echo "[fix-socket] chmod applied OK"
+                   fi'
+            """
           }
-          echo "[fix-socket] Found Docker CLI at: ${env.DOCKER_CMD}"
+        }
+      }
+    }
 
-          def exitCode = sh(
-            script: "${env.DOCKER_CMD} info > /dev/null 2>&1",
-            returnStatus: true
-          )
+    stage('Sync Workspace To Docker Host') {
+      steps {
+        script {
+          withCredentials([sshUserPrivateKey(
+            credentialsId: env.SSH_CREDS_ID,
+            keyFileVariable: 'SSH_KEY_FILE',
+            usernameVariable: 'SSH_USER_FROM_CRED'
+          )]) {
+            sh """
+              set -euo pipefail
+              REMOTE_DIR="/tmp/stock-personalised-alerts-${BUILD_NUMBER}"
+              echo "$REMOTE_DIR" > .remote_dir
 
-          if (exitCode == 0) {
-            echo '[fix-socket] Docker socket is accessible — no action needed'
-          } else {
-            echo '[fix-socket] Docker socket not accessible — fixing permissions via SSH'
-            withCredentials([sshUserPrivateKey(
-              credentialsId: env.SSH_CREDS_ID,
-              keyFileVariable: 'SSH_KEY_FILE',
-              usernameVariable: 'SSH_USER_FROM_CRED'
-            )]) {
-              sh """
-                ssh -i "\$SSH_KEY_FILE" \\
-                    -o StrictHostKeyChecking=no \\
-                    -o BatchMode=yes \\
-                    "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                    'chmod 666 /var/run/docker.sock && echo "[fix-socket] chmod applied OK"'
-              """
-            }
+              ssh -i "\$SSH_KEY_FILE" \\
+                  -o StrictHostKeyChecking=no \\
+                  -o BatchMode=yes \\
+                  "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                  "rm -rf '$REMOTE_DIR' && mkdir -p '$REMOTE_DIR'"
+
+              tar --exclude=.git -czf - . | ssh -i "\$SSH_KEY_FILE" \\
+                  -o StrictHostKeyChecking=no \\
+                  -o BatchMode=yes \\
+                  "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                  "tar -xzf - -C '$REMOTE_DIR'"
+            """
           }
         }
       }
@@ -107,25 +119,53 @@ pipeline {
 
     stage('Build Docker Image') {
       steps {
-        sh '''
-          set -euo pipefail
-          cd "$APP_DIR"
-          "$DOCKER_CMD" build -t "$IMAGE_NAME:$BUILD_NUMBER" -t "$IMAGE_NAME:latest" .
-        '''
+        script {
+          withCredentials([sshUserPrivateKey(
+            credentialsId: env.SSH_CREDS_ID,
+            keyFileVariable: 'SSH_KEY_FILE',
+            usernameVariable: 'SSH_USER_FROM_CRED'
+          )]) {
+            sh """
+              set -euo pipefail
+              REMOTE_DIR=\$(cat .remote_dir)
+
+              ssh -i "\$SSH_KEY_FILE" \\
+                  -o StrictHostKeyChecking=no \\
+                  -o BatchMode=yes \\
+                  "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                  "cd '\$REMOTE_DIR/$APP_DIR' && docker build -t '$IMAGE_NAME:$BUILD_NUMBER' -t '$IMAGE_NAME:latest' ."
+            """
+          }
+        }
       }
     }
 
     stage('Run Script') {
       steps {
-        sh '''
-          set -euo pipefail
-          cd "$APP_DIR"
-          if [ "$DRY_RUN" = "true" ]; then
-            "$DOCKER_CMD" run --rm --env-file .env "$IMAGE_NAME:$BUILD_NUMBER" python3 main.py --dry-run
-          else
-            "$DOCKER_CMD" run --rm --env-file .env "$IMAGE_NAME:$BUILD_NUMBER" python3 main.py
-          fi
-        '''
+        script {
+          withCredentials([sshUserPrivateKey(
+            credentialsId: env.SSH_CREDS_ID,
+            keyFileVariable: 'SSH_KEY_FILE',
+            usernameVariable: 'SSH_USER_FROM_CRED'
+          )]) {
+            sh """
+              set -euo pipefail
+              REMOTE_DIR=\$(cat .remote_dir)
+
+              if [ "$DRY_RUN" = "true" ]; then
+                RUN_CMD="python3 main.py --dry-run"
+              else
+                RUN_CMD="python3 main.py"
+              fi
+
+              ssh -i "\$SSH_KEY_FILE" \\
+                  -o StrictHostKeyChecking=no \\
+                  -o BatchMode=yes \\
+                  "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                  "cd '\$REMOTE_DIR/$APP_DIR' && docker run --rm --env-file .env '$IMAGE_NAME:$BUILD_NUMBER' $RUN_CMD"
+            """
+          }
+        }
       }
     }
   }
@@ -136,6 +176,26 @@ pipeline {
         set +e
         rm -f "$APP_DIR/.env"
       '''
+      script {
+        if (fileExists('.remote_dir')) {
+          withCredentials([sshUserPrivateKey(
+            credentialsId: env.SSH_CREDS_ID,
+            keyFileVariable: 'SSH_KEY_FILE',
+            usernameVariable: 'SSH_USER_FROM_CRED'
+          )]) {
+            sh """
+              set +e
+              REMOTE_DIR=\$(cat .remote_dir)
+              ssh -i "\$SSH_KEY_FILE" \\
+                  -o StrictHostKeyChecking=no \\
+                  -o BatchMode=yes \\
+                  "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                  "rm -rf '\$REMOTE_DIR'"
+              rm -f .remote_dir
+            """
+          }
+        }
+      }
       archiveArtifacts artifacts: 'src/*.csv,src/*.json', allowEmptyArchive: true
     }
   }
