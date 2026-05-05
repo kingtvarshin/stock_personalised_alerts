@@ -10,7 +10,7 @@ from email.mime.application import MIMEApplication
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
-from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
+from reportlab.platypus import Paragraph, Preformatted, SimpleDocTemplate, Spacer
 from constant_vars import (
     indicators_data_csv,
     indicators_result_csv_path_large, indicators_result_csv_path_mid,
@@ -75,13 +75,58 @@ class _EmailHTMLTextExtractor(HTMLParser):
         'section', 'article', 'header', 'footer', 'h1', 'h2', 'h3', 'h4',
         'h5', 'h6', 'ul', 'ol', 'li'
     }
+    _IGNORE_CONTENT_TAGS = {'head', 'style', 'script', 'title'}
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self._parts = []
+        self._hidden_stack = []
+        self._ignore_stack = []
+        self._in_table = False
+        self._in_cell = False
+        self._current_row = []
+        self._current_cell = []
+        self._current_cell_is_header = False
+        self._table_has_header = False
+        self._current_link = None
+
+    @staticmethod
+    def _is_hidden_tag(attrs):
+        attrs_dict = dict(attrs)
+        style = str(attrs_dict.get('style', '')).lower()
+        aria_hidden = str(attrs_dict.get('aria-hidden', '')).lower()
+        return 'display:none' in style or 'mso-hide:all' in style or aria_hidden == 'true'
 
     def handle_starttag(self, tag, attrs):
-        if tag == 'br':
+        if tag in self._IGNORE_CONTENT_TAGS:
+            self._ignore_stack.append(tag)
+            return
+
+        if self._ignore_stack:
+            return
+
+        if self._is_hidden_tag(attrs):
+            self._hidden_stack.append(tag)
+            return
+
+        if self._hidden_stack:
+            return
+
+        if tag == 'table':
+            self._in_table = True
+            self._table_has_header = False
+            self._parts.append('\n')
+        elif tag == 'tr' and self._in_table:
+            self._current_row = []
+        elif tag in ('td', 'th') and self._in_table:
+            self._in_cell = True
+            self._current_cell = []
+            self._current_cell_is_header = (tag == 'th')
+            if self._current_cell_is_header:
+                self._table_has_header = True
+        elif tag == 'a':
+            self._current_link = dict(attrs).get('href')
+        elif tag == 'br':
             self._parts.append('\n')
         elif tag == 'li':
             self._parts.append('\n- ')
@@ -89,11 +134,44 @@ class _EmailHTMLTextExtractor(HTMLParser):
             self._parts.append('\n')
 
     def handle_endtag(self, tag):
-        if tag in self._BLOCK_TAGS:
+        if self._ignore_stack:
+            if tag == self._ignore_stack[-1]:
+                self._ignore_stack.pop()
+            return
+
+        if self._hidden_stack:
+            if tag == self._hidden_stack[-1]:
+                self._hidden_stack.pop()
+            return
+
+        if tag in ('td', 'th') and self._in_table and self._in_cell:
+            txt = ' '.join(''.join(self._current_cell).split())
+            if self._current_link and txt:
+                txt = f'{txt} ({self._current_link})'
+            self._current_row.append((txt, self._current_cell_is_header))
+            self._in_cell = False
+            self._current_cell = []
+        elif tag == 'a':
+            self._current_link = None
+        elif tag == 'tr' and self._in_table:
+            if self._current_row:
+                row_values = [cell_text if cell_text else '-' for cell_text, _ in self._current_row]
+                if any(value != '-' for value in row_values):
+                    self._parts.append(' | '.join(row_values) + '\n')
+                    if self._table_has_header and all(is_header for _, is_header in self._current_row):
+                        self._parts.append(' | '.join(['---'] * len(self._current_row)) + '\n')
+        elif tag == 'table' and self._in_table:
+            self._in_table = False
+            self._parts.append('\n')
+        elif tag in self._BLOCK_TAGS:
             self._parts.append('\n')
 
     def handle_data(self, data):
-        if data and not data.isspace():
+        if self._ignore_stack or self._hidden_stack or not data or data.isspace():
+            return
+        if self._in_table and self._in_cell:
+            self._current_cell.append(data)
+        else:
             self._parts.append(data)
 
     def get_text(self):
@@ -127,6 +205,14 @@ def _build_pdf_attachment(subject, html_body, generated_at, filename):
         leading=12,
         spaceAfter=4,
     )
+    mono_style = ParagraphStyle(
+        'PdfMono',
+        parent=styles['Code'],
+        fontName='Courier',
+        fontSize=8,
+        leading=10,
+        spaceAfter=3,
+    )
     doc = SimpleDocTemplate(
         buffer,
         pagesize=A4,
@@ -144,7 +230,10 @@ def _build_pdf_attachment(subject, html_body, generated_at, filename):
     ]
     for line in pdf_text.splitlines():
         if line:
-            story.append(Paragraph(escape(line), body_style))
+            if ' | ' in line or line.startswith('---'):
+                story.append(Preformatted(line, mono_style))
+            else:
+                story.append(Paragraph(escape(line), body_style))
         else:
             story.append(Spacer(1, 4))
 

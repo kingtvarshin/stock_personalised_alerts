@@ -32,7 +32,11 @@ if dry_run:
 # --- Excel extraction (optional) ---------------------------------------------
 if NEW_EXCEL_FLAG:
     logger.info('New Excel file detected. Extracting stock data from %s...', EXCEL_NAME)
-    complete_stocks_list_extractor(EXCEL_NAME, output_json)
+    try:
+        complete_stocks_list_extractor(EXCEL_NAME, output_json)
+    except Exception as e:
+        logger.error('Excel extraction failed for EXCEL_NAME="%s": %s', EXCEL_NAME, e, exc_info=True)
+        raise SystemExit(1)
 
 # --- Time tracking -----------------------------------------------------------
 time_analysis = {}
