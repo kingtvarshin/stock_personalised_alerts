@@ -22,7 +22,7 @@ pipeline {
     APP_DIR          = 'src'
     IMAGE_NAME       = "${params.IMAGE_NAME}"
     DRY_RUN          = "${params.DRY_RUN}"
-    SSH_CREDS_ID     = 'truenas-ssh'
+    SSH_CREDS_ID     = 'truenas-ssh-creds'
     TRUENAS_SSH_HOST = '192.168.29.65'
   }
 
