@@ -23,7 +23,7 @@ pipeline {
     IMAGE_NAME       = "${params.IMAGE_NAME}"
     DRY_RUN          = "${params.DRY_RUN}"
     SSH_CREDS_ID     = 'truenas-ssh-creds'
-    TRUENAS_SSH_HOST = '192.168.29.65'
+    // REGISTRY_HOST is injected by Jenkins (Manage Jenkins → System → Global properties → Environment variables)
   }
 
   stages {
@@ -59,6 +59,8 @@ pipeline {
     // ---------------------------------------------------------------
       steps {
         script {
+          env.TRUENAS_SSH_HOST = env.TRUENAS_REGISTRY_HOST.split(':')[0]
+
           def permissionDenied = sh(
             script: 'docker info > /dev/null 2>&1',
             returnStatus: true
