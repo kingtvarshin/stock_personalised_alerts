@@ -58,6 +58,7 @@ pipeline {
             script: 'if [ -n "${EXCEL_FILE:-}" ] && [ -f "$EXCEL_FILE" ]; then basename "$EXCEL_FILE"; fi',
             returnStdout: true
           ).trim()
+          env.HAS_EXCEL_UPLOAD = env.UPLOADED_EXCEL_NAME ? 'true' : 'false'
 
           sh '''#!/bin/bash
             set -euo pipefail
@@ -166,7 +167,9 @@ pipeline {
       steps {
         script {
           def remoteRunCmd = (DRY_RUN == 'true') ? 'python3 main.py --dry-run' : 'python3 main.py'
-          def excelEnvArgs = env.UPLOADED_EXCEL_NAME ? "-e NEW_EXCEL_FLAG=True -e EXCEL_NAME=${env.UPLOADED_EXCEL_NAME}" : "-e NEW_EXCEL_FLAG=False"
+          def excelEnvArgs = (env.HAS_EXCEL_UPLOAD == 'true')
+            ? "-e NEW_EXCEL_FLAG=True -e EXCEL_NAME=${env.UPLOADED_EXCEL_NAME}"
+            : "-e NEW_EXCEL_FLAG=False"
 
           withCredentials([sshUserPrivateKey(
             credentialsId: env.SSH_CREDS_ID,
