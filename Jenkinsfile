@@ -16,6 +16,7 @@ pipeline {
     string(name: 'BRANCH_NAME', defaultValue: 'feature/pdf_output_for_summary', description: 'Branch to checkout and run')
     string(name: 'IMAGE_NAME', defaultValue: 'stock-analyzer', description: 'Docker image name')
     booleanParam(name: 'DRY_RUN', defaultValue: false, description: 'Run pipeline with --dry-run (no emails sent)')
+    file(name: 'EXCEL_FILE', description: 'Optional Excel file upload for this run. It will be copied to src/resources and used without committing it to git.')
   }
 
   environment {
@@ -47,6 +48,33 @@ pipeline {
             chmod 600 "$APP_DIR/.env"
           '''
         }
+      }
+    }
+
+    stage('Prepare Excel Input') {
+      steps {
+        sh '''#!/bin/bash
+          set -euo pipefail
+          mkdir -p "$APP_DIR/resources"
+
+          if [ -n "${EXCEL_FILE:-}" ] && [ -f "$EXCEL_FILE" ]; then
+            excel_basename="$(basename "$EXCEL_FILE")"
+            cp "$EXCEL_FILE" "$APP_DIR/resources/$excel_basename"
+
+            tmp_env="$(mktemp)"
+            grep -v '^EXCEL_NAME=' "$APP_DIR/.env" | grep -v '^NEW_EXCEL_FLAG=' > "$tmp_env" || true
+            {
+              cat "$tmp_env"
+              echo "NEW_EXCEL_FLAG=True"
+              echo "EXCEL_NAME=$excel_basename"
+            } > "$APP_DIR/.env"
+            rm -f "$tmp_env"
+
+            echo "[excel-input] Uploaded Excel file prepared: $excel_basename"
+          else
+            echo "[excel-input] No Excel file uploaded. Using values from $APP_DIR/.env"
+          fi
+        '''
       }
     }
 
