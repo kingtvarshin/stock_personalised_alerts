@@ -152,21 +152,33 @@ pipeline {
               keyFileVariable: 'SSH_KEY_FILE',
               usernameVariable: 'SSH_USER_FROM_CRED'
             )]) {
-              sh """
-                set -euo pipefail
-                ssh -i "\$SSH_KEY_FILE" \\
-                    -o StrictHostKeyChecking=no \\
-                    -o BatchMode=yes \\
-                    "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                    "mkdir -p '${env.REMOTE_CACHE_DIR}'; \
-                     if [ -f '${env.REMOTE_CACHE_DIR}/stocksdict.json' ]; then \
-                       cp '${env.REMOTE_CACHE_DIR}/stocksdict.json' '${env.REMOTE_DIR}/$APP_DIR/stocksdict.json' && \
-                       echo '[cache] Restored stocksdict.json from cache'; \
-                     else \
-                       echo '[cache] stocksdict.json not found in cache'; \
-                       exit 42; \
-                     fi"
-              """
+              int restoreStatus = sh(
+                script: """
+                  set -euo pipefail
+                  ssh -i "\$SSH_KEY_FILE" \\
+                      -o StrictHostKeyChecking=no \\
+                      -o BatchMode=yes \\
+                      "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                      "mkdir -p '${env.REMOTE_CACHE_DIR}'; \
+                       if [ -f '${env.REMOTE_DIR}/$APP_DIR/stocksdict.json' ]; then \
+                         echo '[cache] Using stocksdict.json already present in workspace'; \
+                       elif [ -f '${env.REMOTE_CACHE_DIR}/stocksdict.json' ]; then \
+                         cp '${env.REMOTE_CACHE_DIR}/stocksdict.json' '${env.REMOTE_DIR}/$APP_DIR/stocksdict.json' && \
+                         echo '[cache] Restored stocksdict.json from cache'; \
+                       else \
+                         echo '[cache] stocksdict.json not found in workspace or cache'; \
+                         exit 3; \
+                       fi"
+                """,
+                returnStatus: true
+              )
+
+              if (restoreStatus == 3) {
+                error('No stocksdict.json available for non-Excel run. Upload EXCEL_FILE once to bootstrap cache, then future non-Excel runs will succeed.')
+              }
+              if (restoreStatus != 0) {
+                error("Restore Cached Inputs failed with exit code ${restoreStatus}")
+              }
             }
           } else {
             echo '[cache] Excel uploaded for this run; cache restore skipped.'
