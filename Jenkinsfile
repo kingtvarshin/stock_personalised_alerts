@@ -55,24 +55,59 @@ pipeline {
     stage('Prepare Excel Input') {
       steps {
         script {
-          env.UPLOADED_EXCEL_NAME = sh(
-            script: 'if [ -n "${EXCEL_FILE:-}" ] && [ -f "$EXCEL_FILE" ]; then basename "$EXCEL_FILE"; fi',
-            returnStdout: true
-          ).trim()
-          env.HAS_EXCEL_UPLOAD = env.UPLOADED_EXCEL_NAME ? 'true' : 'false'
+          // Some Jenkins setups expose file parameters as a path, others as filename only.
+          // Keep the original parameter value and resolve the real file path in shell.
+          env.EXCEL_PARAM_RAW = (params.EXCEL_FILE ?: '').trim()
+          env.UPLOADED_EXCEL_NAME = ''
+          env.HAS_EXCEL_UPLOAD = 'false'
 
           sh '''#!/bin/bash
             set -euo pipefail
             mkdir -p "$APP_DIR/resources"
 
+            excel_src=""
+
+            # Prefer Jenkins-injected env var path when present
             if [ -n "${EXCEL_FILE:-}" ] && [ -f "$EXCEL_FILE" ]; then
-              excel_basename="$(basename "$EXCEL_FILE")"
-              cp "$EXCEL_FILE" "$APP_DIR/resources/$excel_basename"
+              excel_src="$EXCEL_FILE"
+            fi
+
+            # Fall back to params filename value (can be just basename)
+            if [ -z "$excel_src" ] && [ -n "${EXCEL_PARAM_RAW:-}" ]; then
+              if [ -f "$EXCEL_PARAM_RAW" ]; then
+                excel_src="$EXCEL_PARAM_RAW"
+              elif [ -f "$WORKSPACE/$EXCEL_PARAM_RAW" ]; then
+                excel_src="$WORKSPACE/$EXCEL_PARAM_RAW"
+              else
+                found_path="$(find "$WORKSPACE" -maxdepth 3 -type f -name "$EXCEL_PARAM_RAW" 2>/dev/null | head -n 1 || true)"
+                if [ -n "$found_path" ] && [ -f "$found_path" ]; then
+                  excel_src="$found_path"
+                fi
+              fi
+            fi
+
+            if [ -n "$excel_src" ] && [ -f "$excel_src" ]; then
+              excel_basename="$(basename "$excel_src")"
+              cp "$excel_src" "$APP_DIR/resources/$excel_basename"
+              echo "UPLOADED_EXCEL_NAME=$excel_basename" > .excel_upload_meta
               echo "[excel-input] Uploaded Excel file prepared: $excel_basename"
+              echo "[excel-input] Source file resolved at: $excel_src"
             else
-              echo "[excel-input] No Excel file uploaded. NEW_EXCEL_FLAG will be set dynamically at runtime."
+              : > .excel_upload_meta
+              echo "[excel-input] No valid Excel upload found."
+              echo "[excel-input] EXCEL_FILE env: ${EXCEL_FILE:-<empty>}"
+              echo "[excel-input] params.EXCEL_FILE: ${EXCEL_PARAM_RAW:-<empty>}"
+              echo "[excel-input] NEW_EXCEL_FLAG will be set dynamically at runtime."
             fi
           '''
+
+          def uploaded = sh(
+            script: "grep '^UPLOADED_EXCEL_NAME=' .excel_upload_meta 2>/dev/null | cut -d= -f2- || true",
+            returnStdout: true
+          ).trim()
+          env.UPLOADED_EXCEL_NAME = uploaded
+          env.HAS_EXCEL_UPLOAD = uploaded ? 'true' : 'false'
+          echo "[excel-input] HAS_EXCEL_UPLOAD=${env.HAS_EXCEL_UPLOAD}${uploaded ? ", UPLOADED_EXCEL_NAME=${uploaded}" : ''}"
         }
       }
     }
