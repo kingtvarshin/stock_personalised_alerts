@@ -66,10 +66,16 @@ pipeline {
             mkdir -p "$APP_DIR/resources"
 
             excel_src=""
+            candidate_name=""
 
             # Prefer Jenkins-injected env var path when present
             if [ -n "${EXCEL_FILE:-}" ] && [ -f "$EXCEL_FILE" ]; then
               excel_src="$EXCEL_FILE"
+            fi
+
+            # If EXCEL_FILE is a basename (common Jenkins behavior), remember it for lookup.
+            if [ -z "$excel_src" ] && [ -n "${EXCEL_FILE:-}" ]; then
+              candidate_name="$(basename "$EXCEL_FILE")"
             fi
 
             # Fall back to params filename value (can be just basename)
@@ -80,6 +86,18 @@ pipeline {
                 excel_src="$WORKSPACE/$EXCEL_PARAM_RAW"
               else
                 found_path="$(find "$WORKSPACE" -maxdepth 3 -type f -name "$EXCEL_PARAM_RAW" 2>/dev/null | head -n 1 || true)"
+                if [ -n "$found_path" ] && [ -f "$found_path" ]; then
+                  excel_src="$found_path"
+                fi
+              fi
+            fi
+
+            # Search by candidate basename in common Jenkins locations.
+            if [ -z "$excel_src" ] && [ -n "$candidate_name" ]; then
+              if [ -f "$WORKSPACE/$candidate_name" ]; then
+                excel_src="$WORKSPACE/$candidate_name"
+              else
+                found_path="$(find "$WORKSPACE" "$WORKSPACE@tmp" -maxdepth 5 -type f -name "$candidate_name" 2>/dev/null | head -n 1 || true)"
                 if [ -n "$found_path" ] && [ -f "$found_path" ]; then
                   excel_src="$found_path"
                 fi
@@ -97,6 +115,8 @@ pipeline {
               echo "[excel-input] No valid Excel upload found."
               echo "[excel-input] EXCEL_FILE env: ${EXCEL_FILE:-<empty>}"
               echo "[excel-input] params.EXCEL_FILE: ${EXCEL_PARAM_RAW:-<empty>}"
+              echo "[excel-input] WORKSPACE: ${WORKSPACE:-<empty>}"
+              echo "[excel-input] WORKSPACE@tmp exists: $( [ -d "$WORKSPACE@tmp" ] && echo yes || echo no )"
               echo "[excel-input] NEW_EXCEL_FLAG will be set dynamically at runtime."
             fi
           '''
