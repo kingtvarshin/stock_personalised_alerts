@@ -105,13 +105,24 @@ pipeline {
             fi
 
             # Deterministic Jenkins file-parameter location (controller filesystem).
-            # Path pattern: $JENKINS_HOME/jobs/<job path>/builds/<build #>/fileParameters/<filename>
+            # Path pattern: $JENKINS_HOME/jobs/<job path>/builds/<build #>/fileParameters/<parameter-name>
+            # In most Jenkins setups, the stored file is named after the parameter key (EXCEL_FILE),
+            # not the original uploaded filename.
             if [ -z "$excel_src" ] && [ -n "$candidate_name" ] && [ -n "${JENKINS_HOME:-}" ] && [ -n "${JOB_NAME:-}" ] && [ -n "${BUILD_NUMBER:-}" ]; then
               job_path="$(echo "$JOB_NAME" | sed 's#/#/jobs/#g')"
-              fp_path="$JENKINS_HOME/jobs/$job_path/builds/$BUILD_NUMBER/fileParameters/$candidate_name"
-              if [ -f "$fp_path" ]; then
-                excel_src="$fp_path"
-                echo "[excel-input] Resolved from Jenkins fileParameters: $fp_path"
+              fp_dir="$JENKINS_HOME/jobs/$job_path/builds/$BUILD_NUMBER/fileParameters"
+              fp_by_param="$fp_dir/EXCEL_FILE"
+              fp_by_name="$fp_dir/$candidate_name"
+
+              if [ -f "$fp_by_param" ]; then
+                excel_src="$fp_by_param"
+                echo "[excel-input] Resolved from Jenkins fileParameters by parameter key: $fp_by_param"
+              elif [ -f "$fp_by_name" ]; then
+                excel_src="$fp_by_name"
+                echo "[excel-input] Resolved from Jenkins fileParameters by filename: $fp_by_name"
+              else
+                echo "[excel-input] fileParameters dir checked: $fp_dir"
+                ls -la "$fp_dir" 2>/dev/null || true
               fi
             fi
 
