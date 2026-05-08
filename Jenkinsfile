@@ -104,6 +104,17 @@ pipeline {
               fi
             fi
 
+            # Deterministic Jenkins file-parameter location (controller filesystem).
+            # Path pattern: $JENKINS_HOME/jobs/<job path>/builds/<build #>/fileParameters/<filename>
+            if [ -z "$excel_src" ] && [ -n "$candidate_name" ] && [ -n "${JENKINS_HOME:-}" ] && [ -n "${JOB_NAME:-}" ] && [ -n "${BUILD_NUMBER:-}" ]; then
+              job_path="$(echo "$JOB_NAME" | sed 's#/#/jobs/#g')"
+              fp_path="$JENKINS_HOME/jobs/$job_path/builds/$BUILD_NUMBER/fileParameters/$candidate_name"
+              if [ -f "$fp_path" ]; then
+                excel_src="$fp_path"
+                echo "[excel-input] Resolved from Jenkins fileParameters: $fp_path"
+              fi
+            fi
+
             if [ -n "$excel_src" ] && [ -f "$excel_src" ]; then
               excel_basename="$(basename "$excel_src")"
               cp "$excel_src" "$APP_DIR/resources/$excel_basename"
@@ -117,6 +128,9 @@ pipeline {
               echo "[excel-input] params.EXCEL_FILE: ${EXCEL_PARAM_RAW:-<empty>}"
               echo "[excel-input] WORKSPACE: ${WORKSPACE:-<empty>}"
               echo "[excel-input] WORKSPACE@tmp exists: $( [ -d "$WORKSPACE@tmp" ] && echo yes || echo no )"
+              echo "[excel-input] JENKINS_HOME: ${JENKINS_HOME:-<empty>}"
+              echo "[excel-input] JOB_NAME: ${JOB_NAME:-<empty>}"
+              echo "[excel-input] BUILD_NUMBER: ${BUILD_NUMBER:-<empty>}"
               echo "[excel-input] NEW_EXCEL_FLAG will be set dynamically at runtime."
             fi
           '''
