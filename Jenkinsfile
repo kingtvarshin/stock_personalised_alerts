@@ -53,28 +53,25 @@ pipeline {
 
     stage('Prepare Excel Input') {
       steps {
-        sh '''#!/bin/bash
-          set -euo pipefail
-          mkdir -p "$APP_DIR/resources"
+        script {
+          env.UPLOADED_EXCEL_NAME = sh(
+            script: 'if [ -n "${EXCEL_FILE:-}" ] && [ -f "$EXCEL_FILE" ]; then basename "$EXCEL_FILE"; fi',
+            returnStdout: true
+          ).trim()
 
-          if [ -n "${EXCEL_FILE:-}" ] && [ -f "$EXCEL_FILE" ]; then
-            excel_basename="$(basename "$EXCEL_FILE")"
-            cp "$EXCEL_FILE" "$APP_DIR/resources/$excel_basename"
+          sh '''#!/bin/bash
+            set -euo pipefail
+            mkdir -p "$APP_DIR/resources"
 
-            tmp_env="$(mktemp)"
-            grep -v '^EXCEL_NAME=' "$APP_DIR/.env" | grep -v '^NEW_EXCEL_FLAG=' > "$tmp_env" || true
-            {
-              cat "$tmp_env"
-              echo "NEW_EXCEL_FLAG=True"
-              echo "EXCEL_NAME=$excel_basename"
-            } > "$APP_DIR/.env"
-            rm -f "$tmp_env"
-
-            echo "[excel-input] Uploaded Excel file prepared: $excel_basename"
-          else
-            echo "[excel-input] No Excel file uploaded. Using values from $APP_DIR/.env"
-          fi
-        '''
+            if [ -n "${EXCEL_FILE:-}" ] && [ -f "$EXCEL_FILE" ]; then
+              excel_basename="$(basename "$EXCEL_FILE")"
+              cp "$EXCEL_FILE" "$APP_DIR/resources/$excel_basename"
+              echo "[excel-input] Uploaded Excel file prepared: $excel_basename"
+            else
+              echo "[excel-input] No Excel file uploaded. NEW_EXCEL_FLAG will be set dynamically at runtime."
+            fi
+          '''
+        }
       }
     }
 
@@ -168,6 +165,9 @@ pipeline {
     stage('Run Script') {
       steps {
         script {
+          def remoteRunCmd = (DRY_RUN == 'true') ? 'python3 main.py --dry-run' : 'python3 main.py'
+          def excelEnvArgs = env.UPLOADED_EXCEL_NAME ? "-e NEW_EXCEL_FLAG=True -e EXCEL_NAME=${env.UPLOADED_EXCEL_NAME}" : "-e NEW_EXCEL_FLAG=False"
+
           withCredentials([sshUserPrivateKey(
             credentialsId: env.SSH_CREDS_ID,
             keyFileVariable: 'SSH_KEY_FILE',
@@ -175,13 +175,12 @@ pipeline {
           )]) {
             sh """
               set -euo pipefail
-              REMOTE_RUN_CMD="${DRY_RUN == 'true' ? 'python3 main.py --dry-run' : 'python3 main.py'}"
 
               ssh -i "\$SSH_KEY_FILE" \\
                   -o StrictHostKeyChecking=no \\
                   -o BatchMode=yes \\
                   "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                  "cd '${env.REMOTE_DIR}/$APP_DIR' && docker run --rm --env-file .env '$IMAGE_NAME:$BUILD_NUMBER' \$REMOTE_RUN_CMD"
+                  "cd '${env.REMOTE_DIR}/$APP_DIR' && docker run --rm --env-file .env ${excelEnvArgs} '$IMAGE_NAME:$BUILD_NUMBER' ${remoteRunCmd}"
             """
           }
         }
