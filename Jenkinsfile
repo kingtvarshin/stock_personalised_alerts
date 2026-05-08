@@ -24,6 +24,7 @@ pipeline {
     IMAGE_NAME       = "${params.IMAGE_NAME}"
     DRY_RUN          = "${params.DRY_RUN}"
     SSH_CREDS_ID     = 'truenas-ssh-creds'
+    REMOTE_CACHE_DIR = '/tmp/stock-personalised-alerts-cache'
     // REGISTRY_HOST is injected by Jenkins (Manage Jenkins → System → Global properties → Environment variables)
   }
 
@@ -142,6 +143,38 @@ pipeline {
       }
     }
 
+    stage('Restore Cached Inputs') {
+      steps {
+        script {
+          if (env.HAS_EXCEL_UPLOAD != 'true') {
+            withCredentials([sshUserPrivateKey(
+              credentialsId: env.SSH_CREDS_ID,
+              keyFileVariable: 'SSH_KEY_FILE',
+              usernameVariable: 'SSH_USER_FROM_CRED'
+            )]) {
+              sh """
+                set -euo pipefail
+                ssh -i "\$SSH_KEY_FILE" \\
+                    -o StrictHostKeyChecking=no \\
+                    -o BatchMode=yes \\
+                    "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                    "mkdir -p '${env.REMOTE_CACHE_DIR}'; \
+                     if [ -f '${env.REMOTE_CACHE_DIR}/stocksdict.json' ]; then \
+                       cp '${env.REMOTE_CACHE_DIR}/stocksdict.json' '${env.REMOTE_DIR}/$APP_DIR/stocksdict.json' && \
+                       echo '[cache] Restored stocksdict.json from cache'; \
+                     else \
+                       echo '[cache] stocksdict.json not found in cache'; \
+                       exit 42; \
+                     fi"
+              """
+            }
+          } else {
+            echo '[cache] Excel uploaded for this run; cache restore skipped.'
+          }
+        }
+      }
+    }
+
     stage('Build Docker Image') {
       steps {
         script {
@@ -183,7 +216,32 @@ pipeline {
                   -o StrictHostKeyChecking=no \\
                   -o BatchMode=yes \\
                   "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                  "cd '${env.REMOTE_DIR}/$APP_DIR' && docker run --rm --env-file .env ${excelEnvArgs} '$IMAGE_NAME:$BUILD_NUMBER' ${remoteRunCmd}"
+                  "cd '${env.REMOTE_DIR}/$APP_DIR' && docker run --rm --env-file .env ${excelEnvArgs} -v '${env.REMOTE_DIR}/$APP_DIR:/app' '$IMAGE_NAME:$BUILD_NUMBER' ${remoteRunCmd}"
+            """
+          }
+        }
+      }
+    }
+
+    stage('Persist Generated Files') {
+      steps {
+        script {
+          withCredentials([sshUserPrivateKey(
+            credentialsId: env.SSH_CREDS_ID,
+            keyFileVariable: 'SSH_KEY_FILE',
+            usernameVariable: 'SSH_USER_FROM_CRED'
+          )]) {
+            sh """
+              set -euo pipefail
+              ssh -i "\$SSH_KEY_FILE" \\
+                  -o StrictHostKeyChecking=no \\
+                  -o BatchMode=yes \\
+                  "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                  "mkdir -p '${env.REMOTE_CACHE_DIR}'; \
+                   [ -f '${env.REMOTE_DIR}/$APP_DIR/stocksdict.json' ] && cp '${env.REMOTE_DIR}/$APP_DIR/stocksdict.json' '${env.REMOTE_CACHE_DIR}/stocksdict.json' || true; \
+                   [ -f '${env.REMOTE_DIR}/$APP_DIR/fiftytwo_weeks_analysis.json' ] && cp '${env.REMOTE_DIR}/$APP_DIR/fiftytwo_weeks_analysis.json' '${env.REMOTE_CACHE_DIR}/fiftytwo_weeks_analysis.json' || true; \
+                   [ -f '${env.REMOTE_DIR}/$APP_DIR/time_analysis.json' ] && cp '${env.REMOTE_DIR}/$APP_DIR/time_analysis.json' '${env.REMOTE_CACHE_DIR}/time_analysis.json' || true; \
+                   [ -f '${env.REMOTE_DIR}/$APP_DIR/indicators_data.csv' ] && cp '${env.REMOTE_DIR}/$APP_DIR/indicators_data.csv' '${env.REMOTE_CACHE_DIR}/indicators_data.csv' || true"
             """
           }
         }
