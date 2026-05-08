@@ -35,7 +35,7 @@ pipeline {
           $class: 'GitSCM',
           branches: [[name: "*/${params.BRANCH_NAME}"]],
           userRemoteConfigs: scm.userRemoteConfigs,
-          extensions: [[$class: 'CleanBeforeCheckout']]
+          extensions: []
         ])
       }
     }
