@@ -144,7 +144,8 @@ pipeline {
                 found_path="$({
                   for root in $search_roots; do
                     [ -d "$root" ] || continue
-                    find "$root" -maxdepth 8 -type f \( -name "$candidate_name" -o -name 'EXCEL_FILE' \) 2>/dev/null
+                    find "$root" -maxdepth 8 -type f -name "$candidate_name" 2>/dev/null
+                    find "$root" -maxdepth 8 -type f -name 'EXCEL_FILE' 2>/dev/null
                   done
                 } | head -n 1 || true)"
 
@@ -290,7 +291,7 @@ pipeline {
                         -o StrictHostKeyChecking=no \\
                         -o BatchMode=yes \\
                         "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                        "find '${env.REMOTE_DIR}/$APP_DIR/resources' -maxdepth 1 -type f \\( -iname '*.xlsx' -o -iname '*.xls' \\) -printf '%T@ %f\\n' 2>/dev/null | sort -nr | sed -n '1s/^[^ ]* //p'"
+                        "find '${env.REMOTE_DIR}/$APP_DIR/resources' -maxdepth 1 -type f -printf '%T@ %f\\n' 2>/dev/null | grep -Ei '\\.(xlsx|xls)$$' | sort -nr | sed -n '1s/^[^ ]* //p'"
                   """,
                   returnStdout: true
                 ).trim()
