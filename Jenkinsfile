@@ -255,7 +255,26 @@ pipeline {
               )
 
               if (restoreStatus == 3) {
-                error('No stocksdict.json available for non-Excel run. Upload EXCEL_FILE once to bootstrap cache, then future non-Excel runs will succeed.')
+                def fallbackExcelName = sh(
+                  script: """
+                    set -euo pipefail
+                    ssh -i "\$SSH_KEY_FILE" \\
+                        -o StrictHostKeyChecking=no \\
+                        -o BatchMode=yes \\
+                        "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
+                        "{ ls -1t '${env.REMOTE_DIR}/$APP_DIR/resources'/*.xlsx '${env.REMOTE_DIR}/$APP_DIR/resources'/*.xls 2>/dev/null || true; } | sed -n '1p' | xargs -r basename"
+                  """,
+                  returnStdout: true
+                ).trim()
+
+                if (fallbackExcelName) {
+                  env.HAS_EXCEL_UPLOAD = 'true'
+                  env.UPLOADED_EXCEL_NAME = fallbackExcelName
+                  restoreStatus = 0
+                  echo "[cache] stocksdict.json missing in workspace/cache; bootstrapping from bundled Excel: ${fallbackExcelName}"
+                } else {
+                  error('No stocksdict.json available for non-Excel run, and no bundled Excel found under src/resources. Upload EXCEL_FILE once to bootstrap cache, then future non-Excel runs will succeed.')
+                }
               }
               if (restoreStatus != 0) {
                 error("Restore Cached Inputs failed with exit code ${restoreStatus}")
