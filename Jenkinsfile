@@ -127,6 +127,34 @@ pipeline {
               fi
             fi
 
+            # Final fallback: search common Jenkins temp/build locations without assuming
+            # a specific storage layout for file parameters.
+            if [ -z "$excel_src" ] && [ -n "$candidate_name" ]; then
+              search_roots=""
+              [ -n "${WORKSPACE:-}" ] && search_roots="$search_roots $WORKSPACE"
+              [ -n "${WORKSPACE:-}" ] && [ -d "$WORKSPACE@tmp" ] && search_roots="$search_roots $WORKSPACE@tmp"
+
+              if [ -n "${JENKINS_HOME:-}" ] && [ -n "${JOB_NAME:-}" ] && [ -n "${BUILD_NUMBER:-}" ]; then
+                job_path="$(echo "$JOB_NAME" | sed 's#/#/jobs/#g')"
+                build_dir="$JENKINS_HOME/jobs/$job_path/builds/$BUILD_NUMBER"
+                [ -d "$build_dir" ] && search_roots="$search_roots $build_dir"
+              fi
+
+              if [ -n "$search_roots" ]; then
+                found_path="$({
+                  for root in $search_roots; do
+                    [ -d "$root" ] || continue
+                    find "$root" -maxdepth 8 -type f \( -name "$candidate_name" -o -name 'EXCEL_FILE' \) 2>/dev/null
+                  done
+                } | head -n 1 || true)"
+
+                if [ -n "$found_path" ] && [ -f "$found_path" ]; then
+                  excel_src="$found_path"
+                  echo "[excel-input] Resolved from fallback search: $found_path"
+                fi
+              fi
+            fi
+
             if [ -n "$excel_src" ] && [ -f "$excel_src" ]; then
               excel_basename="$(basename "$excel_src")"
               cp "$excel_src" "$APP_DIR/resources/$excel_basename"
@@ -262,7 +290,7 @@ pipeline {
                         -o StrictHostKeyChecking=no \\
                         -o BatchMode=yes \\
                         "\$SSH_USER_FROM_CRED@${env.TRUENAS_SSH_HOST}" \\
-                        "{ ls -1t '${env.REMOTE_DIR}/$APP_DIR/resources'/*.xlsx '${env.REMOTE_DIR}/$APP_DIR/resources'/*.xls 2>/dev/null || true; } | sed -n '1p' | xargs -r basename"
+                        "find '${env.REMOTE_DIR}/$APP_DIR/resources' -maxdepth 1 -type f \\( -iname '*.xlsx' -o -iname '*.xls' \\) -printf '%T@ %f\\n' 2>/dev/null | sort -nr | sed -n '1s/^[^ ]* //p'"
                   """,
                   returnStdout: true
                 ).trim()
